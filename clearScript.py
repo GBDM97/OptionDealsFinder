@@ -28,7 +28,7 @@ def newAssetFlow(ticker):
     actions.move_by_offset(-610,-215)
     time.sleep(1.5)
     e = WebDriverWait(driver, 10).until(
-        EC.presence_of_element_located((By.CSS_SELECTOR, "[class='small soma-caption ellipsis hydrated']"))
+        EC.presence_of_element_located((By.CSS_SELECTOR, "[alt='Logo do ativo "+ticker+"']"))
     )
     e.click()
     actions.move_by_offset(931,543)
