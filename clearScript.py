@@ -39,11 +39,32 @@ def newAssetFlow(ticker):
     actions.perform()
 
 def addAssets():
-    [newAssetFlow(i) for i in optionCodes.get()]
-    time.sleep(0.5)
-    prices = [i.text for i in driver.find_elements(By.CSS_SELECTOR, '[class="defaultCell bodyCell"]')[8:]]
-    print(prices)
+    [newAssetFlow(i['code']) for i in optionCodes.get()]
 
-addAssets()
+def generateDataSet():
+    options_dataset = []
+    prices_index = 2
+    # prices = [' 0,77', ' 0,77', ' 0,76', ' 0,77', '-', '-', '-', '-', '-', '-', '-', '-', ' 0,01', ' 0,01', '-', ' 0,06', '-', ' 0,01', '-', ' 0,01', '-', ' 0,01', '-', ' 0,01', '-', ' 0,01', '-', '-', '-', '-', '-', ' 0,22', '-', '-', '-', ' 0,01', '-', '-', '-', '-', '-', '-', '-', ' 0,02', '-', '-', '-', ' 0,22', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+    prices = [i.text for i in driver.find_elements(By.CSS_SELECTOR, '[class="defaultCell bodyCell"]')[8:]]
+    for i in optionCodes.get():
+        new = {}
+        if 'strike' in i:
+            new = {
+                'code': i['code'],
+                'strike': i['strike'],
+                'buyPrice': prices[prices_index],
+                'sellPrice': prices[prices_index + 1]
+            }
+        else:
+            new = {
+                'code': i['code'],
+                'buyPrice': prices[prices_index],
+                'sellPrice': prices[prices_index + 1]
+            }
+        options_dataset.append(new)
+        prices_index += 4
+    options_dataset
+
+generateDataSet()
 
 input()
