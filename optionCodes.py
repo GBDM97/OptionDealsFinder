@@ -130,6 +130,3 @@ def write(callCode):
         outArray.append(assetArr)
     with open('currentOptionsList.json', 'w') as file:
         file.write(json.dumps(outArray))
-
-write('C')
-    
