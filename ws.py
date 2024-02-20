@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
 import optionCodes
+import time
 
 chrome_options = Options()
 chrome_driver = "C:\Program Files\Google\Chrome\Application\chrome.exe"
@@ -13,11 +14,16 @@ input()
 
 #verify type 6 is being sent and clean connections for the execution bellow:
 '''
-    queryObjects(Websocket)
+    delete temp1
+    queryObjects(WebSocket)
     let messages = [];
-    temp1.onmessage = function (e) {
-        if(e.data !== '{"type":6}\x1E'){messages.push(e.data);}
-    }
+    temp1.addEventListener('message', function(event) {
+        var data = event.data.replace(/\x1E/g,''));
+        if (data && data.target === 'QuoteSnapshot') {
+            messages.push(data);
+        }
+    });
+
 '''
 
 driver.execute_script('var messages = [1]; console.log(messages);')
@@ -30,6 +36,7 @@ def getWSMessages():
 
 def assetWSQuery(a):
     sendMessage('{"arguments":["'+a+'"],"target":"SubscribeQuote","type":1}')
+    time.sleep(10)
     sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}')
 
 def queryList():
