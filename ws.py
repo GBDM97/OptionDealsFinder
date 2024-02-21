@@ -47,9 +47,10 @@ def queryList():
     ii = 0
     for i in l:
         for v in i:
-            if ii < 500:
-                quoteSnapshotWS(v)
+            if ii < 4000:
+                quoteSnapshotWS(v['code'])
                 ii += 1
+                if ii == 1000 or ii == 2000 or ii == 3000:
+                    time.sleep(1)
 #send the ii to ws message
-queryList()
 
