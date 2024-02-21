@@ -27,7 +27,7 @@ input()
     }
     });
 
-'''
+# '''
 
 def sendMessage(m):
     driver.execute_script('temp1.send(JSON.stringify('+m+')+\'\x1E\');')
@@ -44,6 +44,12 @@ def unsubscribeQuoteWS(a):
 
 def queryList():
     l = optionCodes.get()
-    [print(v) for ii, v in enumerate((i for i in l)) if ii < 500]
-    #send the ii to ws message
+    ii = 0
+    for i in l:
+        for v in i:
+            if ii < 500:
+                quoteSnapshotWS(v)
+                ii += 1
+#send the ii to ws message
+queryList()
 
