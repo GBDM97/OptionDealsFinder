@@ -1,16 +1,5 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.action_chains import ActionChains
 import optionCodes
 import time
-
-chrome_options = Options()
-chrome_driver = "C:\Program Files\Google\Chrome\Application\chrome.exe"
-driver = webdriver.Chrome(chrome_options)
-driver.get('https://portal.clear.com.br/login')
-actions = ActionChains(driver)
-
-input()
 
 #verify type 6 is being sent and clean connections for the execution bellow:
 '''
@@ -29,28 +18,28 @@ input()
 
 # '''
 
-def sendMessage(m):
+def sendMessage(m,driver):
     driver.execute_script('temp1.send(JSON.stringify('+m+')+\'\x1E\');')
 
-def getWSMessages():
+def getWSMessages(driver):
     return driver.execute_script('return messages')
 
-def quoteSnapshotWS(a):
-    sendMessage('{"arguments":["'+a+'"],"target":"SubscribeQuote","type":1}')
-    sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}')
+def quoteSnapshotWS(a,driver):
+    sendMessage('{"arguments":["'+a+'"],"target":"SubscribeQuote","type":1}',driver)
+    sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}',driver)
 
 def unsubscribeQuoteWS(a):
     sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}')
 
-def queryList():
-    l = optionCodes.get()
+def queryPrices(driver):
+    l = optionCodes.get()[:5]
     ii = 0
     for i in l:
         for v in i:
-            if ii < 4000:
-                quoteSnapshotWS(v['code'])
+            if ii < 5:
+                quoteSnapshotWS(v['code'],driver)
                 ii += 1
                 if ii == 1000 or ii == 2000 or ii == 3000:
                     time.sleep(1)
-#send the ii to ws message
+    return getWSMessages(driver)
 
