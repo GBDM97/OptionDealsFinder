@@ -113,9 +113,8 @@ def assetOptionsToList(asset: str,currentCode: str) -> list:
     calls+=puts
     return calls
 
-
 def get():
-    with open('Data\\currentOptionsList.json', 'r') as file:
+    with open('Data\\testOptionsList.json', 'r') as file:
         return ast.literal_eval(file.read())
 
 def write(callCode):

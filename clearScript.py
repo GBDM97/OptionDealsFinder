@@ -1,13 +1,22 @@
 import optionCodes,dataProcess
+import ast
+import json
 import ws
+
+def testPrices():
+    with open('Data\\testPrices.json', 'r') as file:
+        return ast.literal_eval(file.read().replace('null','None'))
 
 def generateDataSet(driver) -> list[list[dict]]:
     asset_dataset = []
     final_dataset = []
     prices_index = 0
-    prices = ws.queryPrices(driver)
+    prices = testPrices()
+    # prices = ws.queryPrices(driver)
     for ii in optionCodes.get():
         asset_dataset = []
+        if prices_index >= 7000:
+            print
         for i in ii:
             b = prices[prices_index]['arguments'][1]['bestBuyPrice'] 
             s = prices[prices_index]['arguments'][1]['bestSellPrice']
