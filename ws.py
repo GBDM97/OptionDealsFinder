@@ -32,14 +32,17 @@ def unsubscribeQuoteWS(a):
     sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}')
 
 def queryPrices(driver):
-    l = optionCodes.get()[:5]
+    l = optionCodes.get()
     ii = 0
     for i in l:
         for v in i:
-            if ii < 5:
+            if ii < 15:
                 quoteSnapshotWS(v['code'],driver)
                 ii += 1
                 if ii == 1000 or ii == 2000 or ii == 3000:
                     time.sleep(1)
-    return getWSMessages(driver)
+    ret = getWSMessages(driver)
+    while ret[-1]['arguments'][0] != l[-1][-1]['code']:
+        ret = getWSMessages(driver)
+    return ret
 

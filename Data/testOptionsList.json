@@ -1,0 +1,16 @@
+[
+  [
+    { "code": "ABEV3" },
+    { "code": "ABEVC502", "strike": 4.4 },
+    { "code": "ABEVC100", "strike": 9.4 },
+    { "code": "ABEVC105", "strike": 9.9 },
+    { "code": "ABEVC110", "strike": 10.4 }
+  ],
+  [
+    { "code": "AESB3" },
+    { "code": "AESBC890", "strike": 8.9 },
+    { "code": "AESBC900", "strike": 9.0 },
+    { "code": "AESBC990", "strike": 9.9 },
+    { "code": "AESBC100", "strike": 10.0 }
+  ]
+]
