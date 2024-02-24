@@ -32,5 +32,4 @@ def getLockInfo(l:list[list[dict]]) -> list[dict]:
     outList = []
     for i in l:
         outList.extend(assetLockInfo(i))
-    print(outList)
     return outList

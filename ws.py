@@ -39,7 +39,9 @@ def queryPrices(driver):
         for v in i:
             quoteSnapshotWS(v['code'],driver)
             ii += 1
-            if ii == 1000 or ii == 2000 or ii == 3000:
+            if (ii == 1000 or ii == 2000 or ii == 3000 or
+                ii == 4000 or ii == 5000 or ii == 6000 or
+                ii == 7000 or ii == 8000):
                 time.sleep(1)
             last = v['code']
     ret = getWSMessages(driver)
