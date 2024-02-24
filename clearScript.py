@@ -20,5 +20,4 @@ def generateDataSet(driver) -> list[list[dict]]:
     return final_dataset
 
 def getLockOutput(driver):
-    # dataProcess.getLockInfo(generateDataSet(driver))
-    return ['a','b','c']
+    return dataProcess.getLockInfo(generateDataSet(driver))

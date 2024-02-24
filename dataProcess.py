@@ -17,12 +17,13 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
                         all_lock_combinations.append([i['strike'],i['code']+"("+str(i['strike'])+")",i['sellPrice'],
                         ii['code']+"("+str(ii['strike'])+")",ii['buyPrice'],
                         1/((i['sellPrice']-ii['buyPrice'])/(ii['strike']-i['strike'])),
-                        str(round(((ii['strike']-stockPrice)/stockPrice)*100,3))+'%'])
+                        round(((ii['strike']-stockPrice)/stockPrice)*100,3)])
                     if not itype and not iitype and i['strike'] < stockPrice and ii['strike'] < stockPrice:
                         all_lock_combinations.append([ii['strike'],ii['code']+"("+str(ii['strike'])+")",ii['sellPrice'],
                         i['code']+"("+str(i['strike'])+")",i['buyPrice'],
                         1/((ii['sellPrice']-i['buyPrice'])/(ii['strike']-i['strike'])),
-                        str(round(((stockPrice-i['strike'])/stockPrice)*100,3))+'%'])
+                        round(((stockPrice-i['strike'])/stockPrice)*100,3)])
+                        
             except TypeError:
                 continue
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
@@ -30,5 +31,6 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
 def getLockInfo(l:list[list[dict]]) -> list[dict]:
     outList = []
     for i in l:
-        outList.append(assetLockInfo(i))
+        outList.extend(assetLockInfo(i))
+    print(outList)
     return outList
