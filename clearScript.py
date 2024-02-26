@@ -23,7 +23,6 @@ def generateDataSet(driver) -> list[list[dict]]:
         return False
             
     prices_index = 0
-    # prices = testPrices()
     prices = ws.queryPrices(driver)
     for i in optionCodes.get():
         asset_dataset = []
@@ -46,5 +45,3 @@ def generateDataSet(driver) -> list[list[dict]]:
 
 def getLockOutput(driver):
     return dataProcess.getLockInfo(generateDataSet(driver))
-
-generateDataSet()
