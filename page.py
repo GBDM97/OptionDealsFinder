@@ -17,7 +17,7 @@ with st.empty():
         driver = browser.getDriver()
         if driver:
             input("input")
-            df = pd.DataFrame(clearScript.getLockOutput(driver),
+            df = pd.DataFrame(clearScript.getLockOutput(),
                                columns=['Profit Level','Buy','Buy Price', 'Sell', 'Sell Price', 
                                         'Multiplication', 'Percentage To Max. Profit'])
             df = df.style.apply(colorFn, subset=(slice(None),['Buy','Sell'])

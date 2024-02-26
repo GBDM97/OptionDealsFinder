@@ -23,8 +23,7 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
                         i['code']+"("+str(i['strike'])+")",i['buyPrice'],
                         1/((ii['sellPrice']-i['buyPrice'])/(ii['strike']-i['strike'])),
                         round(((stockPrice-i['strike'])/stockPrice)*100,3)])
-                        
-            except TypeError:
+            except (TypeError, ZeroDivisionError):
                 continue
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
 
