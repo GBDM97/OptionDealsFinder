@@ -29,8 +29,11 @@ def generateDataSet() -> list[list[dict]]:
         asset_dataset = []
         for ii in i:
             if ii['code'] == prices[prices_index]['arguments'][0]:
-                if (prices[prices_index]['arguments'][1]['bestBuyPrice'] == None 
-                 or prices[prices_index]['arguments'][1]['bestBuyPrice'] == None):
+                if ((prices[prices_index]['arguments'][1]['bestBuyPrice'] == None 
+                or prices[prices_index]['arguments'][1]['bestSellPrice'] == None) 
+                and 'strike' not in ii): 
+                    while ii['code'][:4] == prices[prices_index]['arguments'][0][:4]:
+                        prices_index+=1
                     break
                 save(prices[prices_index],ii)
             elif 'strike' not in ii:

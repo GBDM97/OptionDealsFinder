@@ -5,8 +5,7 @@ driver = ''
 
 def start():
     global driver
-    chrome_options = Options()
-    driver = webdriver.Chrome(chrome_options)
+    driver = webdriver.Chrome()
     driver.get('https://portal.clear.com.br/login')
 
 def getDriver():
