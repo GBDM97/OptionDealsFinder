@@ -1,13 +1,12 @@
 import optionCodes,dataProcess
 import ast
-import json
 import ws
 
 def testPrices():
     with open('Data\\testPrices.json', 'r') as file:
         return ast.literal_eval(file.read().replace('null','None'))
 
-def generateDataSet() -> list[list[dict]]:
+def generateDataSet(driver) -> list[list[dict]]:
     asset_dataset = []
     final_dataset = []
 
@@ -24,8 +23,8 @@ def generateDataSet() -> list[list[dict]]:
         return False
             
     prices_index = 0
-    prices = testPrices()
-    # prices = ws.queryPrices(driver)
+    # prices = testPrices()
+    prices = ws.queryPrices(driver)
     for i in optionCodes.get():
         asset_dataset = []
         for ii in i:
