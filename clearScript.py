@@ -23,11 +23,14 @@ def generateDataSet() -> list[list[dict]]:
         return False
             
     prices_index = 0
+    currentOptions = optionCodes.get()
+    # prices = ws.queryPrices([ii['code'] for i in currentOptions for ii in i],driver)
     prices = testPrices()
-    # prices = ws.queryPrices(driver)
-    for i in optionCodes.get():
+    for i in currentOptions:
         asset_dataset = []
         for ii in i:
+            if ii['code'] == 'PCAR3':
+                print
             if ii['code'] == prices[prices_index]['arguments'][0]:
                 if ((prices[prices_index]['arguments'][1]['bestBuyPrice'] == None 
                 or prices[prices_index]['arguments'][1]['bestSellPrice'] == None) 
@@ -53,6 +56,7 @@ def generateDataSet() -> list[list[dict]]:
 def getLockOutput(updateStatus,driver):
     if updateStatus:
         optionCodes.updateOptionsList(driver)
-    return dataProcess.getLockInfo()
+    assetsInputData = generateDataSet(driver)
+    return dataProcess.getLockInfo(assetsInputData)
 
-# dataProcess.getLockInfo(generateDataSet())
+generateDataSet()

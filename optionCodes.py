@@ -3,102 +3,7 @@ import requests
 import json
 import ws
 
-underlyingAsets = [
-  "ABEV3",
-  "AESB3",
-  "ALOS3",
-  "ALPA4",
-  "ALUP11",
-  "ARZZ3",
-  "ASAI3",
-  "B3SA3",
-  "BBAS3",
-  "BBDC3",
-  "BBDC4",
-  "BBSE3",
-  "BEEF3",
-  "BHIA3",
-  "BOVA11",
-  "BOVV11",
-  "BPAC11",
-  "BPAN4",
-  "BRAP4",
-  "BRFS3",
-  "BRKM5",
-  "CASH3",
-  "CCRO3",
-  "CIEL3",
-  "CMIG4",
-  "CMIN3",
-  "COGN3",
-  "CPFE3",
-  "CPLE6",
-  "CRFB3",
-  "CSAN3",
-  "CSNA3",
-  "CXSE3",
-  "CYRE3",
-  "DXCO3",
-  "ECOR3",
-  "EGIE3",
-  "ELET3",
-  "ELET6",
-  "EMBR3",
-  "ENEV3",
-  "ENGI11",
-  "EQTL3",
-  "EZTC3",
-  "FLRY3",
-  "GFSA3",
-  "GGBR4",
-  "GOAU4",
-  "HAPV3",
-  "HYPE3",
-  "IBOV11",
-  "IGTI11",
-  "IRBR3",
-  "ITSA4",
-  "ITUB3",
-  "ITUB4",
-  "IVVB11",
-  "JBSS3",
-  "JHSF3",
-  "KLBN11",
-  "LEVE3",
-  "LREN3",
-  "LWSA3",
-  "MEAL3",
-  "MGLU3",
-  "MRFG3",
-  "MRVE3",
-  "MULT3",
-  "NEOE3",
-  "NTCO3",
-  "PCAR3",
-  "PETR3",
-  "PETR4",
-  "PETZ3",
-  "POSI3",
-  "PRIO3",
-  "RADL3",
-  "RAIL3",
-  "RAIZ4",
-  "RDOR3",
-  "RENT3",
-  "RRRP3",
-  "SANB11",
-  "SAPR11",
-  "SBSP3",
-  "SLCE3",
-  "SMAL11",
-  "SMTO3",
-  "SOMA3",
-  "SUZB3",
-  "TAEE11",
-  "USIM5",
-  "VALE3",
-  "WEGE3"
-]
+underlyingAssets = ["ABEV3","AESB3","ALOS3","ALPA4","ALUP11","ARZZ3","ASAI3","B3SA3","BBAS3","BBDC3","BBDC4","BBSE3","BEEF3","BHIA3","BOVA11","BOVV11","BPAC11","BPAN4","BRAP4","BRFS3","BRKM5","CASH3","CCRO3","CIEL3","CMIG4","CMIN3","COGN3","CPFE3","CPLE6","CRFB3","CSAN3","CSNA3","CXSE3","CYRE3","DXCO3","ECOR3","EGIE3","ELET3","ELET6","EMBR3","ENEV3","ENGI11","EQTL3","EZTC3","FLRY3","GFSA3","GGBR4","GOAU4","HAPV3","HYPE3","IBOV11","IGTI11","IRBR3","ITSA4","ITUB3","ITUB4","IVVB11","JBSS3","JHSF3","KLBN11","LEVE3","LREN3","LWSA3","MEAL3","MGLU3","MRFG3","MRVE3","MULT3","NEOE3","NTCO3","PCAR3","PETR3","PETR4","PETZ3","POSI3","PRIO3","RADL3","RAIL3","RAIZ4","RDOR3","RENT3","RRRP3","SANB11","SAPR11","SBSP3","SLCE3","SMAL11","SMTO3","SOMA3","SUZB3","TAEE11","USIM5","VALE3","WEGE3"]
 testList = ['ABEV3','AESB3']
 
 def getAllOptionsOfAssets(assets: str,currentCallCode: str) -> list:
@@ -120,7 +25,7 @@ def getAllOptionsOfAssets(assets: str,currentCallCode: str) -> list:
         output.append(outAssetList)
     return output
     
-def getOptions():
+def get():
     with open('Data\\currentOptionsList.json', 'r') as file:
         return ast.literal_eval(file.read())
 
@@ -140,7 +45,7 @@ def updateOptionsList():
     percentage = 5
     # assetsPrices = ws.queryPrices(underlyingAsets,driver)
     assetsPrices = getPrices()
-    assetsOptions = getAllOptionsOfAssets(underlyingAsets, 'C')
+    assetsOptions = getAllOptionsOfAssets(underlyingAssets, 'C')
     # assetsOptions = getOptions()
     for i,v in enumerate(assetsPrices):
         price = v['arguments'][1]['lastPrice']
@@ -155,4 +60,3 @@ def updateOptionsList():
         assetsOptions[i] = list(filter(None,assetsOptions[i]))
     assetsOptions = list(filter(lambda x: x is not None and len(x) != 1, assetsOptions))
     changeCurrentOptionsList(assetsOptions)
-updateOptionsList()
