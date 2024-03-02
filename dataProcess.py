@@ -26,6 +26,7 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
             except (TypeError, ZeroDivisionError):
                 continue
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
+    # return list(filter(lambda x: x[-2] >= 2,all_lock_combinations))
 
 def getLockInfo(l:list[list[dict]]) -> list[dict]:
     outList = []

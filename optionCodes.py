@@ -1,8 +1,9 @@
 import ast
 import requests
 import json
+import ws
 
-currentList = [
+underlyingAsets = [
   "ABEV3",
   "AESB3",
   "ALOS3",
@@ -100,32 +101,58 @@ currentList = [
 ]
 testList = ['ABEV3','AESB3']
 
-def assetOptionsToList(asset: str,currentCode: str) -> list:
-    response = requests.get('https://opcoes.net.br/opcoes/bovespa/'+asset+'/json?skip=0&load=8&colsAndUnderlyingInfo=true').json()
-    index = 0
-    for i,v in enumerate(response['data']['expirations']):
-        optCode = v['calls'][0][0]
-        if len(optCode) <= 4 and optCode[0]==currentCode:
-            index = i
-            break 
-    calls = response['data']['expirations'][index]['calls']
-    puts = response['data']['expirations'][index]['puts']
-    calls+=puts
-    return calls
-
-def get():
-    with open('Data\\testOptionsList.json', 'r') as file:
+def getAllOptionsOfAssets(assets: str,currentCallCode: str) -> list:
+    output = []
+    for a in assets:
+        print(a)
+        response = requests.get('https://opcoes.net.br/opcoes/bovespa/'+a+'/json?skip=0&load=8&colsAndUnderlyingInfo=true').json()
+        index = 0
+        for i,v in enumerate(response['data']['expirations']):
+            optCode = v['calls'][0][0]
+            if len(optCode) <= 4 and optCode[0]==currentCallCode:
+                index = i
+                break 
+        calls = response['data']['expirations'][index]['calls']
+        puts = response['data']['expirations'][index]['puts']
+        calls+=puts
+        outAssetList = [{'code':a}]
+        outAssetList.extend(map(lambda x: {"code":a[:4]+x[0],"strike":x[3]},calls))
+        output.append(outAssetList)
+    return output
+    
+def getOptions():
+    with open('Data\\currentOptionsList.json', 'r') as file:
         return ast.literal_eval(file.read())
 
-def write(callCode):
-    outArray = []
-    for i in currentList:
-        assetArr = []
-        assetArr.append({'code':i})
-        l = assetOptionsToList(i,callCode)
-        for ii in l:
-            d = {"code":i[:4]+ii[0],"strike":ii[3]}
-            assetArr.append(d)
-        outArray.append(assetArr)
-    with open('currentOptionsList.json', 'w') as file:
-        file.write(json.dumps(outArray))
+def getPrices():
+    with open('Data\\testPrices.json', 'r') as file:
+        return ast.literal_eval(file.read().replace('null','None'))
+
+def changeCurrentOptionsList(l):
+    with open('Data\\currentOptionsList.json', "w") as file:
+        json.dump(l, file, indent=1)
+
+def changeTestPrices(l):
+    with open('Data\\testPrices.json', "w") as file:
+        json.dump(l, file, indent=1)
+
+def updateOptionsList():
+    percentage = 5
+    # assetsPrices = ws.queryPrices(underlyingAsets,driver)
+    assetsPrices = getPrices()
+    assetsOptions = getAllOptionsOfAssets(underlyingAsets, 'C')
+    # assetsOptions = getOptions()
+    for i,v in enumerate(assetsPrices):
+        price = v['arguments'][1]['lastPrice']
+        if not price:
+            assetsPrices[i]=None
+            assetsOptions[i]=None
+            continue
+        priceRange = [price-price*(percentage/100),price+price*(percentage/100)]
+        for ii,vv in enumerate(assetsOptions[i][1:]):
+            if vv['strike'] < priceRange[0] or vv['strike'] > priceRange[1]:
+                assetsOptions[i][ii+1]=None
+        assetsOptions[i] = list(filter(None,assetsOptions[i]))
+    assetsOptions = list(filter(lambda x: x is not None and len(x) != 1, assetsOptions))
+    changeCurrentOptionsList(assetsOptions)
+updateOptionsList()

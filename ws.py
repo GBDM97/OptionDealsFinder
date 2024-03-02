@@ -1,3 +1,4 @@
+import ast
 import optionCodes
 import time
 
@@ -31,21 +32,18 @@ def quoteSnapshotWS(a,driver):
 def unsubscribeQuoteWS(a):
     sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}')
 
-def queryPrices(driver):
-    l = optionCodes.get()
-    ii = 0
+def queryPrices(list, driver):
     last = ''
-    for i in l:
-        for v in i:
-            quoteSnapshotWS(v['code'],driver)
-            ii += 1
-            if (ii == 1000 or ii == 2000 or ii == 3000 or
-                ii == 4000 or ii == 5000 or ii == 6000 or
-                ii == 7000 or ii == 8000):
-                time.sleep(1)
-            last = v['code']
+    for index,asset in enumerate(list):
+        quoteSnapshotWS(asset,driver)
+        index += 1
+        if (index == 1000 or index == 2000 or index == 3000 or
+        index == 4000 or index == 5000 or index == 6000 or
+        index == 7000 or index == 8000):
+            input('WS')
+        last = asset
     ret = getWSMessages(driver)
     while ret[-1]['arguments'][0] != last:
         ret = getWSMessages(driver)
-    return ret
+    return ast.literal_eval(str(ret).replace('null','None'))
 

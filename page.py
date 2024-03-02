@@ -16,8 +16,10 @@ with st.empty():
     while True:
         driver = browser.getDriver()
         if driver:
-            input("input")
-            df = pd.DataFrame(clearScript.getLockOutput(),
+            updateStatus = False
+            if input("Please configure env and set params:\n"): #anything other than blank will update optionsList
+                updateStatus = True
+            df = pd.DataFrame(clearScript.getLockOutput(updateStatus,driver),
                                columns=['Profit Level','Buy','Buy Price', 'Sell', 'Sell Price', 
                                         'Multiplication', 'Percentage To Max. Profit'])
             df = df.style.apply(colorFn, subset=(slice(None),['Buy','Sell'])

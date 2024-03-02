@@ -50,7 +50,9 @@ def generateDataSet() -> list[list[dict]]:
             final_dataset.append(asset_dataset)
     return final_dataset
 
-def getLockOutput():
-    return dataProcess.getLockInfo(generateDataSet())
+def getLockOutput(updateStatus,driver):
+    if updateStatus:
+        optionCodes.updateOptionsList(driver)
+    return dataProcess.getLockInfo()
 
-dataProcess.getLockInfo(generateDataSet())
+# dataProcess.getLockInfo(generateDataSet())
