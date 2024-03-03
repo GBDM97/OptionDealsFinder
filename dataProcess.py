@@ -6,7 +6,7 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
     stockPrice = (input_data[0]['buyPrice']+input_data[0]['sellPrice'])/2
     data = input_data[1:]
     def verifyOptType(s):
-        return any(map(lambda x: x == (re.search("[a-zA-Z]+",s).group(0)[-1]),callCodes))
+        return any(map(lambda x: x == (re.search("[a-zA-Z]+",s[::-1]).group(0)[0]),callCodes))
     for ii in data: 
         for i in data:
             try:
@@ -22,12 +22,12 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
                     if itype and iitype and i['strike'] > stockPrice and ii['strike'] > stockPrice:
                         all_lock_combinations.append([i['strike'],i['code']+"("+str(i['strike'])+")",i['sellPrice'],
                         ii['code']+"("+str(ii['strike'])+")",ii['buyPrice'],
-                        strikeDiff,
+                        int(strikeDiff*100),
                         round(((ii['strike']-stockPrice)/stockPrice)*100,3)])
                     if not itype and not iitype and i['strike'] < stockPrice and ii['strike'] < stockPrice:
                         all_lock_combinations.append([ii['strike'],ii['code']+"("+str(ii['strike'])+")",ii['sellPrice'],
                         i['code']+"("+str(i['strike'])+")",i['buyPrice'],
-                        strikeDiff,
+                        int(strikeDiff*100),
                         round(((stockPrice-i['strike'])/stockPrice)*100,3)])
             except (TypeError, ZeroDivisionError):
                 continue

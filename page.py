@@ -20,11 +20,10 @@ with st.empty():
             if input("Please configure env and set params:\n"): #anything other than blank will update optionsList
                 updateStatus = True
             df = pd.DataFrame(clearScript.getLockOutput(updateStatus,driver),
-                               columns=['Profit Level','Buy','Buy Price', 'Sell', 'Sell Price', 
-                                        'Strike Difference', 'Percentage To Max. Profit'])
+                               columns=['Profit Level','Buy','Buy Price', 'Sell', 'Sell Price',
+                                        'Strike Difference*100', 'Percentage To Max. Profit'])
             df = df.style.apply(colorFn, subset=(slice(None),['Buy','Sell'])
-            ).applymap(lambda x: 'color: lime' if float(x) >= 5 else None, subset=(slice(None),['Multiplication'])).applymap(
-                 lambda x: 'color: lime' if float(x) <= 4 else None, subset=(slice(None),['Percentage To Max. Profit']))
+            ).applymap(lambda x: 'color: lime' if float(x) <= 4 else None, subset=(slice(None),['Percentage To Max. Profit']))
             st.dataframe(df, hide_index=True, width=1100, height=500)
         else:
             st.write('LOADING....')
