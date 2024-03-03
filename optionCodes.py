@@ -51,8 +51,8 @@ def changeTestPrices(l):
 
 def updateOptionsList(driver):
     percentage = 5
-    assetsPrices = ws.queryPrices(underlyingAssets,driver)
-    # assetsPrices = getPrices()
+    # assetsPrices = ws.queryPrices(underlyingAssets,driver)
+    assetsPrices = getPrices()
     # assetsOptions = getAllOptionsAPI(underlyingAssets, 'C')
     assetsOptions = get()
     for i,v in enumerate(assetsPrices):

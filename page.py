@@ -21,7 +21,7 @@ with st.empty():
                 updateStatus = True
             df = pd.DataFrame(clearScript.getLockOutput(updateStatus,driver),
                                columns=['Profit Level','Buy','Buy Price', 'Sell', 'Sell Price', 
-                                        'Multiplication', 'Percentage To Max. Profit'])
+                                        'Strike Difference', 'Percentage To Max. Profit'])
             df = df.style.apply(colorFn, subset=(slice(None),['Buy','Sell'])
             ).applymap(lambda x: 'color: lime' if float(x) >= 5 else None, subset=(slice(None),['Multiplication'])).applymap(
                  lambda x: 'color: lime' if float(x) <= 4 else None, subset=(slice(None),['Percentage To Max. Profit']))

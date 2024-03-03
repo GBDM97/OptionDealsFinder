@@ -24,8 +24,8 @@ def generateDataSet(driver) -> list[list[dict]]:
             
     prices_index = 0
     currentOptions = optionCodes.getFiltered()
-    prices = ws.queryPrices([ii['code'] for i in currentOptions for ii in i],driver)
-    # prices = testPrices()
+    # prices = ws.queryPrices([ii['code'] for i in currentOptions for ii in i],driver)
+    prices = testPrices()
     for i in currentOptions:
         asset_dataset = []
         for ii in i:

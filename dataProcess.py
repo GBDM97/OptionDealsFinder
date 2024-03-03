@@ -10,23 +10,28 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
     for ii in data: 
         for i in data:
             try:
-                if ii['code'] != i['code'] and ii['strike'] >= i['strike']:
+                strikeDiff = ii['strike']-i['strike']
+                if (ii['code'] != i['code'] and ii['strike'] >= i['strike'] 
+                and i['buyPrice'] >= 0.1 and i['buyPrice'] <= 0.5 
+                and ii['buyPrice'] >= 0.1 and ii['buyPrice'] <= 0.5
+                and i['sellPrice'] >= 0.1 and i['sellPrice'] <= 0.5 
+                and ii['sellPrice'] >= 0.1 and ii['sellPrice'] <= 0.5
+                and strikeDiff >= 0.25):
                     itype = verifyOptType(i['code'])
                     iitype = verifyOptType(ii['code'])
                     if itype and iitype and i['strike'] > stockPrice and ii['strike'] > stockPrice:
                         all_lock_combinations.append([i['strike'],i['code']+"("+str(i['strike'])+")",i['sellPrice'],
                         ii['code']+"("+str(ii['strike'])+")",ii['buyPrice'],
-                        1/((i['sellPrice']-ii['buyPrice'])/(ii['strike']-i['strike'])),
+                        strikeDiff,
                         round(((ii['strike']-stockPrice)/stockPrice)*100,3)])
                     if not itype and not iitype and i['strike'] < stockPrice and ii['strike'] < stockPrice:
                         all_lock_combinations.append([ii['strike'],ii['code']+"("+str(ii['strike'])+")",ii['sellPrice'],
                         i['code']+"("+str(i['strike'])+")",i['buyPrice'],
-                        1/((ii['sellPrice']-i['buyPrice'])/(ii['strike']-i['strike'])),
+                        strikeDiff,
                         round(((stockPrice-i['strike'])/stockPrice)*100,3)])
             except (TypeError, ZeroDivisionError):
                 continue
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
-    # return list(filter(lambda x: x[-2] >= 2,all_lock_combinations))
 
 def getLockInfo(l:list[list[dict]]) -> list[dict]:
     outList = []
