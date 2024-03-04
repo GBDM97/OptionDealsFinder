@@ -49,10 +49,11 @@ def changeTestPrices(l):
     with open('Data\\testPrices.json', "w") as file:
         json.dump(l, file, indent=1)
 
-def updateOptionsList(driver):
+async def updateOptionsList(driver):
     percentage = 5
-    # assetsPrices = ws.queryPrices(underlyingAssets,driver)
-    assetsPrices = getPrices()
+    assetsPrices = await ws.queryPrices(underlyingAssets,driver)
+    driver.execute_script('messages=[]')
+    # assetsPrices = getPrices()
     # assetsOptions = getAllOptionsAPI(underlyingAssets, 'C')
     assetsOptions = get()
     for i,v in enumerate(assetsPrices):
