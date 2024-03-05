@@ -23,7 +23,7 @@ async def generateDataSet(driver) -> list[list[dict]]:
         return False
             
     prices_index = 0
-    currentOptions = optionCodes.getFiltered()
+    currentOptions = optionCodes.importFiltered()
     prices = await ws.queryPrices([ii['code'] for i in currentOptions for ii in i],driver)
     # prices = testPrices()
     for i in currentOptions:
@@ -51,8 +51,7 @@ async def generateDataSet(driver) -> list[list[dict]]:
             final_dataset.append(asset_dataset)
     return final_dataset
 
-async def getLockOutput(updateStatus,driver):
-    if updateStatus:
-        await optionCodes.updateOptionsList(driver)
+async def createLockOutput(driver):
+    await optionCodes.updateOptionsList(driver)
     assetsInputData = await generateDataSet(driver)
     return dataProcess.getLockInfo(assetsInputData)

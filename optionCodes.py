@@ -25,27 +25,27 @@ def getAllOptionsAPI(assets: str,currentCallCode: str) -> list:
         output.append(outAssetList)
     return output
     
-def get():
+def importCurrent():
     with open('Data\\currentOptionsList.json', 'r') as file:
         return ast.literal_eval(file.read())
 
-def getPrices():
+def importPrices():
     with open('Data\\testPrices.json', 'r') as file:
         return ast.literal_eval(file.read().replace('null','None'))
 
-def getFiltered():
+def importFiltered():
     with open('Data\\filteredOptionsList.json', 'r') as file:
         return ast.literal_eval(file.read())
 
-def changeCurrentOptionsList(l):
+def exportCurrentOptionsList(l):
     with open('Data\\currentOptionsList.json', "w") as file:
         json.dump(l, file, indent=2)
 
-def changeFilteredOptionsList(l):
+def exportFilteredOptions(l):
     with open('Data\\filteredOptionsList.json', "w") as file:
         json.dump(l, file, indent=2)
 
-def changeTestPrices(l):
+def exportTestPrices(l):
     with open('Data\\testPrices.json', "w") as file:
         json.dump(l, file, indent=1)
 
@@ -55,7 +55,7 @@ async def updateOptionsList(driver):
     driver.execute_script('messages=[]')
     # assetsPrices = getPrices()
     # assetsOptions = getAllOptionsAPI(underlyingAssets, 'C')
-    assetsOptions = get()
+    assetsOptions = importCurrent()
     for i,v in enumerate(assetsPrices):
         b = v['arguments'][1]['bestBuyPrice']
         b = b if b is not None else 0
@@ -72,4 +72,4 @@ async def updateOptionsList(driver):
                 assetsOptions[i][ii+1]=None
         assetsOptions[i] = list(filter(None,assetsOptions[i]))
     assetsOptions = list(filter(lambda x: x is not None and len(x) != 1, assetsOptions))
-    changeFilteredOptionsList(assetsOptions)
+    exportFilteredOptions(assetsOptions)

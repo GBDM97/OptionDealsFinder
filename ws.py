@@ -1,6 +1,4 @@
 import ast
-import optionCodes
-import time
 
 '''
 delete temp1
@@ -37,7 +35,7 @@ async def queryPrices(list, driver):
         quoteSnapshotWS(asset,driver)
         print('Snap= '+asset)
         index += 1
-        if (index == 1000 or index == 2000 or index == 3000 or
+        if (index == 2000 or index == 3000 or
         index == 4000 or index == 5000 or index == 6000 or
         index == 7000 or index == 8000):
             input('WS')
