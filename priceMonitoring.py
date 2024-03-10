@@ -1,8 +1,27 @@
-import asyncio
+import ast
+import ws
 
-async def start():
-    n = 0
+def sendNotification(driver,i):
+    driver.execute_script("new Notification("+i['code']+ "'BREAKOUT',{'body':"+i['alertPrice']+"})")
+    inputList[inputList.index()]['notified'] = True
+
+async def importList():
+    with open('Data\\priceMonitoring.json', 'r') as file:
+        return ast.literal_eval(file.read())
+
+inputList = importList()
+
+async def start(driver):
+    [ws.subscribeQuote(i['code']) for i in inputList]
     while True:
-        print('loop running...'+str(n))
-        await asyncio.sleep(2)
-        n += 1
+        # updates = ws.getUpdates(driver)
+        # ws.clearUpdates()
+        updates = ws.getSnapshots(driver)
+        ws.clearSnapshots()
+        for i in updates:
+            for ii in inputList:
+                if ((i['reference'] == ">" and not 'notified' in i and
+                     i['alertPrice'] > ii['arguments'][1]['lastPrice'])
+                or  (i['reference'] == "<" and not 'notified' in i and
+                     i['alertPrice'] < ii['arguments'][1]['lastPrice'])):
+                    sendNotification(driver,i)

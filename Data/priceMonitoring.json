@@ -1,0 +1,5 @@
+[
+    {"code":"ITUB4", "reference":"<", "alertPrice":"20.5"},
+    {"code":"ABEV3", "reference":">", "alertPrice":"40.35"},
+    {"code":"EMBR3", "reference":"<", "alertPrice":"14.8"}
+]
