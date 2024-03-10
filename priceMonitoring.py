@@ -5,21 +5,21 @@ def sendNotification(driver,i):
     driver.execute_script("new Notification("+i['code']+ "'BREAKOUT',{'body':"+i['alertPrice']+"})")
     inputList[inputList.index()]['notified'] = True
 
-async def importList():
+def importList():
     with open('Data\\priceMonitoring.json', 'r') as file:
         return ast.literal_eval(file.read())
 
-inputList = importList()
+inputList = list(importList())
 
 async def start(driver):
-    [ws.subscribeQuote(i['code']) for i in inputList]
+    [ws.subscribeQuote(i['code'],driver) for i in inputList]
     while True:
         # updates = ws.getUpdates(driver)
-        # ws.clearUpdates()
-        updates = ws.getSnapshots(driver)
-        ws.clearSnapshots()
-        for i in updates:
-            for ii in inputList:
+        # ws.clearUpdates(driver)
+        updates = await ws.getSnapshots(driver)
+        ws.clearSnapshots(driver)
+        for i in inputList:
+            for ii in updates:
                 if ((i['reference'] == ">" and not 'notified' in i and
                      i['alertPrice'] > ii['arguments'][1]['lastPrice'])
                 or  (i['reference'] == "<" and not 'notified' in i and

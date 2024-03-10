@@ -16,10 +16,10 @@ async def update():
     loop = asyncio.get_event_loop()
     while not await loop.run_in_executor(None, input, '\n Ready for Update.\n\n'):
         await asyncio.sleep(10)
-        ws.clearSnapshots()
+        ws.clearSnapshots(driver)
         lockOutput = await clearScript.createLockOutput(driver)
         exportLockOutput(lockOutput)
-        [ws.subscribeQuote(i['code']) for i in priceMonitoring.importList()]
+        [ws.subscribeQuote(i['code'],driver) for i in priceMonitoring.importList()]
 
 
 async def main():

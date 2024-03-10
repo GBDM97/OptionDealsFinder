@@ -52,7 +52,7 @@ def exportTestPrices(l):
 async def updateOptionsList(driver):
     percentage = 5
     assetsPrices = await ws.queryPrices(underlyingAssets,driver)
-    ws.clearSnapshots()
+    ws.clearSnapshots(driver)
     # assetsPrices = getPrices()
     # assetsOptions = getAllOptionsAPI(underlyingAssets, 'C')
     assetsOptions = importCurrent()

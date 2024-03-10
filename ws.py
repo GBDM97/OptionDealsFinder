@@ -13,11 +13,11 @@ def quoteSnapshot(a,driver):
     sendMessage('{"arguments":["'+a+'"],"target":"SubscribeQuote","type":1}',driver)
     sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}',driver)
 
-def subscribeQuote(a):
-    sendMessage('{"arguments":["'+a+'"],"target":"SubscribeQuote","type":1}')
+def subscribeQuote(a,driver):
+    sendMessage('{"arguments":["'+a+'"],"target":"SubscribeQuote","type":1}',driver)
 
-def unsubscribeQuote(a):
-    sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}')
+def unsubscribeQuote(a,driver):
+    sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}',driver)
 
 def clearSnapshots(driver):
     driver.execute_script('snapshots=[]')
