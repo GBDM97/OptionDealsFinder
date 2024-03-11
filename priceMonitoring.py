@@ -1,9 +1,11 @@
 import ast
+import asyncio
 import ws
 
-def sendNotification(driver,i):
-    driver.execute_script("new Notification("+i['code']+ "'BREAKOUT',{'body':"+i['alertPrice']+"})")
-    inputList[inputList.index()]['notified'] = True
+def sendNotification(driver,i,ii):
+    driver.execute_script('new Notification("'+ii['arguments'][0]+ ' BREAKOUT",{body:"'
+        +str(ii['arguments'][1]['lastPrice'])+'"})')
+    inputList[inputList.index(i)]['notified'] = True
 
 def importList():
     with open('Data\\priceMonitoring.json', 'r') as file:
@@ -14,14 +16,15 @@ inputList = list(importList())
 async def start(driver):
     [ws.subscribeQuote(i['code'],driver) for i in inputList]
     while True:
-        # updates = ws.getUpdates(driver)
-        # ws.clearUpdates(driver)
-        updates = await ws.getSnapshots(driver)
-        ws.clearSnapshots(driver)
+        updates = ws.getUpdates(driver)
+        ws.clearUpdates(driver)
         for i in inputList:
             for ii in updates:
-                if ((i['reference'] == ">" and not 'notified' in i and
-                     i['alertPrice'] > ii['arguments'][1]['lastPrice'])
-                or  (i['reference'] == "<" and not 'notified' in i and
-                     i['alertPrice'] < ii['arguments'][1]['lastPrice'])):
-                    sendNotification(driver,i)
+                if ((i['code'] == ii['arguments'][0]) and
+                    (i['reference'] == ">" and not 'notified' in i and
+                     float(i['alertPrice']) < ii['arguments'][1]['lastPrice'])
+                or  (i['code'] == ii['arguments'][0]) and
+                    (i['reference'] == "<" and not 'notified' in i and
+                     float(i['alertPrice']) > ii['arguments'][1]['lastPrice'])):
+                    sendNotification(driver,i,ii)
+        await asyncio.sleep(0.5)

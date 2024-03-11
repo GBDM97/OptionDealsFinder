@@ -1,6 +1,7 @@
 delete temp1;
 
 queryObjects(WebSocket);
+
 let snapshots = [];
 temp1.addEventListener("message", function (event) {
   let data = "[" + event.data.replace(/\x1E/g, ",");

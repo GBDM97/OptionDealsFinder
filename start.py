@@ -23,6 +23,7 @@ async def update():
 
 
 async def main():
+    input('Verify permission.')
     driver.execute_script('await Notification.requestPermission();')
     input('Start?')
     await asyncio.gather(

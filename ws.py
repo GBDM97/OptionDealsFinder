@@ -25,7 +25,6 @@ def clearSnapshots(driver):
 def clearUpdates(driver):
     driver.execute_script('updates=[]')
 
-
 async def queryPrices(list, driver):
     last = ''
     for index,asset in enumerate(list):
