@@ -7,8 +7,8 @@ async def getSnapshots(driver):
     return driver.execute_script('return snapshots')
 
 async def getUpdates(driver):
-    return driver.execute_script('return updates')
-
+    return ast.literal_eval(str(driver.execute_script('return updates')).replace('null','None'))
+    
 def quoteSnapshot(a,driver):
     sendMessage('{"arguments":["'+a+'"],"target":"SubscribeQuote","type":1}',driver)
     sendMessage('{"arguments":["'+a+'"],"target":"UnsubscribeQuote","type":1}',driver)
