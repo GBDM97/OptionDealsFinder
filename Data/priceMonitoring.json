@@ -2,16 +2,19 @@
   {
     "code": "ITUB4",
     "reference": ">",
-    "alertPrice": "30.9"
+    "alertPrice": "30.9",
+    "notified": "True"
   },
   {
     "code": "ABEV3",
     "reference": "<",
-    "alertPrice": "13.5"
+    "alertPrice": "13.5",
+    "notified": "True"
   },
   {
     "code": "EMBR3",
     "reference": "<",
-    "alertPrice": "27"
+    "alertPrice": "27",
+    "notified": "True"
   }
 ]
