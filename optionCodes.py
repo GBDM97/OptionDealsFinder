@@ -53,8 +53,6 @@ async def updateOptionsList(driver):
     percentage = 5
     assetsPrices = await ws.queryPrices(underlyingAssets,driver)
     ws.clearSnapshots(driver)
-    # assetsPrices = getPrices()
-    # assetsOptions = getAllOptionsAPI(underlyingAssets, 'C')
     assetsOptions = importCurrent()
     for i,v in enumerate(assetsPrices):
         b = v['arguments'][1]['bestBuyPrice']
@@ -73,3 +71,5 @@ async def updateOptionsList(driver):
         assetsOptions[i] = list(filter(None,assetsOptions[i]))
     assetsOptions = list(filter(lambda x: x is not None and len(x) != 1, assetsOptions))
     exportFilteredOptions(assetsOptions)
+
+getAllOptionsAPI(testList,'D')
