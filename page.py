@@ -17,7 +17,7 @@ with st.empty():
     while True:
         df = pd.DataFrame(importLockOutput(),
             columns=['Profit Level','Buy','Buy Price', 'Sell', 'Sell Price', 'Price Difference',
-            'Strike Difference*100', 'Percentage To Max. Profit'])
+            'Multiplication', 'Percentage To Max. Profit'])
         df = df.style.apply(colorFn, subset=(slice(None),['Buy','Sell'])
         ).applymap(lambda x: 'color: lime' if float(x) <= 3 else None, 
                    subset=(slice(None),['Percentage To Max. Profit']))
