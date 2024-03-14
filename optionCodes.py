@@ -71,5 +71,3 @@ async def updateOptionsList(driver):
         assetsOptions[i] = list(filter(None,assetsOptions[i]))
     assetsOptions = list(filter(lambda x: x is not None and len(x) != 1, assetsOptions))
     exportFilteredOptions(assetsOptions)
-
-getAllOptionsAPI(testList,'D')
