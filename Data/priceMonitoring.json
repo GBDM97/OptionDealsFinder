@@ -1,20 +1,12 @@
 [
   {
-    "code": "ITUB4",
+    "code": "TAEEP361",
     "reference": ">",
-    "alertPrice": "30.9",
-    "notified": "True"
+    "alertPrice": "0.31"
   },
   {
-    "code": "ABEV3",
+    "code": "TAEE11",
     "reference": "<",
-    "alertPrice": "13.5",
-    "notified": "True"
-  },
-  {
-    "code": "EMBR3",
-    "reference": "<",
-    "alertPrice": "27",
-    "notified": "True"
+    "alertPrice": "35.22"
   }
 ]

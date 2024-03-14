@@ -21,13 +21,15 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
                     iitype = verifyOptType(ii['code'])
                     if itype and iitype and i['strike'] > stockPrice and ii['strike'] > stockPrice:
                         all_lock_combinations.append([i['strike'],i['code']+"("+str(i['strike'])+")",i['sellPrice'],
-                        ii['code']+"("+str(ii['strike'])+")",ii['buyPrice'],round(i['sellPrice']-ii['buyPrice']),
+                        ii['code']+"("+str(ii['strike'])+")",ii['buyPrice'],i['sellPrice']-ii['buyPrice'],
                         (strikeDiff-(i['sellPrice']-ii['buyPrice']))/(i['sellPrice']-ii['buyPrice']),
+                        int(strikeDiff*100),
                         round(((ii['strike']-stockPrice)/stockPrice)*100,3)])
                     if not itype and not iitype and i['strike'] < stockPrice and ii['strike'] < stockPrice:
                         all_lock_combinations.append([ii['strike'],ii['code']+"("+str(ii['strike'])+")",ii['sellPrice'],
-                        i['code']+"("+str(i['strike'])+")",i['buyPrice'],round(ii['sellPrice']-i['buyPrice'],2),
+                        i['code']+"("+str(i['strike'])+")",i['buyPrice'],ii['sellPrice']-i['buyPrice'],
                         (strikeDiff-(ii['sellPrice']-i['buyPrice']))/(ii['sellPrice']-i['buyPrice']),
+                        int(strikeDiff*100), 
                         round(((stockPrice-i['strike'])/stockPrice)*100,3)])
             except (TypeError, ZeroDivisionError):
                 continue

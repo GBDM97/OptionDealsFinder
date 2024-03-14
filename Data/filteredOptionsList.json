@@ -4,44 +4,44 @@
       "code": "ABEV3"
     },
     {
-      "code": "ABEVC127",
-      "strike": 12.15
+      "code": "ABEVD128",
+      "strike": 12.23
     },
     {
-      "code": "ABEVC130",
-      "strike": 12.4
+      "code": "ABEVD124",
+      "strike": 12.48
     },
     {
-      "code": "ABEVC132",
-      "strike": 12.65
+      "code": "ABEVD140",
+      "strike": 12.73
     },
     {
-      "code": "ABEVC135",
-      "strike": 12.9
+      "code": "ABEVD129",
+      "strike": 12.98
     },
     {
-      "code": "ABEVC137",
-      "strike": 13.15
+      "code": "ABEVD145",
+      "strike": 13.23
     },
     {
-      "code": "ABEVO127",
-      "strike": 12.15
+      "code": "ABEVP128",
+      "strike": 12.23
     },
     {
-      "code": "ABEVO130",
-      "strike": 12.4
+      "code": "ABEVP124",
+      "strike": 12.48
     },
     {
-      "code": "ABEVO132",
-      "strike": 12.65
+      "code": "ABEVP140",
+      "strike": 12.73
     },
     {
-      "code": "ABEVO135",
-      "strike": 12.9
+      "code": "ABEVP129",
+      "strike": 12.98
     },
     {
-      "code": "ABEVO137",
-      "strike": 13.15
+      "code": "ABEVP145",
+      "strike": 13.23
     }
   ],
   [
@@ -49,28 +49,20 @@
       "code": "AESB3"
     },
     {
-      "code": "AESBC990",
-      "strike": 9.9
-    },
-    {
-      "code": "AESBC100",
+      "code": "AESBD100",
       "strike": 10.0
     },
     {
-      "code": "AESBC105",
-      "strike": 10.5
+      "code": "AESBD107",
+      "strike": 10.75
     },
     {
-      "code": "AESBO990",
-      "strike": 9.9
-    },
-    {
-      "code": "AESBO100",
+      "code": "AESBP100",
       "strike": 10.0
     },
     {
-      "code": "AESBO105",
-      "strike": 10.5
+      "code": "AESBP107",
+      "strike": 10.75
     }
   ],
   [
@@ -78,67 +70,67 @@
       "code": "ALOS3"
     },
     {
-      "code": "ALOSC232",
+      "code": "ALOSD232",
       "strike": 23.25
     },
     {
-      "code": "ALOSC237",
+      "code": "ALOSD237",
       "strike": 23.75
     },
     {
-      "code": "ALOSC240",
+      "code": "ALOSD240",
       "strike": 24.0
     },
     {
-      "code": "ALOSC242",
+      "code": "ALOSD242",
       "strike": 24.25
     },
     {
-      "code": "ALOSC245",
+      "code": "ALOSD245",
       "strike": 24.5
     },
     {
-      "code": "ALOSC247",
+      "code": "ALOSD247",
       "strike": 24.75
     },
     {
-      "code": "ALOSC250",
+      "code": "ALOSD250",
       "strike": 25.0
     },
     {
-      "code": "ALOSC252",
+      "code": "ALOSD252",
       "strike": 25.25
     },
     {
-      "code": "ALOSO232",
+      "code": "ALOSP232",
       "strike": 23.25
     },
     {
-      "code": "ALOSO237",
+      "code": "ALOSP237",
       "strike": 23.75
     },
     {
-      "code": "ALOSO240",
+      "code": "ALOSP240",
       "strike": 24.0
     },
     {
-      "code": "ALOSO242",
+      "code": "ALOSP242",
       "strike": 24.25
     },
     {
-      "code": "ALOSO245",
+      "code": "ALOSP245",
       "strike": 24.5
     },
     {
-      "code": "ALOSO247",
+      "code": "ALOSP247",
       "strike": 24.75
     },
     {
-      "code": "ALOSO250",
+      "code": "ALOSP250",
       "strike": 25.0
     },
     {
-      "code": "ALOSO252",
+      "code": "ALOSP252",
       "strike": 25.25
     }
   ],
@@ -147,27 +139,27 @@
       "code": "ALPA4"
     },
     {
-      "code": "ALPAC980",
+      "code": "ALPAD980",
       "strike": 9.8
     },
     {
-      "code": "ALPAC100",
+      "code": "ALPAD100",
       "strike": 10.0
     },
     {
-      "code": "ALPAC105",
+      "code": "ALPAD105",
       "strike": 10.5
     },
     {
-      "code": "ALPAO980",
+      "code": "ALPAP980",
       "strike": 9.8
     },
     {
-      "code": "ALPAO100",
+      "code": "ALPAP100",
       "strike": 10.0
     },
     {
-      "code": "ALPAO105",
+      "code": "ALPAP105",
       "strike": 10.5
     }
   ],
@@ -176,51 +168,59 @@
       "code": "ALUP11"
     },
     {
-      "code": "ALUPC295",
+      "code": "ALUPD295",
       "strike": 29.5
     },
     {
-      "code": "ALUPC300",
+      "code": "ALUPD297",
+      "strike": 29.75
+    },
+    {
+      "code": "ALUPD300",
       "strike": 30.0
     },
     {
-      "code": "ALUPC305",
+      "code": "ALUPD305",
       "strike": 30.5
     },
     {
-      "code": "ALUPC310",
+      "code": "ALUPD310",
       "strike": 31.0
     },
     {
-      "code": "ALUPC315",
+      "code": "ALUPD315",
       "strike": 31.5
     },
     {
-      "code": "ALUPC320",
+      "code": "ALUPD320",
       "strike": 32.0
     },
     {
-      "code": "ALUPO295",
+      "code": "ALUPP295",
       "strike": 29.5
     },
     {
-      "code": "ALUPO300",
+      "code": "ALUPP297",
+      "strike": 29.75
+    },
+    {
+      "code": "ALUPP300",
       "strike": 30.0
     },
     {
-      "code": "ALUPO305",
+      "code": "ALUPP305",
       "strike": 30.5
     },
     {
-      "code": "ALUPO310",
+      "code": "ALUPP310",
       "strike": 31.0
     },
     {
-      "code": "ALUPO315",
+      "code": "ALUPP315",
       "strike": 31.5
     },
     {
-      "code": "ALUPO320",
+      "code": "ALUPP320",
       "strike": 32.0
     }
   ],
@@ -229,60 +229,76 @@
       "code": "ARZZ3"
     },
     {
-      "code": "ARZZC590",
-      "strike": 59.04
+      "code": "ARZZD590",
+      "strike": 59.0
     },
     {
-      "code": "ARZZC600",
-      "strike": 60.04
+      "code": "ARZZD595",
+      "strike": 59.5
     },
     {
-      "code": "ARZZC610",
-      "strike": 61.04
+      "code": "ARZZD605",
+      "strike": 60.5
     },
     {
-      "code": "ARZZC620",
-      "strike": 62.04
+      "code": "ARZZD610",
+      "strike": 61.0
     },
     {
-      "code": "ARZZC630",
-      "strike": 63.04
+      "code": "ARZZD615",
+      "strike": 61.5
     },
     {
-      "code": "ARZZC640",
-      "strike": 64.04
+      "code": "ARZZD620",
+      "strike": 62.0
     },
     {
-      "code": "ARZZC650",
-      "strike": 65.04
+      "code": "ARZZD625",
+      "strike": 62.5
     },
     {
-      "code": "ARZZO590",
-      "strike": 59.04
+      "code": "ARZZD635",
+      "strike": 63.5
     },
     {
-      "code": "ARZZO600",
-      "strike": 60.04
+      "code": "ARZZD645",
+      "strike": 64.5
     },
     {
-      "code": "ARZZO610",
-      "strike": 61.04
+      "code": "ARZZP590",
+      "strike": 59.0
     },
     {
-      "code": "ARZZO620",
-      "strike": 62.04
+      "code": "ARZZP595",
+      "strike": 59.5
     },
     {
-      "code": "ARZZO630",
-      "strike": 63.04
+      "code": "ARZZP605",
+      "strike": 60.5
     },
     {
-      "code": "ARZZO640",
-      "strike": 64.04
+      "code": "ARZZP610",
+      "strike": 61.0
     },
     {
-      "code": "ARZZO650",
-      "strike": 65.04
+      "code": "ARZZP615",
+      "strike": 61.5
+    },
+    {
+      "code": "ARZZP620",
+      "strike": 62.0
+    },
+    {
+      "code": "ARZZP625",
+      "strike": 62.5
+    },
+    {
+      "code": "ARZZP635",
+      "strike": 63.5
+    },
+    {
+      "code": "ARZZP645",
+      "strike": 64.5
     }
   ],
   [
@@ -290,28 +306,28 @@
       "code": "ASAI3"
     },
     {
-      "code": "ASAIC142",
-      "strike": 14.2
+      "code": "ASAID140",
+      "strike": 14.0
     },
     {
-      "code": "ASAIC147",
-      "strike": 14.7
+      "code": "ASAID145",
+      "strike": 14.5
     },
     {
-      "code": "ASAIC152",
-      "strike": 15.2
+      "code": "ASAID150",
+      "strike": 15.0
     },
     {
-      "code": "ASAIO142",
-      "strike": 14.2
+      "code": "ASAIP140",
+      "strike": 14.0
     },
     {
-      "code": "ASAIO147",
-      "strike": 14.7
+      "code": "ASAIP145",
+      "strike": 14.5
     },
     {
-      "code": "ASAIO152",
-      "strike": 15.2
+      "code": "ASAIP150",
+      "strike": 15.0
     }
   ],
   [
@@ -319,44 +335,44 @@
       "code": "B3SA3"
     },
     {
-      "code": "B3SAC121",
-      "strike": 12.03
+      "code": "B3SAD121",
+      "strike": 12.09
     },
     {
-      "code": "B3SAC124",
-      "strike": 12.28
+      "code": "B3SAD125",
+      "strike": 12.34
     },
     {
-      "code": "B3SAC126",
-      "strike": 12.53
+      "code": "B3SAD126",
+      "strike": 12.59
     },
     {
-      "code": "B3SAC129",
-      "strike": 12.78
+      "code": "B3SAD130",
+      "strike": 12.84
     },
     {
-      "code": "B3SAC132",
-      "strike": 13.03
+      "code": "B3SAD131",
+      "strike": 13.09
     },
     {
-      "code": "B3SAO121",
-      "strike": 12.03
+      "code": "B3SAP121",
+      "strike": 12.09
     },
     {
-      "code": "B3SAO124",
-      "strike": 12.28
+      "code": "B3SAP125",
+      "strike": 12.34
     },
     {
-      "code": "B3SAO126",
-      "strike": 12.53
+      "code": "B3SAP126",
+      "strike": 12.59
     },
     {
-      "code": "B3SAO129",
-      "strike": 12.78
+      "code": "B3SAP130",
+      "strike": 12.84
     },
     {
-      "code": "B3SAO132",
-      "strike": 13.03
+      "code": "B3SAP131",
+      "strike": 13.09
     }
   ],
   [
@@ -364,100 +380,92 @@
       "code": "BBAS3"
     },
     {
-      "code": "BBASC550",
-      "strike": 54.26
+      "code": "BBASD555",
+      "strike": 54.44
     },
     {
-      "code": "BBASC55",
-      "strike": 54.76
+      "code": "BBASD559",
+      "strike": 54.94
     },
     {
-      "code": "BBASC563",
-      "strike": 55.26
+      "code": "BBASD565",
+      "strike": 55.44
     },
     {
-      "code": "BBASC565",
-      "strike": 55.76
+      "code": "BBASD570",
+      "strike": 55.94
     },
     {
-      "code": "BBASC573",
-      "strike": 56.26
+      "code": "BBASD575",
+      "strike": 56.44
     },
     {
-      "code": "BBASC575",
-      "strike": 56.76
+      "code": "BBASD580",
+      "strike": 56.94
     },
     {
-      "code": "BBASC580",
-      "strike": 57.26
+      "code": "BBASD588",
+      "strike": 57.44
     },
     {
-      "code": "BBASC585",
-      "strike": 57.76
+      "code": "BBASD593",
+      "strike": 57.94
     },
     {
-      "code": "BBASC590",
-      "strike": 58.26
+      "code": "BBASD595",
+      "strike": 58.44
     },
     {
-      "code": "BBASC595",
-      "strike": 58.76
+      "code": "BBASD600",
+      "strike": 58.94
     },
     {
-      "code": "BBASC600",
-      "strike": 59.26
+      "code": "BBASD605",
+      "strike": 59.44
     },
     {
-      "code": "BBASC605",
-      "strike": 59.76
+      "code": "BBASP555",
+      "strike": 54.44
     },
     {
-      "code": "BBASO550",
-      "strike": 54.26
+      "code": "BBASP559",
+      "strike": 54.94
     },
     {
-      "code": "BBASO55",
-      "strike": 54.76
+      "code": "BBASP565",
+      "strike": 55.44
     },
     {
-      "code": "BBASO563",
-      "strike": 55.26
+      "code": "BBASP570",
+      "strike": 55.94
     },
     {
-      "code": "BBASO565",
-      "strike": 55.76
+      "code": "BBASP575",
+      "strike": 56.44
     },
     {
-      "code": "BBASO573",
-      "strike": 56.26
+      "code": "BBASP580",
+      "strike": 56.94
     },
     {
-      "code": "BBASO575",
-      "strike": 56.76
+      "code": "BBASP588",
+      "strike": 57.44
     },
     {
-      "code": "BBASO580",
-      "strike": 57.26
+      "code": "BBASP593",
+      "strike": 57.94
     },
     {
-      "code": "BBASO585",
-      "strike": 57.76
+      "code": "BBASP595",
+      "strike": 58.44
     },
     {
-      "code": "BBASO590",
-      "strike": 58.26
+      "code": "BBASP600",
+      "strike": 58.94
     },
     {
-      "code": "BBASO595",
-      "strike": 58.76
-    },
-    {
-      "code": "BBASO600",
-      "strike": 59.26
-    },
-    {
-      "code": "BBASO605",
-      "strike": 59.76
+      "code": "BBASP605",
+      "strike": 59.44
     }
   ],
   [
@@ -465,20 +473,20 @@
       "code": "BBDC3"
     },
     {
-      "code": "BBDCC124",
-      "strike": 12.44
+      "code": "BBDCD130",
+      "strike": 12.46
     },
     {
-      "code": "BBDCC129",
-      "strike": 12.94
+      "code": "BBDCD137",
+      "strike": 12.96
     },
     {
-      "code": "BBDCO124",
-      "strike": 12.44
+      "code": "BBDCP130",
+      "strike": 12.46
     },
     {
-      "code": "BBDCO129",
-      "strike": 12.94
+      "code": "BBDCP137",
+      "strike": 12.96
     }
   ],
   [
@@ -486,52 +494,44 @@
       "code": "BBDC4"
     },
     {
-      "code": "BBDCC14",
-      "strike": 13.71
+      "code": "BBDCD154",
+      "strike": 13.86
     },
     {
-      "code": "BBDCC139",
-      "strike": 13.96
+      "code": "BBDCD146",
+      "strike": 14.11
     },
     {
-      "code": "BBDCC15",
-      "strike": 14.21
+      "code": "BBDCD143",
+      "strike": 14.36
     },
     {
-      "code": "BBDCC154",
-      "strike": 14.46
+      "code": "BBDCD151",
+      "strike": 14.61
     },
     {
-      "code": "BBDCC16",
-      "strike": 14.71
+      "code": "BBDCD136",
+      "strike": 14.86
     },
     {
-      "code": "BBDCC156",
-      "strike": 14.96
+      "code": "BBDCP154",
+      "strike": 13.86
     },
     {
-      "code": "BBDCO14",
-      "strike": 13.71
+      "code": "BBDCP146",
+      "strike": 14.11
     },
     {
-      "code": "BBDCO139",
-      "strike": 13.96
+      "code": "BBDCP143",
+      "strike": 14.36
     },
     {
-      "code": "BBDCO15",
-      "strike": 14.21
+      "code": "BBDCP151",
+      "strike": 14.61
     },
     {
-      "code": "BBDCO154",
-      "strike": 14.46
-    },
-    {
-      "code": "BBDCO16",
-      "strike": 14.71
-    },
-    {
-      "code": "BBDCO156",
-      "strike": 14.96
+      "code": "BBDCP136",
+      "strike": 14.86
     }
   ],
   [
@@ -539,84 +539,84 @@
       "code": "BBSE3"
     },
     {
-      "code": "BBSEC326",
-      "strike": 31.39
+      "code": "BBSED343",
+      "strike": 31.49
     },
     {
-      "code": "BBSEC345",
-      "strike": 31.64
+      "code": "BBSED329",
+      "strike": 31.74
     },
     {
-      "code": "BBSEC347",
-      "strike": 31.89
+      "code": "BBSED332",
+      "strike": 31.99
     },
     {
-      "code": "BBSEC333",
-      "strike": 32.14
+      "code": "BBSED334",
+      "strike": 32.24
     },
     {
-      "code": "BBSEC336",
-      "strike": 32.39
+      "code": "BBSED337",
+      "strike": 32.49
     },
     {
-      "code": "BBSEC341",
-      "strike": 32.89
+      "code": "BBSED335",
+      "strike": 32.74
     },
     {
-      "code": "BBSEC346",
-      "strike": 33.39
+      "code": "BBSED344",
+      "strike": 33.24
     },
     {
-      "code": "BBSEC351",
-      "strike": 33.89
+      "code": "BBSED347",
+      "strike": 33.49
     },
     {
-      "code": "BBSEC370",
-      "strike": 34.14
+      "code": "BBSED349",
+      "strike": 33.74
     },
     {
-      "code": "BBSEC356",
-      "strike": 34.39
+      "code": "BBSED354",
+      "strike": 34.24
     },
     {
-      "code": "BBSEO326",
-      "strike": 31.39
+      "code": "BBSEP343",
+      "strike": 31.49
     },
     {
-      "code": "BBSEO345",
-      "strike": 31.64
+      "code": "BBSEP329",
+      "strike": 31.74
     },
     {
-      "code": "BBSEO347",
-      "strike": 31.89
+      "code": "BBSEP332",
+      "strike": 31.99
     },
     {
-      "code": "BBSEO333",
-      "strike": 32.14
+      "code": "BBSEP334",
+      "strike": 32.24
     },
     {
-      "code": "BBSEO336",
-      "strike": 32.39
+      "code": "BBSEP337",
+      "strike": 32.49
     },
     {
-      "code": "BBSEO341",
-      "strike": 32.89
+      "code": "BBSEP335",
+      "strike": 32.74
     },
     {
-      "code": "BBSEO346",
-      "strike": 33.39
+      "code": "BBSEP344",
+      "strike": 33.24
     },
     {
-      "code": "BBSEO351",
-      "strike": 33.89
+      "code": "BBSEP347",
+      "strike": 33.49
     },
     {
-      "code": "BBSEO370",
-      "strike": 34.14
+      "code": "BBSEP349",
+      "strike": 33.74
     },
     {
-      "code": "BBSEO356",
-      "strike": 34.39
+      "code": "BBSEP354",
+      "strike": 34.24
     }
   ],
   [
@@ -624,28 +624,44 @@
       "code": "BEEF3"
     },
     {
-      "code": "BEEFC680",
-      "strike": 6.8
+      "code": "BEEFD675",
+      "strike": 6.75
     },
     {
-      "code": "BEEFC700",
-      "strike": 7.0
+      "code": "BEEFD695",
+      "strike": 6.95
     },
     {
-      "code": "BEEFC720",
-      "strike": 7.2
+      "code": "BEEFD705",
+      "strike": 7.05
     },
     {
-      "code": "BEEFO680",
-      "strike": 6.8
+      "code": "BEEFD715",
+      "strike": 7.15
     },
     {
-      "code": "BEEFO700",
-      "strike": 7.0
+      "code": "BEEFD735",
+      "strike": 7.35
     },
     {
-      "code": "BEEFO720",
-      "strike": 7.2
+      "code": "BEEFP675",
+      "strike": 6.75
+    },
+    {
+      "code": "BEEFP695",
+      "strike": 6.95
+    },
+    {
+      "code": "BEEFP705",
+      "strike": 7.05
+    },
+    {
+      "code": "BEEFP715",
+      "strike": 7.15
+    },
+    {
+      "code": "BEEFP735",
+      "strike": 7.35
     }
   ],
   [
@@ -653,68 +669,68 @@
       "code": "BHIA3"
     },
     {
-      "code": "BHIAC780",
+      "code": "BHIAD770",
+      "strike": 7.7
+    },
+    {
+      "code": "BHIAD780",
       "strike": 7.8
     },
     {
-      "code": "BHIAC790",
+      "code": "BHIAD790",
       "strike": 7.9
     },
     {
-      "code": "BHIAC800",
+      "code": "BHIAD80",
       "strike": 8.0
     },
     {
-      "code": "BHIAC810",
+      "code": "BHIAD810",
       "strike": 8.1
     },
     {
-      "code": "BHIAC820",
+      "code": "BHIAD820",
       "strike": 8.2
     },
     {
-      "code": "BHIAC830",
+      "code": "BHIAD830",
       "strike": 8.3
     },
     {
-      "code": "BHIAC840",
+      "code": "BHIAD840",
       "strike": 8.4
     },
     {
-      "code": "BHIAC850",
-      "strike": 8.5
+      "code": "BHIAP770",
+      "strike": 7.7
     },
     {
-      "code": "BHIAO780",
+      "code": "BHIAP780",
       "strike": 7.8
     },
     {
-      "code": "BHIAO790",
+      "code": "BHIAP790",
       "strike": 7.9
     },
     {
-      "code": "BHIAO800",
+      "code": "BHIAP80",
       "strike": 8.0
     },
     {
-      "code": "BHIAO810",
+      "code": "BHIAP810",
       "strike": 8.1
     },
     {
-      "code": "BHIAO820",
+      "code": "BHIAP820",
       "strike": 8.2
     },
     {
-      "code": "BHIAO830",
+      "code": "BHIAP830",
       "strike": 8.3
     },
     {
-      "code": "BHIAO840",
+      "code": "BHIAP840",
       "strike": 8.4
-    },
-    {
-      "code": "BHIAO850",
-      "strike": 8.5
     }
   ],
   [
@@ -722,99 +738,107 @@
       "code": "BOVA11"
     },
     {
-      "code": "BOVAC119",
+      "code": "BOVAD118",
+      "strike": 118.0
+    },
+    {
+      "code": "BOVAD119",
       "strike": 119.0
     },
     {
-      "code": "BOVAC120",
+      "code": "BOVAD120",
       "strike": 120.0
     },
     {
-      "code": "BOVAC12",
+      "code": "BOVAD2",
       "strike": 121.0
     },
     {
-      "code": "BOVAC122",
+      "code": "BOVAD122",
       "strike": 122.0
     },
     {
-      "code": "BOVAC123",
+      "code": "BOVAD23",
       "strike": 123.0
     },
     {
-      "code": "BOVAC124",
+      "code": "BOVAD123",
       "strike": 124.0
     },
     {
-      "code": "BOVAC125",
+      "code": "BOVAD124",
       "strike": 125.0
     },
     {
-      "code": "BOVAC126",
+      "code": "BOVAD121",
       "strike": 126.0
     },
     {
-      "code": "BOVAC127",
+      "code": "BOVAD127",
       "strike": 127.0
     },
     {
-      "code": "BOVAC128",
+      "code": "BOVAD128",
       "strike": 128.0
     },
     {
-      "code": "BOVAC129",
+      "code": "BOVAD29",
       "strike": 129.0
     },
     {
-      "code": "BOVAC130",
+      "code": "BOVAD130",
       "strike": 130.0
     },
     {
-      "code": "BOVAO119",
+      "code": "BOVAP118",
+      "strike": 118.0
+    },
+    {
+      "code": "BOVAP119",
       "strike": 119.0
     },
     {
-      "code": "BOVAO120",
+      "code": "BOVAP120",
       "strike": 120.0
     },
     {
-      "code": "BOVAO12",
+      "code": "BOVAP2",
       "strike": 121.0
     },
     {
-      "code": "BOVAO122",
+      "code": "BOVAP122",
       "strike": 122.0
     },
     {
-      "code": "BOVAO123",
+      "code": "BOVAP23",
       "strike": 123.0
     },
     {
-      "code": "BOVAO124",
+      "code": "BOVAP123",
       "strike": 124.0
     },
     {
-      "code": "BOVAO125",
+      "code": "BOVAP124",
       "strike": 125.0
     },
     {
-      "code": "BOVAO126",
+      "code": "BOVAP121",
       "strike": 126.0
     },
     {
-      "code": "BOVAO127",
+      "code": "BOVAP127",
       "strike": 127.0
     },
     {
-      "code": "BOVAO128",
+      "code": "BOVAP128",
       "strike": 128.0
     },
     {
-      "code": "BOVAO129",
+      "code": "BOVAP29",
       "strike": 129.0
     },
     {
-      "code": "BOVAO130",
+      "code": "BOVAP130",
       "strike": 130.0
     }
   ],
@@ -823,59 +847,107 @@
       "code": "BOVV11"
     },
     {
-      "code": "BOVVC124",
+      "code": "BOVVD124",
       "strike": 124.0
     },
     {
-      "code": "BOVVC126",
+      "code": "BOVVD125",
+      "strike": 125.0
+    },
+    {
+      "code": "BOVVD126",
       "strike": 126.0
     },
     {
-      "code": "BOVVC128",
+      "code": "BOVVD127",
+      "strike": 127.0
+    },
+    {
+      "code": "BOVVD128",
       "strike": 128.0
     },
     {
-      "code": "BOVVC130",
+      "code": "BOVVD129",
+      "strike": 129.0
+    },
+    {
+      "code": "BOVVD130",
       "strike": 130.0
     },
     {
-      "code": "BOVVC132",
+      "code": "BOVVD131",
+      "strike": 131.0
+    },
+    {
+      "code": "BOVVD132",
       "strike": 132.0
     },
     {
-      "code": "BOVVC134",
+      "code": "BOVVD133",
+      "strike": 133.0
+    },
+    {
+      "code": "BOVVD134",
       "strike": 134.0
     },
     {
-      "code": "BOVVC136",
+      "code": "BOVVD135",
+      "strike": 135.0
+    },
+    {
+      "code": "BOVVD136",
       "strike": 136.0
     },
     {
-      "code": "BOVVO124",
+      "code": "BOVVP124",
       "strike": 124.0
     },
     {
-      "code": "BOVVO126",
+      "code": "BOVVP125",
+      "strike": 125.0
+    },
+    {
+      "code": "BOVVP126",
       "strike": 126.0
     },
     {
-      "code": "BOVVO128",
+      "code": "BOVVP127",
+      "strike": 127.0
+    },
+    {
+      "code": "BOVVP128",
       "strike": 128.0
     },
     {
-      "code": "BOVVO130",
+      "code": "BOVVP129",
+      "strike": 129.0
+    },
+    {
+      "code": "BOVVP130",
       "strike": 130.0
     },
     {
-      "code": "BOVVO132",
+      "code": "BOVVP131",
+      "strike": 131.0
+    },
+    {
+      "code": "BOVVP132",
       "strike": 132.0
     },
     {
-      "code": "BOVVO134",
+      "code": "BOVVP133",
+      "strike": 133.0
+    },
+    {
+      "code": "BOVVP134",
       "strike": 134.0
     },
     {
-      "code": "BOVVO136",
+      "code": "BOVVP135",
+      "strike": 135.0
+    },
+    {
+      "code": "BOVVP136",
       "strike": 136.0
     }
   ],
@@ -884,91 +956,75 @@
       "code": "BPAC11"
     },
     {
-      "code": "BPACC35",
+      "code": "BPACD354",
       "strike": 35.42
     },
     {
-      "code": "BPACC360",
+      "code": "BPACD356",
+      "strike": 35.67
+    },
+    {
+      "code": "BPACD360",
       "strike": 35.92
     },
     {
-      "code": "BPACC363",
-      "strike": 36.17
-    },
-    {
-      "code": "BPACC367",
+      "code": "BPACD364",
       "strike": 36.42
     },
     {
-      "code": "BPACC370",
+      "code": "BPACD370",
       "strike": 36.92
     },
     {
-      "code": "BPACC375",
-      "strike": 37.17
-    },
-    {
-      "code": "BPACC374",
+      "code": "BPACD374",
       "strike": 37.42
     },
     {
-      "code": "BPACC378",
-      "strike": 37.67
-    },
-    {
-      "code": "BPACC380",
+      "code": "BPACD380",
       "strike": 37.92
     },
     {
-      "code": "BPACC385",
+      "code": "BPACD384",
       "strike": 38.42
     },
     {
-      "code": "BPACC390",
+      "code": "BPACD390",
       "strike": 38.92
     },
     {
-      "code": "BPACO35",
+      "code": "BPACP354",
       "strike": 35.42
     },
     {
-      "code": "BPACO360",
+      "code": "BPACP356",
+      "strike": 35.67
+    },
+    {
+      "code": "BPACP360",
       "strike": 35.92
     },
     {
-      "code": "BPACO363",
-      "strike": 36.17
-    },
-    {
-      "code": "BPACO367",
+      "code": "BPACP364",
       "strike": 36.42
     },
     {
-      "code": "BPACO370",
+      "code": "BPACP370",
       "strike": 36.92
     },
     {
-      "code": "BPACO375",
-      "strike": 37.17
-    },
-    {
-      "code": "BPACO374",
+      "code": "BPACP374",
       "strike": 37.42
     },
     {
-      "code": "BPACO378",
-      "strike": 37.67
-    },
-    {
-      "code": "BPACO380",
+      "code": "BPACP380",
       "strike": 37.92
     },
     {
-      "code": "BPACO385",
+      "code": "BPACP384",
       "strike": 38.42
     },
     {
-      "code": "BPACO390",
+      "code": "BPACP390",
       "strike": 38.92
     }
   ],
@@ -977,44 +1033,36 @@
       "code": "BPAN4"
     },
     {
-      "code": "BPANC860",
-      "strike": 8.42
+      "code": "BPAND860",
+      "strike": 8.6
     },
     {
-      "code": "BPANC880",
-      "strike": 8.62
+      "code": "BPAND880",
+      "strike": 8.8
     },
     {
-      "code": "BPANC900",
-      "strike": 8.82
+      "code": "BPAND900",
+      "strike": 9.0
     },
     {
-      "code": "BPANC920",
-      "strike": 9.02
+      "code": "BPAND920",
+      "strike": 9.2
     },
     {
-      "code": "BPANC940",
-      "strike": 9.22
+      "code": "BPANP860",
+      "strike": 8.6
     },
     {
-      "code": "BPANO860",
-      "strike": 8.42
+      "code": "BPANP880",
+      "strike": 8.8
     },
     {
-      "code": "BPANO880",
-      "strike": 8.62
+      "code": "BPANP900",
+      "strike": 9.0
     },
     {
-      "code": "BPANO900",
-      "strike": 8.82
-    },
-    {
-      "code": "BPANO920",
-      "strike": 9.02
-    },
-    {
-      "code": "BPANO940",
-      "strike": 9.22
+      "code": "BPANP920",
+      "strike": 9.2
     }
   ],
   [
@@ -1022,36 +1070,36 @@
       "code": "BRAP4"
     },
     {
-      "code": "BRAPC193",
-      "strike": 19.39
+      "code": "BRAPD195",
+      "strike": 19.5
     },
     {
-      "code": "BRAPC198",
-      "strike": 19.89
+      "code": "BRAPD200",
+      "strike": 20.0
     },
     {
-      "code": "BRAPC203",
-      "strike": 20.39
+      "code": "BRAPD205",
+      "strike": 20.5
     },
     {
-      "code": "BRAPC208",
-      "strike": 20.89
+      "code": "BRAPD210",
+      "strike": 21.0
     },
     {
-      "code": "BRAPO193",
-      "strike": 19.39
+      "code": "BRAPP195",
+      "strike": 19.5
     },
     {
-      "code": "BRAPO198",
-      "strike": 19.89
+      "code": "BRAPP200",
+      "strike": 20.0
     },
     {
-      "code": "BRAPO203",
-      "strike": 20.39
+      "code": "BRAPP205",
+      "strike": 20.5
     },
     {
-      "code": "BRAPO208",
-      "strike": 20.89
+      "code": "BRAPP210",
+      "strike": 21.0
     }
   ],
   [
@@ -1059,60 +1107,60 @@
       "code": "BRFS3"
     },
     {
-      "code": "BRFSC162",
-      "strike": 16.25
-    },
-    {
-      "code": "BRFSC165",
+      "code": "BRFSD165",
       "strike": 16.5
     },
     {
-      "code": "BRFSC167",
+      "code": "BRFSD167",
       "strike": 16.75
     },
     {
-      "code": "BRFSC170",
+      "code": "BRFSD170",
       "strike": 17.0
     },
     {
-      "code": "BRFSC172",
+      "code": "BRFSD172",
       "strike": 17.25
     },
     {
-      "code": "BRFSC175",
+      "code": "BRFSD175",
       "strike": 17.5
     },
     {
-      "code": "BRFSC177",
+      "code": "BRFSD177",
       "strike": 17.75
     },
     {
-      "code": "BRFSO162",
-      "strike": 16.25
+      "code": "BRFSD180",
+      "strike": 18.0
     },
     {
-      "code": "BRFSO165",
+      "code": "BRFSP165",
       "strike": 16.5
     },
     {
-      "code": "BRFSO167",
+      "code": "BRFSP167",
       "strike": 16.75
     },
     {
-      "code": "BRFSO170",
+      "code": "BRFSP170",
       "strike": 17.0
     },
     {
-      "code": "BRFSO172",
+      "code": "BRFSP172",
       "strike": 17.25
     },
     {
-      "code": "BRFSO175",
+      "code": "BRFSP175",
       "strike": 17.5
     },
     {
-      "code": "BRFSO177",
+      "code": "BRFSP177",
       "strike": 17.75
+    },
+    {
+      "code": "BRFSP180",
+      "strike": 18.0
     }
   ],
   [
@@ -1120,44 +1168,44 @@
       "code": "BRKM5"
     },
     {
-      "code": "BRKMC197",
-      "strike": 19.75
-    },
-    {
-      "code": "BRKMC200",
+      "code": "BRKMD200",
       "strike": 20.0
     },
     {
-      "code": "BRKMC202",
-      "strike": 20.25
+      "code": "BRKMD205",
+      "strike": 20.5
     },
     {
-      "code": "BRKMC207",
-      "strike": 20.75
+      "code": "BRKMD210",
+      "strike": 21.0
     },
     {
-      "code": "BRKMC212",
-      "strike": 21.25
+      "code": "BRKMD215",
+      "strike": 21.5
     },
     {
-      "code": "BRKMO197",
-      "strike": 19.75
+      "code": "BRKMD217",
+      "strike": 21.75
     },
     {
-      "code": "BRKMO200",
+      "code": "BRKMP200",
       "strike": 20.0
     },
     {
-      "code": "BRKMO202",
-      "strike": 20.25
+      "code": "BRKMP205",
+      "strike": 20.5
     },
     {
-      "code": "BRKMO207",
-      "strike": 20.75
+      "code": "BRKMP210",
+      "strike": 21.0
     },
     {
-      "code": "BRKMO212",
-      "strike": 21.25
+      "code": "BRKMP215",
+      "strike": 21.5
+    },
+    {
+      "code": "BRKMP217",
+      "strike": 21.75
     }
   ],
   [
@@ -1165,44 +1213,36 @@
       "code": "CASH3"
     },
     {
-      "code": "CASHC820",
+      "code": "CASHD800",
+      "strike": 8.0
+    },
+    {
+      "code": "CASHD820",
       "strike": 8.2
     },
     {
-      "code": "CASHC840",
+      "code": "CASHD840",
       "strike": 8.4
     },
     {
-      "code": "CASHC860",
+      "code": "CASHD860",
       "strike": 8.6
     },
     {
-      "code": "CASHC880",
-      "strike": 8.8
+      "code": "CASHP800",
+      "strike": 8.0
     },
     {
-      "code": "CASHC900",
-      "strike": 9.0
-    },
-    {
-      "code": "CASHO820",
+      "code": "CASHP820",
       "strike": 8.2
     },
     {
-      "code": "CASHO840",
+      "code": "CASHP840",
       "strike": 8.4
     },
     {
-      "code": "CASHO860",
+      "code": "CASHP860",
       "strike": 8.6
-    },
-    {
-      "code": "CASHO880",
-      "strike": 8.8
-    },
-    {
-      "code": "CASHO900",
-      "strike": 9.0
     }
   ],
   [
@@ -1210,28 +1250,20 @@
       "code": "CCRO3"
     },
     {
-      "code": "CCROC135",
+      "code": "CCROD135",
       "strike": 13.5
     },
     {
-      "code": "CCROC140",
+      "code": "CCROD140",
       "strike": 14.0
     },
     {
-      "code": "CCROC145",
-      "strike": 14.5
-    },
-    {
-      "code": "CCROO135",
+      "code": "CCROP135",
       "strike": 13.5
     },
     {
-      "code": "CCROO140",
+      "code": "CCROP140",
       "strike": 14.0
-    },
-    {
-      "code": "CCROO145",
-      "strike": 14.5
     }
   ],
   [
@@ -1239,44 +1271,20 @@
       "code": "CIEL3"
     },
     {
-      "code": "CIELC520",
-      "strike": 5.14
+      "code": "CIELD529",
+      "strike": 5.23
     },
     {
-      "code": "CIELC530",
-      "strike": 5.24
+      "code": "CIELD549",
+      "strike": 5.43
     },
     {
-      "code": "CIELC540",
-      "strike": 5.34
+      "code": "CIELP529",
+      "strike": 5.23
     },
     {
-      "code": "CIELC550",
-      "strike": 5.44
-    },
-    {
-      "code": "CIELC560",
-      "strike": 5.54
-    },
-    {
-      "code": "CIELO520",
-      "strike": 5.14
-    },
-    {
-      "code": "CIELO530",
-      "strike": 5.24
-    },
-    {
-      "code": "CIELO540",
-      "strike": 5.34
-    },
-    {
-      "code": "CIELO550",
-      "strike": 5.44
-    },
-    {
-      "code": "CIELO560",
-      "strike": 5.54
+      "code": "CIELP549",
+      "strike": 5.43
     }
   ],
   [
@@ -1284,36 +1292,28 @@
       "code": "CMIG4"
     },
     {
-      "code": "CMIGC111",
-      "strike": 10.77
+      "code": "CMIGD109",
+      "strike": 11.0
     },
     {
-      "code": "CMIGC114",
-      "strike": 11.02
+      "code": "CMIGD114",
+      "strike": 11.5
     },
     {
-      "code": "CMIGC116",
-      "strike": 11.27
+      "code": "CMIGD116",
+      "strike": 11.75
     },
     {
-      "code": "CMIGC11",
-      "strike": 11.52
+      "code": "CMIGP109",
+      "strike": 11.0
     },
     {
-      "code": "CMIGO111",
-      "strike": 10.77
+      "code": "CMIGP114",
+      "strike": 11.5
     },
     {
-      "code": "CMIGO114",
-      "strike": 11.02
-    },
-    {
-      "code": "CMIGO116",
-      "strike": 11.27
-    },
-    {
-      "code": "CMIGO11",
-      "strike": 11.52
+      "code": "CMIGP116",
+      "strike": 11.75
     }
   ],
   [
@@ -1321,28 +1321,28 @@
       "code": "CMIN3"
     },
     {
-      "code": "CMINC555",
-      "strike": 5.48
+      "code": "CMIND540",
+      "strike": 5.4
     },
     {
-      "code": "CMINC575",
-      "strike": 5.68
+      "code": "CMIND560",
+      "strike": 5.6
     },
     {
-      "code": "CMINC595",
-      "strike": 5.88
+      "code": "CMIND580",
+      "strike": 5.8
     },
     {
-      "code": "CMINO555",
-      "strike": 5.48
+      "code": "CMINP540",
+      "strike": 5.4
     },
     {
-      "code": "CMINO575",
-      "strike": 5.68
+      "code": "CMINP560",
+      "strike": 5.6
     },
     {
-      "code": "CMINO595",
-      "strike": 5.88
+      "code": "CMINP580",
+      "strike": 5.8
     }
   ],
   [
@@ -1350,52 +1350,52 @@
       "code": "COGN3"
     },
     {
-      "code": "COGNC275",
+      "code": "COGND27",
+      "strike": 2.7
+    },
+    {
+      "code": "COGND275",
       "strike": 2.75
     },
     {
-      "code": "COGNC280",
+      "code": "COGND280",
       "strike": 2.8
     },
     {
-      "code": "COGNC285",
+      "code": "COGND285",
       "strike": 2.85
     },
     {
-      "code": "COGNC29",
+      "code": "COGND29",
       "strike": 2.9
     },
     {
-      "code": "COGNC295",
+      "code": "COGND295",
       "strike": 2.95
     },
     {
-      "code": "COGNC299",
-      "strike": 3.0
+      "code": "COGNP27",
+      "strike": 2.7
     },
     {
-      "code": "COGNO275",
+      "code": "COGNP275",
       "strike": 2.75
     },
     {
-      "code": "COGNO280",
+      "code": "COGNP280",
       "strike": 2.8
     },
     {
-      "code": "COGNO285",
+      "code": "COGNP285",
       "strike": 2.85
     },
     {
-      "code": "COGNO29",
+      "code": "COGNP29",
       "strike": 2.9
     },
     {
-      "code": "COGNO295",
+      "code": "COGNP295",
       "strike": 2.95
-    },
-    {
-      "code": "COGNO299",
-      "strike": 3.0
     }
   ],
   [
@@ -1403,43 +1403,51 @@
       "code": "CPFE3"
     },
     {
-      "code": "CPFEC332",
+      "code": "CPFED327",
+      "strike": 32.75
+    },
+    {
+      "code": "CPFED330",
       "strike": 33.25
     },
     {
-      "code": "CPFEC337",
+      "code": "CPFED337",
       "strike": 33.75
     },
     {
-      "code": "CPFEC342",
+      "code": "CPFED342",
       "strike": 34.25
     },
     {
-      "code": "CPFEC347",
+      "code": "CPFED347",
       "strike": 34.75
     },
     {
-      "code": "CPFEC352",
+      "code": "CPFED352",
       "strike": 35.25
     },
     {
-      "code": "CPFEO332",
+      "code": "CPFEP327",
+      "strike": 32.75
+    },
+    {
+      "code": "CPFEP330",
       "strike": 33.25
     },
     {
-      "code": "CPFEO337",
+      "code": "CPFEP337",
       "strike": 33.75
     },
     {
-      "code": "CPFEO342",
+      "code": "CPFEP342",
       "strike": 34.25
     },
     {
-      "code": "CPFEO347",
+      "code": "CPFEP347",
       "strike": 34.75
     },
     {
-      "code": "CPFEO352",
+      "code": "CPFEP352",
       "strike": 35.25
     }
   ],
@@ -1448,36 +1456,36 @@
       "code": "CPLE6"
     },
     {
-      "code": "CPLEC962",
-      "strike": 9.62
+      "code": "CPLED960",
+      "strike": 9.6
     },
     {
-      "code": "CPLEC982",
-      "strike": 9.82
+      "code": "CPLED980",
+      "strike": 9.8
     },
     {
-      "code": "CPLEC100",
-      "strike": 10.02
+      "code": "CPLED100",
+      "strike": 10.0
     },
     {
-      "code": "CPLEC102",
-      "strike": 10.27
+      "code": "CPLED102",
+      "strike": 10.25
     },
     {
-      "code": "CPLEO962",
-      "strike": 9.62
+      "code": "CPLEP960",
+      "strike": 9.6
     },
     {
-      "code": "CPLEO982",
-      "strike": 9.82
+      "code": "CPLEP980",
+      "strike": 9.8
     },
     {
-      "code": "CPLEO100",
-      "strike": 10.02
+      "code": "CPLEP100",
+      "strike": 10.0
     },
     {
-      "code": "CPLEO102",
-      "strike": 10.27
+      "code": "CPLEP102",
+      "strike": 10.25
     }
   ],
   [
@@ -1485,27 +1493,27 @@
       "code": "CRFB3"
     },
     {
-      "code": "CRFBC120",
+      "code": "CRFBD120",
       "strike": 12.0
     },
     {
-      "code": "CRFBC125",
+      "code": "CRFBD125",
       "strike": 12.5
     },
     {
-      "code": "CRFBC130",
+      "code": "CRFBD130",
       "strike": 13.0
     },
     {
-      "code": "CRFBO120",
+      "code": "CRFBP120",
       "strike": 12.0
     },
     {
-      "code": "CRFBO125",
+      "code": "CRFBP125",
       "strike": 12.5
     },
     {
-      "code": "CRFBO130",
+      "code": "CRFBP130",
       "strike": 13.0
     }
   ],
@@ -1514,52 +1522,28 @@
       "code": "CSAN3"
     },
     {
-      "code": "CSANC158",
-      "strike": 15.89
+      "code": "CSAND162",
+      "strike": 16.25
     },
     {
-      "code": "CSANC163",
-      "strike": 16.39
+      "code": "CSAND167",
+      "strike": 16.75
     },
     {
-      "code": "CSANC166",
-      "strike": 16.64
+      "code": "CSAND172",
+      "strike": 17.25
     },
     {
-      "code": "CSANC168",
-      "strike": 16.89
+      "code": "CSANP162",
+      "strike": 16.25
     },
     {
-      "code": "CSANC171",
-      "strike": 17.14
+      "code": "CSANP167",
+      "strike": 16.75
     },
     {
-      "code": "CSANC173",
-      "strike": 17.39
-    },
-    {
-      "code": "CSANO158",
-      "strike": 15.89
-    },
-    {
-      "code": "CSANO163",
-      "strike": 16.39
-    },
-    {
-      "code": "CSANO166",
-      "strike": 16.64
-    },
-    {
-      "code": "CSANO168",
-      "strike": 16.89
-    },
-    {
-      "code": "CSANO171",
-      "strike": 17.14
-    },
-    {
-      "code": "CSANO173",
-      "strike": 17.39
+      "code": "CSANP172",
+      "strike": 17.25
     }
   ],
   [
@@ -1567,44 +1551,44 @@
       "code": "CSNA3"
     },
     {
-      "code": "CSNAC152",
-      "strike": 15.26
+      "code": "CSNAD149",
+      "strike": 14.91
     },
     {
-      "code": "CSNAC162",
-      "strike": 15.51
+      "code": "CSNAD154",
+      "strike": 15.41
     },
     {
-      "code": "CSNAC157",
-      "strike": 15.76
+      "code": "CSNAD159",
+      "strike": 15.91
     },
     {
-      "code": "CSNAC16",
-      "strike": 16.26
+      "code": "CSNAD161",
+      "strike": 16.16
     },
     {
-      "code": "CSNAC165",
-      "strike": 16.51
+      "code": "CSNAD164",
+      "strike": 16.41
     },
     {
-      "code": "CSNAO152",
-      "strike": 15.26
+      "code": "CSNAP149",
+      "strike": 14.91
     },
     {
-      "code": "CSNAO162",
-      "strike": 15.51
+      "code": "CSNAP154",
+      "strike": 15.41
     },
     {
-      "code": "CSNAO157",
-      "strike": 15.76
+      "code": "CSNAP159",
+      "strike": 15.91
     },
     {
-      "code": "CSNAO16",
-      "strike": 16.26
+      "code": "CSNAP161",
+      "strike": 16.16
     },
     {
-      "code": "CSNAO165",
-      "strike": 16.51
+      "code": "CSNAP164",
+      "strike": 16.41
     }
   ],
   [
@@ -1612,27 +1596,11 @@
       "code": "CXSE3"
     },
     {
-      "code": "CXSEC152",
-      "strike": 15.25
-    },
-    {
-      "code": "CXSEC157",
-      "strike": 15.75
-    },
-    {
-      "code": "CXSEC162",
+      "code": "CXSED162",
       "strike": 16.25
     },
     {
-      "code": "CXSEO152",
-      "strike": 15.25
-    },
-    {
-      "code": "CXSEO157",
-      "strike": 15.75
-    },
-    {
-      "code": "CXSEO162",
+      "code": "CXSEP162",
       "strike": 16.25
     }
   ],
@@ -1641,44 +1609,44 @@
       "code": "CYRE3"
     },
     {
-      "code": "CYREC245",
-      "strike": 24.5
+      "code": "CYRED244",
+      "strike": 24.42
     },
     {
-      "code": "CYREC250",
-      "strike": 25.0
+      "code": "CYRED249",
+      "strike": 24.92
     },
     {
-      "code": "CYREC255",
-      "strike": 25.5
+      "code": "CYRED254",
+      "strike": 25.42
     },
     {
-      "code": "CYREC260",
-      "strike": 26.0
+      "code": "CYRED259",
+      "strike": 25.92
     },
     {
-      "code": "CYREC265",
-      "strike": 26.5
+      "code": "CYRED264",
+      "strike": 26.42
     },
     {
-      "code": "CYREO245",
-      "strike": 24.5
+      "code": "CYREP244",
+      "strike": 24.42
     },
     {
-      "code": "CYREO250",
-      "strike": 25.0
+      "code": "CYREP249",
+      "strike": 24.92
     },
     {
-      "code": "CYREO255",
-      "strike": 25.5
+      "code": "CYREP254",
+      "strike": 25.42
     },
     {
-      "code": "CYREO260",
-      "strike": 26.0
+      "code": "CYREP259",
+      "strike": 25.92
     },
     {
-      "code": "CYREO265",
-      "strike": 26.5
+      "code": "CYREP264",
+      "strike": 26.42
     }
   ],
   [
@@ -1686,68 +1654,76 @@
       "code": "DXCO3"
     },
     {
-      "code": "DXCOC802",
-      "strike": 8.02
+      "code": "DXCOD792",
+      "strike": 7.85
     },
     {
-      "code": "DXCOC812",
-      "strike": 8.12
+      "code": "DXCOD802",
+      "strike": 7.95
     },
     {
-      "code": "DXCOC822",
-      "strike": 8.22
+      "code": "DXCOD812",
+      "strike": 8.05
     },
     {
-      "code": "DXCOC832",
-      "strike": 8.32
+      "code": "DXCOD822",
+      "strike": 8.15
     },
     {
-      "code": "DXCOC842",
-      "strike": 8.42
+      "code": "DXCOD832",
+      "strike": 8.25
     },
     {
-      "code": "DXCOC852",
-      "strike": 8.52
+      "code": "DXCOD842",
+      "strike": 8.35
     },
     {
-      "code": "DXCOC862",
-      "strike": 8.62
+      "code": "DXCOD852",
+      "strike": 8.45
     },
     {
-      "code": "DXCOC872",
-      "strike": 8.72
+      "code": "DXCOD862",
+      "strike": 8.55
     },
     {
-      "code": "DXCOO802",
-      "strike": 8.02
+      "code": "DXCOD872",
+      "strike": 8.65
     },
     {
-      "code": "DXCOO812",
-      "strike": 8.12
+      "code": "DXCOP792",
+      "strike": 7.85
     },
     {
-      "code": "DXCOO822",
-      "strike": 8.22
+      "code": "DXCOP802",
+      "strike": 7.95
     },
     {
-      "code": "DXCOO832",
-      "strike": 8.32
+      "code": "DXCOP812",
+      "strike": 8.05
     },
     {
-      "code": "DXCOO842",
-      "strike": 8.42
+      "code": "DXCOP822",
+      "strike": 8.15
     },
     {
-      "code": "DXCOO852",
-      "strike": 8.52
+      "code": "DXCOP832",
+      "strike": 8.25
     },
     {
-      "code": "DXCOO862",
-      "strike": 8.62
+      "code": "DXCOP842",
+      "strike": 8.35
     },
     {
-      "code": "DXCOO872",
-      "strike": 8.72
+      "code": "DXCOP852",
+      "strike": 8.45
+    },
+    {
+      "code": "DXCOP862",
+      "strike": 8.55
+    },
+    {
+      "code": "DXCOP872",
+      "strike": 8.65
     }
   ],
   [
@@ -1755,44 +1731,76 @@
       "code": "ECOR3"
     },
     {
-      "code": "ECORC900",
-      "strike": 9.0
+      "code": "ECORD882",
+      "strike": 8.82
     },
     {
-      "code": "ECORC920",
-      "strike": 9.2
+      "code": "ECORD892",
+      "strike": 8.92
     },
     {
-      "code": "ECORC940",
-      "strike": 9.4
+      "code": "ECORD902",
+      "strike": 9.02
     },
     {
-      "code": "ECORC960",
-      "strike": 9.6
+      "code": "ECORD912",
+      "strike": 9.12
     },
     {
-      "code": "ECORC980",
-      "strike": 9.8
+      "code": "ECORD922",
+      "strike": 9.22
     },
     {
-      "code": "ECORO900",
-      "strike": 9.0
+      "code": "ECORD932",
+      "strike": 9.32
     },
     {
-      "code": "ECORO920",
-      "strike": 9.2
+      "code": "ECORD942",
+      "strike": 9.42
     },
     {
-      "code": "ECORO940",
-      "strike": 9.4
+      "code": "ECORD952",
+      "strike": 9.52
     },
     {
-      "code": "ECORO960",
-      "strike": 9.6
+      "code": "ECORD962",
+      "strike": 9.62
     },
     {
-      "code": "ECORO980",
-      "strike": 9.8
+      "code": "ECORP882",
+      "strike": 8.82
+    },
+    {
+      "code": "ECORP892",
+      "strike": 8.92
+    },
+    {
+      "code": "ECORP902",
+      "strike": 9.02
+    },
+    {
+      "code": "ECORP912",
+      "strike": 9.12
+    },
+    {
+      "code": "ECORP922",
+      "strike": 9.22
+    },
+    {
+      "code": "ECORP932",
+      "strike": 9.32
+    },
+    {
+      "code": "ECORP942",
+      "strike": 9.42
+    },
+    {
+      "code": "ECORP952",
+      "strike": 9.52
+    },
+    {
+      "code": "ECORP962",
+      "strike": 9.62
     }
   ],
   [
@@ -1800,92 +1808,100 @@
       "code": "EGIE3"
     },
     {
-      "code": "EGIEC390",
-      "strike": 38.85
+      "code": "EGIED387",
+      "strike": 38.63
     },
     {
-      "code": "EGIEC395",
-      "strike": 39.35
+      "code": "EGIED393",
+      "strike": 39.38
     },
     {
-      "code": "EGIEC400",
-      "strike": 39.85
+      "code": "EGIED398",
+      "strike": 39.88
     },
     {
-      "code": "EGIEC405",
-      "strike": 40.35
+      "code": "EGIED403",
+      "strike": 40.38
     },
     {
-      "code": "EGIEC407",
-      "strike": 40.6
+      "code": "EGIED406",
+      "strike": 40.63
     },
     {
-      "code": "EGIEC410",
-      "strike": 40.85
+      "code": "EGIED408",
+      "strike": 40.88
     },
     {
-      "code": "EGIEC415",
-      "strike": 41.35
+      "code": "EGIED411",
+      "strike": 41.13
     },
     {
-      "code": "EGIEC416",
-      "strike": 41.6
+      "code": "EGIED413",
+      "strike": 41.38
     },
     {
-      "code": "EGIEC420",
-      "strike": 41.85
+      "code": "EGIED416",
+      "strike": 41.63
     },
     {
-      "code": "EGIEC422",
-      "strike": 42.1
+      "code": "EGIED418",
+      "strike": 41.88
     },
     {
-      "code": "EGIEC425",
-      "strike": 42.35
+      "code": "EGIED421",
+      "strike": 42.13
     },
     {
-      "code": "EGIEO390",
-      "strike": 38.85
+      "code": "EGIED423",
+      "strike": 42.38
     },
     {
-      "code": "EGIEO395",
-      "strike": 39.35
+      "code": "EGIEP387",
+      "strike": 38.63
     },
     {
-      "code": "EGIEO400",
-      "strike": 39.85
+      "code": "EGIEP393",
+      "strike": 39.38
     },
     {
-      "code": "EGIEO405",
-      "strike": 40.35
+      "code": "EGIEP398",
+      "strike": 39.88
     },
     {
-      "code": "EGIEO407",
-      "strike": 40.6
+      "code": "EGIEP403",
+      "strike": 40.38
     },
     {
-      "code": "EGIEO410",
-      "strike": 40.85
+      "code": "EGIEP406",
+      "strike": 40.63
     },
     {
-      "code": "EGIEO415",
-      "strike": 41.35
+      "code": "EGIEP408",
+      "strike": 40.88
     },
     {
-      "code": "EGIEO416",
-      "strike": 41.6
+      "code": "EGIEP411",
+      "strike": 41.13
     },
     {
-      "code": "EGIEO420",
-      "strike": 41.85
+      "code": "EGIEP413",
+      "strike": 41.38
     },
     {
-      "code": "EGIEO422",
-      "strike": 42.1
+      "code": "EGIEP416",
+      "strike": 41.63
     },
     {
-      "code": "EGIEO425",
-      "strike": 42.35
+      "code": "EGIEP418",
+      "strike": 41.88
+    },
+    {
+      "code": "EGIEP421",
+      "strike": 42.13
+    },
+    {
+      "code": "EGIEP423",
+      "strike": 42.38
     }
   ],
   [
@@ -1893,123 +1909,123 @@
       "code": "ELET3"
     },
     {
-      "code": "ELETC420",
+      "code": "ELETD420",
       "strike": 42.03
     },
     {
-      "code": "ELETC422",
+      "code": "ELETD422",
       "strike": 42.28
     },
     {
-      "code": "ELETC425",
+      "code": "ELETD425",
       "strike": 42.53
     },
     {
-      "code": "ELETC427",
+      "code": "ELETD427",
       "strike": 42.78
     },
     {
-      "code": "ELETC430",
+      "code": "ELETD430",
       "strike": 43.03
     },
     {
-      "code": "ELETC432",
+      "code": "ELETD432",
       "strike": 43.28
     },
     {
-      "code": "ELETC435",
+      "code": "ELETD435",
       "strike": 43.53
     },
     {
-      "code": "ELETC437",
+      "code": "ELETD437",
       "strike": 43.78
     },
     {
-      "code": "ELETC440",
+      "code": "ELETD440",
       "strike": 44.03
     },
     {
-      "code": "ELETC442",
-      "strike": 44.28
-    },
-    {
-      "code": "ELETC445",
+      "code": "ELETD445",
       "strike": 44.53
     },
     {
-      "code": "ELETC450",
+      "code": "ELETD447",
+      "strike": 44.78
+    },
+    {
+      "code": "ELETD450",
       "strike": 45.03
     },
     {
-      "code": "ELETC452",
+      "code": "ELETD452",
       "strike": 45.28
     },
     {
-      "code": "ELETC455",
+      "code": "ELETD455",
       "strike": 45.53
     },
     {
-      "code": "ELETC460",
+      "code": "ELETD460",
       "strike": 46.03
     },
     {
-      "code": "ELETO420",
+      "code": "ELETP420",
       "strike": 42.03
     },
     {
-      "code": "ELETO422",
+      "code": "ELETP422",
       "strike": 42.28
     },
     {
-      "code": "ELETO425",
+      "code": "ELETP425",
       "strike": 42.53
     },
     {
-      "code": "ELETO427",
+      "code": "ELETP427",
       "strike": 42.78
     },
     {
-      "code": "ELETO430",
+      "code": "ELETP430",
       "strike": 43.03
     },
     {
-      "code": "ELETO432",
+      "code": "ELETP432",
       "strike": 43.28
     },
     {
-      "code": "ELETO435",
+      "code": "ELETP435",
       "strike": 43.53
     },
     {
-      "code": "ELETO437",
+      "code": "ELETP437",
       "strike": 43.78
     },
     {
-      "code": "ELETO440",
+      "code": "ELETP440",
       "strike": 44.03
     },
     {
-      "code": "ELETO442",
-      "strike": 44.28
-    },
-    {
-      "code": "ELETO445",
+      "code": "ELETP445",
       "strike": 44.53
     },
     {
-      "code": "ELETO450",
+      "code": "ELETP447",
+      "strike": 44.78
+    },
+    {
+      "code": "ELETP450",
       "strike": 45.03
     },
     {
-      "code": "ELETO452",
+      "code": "ELETP452",
       "strike": 45.28
     },
     {
-      "code": "ELETO455",
+      "code": "ELETP455",
       "strike": 45.53
     },
     {
-      "code": "ELETO460",
+      "code": "ELETP460",
       "strike": 46.03
     }
   ],
@@ -2018,124 +2034,116 @@
       "code": "ELET6"
     },
     {
-      "code": "ELETC464",
-      "strike": 46.5
+      "code": "ELETD46",
+      "strike": 46.76
     },
     {
-      "code": "ELETC466",
-      "strike": 46.75
+      "code": "ELETD469",
+      "strike": 47.01
     },
     {
-      "code": "ELETC47",
-      "strike": 47.0
+      "code": "ELETD471",
+      "strike": 47.26
     },
     {
-      "code": "ELETC471",
-      "strike": 47.25
+      "code": "ELETD474",
+      "strike": 47.51
     },
     {
-      "code": "ELETC475",
-      "strike": 47.5
+      "code": "ELETD47",
+      "strike": 47.76
     },
     {
-      "code": "ELETC476",
-      "strike": 47.75
+      "code": "ELETD479",
+      "strike": 48.01
     },
     {
-      "code": "ELETC480",
-      "strike": 48.0
+      "code": "ELETD481",
+      "strike": 48.26
     },
     {
-      "code": "ELETC481",
-      "strike": 48.25
+      "code": "ELETD484",
+      "strike": 48.51
     },
     {
-      "code": "ELETC48",
-      "strike": 48.5
+      "code": "ELETD489",
+      "strike": 49.01
     },
     {
-      "code": "ELETC486",
-      "strike": 48.75
+      "code": "ELETD491",
+      "strike": 49.26
     },
     {
-      "code": "ELETC49",
-      "strike": 49.0
+      "code": "ELETD51",
+      "strike": 49.51
     },
     {
-      "code": "ELETC491",
-      "strike": 49.25
+      "code": "ELETD496",
+      "strike": 49.76
     },
     {
-      "code": "ELETC494",
-      "strike": 49.5
+      "code": "ELETD499",
+      "strike": 50.01
     },
     {
-      "code": "ELETC50",
-      "strike": 50.0
+      "code": "ELETD509",
+      "strike": 51.01
     },
     {
-      "code": "ELETC51",
-      "strike": 51.0
+      "code": "ELETP46",
+      "strike": 46.76
     },
     {
-      "code": "ELETO464",
-      "strike": 46.5
+      "code": "ELETP469",
+      "strike": 47.01
     },
     {
-      "code": "ELETO466",
-      "strike": 46.75
+      "code": "ELETP471",
+      "strike": 47.26
     },
     {
-      "code": "ELETO47",
-      "strike": 47.0
+      "code": "ELETP474",
+      "strike": 47.51
     },
     {
-      "code": "ELETO471",
-      "strike": 47.25
+      "code": "ELETP47",
+      "strike": 47.76
     },
     {
-      "code": "ELETO475",
-      "strike": 47.5
+      "code": "ELETP479",
+      "strike": 48.01
     },
     {
-      "code": "ELETO476",
-      "strike": 47.75
+      "code": "ELETP481",
+      "strike": 48.26
     },
     {
-      "code": "ELETO480",
-      "strike": 48.0
+      "code": "ELETP484",
+      "strike": 48.51
     },
     {
-      "code": "ELETO481",
-      "strike": 48.25
+      "code": "ELETP489",
+      "strike": 49.01
     },
     {
-      "code": "ELETO48",
-      "strike": 48.5
+      "code": "ELETP491",
+      "strike": 49.26
     },
     {
-      "code": "ELETO486",
-      "strike": 48.75
+      "code": "ELETP51",
+      "strike": 49.51
     },
     {
-      "code": "ELETO49",
-      "strike": 49.0
+      "code": "ELETP496",
+      "strike": 49.76
     },
     {
-      "code": "ELETO491",
-      "strike": 49.25
+      "code": "ELETP499",
+      "strike": 50.01
     },
     {
-      "code": "ELETO494",
-      "strike": 49.5
-    },
-    {
-      "code": "ELETO50",
-      "strike": 50.0
-    },
-    {
-      "code": "ELETO51",
-      "strike": 51.0
+      "code": "ELETP509",
+      "strike": 51.01
     }
   ],
   [
@@ -2143,20 +2151,60 @@
       "code": "EMBR3"
     },
     {
-      "code": "EMBRC270",
-      "strike": 27.0
-    },
-    {
-      "code": "EMBRC275",
+      "code": "EMBRD275",
       "strike": 27.5
     },
     {
-      "code": "EMBRO270",
-      "strike": 27.0
+      "code": "EMBRD277",
+      "strike": 27.75
     },
     {
-      "code": "EMBRO275",
+      "code": "EMBRD280",
+      "strike": 28.0
+    },
+    {
+      "code": "EMBRD282",
+      "strike": 28.25
+    },
+    {
+      "code": "EMBRD285",
+      "strike": 28.5
+    },
+    {
+      "code": "EMBRD287",
+      "strike": 28.75
+    },
+    {
+      "code": "EMBRD290",
+      "strike": 29.0
+    },
+    {
+      "code": "EMBRP275",
       "strike": 27.5
+    },
+    {
+      "code": "EMBRP277",
+      "strike": 27.75
+    },
+    {
+      "code": "EMBRP280",
+      "strike": 28.0
+    },
+    {
+      "code": "EMBRP282",
+      "strike": 28.25
+    },
+    {
+      "code": "EMBRP285",
+      "strike": 28.5
+    },
+    {
+      "code": "EMBRP287",
+      "strike": 28.75
+    },
+    {
+      "code": "EMBRP290",
+      "strike": 29.0
     }
   ],
   [
@@ -2164,27 +2212,27 @@
       "code": "ENEV3"
     },
     {
-      "code": "ENEVC120",
-      "strike": 12.0
+      "code": "ENEVD122",
+      "strike": 12.25
     },
     {
-      "code": "ENEVC125",
+      "code": "ENEVD125",
       "strike": 12.5
     },
     {
-      "code": "ENEVC130",
+      "code": "ENEVD130",
       "strike": 13.0
     },
     {
-      "code": "ENEVO120",
-      "strike": 12.0
+      "code": "ENEVP122",
+      "strike": 12.25
     },
     {
-      "code": "ENEVO125",
+      "code": "ENEVP125",
       "strike": 12.5
     },
     {
-      "code": "ENEVO130",
+      "code": "ENEVP130",
       "strike": 13.0
     }
   ],
@@ -2193,76 +2241,68 @@
       "code": "ENGI11"
     },
     {
-      "code": "ENGIC480",
+      "code": "ENGID470",
       "strike": 47.0
     },
     {
-      "code": "ENGIC485",
+      "code": "ENGID475",
       "strike": 47.5
     },
     {
-      "code": "ENGIC490",
+      "code": "ENGID480",
       "strike": 48.0
     },
     {
-      "code": "ENGIC495",
+      "code": "ENGID485",
       "strike": 48.5
     },
     {
-      "code": "ENGIC500",
+      "code": "ENGID490",
       "strike": 49.0
     },
     {
-      "code": "ENGIC49",
+      "code": "ENGID495",
       "strike": 49.5
     },
     {
-      "code": "ENGIC510",
+      "code": "ENGID500",
       "strike": 50.0
     },
     {
-      "code": "ENGIC520",
+      "code": "ENGID510",
       "strike": 51.0
     },
     {
-      "code": "ENGIC515",
-      "strike": 51.5
-    },
-    {
-      "code": "ENGIO480",
+      "code": "ENGIP470",
       "strike": 47.0
     },
     {
-      "code": "ENGIO485",
+      "code": "ENGIP475",
       "strike": 47.5
     },
     {
-      "code": "ENGIO490",
+      "code": "ENGIP480",
       "strike": 48.0
     },
     {
-      "code": "ENGIO495",
+      "code": "ENGIP485",
       "strike": 48.5
     },
     {
-      "code": "ENGIO500",
+      "code": "ENGIP490",
       "strike": 49.0
     },
     {
-      "code": "ENGIO49",
+      "code": "ENGIP495",
       "strike": 49.5
     },
     {
-      "code": "ENGIO510",
+      "code": "ENGIP500",
       "strike": 50.0
     },
     {
-      "code": "ENGIO520",
+      "code": "ENGIP510",
       "strike": 51.0
-    },
-    {
-      "code": "ENGIO515",
-      "strike": 51.5
     }
   ],
   [
@@ -2270,52 +2310,76 @@
       "code": "EQTL3"
     },
     {
-      "code": "EQTLC315",
-      "strike": 31.5
+      "code": "EQTLD313",
+      "strike": 31.37
     },
     {
-      "code": "EQTLC320",
-      "strike": 32.0
+      "code": "EQTLD318",
+      "strike": 31.87
     },
     {
-      "code": "EQTLC325",
-      "strike": 32.5
+      "code": "EQTLD323",
+      "strike": 32.37
     },
     {
-      "code": "EQTLC330",
-      "strike": 33.0
+      "code": "EQTLD328",
+      "strike": 32.87
     },
     {
-      "code": "EQTLC335",
-      "strike": 33.5
+      "code": "EQTLD33",
+      "strike": 33.12
     },
     {
-      "code": "EQTLC340",
-      "strike": 34.0
+      "code": "EQTLD333",
+      "strike": 33.37
     },
     {
-      "code": "EQTLO315",
-      "strike": 31.5
+      "code": "EQTLD338",
+      "strike": 33.87
     },
     {
-      "code": "EQTLO320",
-      "strike": 32.0
+      "code": "EQTLD341",
+      "strike": 34.12
     },
     {
-      "code": "EQTLO325",
-      "strike": 32.5
+      "code": "EQTLD343",
+      "strike": 34.37
     },
     {
-      "code": "EQTLO330",
-      "strike": 33.0
+      "code": "EQTLP313",
+      "strike": 31.37
     },
     {
-      "code": "EQTLO335",
-      "strike": 33.5
+      "code": "EQTLP318",
+      "strike": 31.87
     },
     {
-      "code": "EQTLO340",
-      "strike": 34.0
+      "code": "EQTLP323",
+      "strike": 32.37
+    },
+    {
+      "code": "EQTLP328",
+      "strike": 32.87
+    },
+    {
+      "code": "EQTLP33",
+      "strike": 33.12
+    },
+    {
+      "code": "EQTLP333",
+      "strike": 33.37
+    },
+    {
+      "code": "EQTLP338",
+      "strike": 33.87
+    },
+    {
+      "code": "EQTLP341",
+      "strike": 34.12
+    },
+    {
+      "code": "EQTLP343",
+      "strike": 34.37
     }
   ],
   [
@@ -2323,28 +2387,44 @@
       "code": "EZTC3"
     },
     {
-      "code": "EZTCC162",
-      "strike": 16.25
+      "code": "EZTCD161",
+      "strike": 16.13
     },
     {
-      "code": "EZTCC167",
-      "strike": 16.75
+      "code": "EZTCD163",
+      "strike": 16.38
     },
     {
-      "code": "EZTCC172",
-      "strike": 17.25
+      "code": "EZTCD166",
+      "strike": 16.63
     },
     {
-      "code": "EZTCO162",
-      "strike": 16.25
+      "code": "EZTCD171",
+      "strike": 17.13
     },
     {
-      "code": "EZTCO167",
-      "strike": 16.75
+      "code": "EZTCD176",
+      "strike": 17.63
     },
     {
-      "code": "EZTCO172",
-      "strike": 17.25
+      "code": "EZTCP161",
+      "strike": 16.13
+    },
+    {
+      "code": "EZTCP163",
+      "strike": 16.38
+    },
+    {
+      "code": "EZTCP166",
+      "strike": 16.63
+    },
+    {
+      "code": "EZTCP171",
+      "strike": 17.13
+    },
+    {
+      "code": "EZTCP176",
+      "strike": 17.63
     }
   ],
   [
@@ -2352,36 +2432,28 @@
       "code": "FLRY3"
     },
     {
-      "code": "FLRYC146",
-      "strike": 14.63
+      "code": "FLRYD145",
+      "strike": 14.5
     },
     {
-      "code": "FLRYC151",
-      "strike": 15.13
+      "code": "FLRYD150",
+      "strike": 15.0
     },
     {
-      "code": "FLRYC157",
-      "strike": 15.38
+      "code": "FLRYD155",
+      "strike": 15.5
     },
     {
-      "code": "FLRYC156",
-      "strike": 15.63
+      "code": "FLRYP145",
+      "strike": 14.5
     },
     {
-      "code": "FLRYO146",
-      "strike": 14.63
+      "code": "FLRYP150",
+      "strike": 15.0
     },
     {
-      "code": "FLRYO151",
-      "strike": 15.13
-    },
-    {
-      "code": "FLRYO157",
-      "strike": 15.38
-    },
-    {
-      "code": "FLRYO156",
-      "strike": 15.63
+      "code": "FLRYP155",
+      "strike": 15.5
     }
   ],
   [
@@ -2389,36 +2461,20 @@
       "code": "GFSA3"
     },
     {
-      "code": "GFSAC117",
-      "strike": 11.75
-    },
-    {
-      "code": "GFSAC120",
+      "code": "GFSAD120",
       "strike": 12.0
     },
     {
-      "code": "GFSAC122",
-      "strike": 12.25
+      "code": "GFSAD125",
+      "strike": 12.5
     },
     {
-      "code": "GFSAC127",
-      "strike": 12.75
-    },
-    {
-      "code": "GFSAO117",
-      "strike": 11.75
-    },
-    {
-      "code": "GFSAO120",
+      "code": "GFSAP120",
       "strike": 12.0
     },
     {
-      "code": "GFSAO122",
-      "strike": 12.25
-    },
-    {
-      "code": "GFSAO127",
-      "strike": 12.75
+      "code": "GFSAP125",
+      "strike": 12.5
     }
   ],
   [
@@ -2426,68 +2482,76 @@
       "code": "GGBR4"
     },
     {
-      "code": "GGBRC208",
-      "strike": 20.75
+      "code": "GGBRD203",
+      "strike": 20.28
     },
     {
-      "code": "GGBRC211",
-      "strike": 21.0
+      "code": "GGBRD206",
+      "strike": 20.53
     },
     {
-      "code": "GGBRC213",
-      "strike": 21.25
+      "code": "GGBRD208",
+      "strike": 20.78
     },
     {
-      "code": "GGBRC216",
-      "strike": 21.5
+      "code": "GGBRD211",
+      "strike": 21.03
     },
     {
-      "code": "GGBRC218",
-      "strike": 21.75
+      "code": "GGBRD213",
+      "strike": 21.28
     },
     {
-      "code": "GGBRC221",
-      "strike": 22.0
+      "code": "GGBRD216",
+      "strike": 21.53
     },
     {
-      "code": "GGBRC223",
-      "strike": 22.25
+      "code": "GGBRD218",
+      "strike": 21.78
     },
     {
-      "code": "GGBRC230",
-      "strike": 22.5
+      "code": "GGBRD221",
+      "strike": 22.03
     },
     {
-      "code": "GGBRO208",
-      "strike": 20.75
+      "code": "GGBRD223",
+      "strike": 22.28
     },
     {
-      "code": "GGBRO211",
-      "strike": 21.0
+      "code": "GGBRP203",
+      "strike": 20.28
     },
     {
-      "code": "GGBRO213",
-      "strike": 21.25
+      "code": "GGBRP206",
+      "strike": 20.53
     },
     {
-      "code": "GGBRO216",
-      "strike": 21.5
+      "code": "GGBRP208",
+      "strike": 20.78
     },
     {
-      "code": "GGBRO218",
-      "strike": 21.75
+      "code": "GGBRP211",
+      "strike": 21.03
     },
     {
-      "code": "GGBRO221",
-      "strike": 22.0
+      "code": "GGBRP213",
+      "strike": 21.28
     },
     {
-      "code": "GGBRO223",
-      "strike": 22.25
+      "code": "GGBRP216",
+      "strike": 21.53
     },
     {
-      "code": "GGBRO230",
-      "strike": 22.5
+      "code": "GGBRP218",
+      "strike": 21.78
+    },
+    {
+      "code": "GGBRP221",
+      "strike": 22.03
+    },
+    {
+      "code": "GGBRP223",
+      "strike": 22.28
     }
   ],
   [
@@ -2495,35 +2559,43 @@
       "code": "GOAU4"
     },
     {
-      "code": "GOAUC962",
+      "code": "GOAUD942",
+      "strike": 9.37
+    },
+    {
+      "code": "GOAUD962",
       "strike": 9.57
     },
     {
-      "code": "GOAUC982",
+      "code": "GOAUD972",
+      "strike": 9.67
+    },
+    {
+      "code": "GOAUD982",
       "strike": 9.77
     },
     {
-      "code": "GOAUC100",
-      "strike": 10.02
-    },
-    {
-      "code": "GOAUC103",
+      "code": "GOAUD103",
       "strike": 10.27
     },
     {
-      "code": "GOAUO962",
+      "code": "GOAUP942",
+      "strike": 9.37
+    },
+    {
+      "code": "GOAUP962",
       "strike": 9.57
     },
     {
-      "code": "GOAUO982",
+      "code": "GOAUP972",
+      "strike": 9.67
+    },
+    {
+      "code": "GOAUP982",
       "strike": 9.77
     },
     {
-      "code": "GOAUO100",
-      "strike": 10.02
-    },
-    {
-      "code": "GOAUO103",
+      "code": "GOAUP103",
       "strike": 10.27
     }
   ],
@@ -2532,68 +2604,68 @@
       "code": "HAPV3"
     },
     {
-      "code": "HAPVC375",
+      "code": "HAPVD370",
+      "strike": 3.7
+    },
+    {
+      "code": "HAPVD375",
       "strike": 3.75
     },
     {
-      "code": "HAPVC380",
+      "code": "HAPVD380",
       "strike": 3.8
     },
     {
-      "code": "HAPVC385",
+      "code": "HAPVD385",
       "strike": 3.85
     },
     {
-      "code": "HAPVC390",
+      "code": "HAPVD390",
       "strike": 3.9
     },
     {
-      "code": "HAPVC395",
+      "code": "HAPVD395",
       "strike": 3.95
     },
     {
-      "code": "HAPVC400",
+      "code": "HAPVD400",
       "strike": 4.0
     },
     {
-      "code": "HAPVC405",
+      "code": "HAPVD405",
       "strike": 4.05
     },
     {
-      "code": "HAPVC410",
-      "strike": 4.1
+      "code": "HAPVP370",
+      "strike": 3.7
     },
     {
-      "code": "HAPVO375",
+      "code": "HAPVP375",
       "strike": 3.75
     },
     {
-      "code": "HAPVO380",
+      "code": "HAPVP380",
       "strike": 3.8
     },
     {
-      "code": "HAPVO385",
+      "code": "HAPVP385",
       "strike": 3.85
     },
     {
-      "code": "HAPVO390",
+      "code": "HAPVP390",
       "strike": 3.9
     },
     {
-      "code": "HAPVO395",
+      "code": "HAPVP395",
       "strike": 3.95
     },
     {
-      "code": "HAPVO400",
+      "code": "HAPVP400",
       "strike": 4.0
     },
     {
-      "code": "HAPVO405",
+      "code": "HAPVP405",
       "strike": 4.05
-    },
-    {
-      "code": "HAPVO410",
-      "strike": 4.1
     }
   ],
   [
@@ -2601,52 +2673,60 @@
       "code": "HYPE3"
     },
     {
-      "code": "HYPEC330",
-      "strike": 32.58
+      "code": "HYPED319",
+      "strike": 31.56
     },
     {
-      "code": "HYPEC335",
-      "strike": 33.08
+      "code": "HYPED322",
+      "strike": 32.06
     },
     {
-      "code": "HYPEC340",
-      "strike": 33.58
+      "code": "HYPED329",
+      "strike": 32.56
     },
     {
-      "code": "HYPEC345",
-      "strike": 34.08
+      "code": "HYPED332",
+      "strike": 33.06
     },
     {
-      "code": "HYPEC350",
-      "strike": 34.58
+      "code": "HYPED339",
+      "strike": 33.56
     },
     {
-      "code": "HYPEC355",
-      "strike": 35.08
+      "code": "HYPED342",
+      "strike": 34.06
     },
     {
-      "code": "HYPEO330",
-      "strike": 32.58
+      "code": "HYPED349",
+      "strike": 34.56
     },
     {
-      "code": "HYPEO335",
-      "strike": 33.08
+      "code": "HYPEP319",
+      "strike": 31.56
     },
     {
-      "code": "HYPEO340",
-      "strike": 33.58
+      "code": "HYPEP322",
+      "strike": 32.06
     },
     {
-      "code": "HYPEO345",
-      "strike": 34.08
+      "code": "HYPEP329",
+      "strike": 32.56
     },
     {
-      "code": "HYPEO350",
-      "strike": 34.58
+      "code": "HYPEP332",
+      "strike": 33.06
     },
     {
-      "code": "HYPEO355",
-      "strike": 35.08
+      "code": "HYPEP339",
+      "strike": 33.56
+    },
+    {
+      "code": "HYPEP342",
+      "strike": 34.06
+    },
+    {
+      "code": "HYPEP349",
+      "strike": 34.56
     }
   ],
   [
@@ -2654,52 +2734,44 @@
       "code": "IGTI11"
     },
     {
-      "code": "IGTIC232",
-      "strike": 23.08
+      "code": "IGTID235",
+      "strike": 23.33
     },
     {
-      "code": "IGTIC237",
-      "strike": 23.58
+      "code": "IGTID240",
+      "strike": 23.83
     },
     {
-      "code": "IGTIC242",
-      "strike": 24.08
+      "code": "IGTID245",
+      "strike": 24.33
     },
     {
-      "code": "IGTIC247",
-      "strike": 24.58
-    },
-    {
-      "code": "IGTIC250",
+      "code": "IGTID250",
       "strike": 24.83
     },
     {
-      "code": "IGTIC252",
-      "strike": 25.08
+      "code": "IGTID255",
+      "strike": 25.33
     },
     {
-      "code": "IGTIO232",
-      "strike": 23.08
+      "code": "IGTIP235",
+      "strike": 23.33
     },
     {
-      "code": "IGTIO237",
-      "strike": 23.58
+      "code": "IGTIP240",
+      "strike": 23.83
     },
     {
-      "code": "IGTIO242",
-      "strike": 24.08
+      "code": "IGTIP245",
+      "strike": 24.33
     },
     {
-      "code": "IGTIO247",
-      "strike": 24.58
-    },
-    {
-      "code": "IGTIO250",
+      "code": "IGTIP250",
       "strike": 24.83
     },
     {
-      "code": "IGTIO252",
-      "strike": 25.08
+      "code": "IGTIP255",
+      "strike": 25.33
     }
   ],
   [
@@ -2707,76 +2779,132 @@
       "code": "IRBR3"
     },
     {
-      "code": "IRBRC385",
+      "code": "IRBRD385",
       "strike": 38.5
     },
     {
-      "code": "IRBRC390",
+      "code": "IRBRD387",
+      "strike": 38.75
+    },
+    {
+      "code": "IRBRD390",
       "strike": 39.0
     },
     {
-      "code": "IRBRC395",
+      "code": "IRBRD392",
+      "strike": 39.25
+    },
+    {
+      "code": "IRBRD395",
       "strike": 39.5
     },
     {
-      "code": "IRBRC400",
+      "code": "IRBRD397",
+      "strike": 39.75
+    },
+    {
+      "code": "IRBRD40",
       "strike": 40.0
     },
     {
-      "code": "IRBRC405",
+      "code": "IRBRD402",
+      "strike": 40.25
+    },
+    {
+      "code": "IRBRD405",
       "strike": 40.5
     },
     {
-      "code": "IRBRC410",
+      "code": "IRBRD407",
+      "strike": 40.75
+    },
+    {
+      "code": "IRBRD410",
       "strike": 41.0
     },
     {
-      "code": "IRBRC415",
+      "code": "IRBRD412",
+      "strike": 41.25
+    },
+    {
+      "code": "IRBRD415",
       "strike": 41.5
     },
     {
-      "code": "IRBRC420",
+      "code": "IRBRD417",
+      "strike": 41.75
+    },
+    {
+      "code": "IRBRD420",
       "strike": 42.0
     },
     {
-      "code": "IRBRC425",
-      "strike": 42.5
+      "code": "IRBRD422",
+      "strike": 42.25
     },
     {
-      "code": "IRBRO385",
+      "code": "IRBRP385",
       "strike": 38.5
     },
     {
-      "code": "IRBRO390",
+      "code": "IRBRP387",
+      "strike": 38.75
+    },
+    {
+      "code": "IRBRP390",
       "strike": 39.0
     },
     {
-      "code": "IRBRO395",
+      "code": "IRBRP392",
+      "strike": 39.25
+    },
+    {
+      "code": "IRBRP395",
       "strike": 39.5
     },
     {
-      "code": "IRBRO400",
+      "code": "IRBRP397",
+      "strike": 39.75
+    },
+    {
+      "code": "IRBRP40",
       "strike": 40.0
     },
     {
-      "code": "IRBRO405",
+      "code": "IRBRP402",
+      "strike": 40.25
+    },
+    {
+      "code": "IRBRP405",
       "strike": 40.5
     },
     {
-      "code": "IRBRO410",
+      "code": "IRBRP407",
+      "strike": 40.75
+    },
+    {
+      "code": "IRBRP410",
       "strike": 41.0
     },
     {
-      "code": "IRBRO415",
+      "code": "IRBRP412",
+      "strike": 41.25
+    },
+    {
+      "code": "IRBRP415",
       "strike": 41.5
     },
     {
-      "code": "IRBRO420",
+      "code": "IRBRP417",
+      "strike": 41.75
+    },
+    {
+      "code": "IRBRP420",
       "strike": 42.0
     },
     {
-      "code": "IRBRO425",
-      "strike": 42.5
+      "code": "IRBRP422",
+      "strike": 42.25
     }
   ],
   [
@@ -2784,36 +2912,44 @@
       "code": "ITSA4"
     },
     {
-      "code": "ITSAC106",
-      "strike": 10.36
+      "code": "ITSAD105",
+      "strike": 10.2
     },
     {
-      "code": "ITSAC110",
-      "strike": 10.61
+      "code": "ITSAD107",
+      "strike": 10.45
     },
     {
-      "code": "ITSAC113",
-      "strike": 10.86
+      "code": "ITSAD11",
+      "strike": 10.7
     },
     {
-      "code": "ITSAC122",
-      "strike": 11.11
+      "code": "ITSAD112",
+      "strike": 10.95
     },
     {
-      "code": "ITSAO106",
-      "strike": 10.36
+      "code": "ITSAD115",
+      "strike": 11.2
     },
     {
-      "code": "ITSAO110",
-      "strike": 10.61
+      "code": "ITSAP105",
+      "strike": 10.2
     },
     {
-      "code": "ITSAO113",
-      "strike": 10.86
+      "code": "ITSAP107",
+      "strike": 10.45
     },
     {
-      "code": "ITSAO122",
-      "strike": 11.11
+      "code": "ITSAP11",
+      "strike": 10.7
+    },
+    {
+      "code": "ITSAP112",
+      "strike": 10.95
+    },
+    {
+      "code": "ITSAP115",
+      "strike": 11.2
     }
   ],
   [
@@ -2821,11 +2957,11 @@
       "code": "ITUB3"
     },
     {
-      "code": "ITUBC29",
+      "code": "ITUBD29",
       "strike": 28.75
     },
     {
-      "code": "ITUBO29",
+      "code": "ITUBP29",
       "strike": 28.75
     }
   ],
@@ -2834,100 +2970,100 @@
       "code": "ITUB4"
     },
     {
-      "code": "ITUBC351",
-      "strike": 33.24
+      "code": "ITUBD345",
+      "strike": 33.1
     },
     {
-      "code": "ITUBC345",
-      "strike": 33.49
+      "code": "ITUBD344",
+      "strike": 33.35
     },
     {
-      "code": "ITUBC349",
-      "strike": 33.74
+      "code": "ITUBD347",
+      "strike": 33.6
     },
     {
-      "code": "ITUBC350",
-      "strike": 33.99
+      "code": "ITUBD350",
+      "strike": 33.85
     },
     {
-      "code": "ITUBC353",
-      "strike": 34.24
+      "code": "ITUBD352",
+      "strike": 34.1
     },
     {
-      "code": "ITUBC355",
-      "strike": 34.49
+      "code": "ITUBD355",
+      "strike": 34.35
     },
     {
-      "code": "ITUBC358",
-      "strike": 34.74
+      "code": "ITUBD357",
+      "strike": 34.6
     },
     {
-      "code": "ITUBC360",
-      "strike": 34.99
+      "code": "ITUBD360",
+      "strike": 34.85
     },
     {
-      "code": "ITUBC363",
-      "strike": 35.24
+      "code": "ITUBD365",
+      "strike": 35.35
     },
     {
-      "code": "ITUBC365",
-      "strike": 35.49
+      "code": "ITUBD37",
+      "strike": 35.85
     },
     {
-      "code": "ITUBC368",
-      "strike": 35.74
+      "code": "ITUBD361",
+      "strike": 36.1
     },
     {
-      "code": "ITUBC373",
-      "strike": 36.24
+      "code": "ITUBD375",
+      "strike": 36.35
     },
     {
-      "code": "ITUBO351",
-      "strike": 33.24
+      "code": "ITUBP345",
+      "strike": 33.1
     },
     {
-      "code": "ITUBO345",
-      "strike": 33.49
+      "code": "ITUBP344",
+      "strike": 33.35
     },
     {
-      "code": "ITUBO349",
-      "strike": 33.74
+      "code": "ITUBP347",
+      "strike": 33.6
     },
     {
-      "code": "ITUBO350",
-      "strike": 33.99
+      "code": "ITUBP350",
+      "strike": 33.85
     },
     {
-      "code": "ITUBO353",
-      "strike": 34.24
+      "code": "ITUBP352",
+      "strike": 34.1
     },
     {
-      "code": "ITUBO355",
-      "strike": 34.49
+      "code": "ITUBP355",
+      "strike": 34.35
     },
     {
-      "code": "ITUBO358",
-      "strike": 34.74
+      "code": "ITUBP357",
+      "strike": 34.6
     },
     {
-      "code": "ITUBO360",
-      "strike": 34.99
+      "code": "ITUBP360",
+      "strike": 34.85
     },
     {
-      "code": "ITUBO363",
-      "strike": 35.24
+      "code": "ITUBP365",
+      "strike": 35.35
     },
     {
-      "code": "ITUBO365",
-      "strike": 35.49
+      "code": "ITUBP37",
+      "strike": 35.85
     },
     {
-      "code": "ITUBO368",
-      "strike": 35.74
+      "code": "ITUBP361",
+      "strike": 36.1
     },
     {
-      "code": "ITUBO373",
-      "strike": 36.24
+      "code": "ITUBP375",
+      "strike": 36.35
     }
   ],
   [
@@ -2935,20 +3071,28 @@
       "code": "IVVB11"
     },
     {
-      "code": "IVVBC280",
-      "strike": 280.0
+      "code": "IVVBD275",
+      "strike": 275.0
     },
     {
-      "code": "IVVBC290",
-      "strike": 290.0
+      "code": "IVVBD285",
+      "strike": 285.0
     },
     {
-      "code": "IVVBO280",
-      "strike": 280.0
+      "code": "IVVBD295",
+      "strike": 295.0
     },
     {
-      "code": "IVVBO290",
-      "strike": 290.0
+      "code": "IVVBP275",
+      "strike": 275.0
+    },
+    {
+      "code": "IVVBP285",
+      "strike": 285.0
+    },
+    {
+      "code": "IVVBP295",
+      "strike": 295.0
     }
   ],
   [
@@ -2956,59 +3100,59 @@
       "code": "JBSS3"
     },
     {
-      "code": "JBSSC227",
-      "strike": 22.75
+      "code": "JBSSD225",
+      "strike": 22.5
     },
     {
-      "code": "JBSSC230",
+      "code": "JBSSD230",
       "strike": 23.0
     },
     {
-      "code": "JBSSC232",
-      "strike": 23.25
-    },
-    {
-      "code": "JBSSC235",
+      "code": "JBSSD235",
       "strike": 23.5
     },
     {
-      "code": "JBSSC237",
+      "code": "JBSSD237",
       "strike": 23.75
     },
     {
-      "code": "JBSSC242",
-      "strike": 24.25
+      "code": "JBSSD240",
+      "strike": 24.0
     },
     {
-      "code": "JBSSC247",
+      "code": "JBSSD245",
+      "strike": 24.5
+    },
+    {
+      "code": "JBSSD247",
       "strike": 24.75
     },
     {
-      "code": "JBSSO227",
-      "strike": 22.75
+      "code": "JBSSP225",
+      "strike": 22.5
     },
     {
-      "code": "JBSSO230",
+      "code": "JBSSP230",
       "strike": 23.0
     },
     {
-      "code": "JBSSO232",
-      "strike": 23.25
-    },
-    {
-      "code": "JBSSO235",
+      "code": "JBSSP235",
       "strike": 23.5
     },
     {
-      "code": "JBSSO237",
+      "code": "JBSSP237",
       "strike": 23.75
     },
     {
-      "code": "JBSSO242",
-      "strike": 24.25
+      "code": "JBSSP240",
+      "strike": 24.0
     },
     {
-      "code": "JBSSO247",
+      "code": "JBSSP245",
+      "strike": 24.5
+    },
+    {
+      "code": "JBSSP247",
       "strike": 24.75
     }
   ],
@@ -3017,36 +3161,36 @@
       "code": "JHSF3"
     },
     {
-      "code": "JHSFC430",
-      "strike": 4.21
+      "code": "JHSFD431",
+      "strike": 4.22
     },
     {
-      "code": "JHSFC440",
-      "strike": 4.31
+      "code": "JHSFD438",
+      "strike": 4.32
     },
     {
-      "code": "JHSFC450",
-      "strike": 4.41
+      "code": "JHSFD448",
+      "strike": 4.42
     },
     {
-      "code": "JHSFC460",
-      "strike": 4.51
+      "code": "JHSFD461",
+      "strike": 4.52
     },
     {
-      "code": "JHSFO430",
-      "strike": 4.21
+      "code": "JHSFP431",
+      "strike": 4.22
     },
     {
-      "code": "JHSFO440",
-      "strike": 4.31
+      "code": "JHSFP438",
+      "strike": 4.32
     },
     {
-      "code": "JHSFO450",
-      "strike": 4.41
+      "code": "JHSFP448",
+      "strike": 4.42
     },
     {
-      "code": "JHSFO460",
-      "strike": 4.51
+      "code": "JHSFP461",
+      "strike": 4.52
     }
   ],
   [
@@ -3054,52 +3198,36 @@
       "code": "KLBN11"
     },
     {
-      "code": "KLBNC220",
-      "strike": 21.71
+      "code": "KLBND222",
+      "strike": 21.95
     },
     {
-      "code": "KLBNC225",
-      "strike": 22.21
+      "code": "KLBND226",
+      "strike": 22.45
     },
     {
-      "code": "KLBNC230",
-      "strike": 22.71
+      "code": "KLBND232",
+      "strike": 22.95
     },
     {
-      "code": "KLBNC232",
-      "strike": 22.96
+      "code": "KLBND236",
+      "strike": 23.45
     },
     {
-      "code": "KLBNC235",
-      "strike": 23.21
+      "code": "KLBNP222",
+      "strike": 21.95
     },
     {
-      "code": "KLBNC240",
-      "strike": 23.71
+      "code": "KLBNP226",
+      "strike": 22.45
     },
     {
-      "code": "KLBNO220",
-      "strike": 21.71
+      "code": "KLBNP232",
+      "strike": 22.95
     },
     {
-      "code": "KLBNO225",
-      "strike": 22.21
-    },
-    {
-      "code": "KLBNO230",
-      "strike": 22.71
-    },
-    {
-      "code": "KLBNO232",
-      "strike": 22.96
-    },
-    {
-      "code": "KLBNO235",
-      "strike": 23.21
-    },
-    {
-      "code": "KLBNO240",
-      "strike": 23.71
+      "code": "KLBNP236",
+      "strike": 23.45
     }
   ],
   [
@@ -3107,36 +3235,44 @@
       "code": "LEVE3"
     },
     {
-      "code": "LEVEC308",
+      "code": "LEVED308",
       "strike": 30.88
     },
     {
-      "code": "LEVEC318",
+      "code": "LEVED318",
       "strike": 31.88
     },
     {
-      "code": "LEVEC328",
+      "code": "LEVED328",
       "strike": 32.88
     },
     {
-      "code": "LEVEC333",
+      "code": "LEVED333",
       "strike": 33.38
     },
     {
-      "code": "LEVEO308",
+      "code": "LEVED338",
+      "strike": 33.88
+    },
+    {
+      "code": "LEVEP308",
       "strike": 30.88
     },
     {
-      "code": "LEVEO318",
+      "code": "LEVEP318",
       "strike": 31.88
     },
     {
-      "code": "LEVEO328",
+      "code": "LEVEP328",
       "strike": 32.88
     },
     {
-      "code": "LEVEO333",
+      "code": "LEVEP333",
       "strike": 33.38
+    },
+    {
+      "code": "LEVEP338",
+      "strike": 33.88
     }
   ],
   [
@@ -3144,60 +3280,52 @@
       "code": "LREN3"
     },
     {
-      "code": "LRENC162",
-      "strike": 16.1
+      "code": "LREND159",
+      "strike": 15.95
     },
     {
-      "code": "LRENC163",
-      "strike": 16.35
+      "code": "LREND162",
+      "strike": 16.2
     },
     {
-      "code": "LRENC166",
-      "strike": 16.6
+      "code": "LREND170",
+      "strike": 16.45
     },
     {
-      "code": "LRENC170",
-      "strike": 16.85
+      "code": "LREND167",
+      "strike": 16.7
     },
     {
-      "code": "LRENC171",
-      "strike": 17.1
+      "code": "LREND169",
+      "strike": 16.95
     },
     {
-      "code": "LRENC173",
-      "strike": 17.35
+      "code": "LREND172",
+      "strike": 17.2
     },
     {
-      "code": "LRENC176",
-      "strike": 17.6
+      "code": "LRENP159",
+      "strike": 15.95
     },
     {
-      "code": "LRENO162",
-      "strike": 16.1
+      "code": "LRENP162",
+      "strike": 16.2
     },
     {
-      "code": "LRENO163",
-      "strike": 16.35
+      "code": "LRENP170",
+      "strike": 16.45
     },
     {
-      "code": "LRENO166",
-      "strike": 16.6
+      "code": "LRENP167",
+      "strike": 16.7
     },
     {
-      "code": "LRENO170",
-      "strike": 16.85
+      "code": "LRENP169",
+      "strike": 16.95
     },
     {
-      "code": "LRENO171",
-      "strike": 17.1
-    },
-    {
-      "code": "LRENO173",
-      "strike": 17.35
-    },
-    {
-      "code": "LRENO176",
-      "strike": 17.6
+      "code": "LRENP172",
+      "strike": 17.2
     }
   ],
   [
@@ -3205,28 +3333,65 @@
       "code": "LWSA3"
     },
     {
-      "code": "LWSAC575",
-      "strike": 5.75
+      "code": "LWSAD560",
+      "strike": 5.6
     },
     {
-      "code": "LWSAC595",
-      "strike": 5.95
+      "code": "LWSAD580",
+      "strike": 5.8
     },
     {
-      "code": "LWSAC615",
-      "strike": 6.15
+      "code": "LWSAD590",
+      "strike": 5.9
     },
     {
-      "code": "LWSAO575",
-      "strike": 5.75
+      "code": "LWSAD600",
+      "strike": 6.0
     },
     {
-      "code": "LWSAO595",
-      "strike": 5.95
+      "code": "LWSAP560",
+      "strike": 5.6
     },
     {
-      "code": "LWSAO615",
-      "strike": 6.15
+      "code": "LWSAP580",
+      "strike": 5.8
+    },
+    {
+      "code": "LWSAP590",
+      "strike": 5.9
+    },
+    {
+      "code": "LWSAP600",
+      "strike": 6.0
+    }
+  ],
+  [
+    {
+      "code": "MEAL3"
+    },
+    {
+      "code": "MEALD210",
+      "strike": 2.1
+    },
+    {
+      "code": "MEALD220",
+      "strike": 2.2
+    },
+    {
+      "code": "MEALD230",
+      "strike": 2.3
+    },
+    {
+      "code": "MEALP210",
+      "strike": 2.1
+    },
+    {
+      "code": "MEALP220",
+      "strike": 2.2
+    },
+    {
+      "code": "MEALP230",
+      "strike": 2.3
     }
   ],
   [
@@ -3234,36 +3399,36 @@
       "code": "MGLU3"
     },
     {
-      "code": "MGLUC199",
+      "code": "MGLUD195",
+      "strike": 1.94
+    },
+    {
+      "code": "MGLUD199",
       "strike": 1.99
     },
     {
-      "code": "MGLUC205",
+      "code": "MGLUD205",
       "strike": 2.04
     },
     {
-      "code": "MGLUC210",
+      "code": "MGLUD210",
       "strike": 2.09
     },
     {
-      "code": "MGLUC215",
-      "strike": 2.14
+      "code": "MGLUP195",
+      "strike": 1.94
     },
     {
-      "code": "MGLUO199",
+      "code": "MGLUP199",
       "strike": 1.99
     },
     {
-      "code": "MGLUO205",
+      "code": "MGLUP205",
       "strike": 2.04
     },
     {
-      "code": "MGLUO210",
+      "code": "MGLUP210",
       "strike": 2.09
-    },
-    {
-      "code": "MGLUO215",
-      "strike": 2.14
     }
   ],
   [
@@ -3271,52 +3436,28 @@
       "code": "MRFG3"
     },
     {
-      "code": "MRFGC980",
+      "code": "MRFGD980",
       "strike": 9.8
     },
     {
-      "code": "MRFGC990",
-      "strike": 9.9
-    },
-    {
-      "code": "MRFGC100",
+      "code": "MRFGD100",
       "strike": 10.0
     },
     {
-      "code": "MRFGC102",
-      "strike": 10.25
-    },
-    {
-      "code": "MRFGC105",
+      "code": "MRFGD105",
       "strike": 10.5
     },
     {
-      "code": "MRFGC107",
-      "strike": 10.75
-    },
-    {
-      "code": "MRFGO980",
+      "code": "MRFGP980",
       "strike": 9.8
     },
     {
-      "code": "MRFGO990",
-      "strike": 9.9
-    },
-    {
-      "code": "MRFGO100",
+      "code": "MRFGP100",
       "strike": 10.0
     },
     {
-      "code": "MRFGO102",
-      "strike": 10.25
-    },
-    {
-      "code": "MRFGO105",
+      "code": "MRFGP105",
       "strike": 10.5
-    },
-    {
-      "code": "MRFGO107",
-      "strike": 10.75
     }
   ],
   [
@@ -3324,60 +3465,68 @@
       "code": "MRVE3"
     },
     {
-      "code": "MRVEC780",
+      "code": "MRVED780",
       "strike": 7.8
     },
     {
-      "code": "MRVEC790",
+      "code": "MRVED790",
       "strike": 7.9
     },
     {
-      "code": "MRVEC800",
+      "code": "MRVED800",
       "strike": 8.0
     },
     {
-      "code": "MRVEC810",
+      "code": "MRVED810",
       "strike": 8.1
     },
     {
-      "code": "MRVEC820",
+      "code": "MRVED820",
       "strike": 8.2
     },
     {
-      "code": "MRVEC830",
+      "code": "MRVED830",
       "strike": 8.3
     },
     {
-      "code": "MRVEC840",
+      "code": "MRVED840",
       "strike": 8.4
     },
     {
-      "code": "MRVEO780",
+      "code": "MRVED850",
+      "strike": 8.5
+    },
+    {
+      "code": "MRVEP780",
       "strike": 7.8
     },
     {
-      "code": "MRVEO790",
+      "code": "MRVEP790",
       "strike": 7.9
     },
     {
-      "code": "MRVEO800",
+      "code": "MRVEP800",
       "strike": 8.0
     },
     {
-      "code": "MRVEO810",
+      "code": "MRVEP810",
       "strike": 8.1
     },
     {
-      "code": "MRVEO820",
+      "code": "MRVEP820",
       "strike": 8.2
     },
     {
-      "code": "MRVEO830",
+      "code": "MRVEP830",
       "strike": 8.3
     },
     {
-      "code": "MRVEO840",
+      "code": "MRVEP840",
       "strike": 8.4
+    },
+    {
+      "code": "MRVEP850",
+      "strike": 8.5
     }
   ],
   [
@@ -3385,44 +3534,44 @@
       "code": "MULT3"
     },
     {
-      "code": "MULTC255",
-      "strike": 25.34
+      "code": "MULTD255",
+      "strike": 25.5
     },
     {
-      "code": "MULTC260",
-      "strike": 25.84
+      "code": "MULTD260",
+      "strike": 26.0
     },
     {
-      "code": "MULTC265",
-      "strike": 26.34
+      "code": "MULTD265",
+      "strike": 26.5
     },
     {
-      "code": "MULTC270",
-      "strike": 26.84
+      "code": "MULTD270",
+      "strike": 27.0
     },
     {
-      "code": "MULTC275",
-      "strike": 27.34
+      "code": "MULTD275",
+      "strike": 27.5
     },
     {
-      "code": "MULTO255",
-      "strike": 25.34
+      "code": "MULTP255",
+      "strike": 25.5
     },
     {
-      "code": "MULTO260",
-      "strike": 25.84
+      "code": "MULTP260",
+      "strike": 26.0
     },
     {
-      "code": "MULTO265",
-      "strike": 26.34
+      "code": "MULTP265",
+      "strike": 26.5
     },
     {
-      "code": "MULTO270",
-      "strike": 26.84
+      "code": "MULTP270",
+      "strike": 27.0
     },
     {
-      "code": "MULTO275",
-      "strike": 27.34
+      "code": "MULTP275",
+      "strike": 27.5
     }
   ],
   [
@@ -3430,35 +3579,35 @@
       "code": "NEOE3"
     },
     {
-      "code": "NEOEC201",
+      "code": "NEOED201",
       "strike": 20.15
     },
     {
-      "code": "NEOEC210",
+      "code": "NEOED210",
       "strike": 20.65
     },
     {
-      "code": "NEOEC215",
+      "code": "NEOED215",
       "strike": 21.15
     },
     {
-      "code": "NEOEC220",
+      "code": "NEOED220",
       "strike": 21.65
     },
     {
-      "code": "NEOEO201",
+      "code": "NEOEP201",
       "strike": 20.15
     },
     {
-      "code": "NEOEO210",
+      "code": "NEOEP210",
       "strike": 20.65
     },
     {
-      "code": "NEOEO215",
+      "code": "NEOEP215",
       "strike": 21.15
     },
     {
-      "code": "NEOEO220",
+      "code": "NEOEP220",
       "strike": 21.65
     }
   ],
@@ -3467,36 +3616,44 @@
       "code": "NTCO3"
     },
     {
-      "code": "NTCOC175",
+      "code": "NTCOD175",
       "strike": 17.5
     },
     {
-      "code": "NTCOC180",
-      "strike": 18.0
+      "code": "NTCOD177",
+      "strike": 17.75
     },
     {
-      "code": "NTCOC185",
-      "strike": 18.5
+      "code": "NTCOD182",
+      "strike": 18.25
     },
     {
-      "code": "NTCOC190",
-      "strike": 19.0
+      "code": "NTCOD187",
+      "strike": 18.75
     },
     {
-      "code": "NTCOO175",
+      "code": "NTCOD192",
+      "strike": 19.25
+    },
+    {
+      "code": "NTCOP175",
       "strike": 17.5
     },
     {
-      "code": "NTCOO180",
-      "strike": 18.0
+      "code": "NTCOP177",
+      "strike": 17.75
     },
     {
-      "code": "NTCOO185",
-      "strike": 18.5
+      "code": "NTCOP182",
+      "strike": 18.25
     },
     {
-      "code": "NTCOO190",
-      "strike": 19.0
+      "code": "NTCOP187",
+      "strike": 18.75
+    },
+    {
+      "code": "NTCOP192",
+      "strike": 19.25
     }
   ],
   [
@@ -3504,59 +3661,51 @@
       "code": "PCAR3"
     },
     {
-      "code": "PCARC315",
-      "strike": 3.15
-    },
-    {
-      "code": "PCARC320",
+      "code": "PCARD320",
       "strike": 3.2
     },
     {
-      "code": "PCARC325",
+      "code": "PCARD325",
       "strike": 3.25
     },
     {
-      "code": "PCARC330",
+      "code": "PCARD330",
       "strike": 3.3
     },
     {
-      "code": "PCARC335",
+      "code": "PCARD335",
       "strike": 3.35
     },
     {
-      "code": "PCARC340",
+      "code": "PCARD340",
       "strike": 3.4
     },
     {
-      "code": "PCARC345",
+      "code": "PCARD345",
       "strike": 3.45
     },
     {
-      "code": "PCARO315",
-      "strike": 3.15
-    },
-    {
-      "code": "PCARO320",
+      "code": "PCARP320",
       "strike": 3.2
     },
     {
-      "code": "PCARO325",
+      "code": "PCARP325",
       "strike": 3.25
     },
     {
-      "code": "PCARO330",
+      "code": "PCARP330",
       "strike": 3.3
     },
     {
-      "code": "PCARO335",
+      "code": "PCARP335",
       "strike": 3.35
     },
     {
-      "code": "PCARO340",
+      "code": "PCARP340",
       "strike": 3.4
     },
     {
-      "code": "PCARO345",
+      "code": "PCARP345",
       "strike": 3.45
     }
   ],
@@ -3565,76 +3714,68 @@
       "code": "PETR3"
     },
     {
-      "code": "PETRC36",
-      "strike": 35.26
+      "code": "PETRD34",
+      "strike": 34.97
     },
     {
-      "code": "PETRC367",
-      "strike": 35.51
+      "code": "PETRD367",
+      "strike": 35.47
     },
     {
-      "code": "PETRC357",
-      "strike": 35.76
+      "code": "PETRD35",
+      "strike": 35.97
     },
     {
-      "code": "PETRC375",
-      "strike": 36.26
+      "code": "PETRD377",
+      "strike": 36.47
     },
     {
-      "code": "PETRC3",
-      "strike": 36.76
+      "code": "PETRD2",
+      "strike": 36.97
     },
     {
-      "code": "PETRC385",
-      "strike": 37.26
+      "code": "PETRD387",
+      "strike": 37.47
     },
     {
-      "code": "PETRC377",
-      "strike": 37.76
+      "code": "PETRD37",
+      "strike": 37.97
     },
     {
-      "code": "PETRC395",
-      "strike": 38.26
+      "code": "PETRD397",
+      "strike": 38.47
     },
     {
-      "code": "PETRC387",
-      "strike": 38.76
+      "code": "PETRP34",
+      "strike": 34.97
     },
     {
-      "code": "PETRO36",
-      "strike": 35.26
+      "code": "PETRP367",
+      "strike": 35.47
     },
     {
-      "code": "PETRO367",
-      "strike": 35.51
+      "code": "PETRP35",
+      "strike": 35.97
     },
     {
-      "code": "PETRO357",
-      "strike": 35.76
+      "code": "PETRP377",
+      "strike": 36.47
     },
     {
-      "code": "PETRO375",
-      "strike": 36.26
+      "code": "PETRP2",
+      "strike": 36.97
     },
     {
-      "code": "PETRO3",
-      "strike": 36.76
+      "code": "PETRP387",
+      "strike": 37.47
     },
     {
-      "code": "PETRO385",
-      "strike": 37.26
+      "code": "PETRP37",
+      "strike": 37.97
     },
     {
-      "code": "PETRO377",
-      "strike": 37.76
-    },
-    {
-      "code": "PETRO395",
-      "strike": 38.26
-    },
-    {
-      "code": "PETRO387",
-      "strike": 38.76
+      "code": "PETRP397",
+      "strike": 38.47
     }
   ],
   [
@@ -3642,124 +3783,124 @@
       "code": "PETR4"
     },
     {
-      "code": "PETRC34",
+      "code": "PETRD550",
+      "strike": 34.51
+    },
+    {
+      "code": "PETRD359",
       "strike": 34.76
     },
     {
-      "code": "PETRC356",
+      "code": "PETRD361",
       "strike": 35.01
     },
     {
-      "code": "PETRC352",
+      "code": "PETRD364",
       "strike": 35.26
     },
     {
-      "code": "PETRC366",
+      "code": "PETRD366",
       "strike": 35.51
     },
     {
-      "code": "PETRC369",
+      "code": "PETRD368",
       "strike": 35.76
     },
     {
-      "code": "PETRC371",
+      "code": "PETRD371",
       "strike": 36.01
     },
     {
-      "code": "PETRC362",
+      "code": "PETRD374",
       "strike": 36.26
     },
     {
-      "code": "PETRC376",
+      "code": "PETRD376",
       "strike": 36.51
     },
     {
-      "code": "PETRC296",
+      "code": "PETRD363",
       "strike": 36.76
     },
     {
-      "code": "PETRC381",
+      "code": "PETRD381",
       "strike": 37.01
     },
     {
-      "code": "PETRC372",
+      "code": "PETRD384",
       "strike": 37.26
     },
     {
-      "code": "PETRC386",
+      "code": "PETRD386",
       "strike": 37.51
     },
     {
-      "code": "PETRC400",
+      "code": "PETRD389",
       "strike": 37.76
     },
     {
-      "code": "PETRC391",
+      "code": "PETRD379",
       "strike": 38.01
     },
     {
-      "code": "PETRC382",
-      "strike": 38.26
+      "code": "PETRP550",
+      "strike": 34.51
     },
     {
-      "code": "PETRO34",
+      "code": "PETRP359",
       "strike": 34.76
     },
     {
-      "code": "PETRO356",
+      "code": "PETRP361",
       "strike": 35.01
     },
     {
-      "code": "PETRO352",
+      "code": "PETRP364",
       "strike": 35.26
     },
     {
-      "code": "PETRO366",
+      "code": "PETRP366",
       "strike": 35.51
     },
     {
-      "code": "PETRO369",
+      "code": "PETRP368",
       "strike": 35.76
     },
     {
-      "code": "PETRO371",
+      "code": "PETRP371",
       "strike": 36.01
     },
     {
-      "code": "PETRO362",
+      "code": "PETRP374",
       "strike": 36.26
     },
     {
-      "code": "PETRO376",
+      "code": "PETRP376",
       "strike": 36.51
     },
     {
-      "code": "PETRO296",
+      "code": "PETRP363",
       "strike": 36.76
     },
     {
-      "code": "PETRO381",
+      "code": "PETRP381",
       "strike": 37.01
     },
     {
-      "code": "PETRO372",
+      "code": "PETRP384",
       "strike": 37.26
     },
     {
-      "code": "PETRO386",
+      "code": "PETRP386",
       "strike": 37.51
     },
     {
-      "code": "PETRO400",
+      "code": "PETRP389",
       "strike": 37.76
     },
     {
-      "code": "PETRO391",
+      "code": "PETRP379",
       "strike": 38.01
-    },
-    {
-      "code": "PETRO382",
-      "strike": 38.26
     }
   ],
   [
@@ -3767,76 +3908,76 @@
       "code": "PETZ3"
     },
     {
-      "code": "PETZC419",
-      "strike": 4.19
+      "code": "PETZD430",
+      "strike": 4.3
     },
     {
-      "code": "PETZC424",
-      "strike": 4.24
+      "code": "PETZD435",
+      "strike": 4.35
     },
     {
-      "code": "PETZC429",
-      "strike": 4.29
+      "code": "PETZD440",
+      "strike": 4.4
     },
     {
-      "code": "PETZC434",
-      "strike": 4.34
+      "code": "PETZD445",
+      "strike": 4.45
     },
     {
-      "code": "PETZC439",
-      "strike": 4.39
+      "code": "PETZD450",
+      "strike": 4.5
     },
     {
-      "code": "PETZC444",
-      "strike": 4.44
+      "code": "PETZD455",
+      "strike": 4.55
     },
     {
-      "code": "PETZC449",
-      "strike": 4.49
+      "code": "PETZD460",
+      "strike": 4.6
     },
     {
-      "code": "PETZC454",
-      "strike": 4.54
+      "code": "PETZD465",
+      "strike": 4.65
     },
     {
-      "code": "PETZC459",
-      "strike": 4.59
+      "code": "PETZD470",
+      "strike": 4.7
     },
     {
-      "code": "PETZO419",
-      "strike": 4.19
+      "code": "PETZP430",
+      "strike": 4.3
     },
     {
-      "code": "PETZO424",
-      "strike": 4.24
+      "code": "PETZP435",
+      "strike": 4.35
     },
     {
-      "code": "PETZO429",
-      "strike": 4.29
+      "code": "PETZP440",
+      "strike": 4.4
     },
     {
-      "code": "PETZO434",
-      "strike": 4.34
+      "code": "PETZP445",
+      "strike": 4.45
     },
     {
-      "code": "PETZO439",
-      "strike": 4.39
+      "code": "PETZP450",
+      "strike": 4.5
     },
     {
-      "code": "PETZO444",
-      "strike": 4.44
+      "code": "PETZP455",
+      "strike": 4.55
     },
     {
-      "code": "PETZO449",
-      "strike": 4.49
+      "code": "PETZP460",
+      "strike": 4.6
     },
     {
-      "code": "PETZO454",
-      "strike": 4.54
+      "code": "PETZP465",
+      "strike": 4.65
     },
     {
-      "code": "PETZO459",
-      "strike": 4.59
+      "code": "PETZP470",
+      "strike": 4.7
     }
   ],
   [
@@ -3844,35 +3985,35 @@
       "code": "POSI3"
     },
     {
-      "code": "POSIC820",
+      "code": "POSID820",
       "strike": 8.2
     },
     {
-      "code": "POSIC840",
+      "code": "POSID840",
       "strike": 8.4
     },
     {
-      "code": "POSIC860",
+      "code": "POSID860",
       "strike": 8.6
     },
     {
-      "code": "POSIC880",
+      "code": "POSID880",
       "strike": 8.8
     },
     {
-      "code": "POSIO820",
+      "code": "POSIP820",
       "strike": 8.2
     },
     {
-      "code": "POSIO840",
+      "code": "POSIP840",
       "strike": 8.4
     },
     {
-      "code": "POSIO860",
+      "code": "POSIP860",
       "strike": 8.6
     },
     {
-      "code": "POSIO880",
+      "code": "POSIP880",
       "strike": 8.8
     }
   ],
@@ -3881,108 +4022,148 @@
       "code": "PRIO3"
     },
     {
-      "code": "PRIOC467",
+      "code": "PRIOD461",
+      "strike": 46.18
+    },
+    {
+      "code": "PRIOD464",
+      "strike": 46.43
+    },
+    {
+      "code": "PRIOD466",
       "strike": 46.68
     },
     {
-      "code": "PRIOC469",
+      "code": "PRIOD469",
       "strike": 46.93
     },
     {
-      "code": "PRIOC474",
+      "code": "PRIOD471",
+      "strike": 47.18
+    },
+    {
+      "code": "PRIOD474",
       "strike": 47.43
     },
     {
-      "code": "PRIOC479",
+      "code": "PRIOD476",
+      "strike": 47.68
+    },
+    {
+      "code": "PRIOD479",
       "strike": 47.93
     },
     {
-      "code": "PRIOC482",
+      "code": "PRIOD481",
       "strike": 48.18
     },
     {
-      "code": "PRIOC484",
+      "code": "PRIOD484",
       "strike": 48.43
     },
     {
-      "code": "PRIOC487",
+      "code": "PRIOD486",
       "strike": 48.68
     },
     {
-      "code": "PRIOC489",
+      "code": "PRIOD489",
       "strike": 48.93
     },
     {
-      "code": "PRIOC491",
+      "code": "PRIOD491",
       "strike": 49.18
     },
     {
-      "code": "PRIOC494",
+      "code": "PRIOD494",
       "strike": 49.43
     },
     {
-      "code": "PRIOC497",
+      "code": "PRIOD496",
       "strike": 49.68
     },
     {
-      "code": "PRIOC500",
+      "code": "PRIOD50",
       "strike": 49.93
     },
     {
-      "code": "PRIOC510",
-      "strike": 50.93
+      "code": "PRIOD501",
+      "strike": 50.18
     },
     {
-      "code": "PRIOO467",
+      "code": "PRIOD506",
+      "strike": 50.68
+    },
+    {
+      "code": "PRIOP461",
+      "strike": 46.18
+    },
+    {
+      "code": "PRIOP464",
+      "strike": 46.43
+    },
+    {
+      "code": "PRIOP466",
       "strike": 46.68
     },
     {
-      "code": "PRIOO469",
+      "code": "PRIOP469",
       "strike": 46.93
     },
     {
-      "code": "PRIOO474",
+      "code": "PRIOP471",
+      "strike": 47.18
+    },
+    {
+      "code": "PRIOP474",
       "strike": 47.43
     },
     {
-      "code": "PRIOO479",
+      "code": "PRIOP476",
+      "strike": 47.68
+    },
+    {
+      "code": "PRIOP479",
       "strike": 47.93
     },
     {
-      "code": "PRIOO482",
+      "code": "PRIOP481",
       "strike": 48.18
     },
     {
-      "code": "PRIOO484",
+      "code": "PRIOP484",
       "strike": 48.43
     },
     {
-      "code": "PRIOO487",
+      "code": "PRIOP486",
       "strike": 48.68
     },
     {
-      "code": "PRIOO489",
+      "code": "PRIOP489",
       "strike": 48.93
     },
     {
-      "code": "PRIOO491",
+      "code": "PRIOP491",
       "strike": 49.18
     },
     {
-      "code": "PRIOO494",
+      "code": "PRIOP494",
       "strike": 49.43
     },
     {
-      "code": "PRIOO497",
+      "code": "PRIOP496",
       "strike": 49.68
     },
     {
-      "code": "PRIOO500",
+      "code": "PRIOP50",
       "strike": 49.93
     },
     {
-      "code": "PRIOO510",
-      "strike": 50.93
+      "code": "PRIOP501",
+      "strike": 50.18
+    },
+    {
+      "code": "PRIOP506",
+      "strike": 50.68
     }
   ],
   [
@@ -3990,43 +4171,43 @@
       "code": "RADL3"
     },
     {
-      "code": "RADLC260",
+      "code": "RADLD260",
       "strike": 26.0
     },
     {
-      "code": "RADLC265",
+      "code": "RADLD265",
       "strike": 26.5
     },
     {
-      "code": "RADLC270",
+      "code": "RADLD270",
       "strike": 27.0
     },
     {
-      "code": "RADLC275",
+      "code": "RADLD275",
       "strike": 27.5
     },
     {
-      "code": "RADLC280",
+      "code": "RADLD280",
       "strike": 28.0
     },
     {
-      "code": "RADLO260",
+      "code": "RADLP260",
       "strike": 26.0
     },
     {
-      "code": "RADLO265",
+      "code": "RADLP265",
       "strike": 26.5
     },
     {
-      "code": "RADLO270",
+      "code": "RADLP270",
       "strike": 27.0
     },
     {
-      "code": "RADLO275",
+      "code": "RADLP275",
       "strike": 27.5
     },
     {
-      "code": "RADLO280",
+      "code": "RADLP280",
       "strike": 28.0
     }
   ],
@@ -4035,75 +4216,59 @@
       "code": "RAIL3"
     },
     {
-      "code": "RAILC210",
+      "code": "RAILD210",
       "strike": 21.0
     },
     {
-      "code": "RAILC212",
+      "code": "RAILD212",
       "strike": 21.25
     },
     {
-      "code": "RAILC215",
-      "strike": 21.5
-    },
-    {
-      "code": "RAILC217",
+      "code": "RAILD217",
       "strike": 21.75
     },
     {
-      "code": "RAILC220",
+      "code": "RAILD220",
       "strike": 22.0
     },
     {
-      "code": "RAILC222",
+      "code": "RAILD222",
       "strike": 22.25
     },
     {
-      "code": "RAILC225",
-      "strike": 22.5
-    },
-    {
-      "code": "RAILC227",
+      "code": "RAILD227",
       "strike": 22.75
     },
     {
-      "code": "RAILC230",
+      "code": "RAILD230",
       "strike": 23.0
     },
     {
-      "code": "RAILO210",
+      "code": "RAILP210",
       "strike": 21.0
     },
     {
-      "code": "RAILO212",
+      "code": "RAILP212",
       "strike": 21.25
     },
     {
-      "code": "RAILO215",
-      "strike": 21.5
-    },
-    {
-      "code": "RAILO217",
+      "code": "RAILP217",
       "strike": 21.75
     },
     {
-      "code": "RAILO220",
+      "code": "RAILP220",
       "strike": 22.0
     },
     {
-      "code": "RAILO222",
+      "code": "RAILP222",
       "strike": 22.25
     },
     {
-      "code": "RAILO225",
-      "strike": 22.5
-    },
-    {
-      "code": "RAILO227",
+      "code": "RAILP227",
       "strike": 22.75
     },
     {
-      "code": "RAILO230",
+      "code": "RAILP230",
       "strike": 23.0
     }
   ],
@@ -4112,44 +4277,28 @@
       "code": "RAIZ4"
     },
     {
-      "code": "RAIZC350",
+      "code": "RAIZD337",
       "strike": 3.37
     },
     {
-      "code": "RAIZC347",
+      "code": "RAIZD347",
       "strike": 3.47
     },
     {
-      "code": "RAIZC365",
-      "strike": 3.52
-    },
-    {
-      "code": "RAIZC357",
+      "code": "RAIZD357",
       "strike": 3.57
     },
     {
-      "code": "RAIZC380",
-      "strike": 3.67
-    },
-    {
-      "code": "RAIZO350",
+      "code": "RAIZP337",
       "strike": 3.37
     },
     {
-      "code": "RAIZO347",
+      "code": "RAIZP347",
       "strike": 3.47
     },
     {
-      "code": "RAIZO365",
-      "strike": 3.52
-    },
-    {
-      "code": "RAIZO357",
+      "code": "RAIZP357",
       "strike": 3.57
-    },
-    {
-      "code": "RAIZO380",
-      "strike": 3.67
     }
   ],
   [
@@ -4157,52 +4306,44 @@
       "code": "RDOR3"
     },
     {
-      "code": "RDORC244",
-      "strike": 24.43
+      "code": "RDORD245",
+      "strike": 24.5
     },
     {
-      "code": "RDORC248",
-      "strike": 24.68
+      "code": "RDORD250",
+      "strike": 25.0
     },
     {
-      "code": "RDORC249",
-      "strike": 24.93
+      "code": "RDORD255",
+      "strike": 25.5
     },
     {
-      "code": "RDORC254",
-      "strike": 25.43
+      "code": "RDORD260",
+      "strike": 26.0
     },
     {
-      "code": "RDORC259",
-      "strike": 25.93
+      "code": "RDORD265",
+      "strike": 26.5
     },
     {
-      "code": "RDORC264",
-      "strike": 26.43
+      "code": "RDORP245",
+      "strike": 24.5
     },
     {
-      "code": "RDORO244",
-      "strike": 24.43
+      "code": "RDORP250",
+      "strike": 25.0
     },
     {
-      "code": "RDORO248",
-      "strike": 24.68
+      "code": "RDORP255",
+      "strike": 25.5
     },
     {
-      "code": "RDORO249",
-      "strike": 24.93
+      "code": "RDORP260",
+      "strike": 26.0
     },
     {
-      "code": "RDORO254",
-      "strike": 25.43
-    },
-    {
-      "code": "RDORO259",
-      "strike": 25.93
-    },
-    {
-      "code": "RDORO264",
-      "strike": 26.43
+      "code": "RDORP265",
+      "strike": 26.5
     }
   ],
   [
@@ -4210,60 +4351,60 @@
       "code": "RENT3"
     },
     {
-      "code": "RENTC525",
+      "code": "RENTD516",
+      "strike": 51.61
+    },
+    {
+      "code": "RENTD521",
       "strike": 52.11
     },
     {
-      "code": "RENTC535",
+      "code": "RENTD526",
+      "strike": 52.61
+    },
+    {
+      "code": "RENTD531",
       "strike": 53.11
     },
     {
-      "code": "RENTC545",
+      "code": "RENTD541",
       "strike": 54.11
     },
     {
-      "code": "RENTC555",
+      "code": "RENTD551",
       "strike": 55.11
     },
     {
-      "code": "RENTC560",
-      "strike": 55.61
-    },
-    {
-      "code": "RENTC565",
+      "code": "RENTD561",
       "strike": 56.11
     },
     {
-      "code": "RENTC575",
-      "strike": 57.11
+      "code": "RENTP516",
+      "strike": 51.61
     },
     {
-      "code": "RENTO525",
+      "code": "RENTP521",
       "strike": 52.11
     },
     {
-      "code": "RENTO535",
+      "code": "RENTP526",
+      "strike": 52.61
+    },
+    {
+      "code": "RENTP531",
       "strike": 53.11
     },
     {
-      "code": "RENTO545",
+      "code": "RENTP541",
       "strike": 54.11
     },
     {
-      "code": "RENTO555",
+      "code": "RENTP551",
       "strike": 55.11
     },
     {
-      "code": "RENTO560",
-      "strike": 55.61
-    },
-    {
-      "code": "RENTO565",
+      "code": "RENTP561",
       "strike": 56.11
-    },
-    {
-      "code": "RENTO575",
-      "strike": 57.11
     }
   ],
   [
@@ -4271,68 +4412,100 @@
       "code": "RRRP3"
     },
     {
-      "code": "RRRPC283",
+      "code": "RRRPD280",
+      "strike": 28.08
+    },
+    {
+      "code": "RRRPD283",
       "strike": 28.33
     },
     {
-      "code": "RRRPC285",
+      "code": "RRRPD285",
       "strike": 28.58
     },
     {
-      "code": "RRRPC288",
+      "code": "RRRPD288",
       "strike": 28.83
     },
     {
-      "code": "RRRPC293",
+      "code": "RRRPD290",
+      "strike": 29.08
+    },
+    {
+      "code": "RRRPD297",
       "strike": 29.33
     },
     {
-      "code": "RRRPC295",
+      "code": "RRRPD295",
       "strike": 29.58
     },
     {
-      "code": "RRRPC298",
+      "code": "RRRPD298",
       "strike": 29.83
     },
     {
-      "code": "RRRPC303",
+      "code": "RRRPD300",
+      "strike": 30.08
+    },
+    {
+      "code": "RRRPD303",
       "strike": 30.33
     },
     {
-      "code": "RRRPC305",
+      "code": "RRRPD305",
       "strike": 30.58
     },
     {
-      "code": "RRRPO283",
+      "code": "RRRPD308",
+      "strike": 30.83
+    },
+    {
+      "code": "RRRPP280",
+      "strike": 28.08
+    },
+    {
+      "code": "RRRPP283",
       "strike": 28.33
     },
     {
-      "code": "RRRPO285",
+      "code": "RRRPP285",
       "strike": 28.58
     },
     {
-      "code": "RRRPO288",
+      "code": "RRRPP288",
       "strike": 28.83
     },
     {
-      "code": "RRRPO293",
+      "code": "RRRPP290",
+      "strike": 29.08
+    },
+    {
+      "code": "RRRPP297",
       "strike": 29.33
     },
     {
-      "code": "RRRPO295",
+      "code": "RRRPP295",
       "strike": 29.58
     },
     {
-      "code": "RRRPO298",
+      "code": "RRRPP298",
       "strike": 29.83
     },
     {
-      "code": "RRRPO303",
+      "code": "RRRPP300",
+      "strike": 30.08
+    },
+    {
+      "code": "RRRPP303",
       "strike": 30.33
     },
     {
-      "code": "RRRPO305",
+      "code": "RRRPP305",
       "strike": 30.58
+    },
+    {
+      "code": "RRRPP308",
+      "strike": 30.83
     }
   ],
   [
@@ -4340,60 +4513,76 @@
       "code": "SANB11"
     },
     {
-      "code": "SANBC279",
-      "strike": 27.62
+      "code": "SANBD277",
+      "strike": 27.41
     },
     {
-      "code": "SANBC284",
-      "strike": 28.12
+      "code": "SANBD282",
+      "strike": 27.91
     },
     {
-      "code": "SANBC297",
-      "strike": 28.37
+      "code": "SANBD281",
+      "strike": 28.16
     },
     {
-      "code": "SANBC289",
-      "strike": 28.62
+      "code": "SANBD287",
+      "strike": 28.41
     },
     {
-      "code": "SANBC294",
-      "strike": 29.12
+      "code": "SANBD290",
+      "strike": 28.66
     },
     {
-      "code": "SANBC299",
-      "strike": 29.62
+      "code": "SANBD292",
+      "strike": 28.91
     },
     {
-      "code": "SANBC304",
-      "strike": 30.12
+      "code": "SANBD291",
+      "strike": 29.16
     },
     {
-      "code": "SANBO279",
-      "strike": 27.62
+      "code": "SANBD297",
+      "strike": 29.41
     },
     {
-      "code": "SANBO284",
-      "strike": 28.12
+      "code": "SANBD302",
+      "strike": 29.91
     },
     {
-      "code": "SANBO297",
-      "strike": 28.37
+      "code": "SANBP277",
+      "strike": 27.41
     },
     {
-      "code": "SANBO289",
-      "strike": 28.62
+      "code": "SANBP282",
+      "strike": 27.91
     },
     {
-      "code": "SANBO294",
-      "strike": 29.12
+      "code": "SANBP281",
+      "strike": 28.16
     },
     {
-      "code": "SANBO299",
-      "strike": 29.62
+      "code": "SANBP287",
+      "strike": 28.41
     },
     {
-      "code": "SANBO304",
-      "strike": 30.12
+      "code": "SANBP290",
+      "strike": 28.66
+    },
+    {
+      "code": "SANBP292",
+      "strike": 28.91
+    },
+    {
+      "code": "SANBP291",
+      "strike": 29.16
+    },
+    {
+      "code": "SANBP297",
+      "strike": 29.41
+    },
+    {
+      "code": "SANBP302",
+      "strike": 29.91
     }
   ],
   [
@@ -4401,12 +4590,36 @@
       "code": "SAPR11"
     },
     {
-      "code": "SAPRC250",
-      "strike": 24.48
+      "code": "SAPRD247",
+      "strike": 24.73
     },
     {
-      "code": "SAPRO250",
-      "strike": 24.48
+      "code": "SAPRD252",
+      "strike": 25.23
+    },
+    {
+      "code": "SAPRD257",
+      "strike": 25.73
+    },
+    {
+      "code": "SAPRD262",
+      "strike": 26.23
+    },
+    {
+      "code": "SAPRP247",
+      "strike": 24.73
+    },
+    {
+      "code": "SAPRP252",
+      "strike": 25.23
+    },
+    {
+      "code": "SAPRP257",
+      "strike": 25.73
+    },
+    {
+      "code": "SAPRP262",
+      "strike": 26.23
     }
   ],
   [
@@ -4414,84 +4627,76 @@
       "code": "SBSP3"
     },
     {
-      "code": "SBSPC725",
-      "strike": 72.5
+      "code": "SBSPD734",
+      "strike": 73.42
     },
     {
-      "code": "SBSPC730",
-      "strike": 73.0
+      "code": "SBSPD739",
+      "strike": 73.92
     },
     {
-      "code": "SBSPC735",
-      "strike": 73.5
+      "code": "SBSPD744",
+      "strike": 74.42
     },
     {
-      "code": "SBSPC740",
-      "strike": 74.0
+      "code": "SBSPD754",
+      "strike": 75.42
     },
     {
-      "code": "SBSPC750",
-      "strike": 75.0
+      "code": "SBSPD764",
+      "strike": 76.42
     },
     {
-      "code": "SBSPC760",
-      "strike": 76.0
+      "code": "SBSPD769",
+      "strike": 76.92
     },
     {
-      "code": "SBSPC770",
-      "strike": 77.0
+      "code": "SBSPD774",
+      "strike": 77.42
     },
     {
-      "code": "SBSPC780",
-      "strike": 78.0
+      "code": "SBSPD784",
+      "strike": 78.42
     },
     {
-      "code": "SBSPC790",
-      "strike": 79.0
+      "code": "SBSPD794",
+      "strike": 79.42
     },
     {
-      "code": "SBSPC800",
-      "strike": 80.0
+      "code": "SBSPP734",
+      "strike": 73.42
     },
     {
-      "code": "SBSPO725",
-      "strike": 72.5
+      "code": "SBSPP739",
+      "strike": 73.92
     },
     {
-      "code": "SBSPO730",
-      "strike": 73.0
+      "code": "SBSPP744",
+      "strike": 74.42
     },
     {
-      "code": "SBSPO735",
-      "strike": 73.5
+      "code": "SBSPP754",
+      "strike": 75.42
     },
     {
-      "code": "SBSPO740",
-      "strike": 74.0
+      "code": "SBSPP764",
+      "strike": 76.42
     },
     {
-      "code": "SBSPO750",
-      "strike": 75.0
+      "code": "SBSPP769",
+      "strike": 76.92
     },
     {
-      "code": "SBSPO760",
-      "strike": 76.0
+      "code": "SBSPP774",
+      "strike": 77.42
     },
     {
-      "code": "SBSPO770",
-      "strike": 77.0
+      "code": "SBSPP784",
+      "strike": 78.42
     },
     {
-      "code": "SBSPO780",
-      "strike": 78.0
-    },
-    {
-      "code": "SBSPO790",
-      "strike": 79.0
-    },
-    {
-      "code": "SBSPO800",
-      "strike": 80.0
+      "code": "SBSPP794",
+      "strike": 79.42
     }
   ],
   [
@@ -4499,44 +4704,44 @@
       "code": "SLCE3"
     },
     {
-      "code": "SLCEC183",
-      "strike": 18.33
+      "code": "SLCED181",
+      "strike": 18.05
     },
     {
-      "code": "SLCEC188",
-      "strike": 18.83
+      "code": "SLCED183",
+      "strike": 18.3
     },
     {
-      "code": "SLCEC382",
-      "strike": 19.08
+      "code": "SLCED188",
+      "strike": 18.8
     },
     {
-      "code": "SLCEC193",
-      "strike": 19.33
+      "code": "SLCED193",
+      "strike": 19.3
     },
     {
-      "code": "SLCEC392",
-      "strike": 19.58
+      "code": "SLCED198",
+      "strike": 19.8
     },
     {
-      "code": "SLCEO183",
-      "strike": 18.33
+      "code": "SLCEP181",
+      "strike": 18.05
     },
     {
-      "code": "SLCEO188",
-      "strike": 18.83
+      "code": "SLCEP183",
+      "strike": 18.3
     },
     {
-      "code": "SLCEO382",
-      "strike": 19.08
+      "code": "SLCEP188",
+      "strike": 18.8
     },
     {
-      "code": "SLCEO193",
-      "strike": 19.33
+      "code": "SLCEP193",
+      "strike": 19.3
     },
     {
-      "code": "SLCEO392",
-      "strike": 19.58
+      "code": "SLCEP198",
+      "strike": 19.8
     }
   ],
   [
@@ -4544,91 +4749,91 @@
       "code": "SMAL11"
     },
     {
-      "code": "SMALC103",
+      "code": "SMALD103",
       "strike": 103.0
     },
     {
-      "code": "SMALC104",
+      "code": "SMALD104",
       "strike": 104.0
     },
     {
-      "code": "SMALC105",
+      "code": "SMALD105",
       "strike": 105.0
     },
     {
-      "code": "SMALC106",
+      "code": "SMALD106",
       "strike": 106.0
     },
     {
-      "code": "SMALC107",
+      "code": "SMALD107",
       "strike": 107.0
     },
     {
-      "code": "SMALC108",
+      "code": "SMALD108",
       "strike": 108.0
     },
     {
-      "code": "SMALC109",
+      "code": "SMALD109",
       "strike": 109.0
     },
     {
-      "code": "SMALC110",
+      "code": "SMALD110",
       "strike": 110.0
     },
     {
-      "code": "SMALC111",
+      "code": "SMALD111",
       "strike": 111.0
     },
     {
-      "code": "SMALC112",
+      "code": "SMALD112",
       "strike": 112.0
     },
     {
-      "code": "SMALC113",
+      "code": "SMALD113",
       "strike": 113.0
     },
     {
-      "code": "SMALO103",
+      "code": "SMALP103",
       "strike": 103.0
     },
     {
-      "code": "SMALO104",
+      "code": "SMALP104",
       "strike": 104.0
     },
     {
-      "code": "SMALO105",
+      "code": "SMALP105",
       "strike": 105.0
     },
     {
-      "code": "SMALO106",
+      "code": "SMALP106",
       "strike": 106.0
     },
     {
-      "code": "SMALO107",
+      "code": "SMALP107",
       "strike": 107.0
     },
     {
-      "code": "SMALO108",
+      "code": "SMALP108",
       "strike": 108.0
     },
     {
-      "code": "SMALO109",
+      "code": "SMALP109",
       "strike": 109.0
     },
     {
-      "code": "SMALO110",
+      "code": "SMALP110",
       "strike": 110.0
     },
     {
-      "code": "SMALO111",
+      "code": "SMALP111",
       "strike": 111.0
     },
     {
-      "code": "SMALO112",
+      "code": "SMALP112",
       "strike": 112.0
     },
     {
-      "code": "SMALO113",
+      "code": "SMALP113",
       "strike": 113.0
     }
   ],
@@ -4637,52 +4842,60 @@
       "code": "SMTO3"
     },
     {
-      "code": "SMTOC257",
-      "strike": 25.75
-    },
-    {
-      "code": "SMTOC262",
+      "code": "SMTOD262",
       "strike": 26.25
     },
     {
-      "code": "SMTOC267",
+      "code": "SMTOD267",
       "strike": 26.75
     },
     {
-      "code": "SMTOC272",
+      "code": "SMTOD272",
       "strike": 27.25
     },
     {
-      "code": "SMTOC277",
+      "code": "SMTOD277",
       "strike": 27.75
     },
     {
-      "code": "SMTOC282",
+      "code": "SMTOD282",
       "strike": 28.25
     },
     {
-      "code": "SMTOO257",
-      "strike": 25.75
+      "code": "SMTOD285",
+      "strike": 28.5
     },
     {
-      "code": "SMTOO262",
+      "code": "SMTOD287",
+      "strike": 28.75
+    },
+    {
+      "code": "SMTOP262",
       "strike": 26.25
     },
     {
-      "code": "SMTOO267",
+      "code": "SMTOP267",
       "strike": 26.75
     },
     {
-      "code": "SMTOO272",
+      "code": "SMTOP272",
       "strike": 27.25
     },
     {
-      "code": "SMTOO277",
+      "code": "SMTOP277",
       "strike": 27.75
     },
     {
-      "code": "SMTOO282",
+      "code": "SMTOP282",
       "strike": 28.25
+    },
+    {
+      "code": "SMTOP285",
+      "strike": 28.5
+    },
+    {
+      "code": "SMTOP287",
+      "strike": 28.75
     }
   ],
   [
@@ -4690,59 +4903,59 @@
       "code": "SOMA3"
     },
     {
-      "code": "SOMAC710",
+      "code": "SOMAD710",
       "strike": 7.1
     },
     {
-      "code": "SOMAC720",
+      "code": "SOMAD720",
       "strike": 7.2
     },
     {
-      "code": "SOMAC730",
+      "code": "SOMAD730",
       "strike": 7.3
     },
     {
-      "code": "SOMAC740",
+      "code": "SOMAD740",
       "strike": 7.4
     },
     {
-      "code": "SOMAC750",
+      "code": "SOMAD750",
       "strike": 7.5
     },
     {
-      "code": "SOMAC760",
+      "code": "SOMAD760",
       "strike": 7.6
     },
     {
-      "code": "SOMAC770",
+      "code": "SOMAD770",
       "strike": 7.7
     },
     {
-      "code": "SOMAO710",
+      "code": "SOMAP710",
       "strike": 7.1
     },
     {
-      "code": "SOMAO720",
+      "code": "SOMAP720",
       "strike": 7.2
     },
     {
-      "code": "SOMAO730",
+      "code": "SOMAP730",
       "strike": 7.3
     },
     {
-      "code": "SOMAO740",
+      "code": "SOMAP740",
       "strike": 7.4
     },
     {
-      "code": "SOMAO750",
+      "code": "SOMAP750",
       "strike": 7.5
     },
     {
-      "code": "SOMAO760",
+      "code": "SOMAP760",
       "strike": 7.6
     },
     {
-      "code": "SOMAO770",
+      "code": "SOMAP770",
       "strike": 7.7
     }
   ],
@@ -4751,92 +4964,84 @@
       "code": "SUZB3"
     },
     {
-      "code": "SUZBC565",
+      "code": "SUZBD564",
       "strike": 56.51
     },
     {
-      "code": "SUZBC57",
+      "code": "SUZBD570",
       "strike": 57.01
     },
     {
-      "code": "SUZBC575",
+      "code": "SUZBD575",
       "strike": 57.51
     },
     {
-      "code": "SUZBC590",
+      "code": "SUZBD580",
       "strike": 58.01
     },
     {
-      "code": "SUZBC585",
+      "code": "SUZBD585",
       "strike": 58.51
     },
     {
-      "code": "SUZBC59",
+      "code": "SUZBD590",
       "strike": 59.01
     },
     {
-      "code": "SUZBC595",
+      "code": "SUZBD595",
       "strike": 59.51
     },
     {
-      "code": "SUZBC600",
+      "code": "SUZBD610",
       "strike": 60.01
     },
     {
-      "code": "SUZBC610",
-      "strike": 61.01
+      "code": "SUZBD605",
+      "strike": 60.51
     },
     {
-      "code": "SUZBC615",
+      "code": "SUZBD615",
       "strike": 61.51
     },
     {
-      "code": "SUZBC620",
-      "strike": 62.01
-    },
-    {
-      "code": "SUZBO565",
+      "code": "SUZBP564",
       "strike": 56.51
     },
     {
-      "code": "SUZBO57",
+      "code": "SUZBP570",
       "strike": 57.01
     },
     {
-      "code": "SUZBO575",
+      "code": "SUZBP575",
       "strike": 57.51
     },
     {
-      "code": "SUZBO590",
+      "code": "SUZBP580",
       "strike": 58.01
     },
     {
-      "code": "SUZBO585",
+      "code": "SUZBP585",
       "strike": 58.51
     },
     {
-      "code": "SUZBO59",
+      "code": "SUZBP590",
       "strike": 59.01
     },
     {
-      "code": "SUZBO595",
+      "code": "SUZBP595",
       "strike": 59.51
     },
     {
-      "code": "SUZBO600",
+      "code": "SUZBP610",
       "strike": 60.01
     },
     {
-      "code": "SUZBO610",
-      "strike": 61.01
+      "code": "SUZBP605",
+      "strike": 60.51
     },
     {
-      "code": "SUZBO615",
+      "code": "SUZBP615",
       "strike": 61.51
-    },
-    {
-      "code": "SUZBO620",
-      "strike": 62.01
     }
   ],
   [
@@ -4844,108 +5049,92 @@
       "code": "TAEE11"
     },
     {
-      "code": "TAEEC342",
-      "strike": 33.68
+      "code": "TAEED337",
+      "strike": 33.74
     },
     {
-      "code": "TAEEC360",
-      "strike": 33.93
+      "code": "TAEED400",
+      "strike": 34.24
     },
     {
-      "code": "TAEEC353",
-      "strike": 34.18
+      "code": "TAEED359",
+      "strike": 34.74
     },
     {
-      "code": "TAEEC35",
-      "strike": 34.68
+      "code": "TAEED361",
+      "strike": 34.99
     },
     {
-      "code": "TAEEC349",
-      "strike": 34.93
+      "code": "TAEED352",
+      "strike": 35.24
     },
     {
-      "code": "TAEEC363",
-      "strike": 35.18
+      "code": "TAEED374",
+      "strike": 35.49
     },
     {
-      "code": "TAEEC359",
-      "strike": 35.43
+      "code": "TAEED369",
+      "strike": 35.74
     },
     {
-      "code": "TAEEC362",
-      "strike": 35.68
+      "code": "TAEED379",
+      "strike": 35.99
     },
     {
-      "code": "TAEEC373",
-      "strike": 36.18
+      "code": "TAEED362",
+      "strike": 36.24
     },
     {
-      "code": "TAEEC364",
-      "strike": 36.43
+      "code": "TAEED378",
+      "strike": 36.74
     },
     {
-      "code": "TAEEC372",
-      "strike": 36.68
+      "code": "TAEED368",
+      "strike": 36.99
     },
     {
-      "code": "TAEEC375",
-      "strike": 36.93
+      "code": "TAEEP337",
+      "strike": 33.74
     },
     {
-      "code": "TAEEC383",
-      "strike": 37.18
+      "code": "TAEEP400",
+      "strike": 34.24
     },
     {
-      "code": "TAEEO342",
-      "strike": 33.68
+      "code": "TAEEP359",
+      "strike": 34.74
     },
     {
-      "code": "TAEEO360",
-      "strike": 33.93
+      "code": "TAEEP361",
+      "strike": 34.99
     },
     {
-      "code": "TAEEO353",
-      "strike": 34.18
+      "code": "TAEEP352",
+      "strike": 35.24
     },
     {
-      "code": "TAEEO35",
-      "strike": 34.68
+      "code": "TAEEP374",
+      "strike": 35.49
     },
     {
-      "code": "TAEEO349",
-      "strike": 34.93
+      "code": "TAEEP369",
+      "strike": 35.74
     },
     {
-      "code": "TAEEO363",
-      "strike": 35.18
+      "code": "TAEEP379",
+      "strike": 35.99
     },
     {
-      "code": "TAEEO359",
-      "strike": 35.43
+      "code": "TAEEP362",
+      "strike": 36.24
     },
     {
-      "code": "TAEEO362",
-      "strike": 35.68
+      "code": "TAEEP378",
+      "strike": 36.74
     },
     {
-      "code": "TAEEO373",
-      "strike": 36.18
-    },
-    {
-      "code": "TAEEO364",
-      "strike": 36.43
-    },
-    {
-      "code": "TAEEO372",
-      "strike": 36.68
-    },
-    {
-      "code": "TAEEO375",
-      "strike": 36.93
-    },
-    {
-      "code": "TAEEO383",
-      "strike": 37.18
+      "code": "TAEEP368",
+      "strike": 36.99
     }
   ],
   [
@@ -4953,60 +5142,60 @@
       "code": "USIM5"
     },
     {
-      "code": "USIMC950",
-      "strike": 9.5
+      "code": "USIMD947",
+      "strike": 9.47
     },
     {
-      "code": "USIMC960",
-      "strike": 9.6
+      "code": "USIMD957",
+      "strike": 9.57
     },
     {
-      "code": "USIMC970",
-      "strike": 9.7
+      "code": "USIMD967",
+      "strike": 9.67
     },
     {
-      "code": "USIMC980",
-      "strike": 9.8
+      "code": "USIMD977",
+      "strike": 9.77
     },
     {
-      "code": "USIMC990",
-      "strike": 9.9
+      "code": "USIMD987",
+      "strike": 9.87
     },
     {
-      "code": "USIMC100",
-      "strike": 10.0
+      "code": "USIMD997",
+      "strike": 9.97
     },
     {
-      "code": "USIMC102",
-      "strike": 10.25
+      "code": "USIMD103",
+      "strike": 10.32
     },
     {
-      "code": "USIMO950",
-      "strike": 9.5
+      "code": "USIMP947",
+      "strike": 9.47
     },
     {
-      "code": "USIMO960",
-      "strike": 9.6
+      "code": "USIMP957",
+      "strike": 9.57
     },
     {
-      "code": "USIMO970",
-      "strike": 9.7
+      "code": "USIMP967",
+      "strike": 9.67
     },
     {
-      "code": "USIMO980",
-      "strike": 9.8
+      "code": "USIMP977",
+      "strike": 9.77
     },
     {
-      "code": "USIMO990",
-      "strike": 9.9
+      "code": "USIMP987",
+      "strike": 9.87
     },
     {
-      "code": "USIMO100",
-      "strike": 10.0
+      "code": "USIMP997",
+      "strike": 9.97
     },
     {
-      "code": "USIMO102",
-      "strike": 10.25
+      "code": "USIMP103",
+      "strike": 10.32
     }
   ],
   [
@@ -5014,100 +5203,108 @@
       "code": "VALE3"
     },
     {
-      "code": "VALEC600",
-      "strike": 57.82
+      "code": "VALED640",
+      "strike": 57.49
     },
     {
-      "code": "VALEC605",
-      "strike": 58.32
+      "code": "VALED666",
+      "strike": 57.99
     },
     {
-      "code": "VALEC610",
-      "strike": 58.82
+      "code": "VALED650",
+      "strike": 58.49
     },
     {
-      "code": "VALEC615",
-      "strike": 59.32
+      "code": "VALED655",
+      "strike": 58.99
     },
     {
-      "code": "VALEC620",
-      "strike": 59.82
+      "code": "VALED660",
+      "strike": 59.49
     },
     {
-      "code": "VALEC625",
-      "strike": 60.32
+      "code": "VALED665",
+      "strike": 59.99
     },
     {
-      "code": "VALEC630",
-      "strike": 60.82
+      "code": "VALED670",
+      "strike": 60.49
     },
     {
-      "code": "VALEC635",
-      "strike": 61.32
+      "code": "VALED675",
+      "strike": 60.99
     },
     {
-      "code": "VALEC640",
-      "strike": 61.82
+      "code": "VALED680",
+      "strike": 61.49
     },
     {
-      "code": "VALEC645",
-      "strike": 62.32
+      "code": "VALED685",
+      "strike": 61.99
     },
     {
-      "code": "VALEC666",
-      "strike": 62.82
+      "code": "VALED690",
+      "strike": 62.49
     },
     {
-      "code": "VALEC655",
-      "strike": 63.32
+      "code": "VALED695",
+      "strike": 62.99
     },
     {
-      "code": "VALEO600",
-      "strike": 57.82
+      "code": "VALED700",
+      "strike": 63.49
     },
     {
-      "code": "VALEO605",
-      "strike": 58.32
+      "code": "VALEP640",
+      "strike": 57.49
     },
     {
-      "code": "VALEO610",
-      "strike": 58.82
+      "code": "VALEP666",
+      "strike": 57.99
     },
     {
-      "code": "VALEO615",
-      "strike": 59.32
+      "code": "VALEP650",
+      "strike": 58.49
     },
     {
-      "code": "VALEO620",
-      "strike": 59.82
+      "code": "VALEP655",
+      "strike": 58.99
     },
     {
-      "code": "VALEO625",
-      "strike": 60.32
+      "code": "VALEP660",
+      "strike": 59.49
     },
     {
-      "code": "VALEO630",
-      "strike": 60.82
+      "code": "VALEP665",
+      "strike": 59.99
     },
     {
-      "code": "VALEO635",
-      "strike": 61.32
+      "code": "VALEP670",
+      "strike": 60.49
     },
     {
-      "code": "VALEO640",
-      "strike": 61.82
+      "code": "VALEP675",
+      "strike": 60.99
     },
     {
-      "code": "VALEO645",
-      "strike": 62.32
+      "code": "VALEP680",
+      "strike": 61.49
     },
     {
-      "code": "VALEO666",
-      "strike": 62.82
+      "code": "VALEP685",
+      "strike": 61.99
     },
     {
-      "code": "VALEO655",
-      "strike": 63.32
+      "code": "VALEP690",
+      "strike": 62.49
+    },
+    {
+      "code": "VALEP695",
+      "strike": 62.99
+    },
+    {
+      "code": "VALEP700",
+      "strike": 63.49
     }
   ],
   [
@@ -5115,116 +5312,92 @@
       "code": "WEGE3"
     },
     {
-      "code": "WEGEC365",
-      "strike": 36.09
+      "code": "WEGED365",
+      "strike": 36.14
     },
     {
-      "code": "WEGEC366",
-      "strike": 36.34
+      "code": "WEGED366",
+      "strike": 36.39
     },
     {
-      "code": "WEGEC370",
-      "strike": 36.59
+      "code": "WEGED370",
+      "strike": 36.64
     },
     {
-      "code": "WEGEC371",
-      "strike": 36.84
+      "code": "WEGED368",
+      "strike": 36.89
     },
     {
-      "code": "WEGEC375",
-      "strike": 37.09
+      "code": "WEGED375",
+      "strike": 37.14
     },
     {
-      "code": "WEGEC376",
-      "strike": 37.34
+      "code": "WEGED380",
+      "strike": 37.64
     },
     {
-      "code": "WEGEC380",
-      "strike": 37.59
+      "code": "WEGED385",
+      "strike": 38.14
     },
     {
-      "code": "WEGEC381",
-      "strike": 37.84
+      "code": "WEGED390",
+      "strike": 38.64
     },
     {
-      "code": "WEGEC385",
-      "strike": 38.09
+      "code": "WEGED392",
+      "strike": 38.89
     },
     {
-      "code": "WEGEC387",
-      "strike": 38.34
+      "code": "WEGED395",
+      "strike": 39.14
     },
     {
-      "code": "WEGEC389",
-      "strike": 38.59
+      "code": "WEGED400",
+      "strike": 39.64
     },
     {
-      "code": "WEGEC391",
-      "strike": 38.84
+      "code": "WEGEP365",
+      "strike": 36.14
     },
     {
-      "code": "WEGEC394",
-      "strike": 39.09
+      "code": "WEGEP366",
+      "strike": 36.39
     },
     {
-      "code": "WEGEC399",
-      "strike": 39.59
+      "code": "WEGEP370",
+      "strike": 36.64
     },
     {
-      "code": "WEGEO365",
-      "strike": 36.09
+      "code": "WEGEP368",
+      "strike": 36.89
     },
     {
-      "code": "WEGEO366",
-      "strike": 36.34
+      "code": "WEGEP375",
+      "strike": 37.14
     },
     {
-      "code": "WEGEO370",
-      "strike": 36.59
+      "code": "WEGEP380",
+      "strike": 37.64
     },
     {
-      "code": "WEGEO371",
-      "strike": 36.84
+      "code": "WEGEP385",
+      "strike": 38.14
     },
     {
-      "code": "WEGEO375",
-      "strike": 37.09
+      "code": "WEGEP390",
+      "strike": 38.64
     },
     {
-      "code": "WEGEO376",
-      "strike": 37.34
+      "code": "WEGEP392",
+      "strike": 38.89
     },
     {
-      "code": "WEGEO380",
-      "strike": 37.59
+      "code": "WEGEP395",
+      "strike": 39.14
     },
     {
-      "code": "WEGEO381",
-      "strike": 37.84
-    },
-    {
-      "code": "WEGEO385",
-      "strike": 38.09
-    },
-    {
-      "code": "WEGEO387",
-      "strike": 38.34
-    },
-    {
-      "code": "WEGEO389",
-      "strike": 38.59
-    },
-    {
-      "code": "WEGEO391",
-      "strike": 38.84
-    },
-    {
-      "code": "WEGEO394",
-      "strike": 39.09
-    },
-    {
-      "code": "WEGEO399",
-      "strike": 39.59
+      "code": "WEGEP400",
+      "strike": 39.64
     }
   ]
 ]
