@@ -1,12 +1,28 @@
 [
   {
-    "code": "TAEEP361",
-    "reference": ">",
-    "alertPrice": "0.31"
+    "code": "BOVAP117",
+    "reference": "<=",
+    "alertPrice": "0.02"
   },
   {
-    "code": "TAEE11",
-    "reference": "<",
-    "alertPrice": "35.22"
+    "code": "VALEP666",
+    "reference": "<=",
+    "alertPrice": "0.02"
+  },
+  {
+    "code": "BOVA11",
+    "reference": "<=",
+    "alertPrice": "118"
+  },
+  {
+    "code": "VALE3",
+    "reference": "<=",
+    "alertPrice": "57.99"
+  },
+  {
+    "code": "VALE3",
+    "reference": ">=",
+    "alertPrice": "57.99",
+    "notified": "True"
   }
 ]

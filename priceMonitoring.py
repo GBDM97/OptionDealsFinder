@@ -32,11 +32,11 @@ async def start(driver):
             for ii in updates:
                 if (
                     (i['code'] == ii['arguments'][0]['symbol'] and ii['arguments'][0]['lastPrice']) and 
-                    ((i['reference'] == ">" and not 'notified' in i and 
-                     float(i['alertPrice']) < ii['arguments'][0]['lastPrice'])
+                    ((i['reference'] == ">=" and not 'notified' in i and 
+                      ii['arguments'][0]['lastPrice'] >= float(i['alertPrice']))
                     or  
-                    (i['reference'] == "<" and not 'notified' in i and
-                     float(i['alertPrice']) > ii['arguments'][0]['lastPrice'])
+                    (i['reference'] == "<=" and not 'notified' in i and
+                     ii['arguments'][0]['lastPrice'] <= float(i['alertPrice']))
                      )
                      ):
                     sendNotification(driver,i,ii,inputList)
