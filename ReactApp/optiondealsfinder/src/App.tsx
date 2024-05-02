@@ -53,10 +53,28 @@ const MyTable: React.FC = () => {
                 <TableCell>{v}</TableCell>
               ))}
               <input />
+              <input />
             </TableRow>
           ))}
         </tbody>
       </Table>
+      <div
+        style={{
+          display: "grid",
+          backgroundColor: "purple",
+          height: "400%",
+          gridTemplateRows: "100px auto 100px",
+        }}
+      >
+        <div
+          style={{
+            gridRow: "1",
+            backgroundColor: "orange",
+            position: "sticky",
+            top: 0,
+          }}
+        ></div>
+      </div>
     </div>
   );
 };
