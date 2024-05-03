@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import styled from "styled-components";
 import tableData from "./data/lockOutput.json";
+import useFimatheRef, { FimatheRef } from "./hooks/useFimatheRef";
+import { strict } from "assert";
 
-// Styled components for table and its child elements
 const Table = styled.table`
   width: 100%;
   border-collapse: collapse;
@@ -34,48 +35,67 @@ const TableCell = styled.td`
   border-bottom: 1px solid #ddd;
 `;
 
+const RefInput = styled.input`
+  type: number;
+`;
+
 const MyTable: React.FC = () => {
+  const { ref, setRef } = useFimatheRef();
+  const updateRef = (ticker: string, inputRef: number, refNumber: number) => {
+    const numberIndex = ticker.match(/\d/)?.index;
+    const tickerName: string = ticker.slice(0, numberIndex);
+    const newState: FimatheRef = { ...ref }[tickerName]
+      ? { ...ref }
+      : { [tickerName]: { ref1: 0, ref2: 0 } };
+    if (refNumber === 1) {
+      newState[tickerName].ref1 = inputRef;
+    } else {
+      newState[tickerName].ref2 = inputRef;
+    }
+    setRef(newState);
+  };
+
   return (
-    <div style={{ height: "100vh", backgroundColor: "black" }}>
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableHeaderCell>something to test</TableHeaderCell>
-            <TableHeaderCell>2</TableHeaderCell>
-            <TableHeaderCell>3</TableHeaderCell>
-            <TableHeaderCell>4</TableHeaderCell>
-          </TableRow>
-        </TableHead>
-        <tbody>
-          {tableData.map((row: Array<string | number>) => (
-            <TableRow key={row[0]}>
-              {row.map((v) => (
-                <TableCell>{v}</TableCell>
-              ))}
-              <input />
-              <input />
-            </TableRow>
-          ))}
-        </tbody>
-      </Table>
-      <div
+    <Table>
+      <TableHead
         style={{
-          display: "grid",
-          backgroundColor: "purple",
-          height: "400%",
-          gridTemplateRows: "100px auto 100px",
+          position: "sticky",
+          top: 0,
         }}
       >
-        <div
-          style={{
-            gridRow: "1",
-            backgroundColor: "orange",
-            position: "sticky",
-            top: 0,
-          }}
-        ></div>
-      </div>
-    </div>
+        <TableRow>
+          <TableHeaderCell>something to test</TableHeaderCell>
+          <TableHeaderCell>{JSON.stringify(ref)}</TableHeaderCell>
+          <TableHeaderCell>3</TableHeaderCell>
+          <TableHeaderCell>4</TableHeaderCell>
+          <TableHeaderCell>4</TableHeaderCell>
+          <TableHeaderCell>4</TableHeaderCell>
+          <TableHeaderCell>4</TableHeaderCell>
+          <TableHeaderCell></TableHeaderCell>
+          <TableHeaderCell></TableHeaderCell>
+          <TableHeaderCell></TableHeaderCell>
+        </TableRow>
+      </TableHead>
+      <tbody>
+        {tableData.map((row: Array<string | number>) => (
+          <TableRow key={row[0]}>
+            {row.map((v) => (
+              <TableCell>{v}</TableCell>
+            ))}
+            <RefInput
+              onChange={(e) =>
+                updateRef(row[1].toString(), parseInt(e.target.value), 1)
+              }
+            />
+            <RefInput
+              onChange={(e) =>
+                updateRef(row[1].toString(), parseInt(e.target.value), 2)
+              }
+            />
+          </TableRow>
+        ))}
+      </tbody>
+    </Table>
   );
 };
 
