@@ -2,6 +2,9 @@ import styled from "styled-components";
 import tableData from "../data/lockOutput.json";
 import { useFimatheContext } from "../context/useFimatheContext";
 import ChannelRefComponent from "../components/ChannelRefComponent";
+import { useState } from "react";
+import jsonData from "../data/initialRefs.json";
+import { IFimatheRef } from "../context/FimatheContext";
 
 const Table = styled.table`
   width: 100%;
@@ -34,7 +37,11 @@ const TableCell = styled.td`
 `;
 
 const OptionsPage = () => {
-  const { ref } = useFimatheContext();
+  // const { ref, setRef } = useFimatheContext();
+  const [ref, setRefState] = useState<IFimatheRef>(jsonData);
+  const setRef = (p: IFimatheRef) => {
+    setRefState(p);
+  };
   return (
     <>
       <Table>
@@ -64,8 +71,18 @@ const OptionsPage = () => {
                 <TableCell key={valueIndex}>{v}</TableCell>
               ))}
               <TableCell>
-                <ChannelRefComponent opt={row[1].toString()} refNumber={1} />
-                <ChannelRefComponent opt={row[1].toString()} refNumber={2} />
+                <ChannelRefComponent
+                  opt={row[1].toString()}
+                  refNumber={1}
+                  ref={ref}
+                  setRef={setRef}
+                />
+                <ChannelRefComponent
+                  opt={row[1].toString()}
+                  refNumber={2}
+                  ref={ref}
+                  setRef={setRef}
+                />
               </TableCell>
             </TableRow>
           ))}

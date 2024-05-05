@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 import { useFimatheContext } from "../context/useFimatheContext";
-import { IFimatheRef } from "../context/FimatheContext";
+import { FimatheRef, IFimatheRef } from "../context/FimatheContext";
 import jsonData from "../data/initialRefs.json";
 
 const getTickerName = (opt: string) => {
@@ -56,12 +56,12 @@ const insertedRefInitialState = (
   }
 };
 
-const ChannelRefComponent: React.FC<{ opt: string; refNumber: number }> = ({
-  opt,
-  refNumber,
-}) => {
-  const { ref, setRef } = useFimatheContext();
-
+const ChannelRefComponent: React.FC<{
+  opt: string;
+  refNumber: number;
+  ref: IFimatheRef | null;
+  setRef: (p: IFimatheRef) => void;
+}> = ({ opt, refNumber, ref, setRef }) => {
   const tickerName = getTickerName(opt);
 
   const [open, setOpen] = useState(!assetRefExists(tickerName, refNumber, ref));
