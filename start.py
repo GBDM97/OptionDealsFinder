@@ -9,7 +9,7 @@ browser.start()
 driver = browser.getDriver()
 
 def exportLockOutput(l):
-    with open('Data\\lockOutput.json', "w") as file:
+    with open('ReactApp\\optiondealsfinder\\src\\data\\lockOutput.json', "w") as file:
         json.dump(l, file, indent=2)
 
 async def update():

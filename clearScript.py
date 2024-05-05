@@ -13,6 +13,7 @@ async def generateDataSet(driver) -> list[list[dict]]:
     def save(readArray,writeDict):
         writeDict['buyPrice'] = readArray['arguments'][1]['bestBuyPrice']
         writeDict['sellPrice'] = readArray['arguments'][1]['bestSellPrice']
+        writeDict['time'] = readArray['arguments'][1]['sendingTime']
         asset_dataset.append(writeDict)
 
     def search(readArray,writeDict):

@@ -2,9 +2,7 @@ import styled from "styled-components";
 import tableData from "../data/lockOutput.json";
 import { useFimatheContext } from "../context/useFimatheContext";
 import ChannelRefComponent from "../components/ChannelRefComponent";
-import { useState } from "react";
-import jsonData from "../data/initialRefs.json";
-import { IFimatheRef } from "../context/FimatheContext";
+import parseIsoDate from "../utils/parseIsoDate";
 
 const Table = styled.table`
   width: 100%;
@@ -48,27 +46,30 @@ const OptionsPage = () => {
           }}
         >
           <TableRow>
-            <TableHeaderCell>something to test</TableHeaderCell>
-            <TableHeaderCell>{JSON.stringify(ref)}</TableHeaderCell>
-            <TableHeaderCell>3</TableHeaderCell>
-            <TableHeaderCell>4</TableHeaderCell>
-            <TableHeaderCell>4</TableHeaderCell>
-            <TableHeaderCell>4</TableHeaderCell>
-            <TableHeaderCell>4</TableHeaderCell>
-            <TableHeaderCell></TableHeaderCell>
-            <TableHeaderCell></TableHeaderCell>
+            <TableHeaderCell>Date and Time</TableHeaderCell>
+            <TableHeaderCell>Profit Level</TableHeaderCell>
+            <TableHeaderCell>Buy</TableHeaderCell>
+            <TableHeaderCell>Buy Price</TableHeaderCell>
+            <TableHeaderCell>Sell</TableHeaderCell>
+            <TableHeaderCell>Sell Price</TableHeaderCell>
+            <TableHeaderCell>Multiplication</TableHeaderCell>
+            <TableHeaderCell>Percentage To Max. Profit</TableHeaderCell>
+            <TableHeaderCell>Fimathe Distance Index</TableHeaderCell>
             <TableHeaderCell></TableHeaderCell>
           </TableRow>
         </TableHead>
         <tbody>
-          {tableData.map((row: Array<string | number>, tableIndex) => (
+          {tableData.map((row: Array<string | number>, tableIndex: number) => (
             <TableRow key={tableIndex}>
               {row.map((v, valueIndex) => (
-                <TableCell key={valueIndex}>{v}</TableCell>
+                <TableCell key={valueIndex}>
+                  {valueIndex === 0 ? parseIsoDate(v.toString()) : v}
+                </TableCell>
               ))}
+              <TableCell>0</TableCell>
               <TableCell>
-                <ChannelRefComponent opt={row[1].toString()} refNumber={1} />
-                <ChannelRefComponent opt={row[1].toString()} refNumber={2} />
+                <ChannelRefComponent opt={row[2].toString()} refNumber={1} />
+                <ChannelRefComponent opt={row[2].toString()} refNumber={2} />
               </TableCell>
             </TableRow>
           ))}

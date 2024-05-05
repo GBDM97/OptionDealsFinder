@@ -4,10 +4,6 @@
       "code": "ABEV3"
     },
     {
-      "code": "ABEVE116",
-      "strike": 11.63
-    },
-    {
       "code": "ABEVE118",
       "strike": 11.88
     },
@@ -24,8 +20,8 @@
       "strike": 12.63
     },
     {
-      "code": "ABEVQ116",
-      "strike": 11.63
+      "code": "ABEVE128",
+      "strike": 12.88
     },
     {
       "code": "ABEVQ118",
@@ -42,72 +38,15 @@
     {
       "code": "ABEVQ126",
       "strike": 12.63
-    }
-  ],
-  [
-    {
-      "code": "ALOS3"
     },
     {
-      "code": "ALOSE205",
-      "strike": 20.5
-    },
-    {
-      "code": "ALOSE210",
-      "strike": 21.0
-    },
-    {
-      "code": "ALOSE215",
-      "strike": 21.5
-    },
-    {
-      "code": "ALOSE220",
-      "strike": 22.0
-    },
-    {
-      "code": "ALOSE225",
-      "strike": 22.5
-    },
-    {
-      "code": "ALOSQ205",
-      "strike": 20.5
-    },
-    {
-      "code": "ALOSQ210",
-      "strike": 21.0
-    },
-    {
-      "code": "ALOSQ215",
-      "strike": 21.5
-    },
-    {
-      "code": "ALOSQ220",
-      "strike": 22.0
-    },
-    {
-      "code": "ALOSQ225",
-      "strike": 22.5
+      "code": "ABEVQ128",
+      "strike": 12.88
     }
   ],
   [
     {
       "code": "ALPA4"
-    },
-    {
-      "code": "ALPAE900",
-      "strike": 9.0
-    },
-    {
-      "code": "ALPAE910",
-      "strike": 9.1
-    },
-    {
-      "code": "ALPAE920",
-      "strike": 9.2
-    },
-    {
-      "code": "ALPAE930",
-      "strike": 9.3
     },
     {
       "code": "ALPAE940",
@@ -134,20 +73,12 @@
       "strike": 9.9
     },
     {
-      "code": "ALPAQ900",
-      "strike": 9.0
+      "code": "ALPAE100",
+      "strike": 10.0
     },
     {
-      "code": "ALPAQ910",
-      "strike": 9.1
-    },
-    {
-      "code": "ALPAQ920",
-      "strike": 9.2
-    },
-    {
-      "code": "ALPAQ930",
-      "strike": 9.3
+      "code": "ALPAE102",
+      "strike": 10.25
     },
     {
       "code": "ALPAQ940",
@@ -172,234 +103,14 @@
     {
       "code": "ALPAQ990",
       "strike": 9.9
-    }
-  ],
-  [
-    {
-      "code": "ARZZ3"
     },
     {
-      "code": "ARZZE497",
-      "strike": 49.75
+      "code": "ALPAQ100",
+      "strike": 10.0
     },
     {
-      "code": "ARZZE505",
-      "strike": 50.5
-    },
-    {
-      "code": "ARZZE515",
-      "strike": 51.5
-    },
-    {
-      "code": "ARZZE520",
-      "strike": 52.0
-    },
-    {
-      "code": "ARZZE525",
-      "strike": 52.5
-    },
-    {
-      "code": "ARZZE535",
-      "strike": 53.5
-    },
-    {
-      "code": "ARZZE545",
-      "strike": 54.5
-    },
-    {
-      "code": "ARZZQ497",
-      "strike": 49.75
-    },
-    {
-      "code": "ARZZQ505",
-      "strike": 50.5
-    },
-    {
-      "code": "ARZZQ515",
-      "strike": 51.5
-    },
-    {
-      "code": "ARZZQ520",
-      "strike": 52.0
-    },
-    {
-      "code": "ARZZQ525",
-      "strike": 52.5
-    },
-    {
-      "code": "ARZZQ535",
-      "strike": 53.5
-    },
-    {
-      "code": "ARZZQ545",
-      "strike": 54.5
-    }
-  ],
-  [
-    {
-      "code": "ASAI3"
-    },
-    {
-      "code": "ASAIE130",
-      "strike": 13.0
-    },
-    {
-      "code": "ASAIE135",
-      "strike": 13.5
-    },
-    {
-      "code": "ASAIE140",
-      "strike": 14.0
-    },
-    {
-      "code": "ASAIQ130",
-      "strike": 13.0
-    },
-    {
-      "code": "ASAIQ135",
-      "strike": 13.5
-    },
-    {
-      "code": "ASAIQ140",
-      "strike": 14.0
-    }
-  ],
-  [
-    {
-      "code": "B3SA3"
-    },
-    {
-      "code": "B3SAE109",
-      "strike": 10.8
-    },
-    {
-      "code": "B3SAE112",
-      "strike": 11.05
-    },
-    {
-      "code": "B3SAE114",
-      "strike": 11.3
-    },
-    {
-      "code": "B3SAE116",
-      "strike": 11.55
-    },
-    {
-      "code": "B3SAE120",
-      "strike": 11.8
-    },
-    {
-      "code": "B3SAQ109",
-      "strike": 10.8
-    },
-    {
-      "code": "B3SAQ112",
-      "strike": 11.05
-    },
-    {
-      "code": "B3SAQ114",
-      "strike": 11.3
-    },
-    {
-      "code": "B3SAQ116",
-      "strike": 11.55
-    },
-    {
-      "code": "B3SAQ120",
-      "strike": 11.8
-    }
-  ],
-  [
-    {
-      "code": "BBAS3"
-    },
-    {
-      "code": "BBASE535",
-      "strike": 26.21
-    },
-    {
-      "code": "BBASE540",
-      "strike": 26.46
-    },
-    {
-      "code": "BBASE545",
-      "strike": 26.71
-    },
-    {
-      "code": "BBASE550",
-      "strike": 26.96
-    },
-    {
-      "code": "BBASE555",
-      "strike": 27.21
-    },
-    {
-      "code": "BBASE560",
-      "strike": 27.46
-    },
-    {
-      "code": "BBASE565",
-      "strike": 27.71
-    },
-    {
-      "code": "BBASE570",
-      "strike": 27.96
-    },
-    {
-      "code": "BBASE575",
-      "strike": 28.21
-    },
-    {
-      "code": "BBASE590",
-      "strike": 28.46
-    },
-    {
-      "code": "BBASE585",
-      "strike": 28.71
-    },
-    {
-      "code": "BBASQ535",
-      "strike": 26.21
-    },
-    {
-      "code": "BBASQ540",
-      "strike": 26.46
-    },
-    {
-      "code": "BBASQ545",
-      "strike": 26.71
-    },
-    {
-      "code": "BBASQ550",
-      "strike": 26.96
-    },
-    {
-      "code": "BBASQ555",
-      "strike": 27.21
-    },
-    {
-      "code": "BBASQ560",
-      "strike": 27.46
-    },
-    {
-      "code": "BBASQ565",
-      "strike": 27.71
-    },
-    {
-      "code": "BBASQ570",
-      "strike": 27.96
-    },
-    {
-      "code": "BBASQ575",
-      "strike": 28.21
-    },
-    {
-      "code": "BBASQ590",
-      "strike": 28.46
-    },
-    {
-      "code": "BBASQ585",
-      "strike": 28.71
+      "code": "ALPAQ102",
+      "strike": 10.25
     }
   ],
   [
@@ -415,17 +126,29 @@
       "strike": 12.39
     },
     {
+      "code": "BBDCE134",
+      "strike": 12.89
+    },
+    {
       "code": "BBDCQ124",
       "strike": 11.89
     },
     {
       "code": "BBDCQ12",
       "strike": 12.39
+    },
+    {
+      "code": "BBDCQ134",
+      "strike": 12.89
     }
   ],
   [
     {
       "code": "BBDC4"
+    },
+    {
+      "code": "BBDCE131",
+      "strike": 13.09
     },
     {
       "code": "BBDCE140",
@@ -448,8 +171,8 @@
       "strike": 14.34
     },
     {
-      "code": "BBDCE146",
-      "strike": 14.59
+      "code": "BBDCQ131",
+      "strike": 13.09
     },
     {
       "code": "BBDCQ140",
@@ -470,95 +193,6 @@
     {
       "code": "BBDCQ150",
       "strike": 14.34
-    },
-    {
-      "code": "BBDCQ146",
-      "strike": 14.59
-    }
-  ],
-  [
-    {
-      "code": "BBSE3"
-    },
-    {
-      "code": "BBSEE305",
-      "strike": 30.64
-    },
-    {
-      "code": "BBSEE321",
-      "strike": 30.89
-    },
-    {
-      "code": "BBSEE323",
-      "strike": 31.14
-    },
-    {
-      "code": "BBSEE326",
-      "strike": 31.39
-    },
-    {
-      "code": "BBSEE331",
-      "strike": 31.89
-    },
-    {
-      "code": "BBSEE333",
-      "strike": 32.14
-    },
-    {
-      "code": "BBSEE336",
-      "strike": 32.39
-    },
-    {
-      "code": "BBSEE341",
-      "strike": 32.89
-    },
-    {
-      "code": "BBSEE346",
-      "strike": 33.39
-    },
-    {
-      "code": "BBSEE348",
-      "strike": 33.64
-    },
-    {
-      "code": "BBSEQ305",
-      "strike": 30.64
-    },
-    {
-      "code": "BBSEQ321",
-      "strike": 30.89
-    },
-    {
-      "code": "BBSEQ323",
-      "strike": 31.14
-    },
-    {
-      "code": "BBSEQ326",
-      "strike": 31.39
-    },
-    {
-      "code": "BBSEQ331",
-      "strike": 31.89
-    },
-    {
-      "code": "BBSEQ333",
-      "strike": 32.14
-    },
-    {
-      "code": "BBSEQ336",
-      "strike": 32.39
-    },
-    {
-      "code": "BBSEQ341",
-      "strike": 32.89
-    },
-    {
-      "code": "BBSEQ346",
-      "strike": 33.39
-    },
-    {
-      "code": "BBSEQ348",
-      "strike": 33.64
     }
   ],
   [
@@ -592,68 +226,7 @@
   ],
   [
     {
-      "code": "BHIA3"
-    },
-    {
-      "code": "BHIAE520",
-      "strike": 5.2
-    },
-    {
-      "code": "BHIAE530",
-      "strike": 5.3
-    },
-    {
-      "code": "BHIAE540",
-      "strike": 5.4
-    },
-    {
-      "code": "BHIAE550",
-      "strike": 5.5
-    },
-    {
-      "code": "BHIAE56",
-      "strike": 5.6
-    },
-    {
-      "code": "BHIAE570",
-      "strike": 5.7
-    },
-    {
-      "code": "BHIAQ520",
-      "strike": 5.2
-    },
-    {
-      "code": "BHIAQ530",
-      "strike": 5.3
-    },
-    {
-      "code": "BHIAQ540",
-      "strike": 5.4
-    },
-    {
-      "code": "BHIAQ550",
-      "strike": 5.5
-    },
-    {
-      "code": "BHIAQ56",
-      "strike": 5.6
-    },
-    {
-      "code": "BHIAQ570",
-      "strike": 5.7
-    }
-  ],
-  [
-    {
       "code": "BOVA11"
-    },
-    {
-      "code": "BOVAE117",
-      "strike": 117.0
-    },
-    {
-      "code": "BOVAE118",
-      "strike": 118.0
     },
     {
       "code": "BOVAE119",
@@ -696,12 +269,16 @@
       "strike": 128.0
     },
     {
-      "code": "BOVAQ117",
-      "strike": 117.0
+      "code": "BOVAE129",
+      "strike": 129.0
     },
     {
-      "code": "BOVAQ118",
-      "strike": 118.0
+      "code": "BOVAE130",
+      "strike": 130.0
+    },
+    {
+      "code": "BOVAE131",
+      "strike": 131.0
     },
     {
       "code": "BOVAQ119",
@@ -742,6 +319,18 @@
     {
       "code": "BOVAQ128",
       "strike": 128.0
+    },
+    {
+      "code": "BOVAQ129",
+      "strike": 129.0
+    },
+    {
+      "code": "BOVAQ130",
+      "strike": 130.0
+    },
+    {
+      "code": "BOVAQ131",
+      "strike": 131.0
     }
   ],
   [
@@ -781,6 +370,10 @@
       "strike": 134.0
     },
     {
+      "code": "BOVVE136",
+      "strike": 136.0
+    },
+    {
       "code": "BOVVQ124",
       "strike": 124.0
     },
@@ -811,76 +404,15 @@
     {
       "code": "BOVVQ134",
       "strike": 134.0
-    }
-  ],
-  [
-    {
-      "code": "BPAC11"
     },
     {
-      "code": "BPACE332",
-      "strike": 33.08
-    },
-    {
-      "code": "BPACE335",
-      "strike": 33.58
-    },
-    {
-      "code": "BPACE342",
-      "strike": 34.08
-    },
-    {
-      "code": "BPACE345",
-      "strike": 34.58
-    },
-    {
-      "code": "BPACE352",
-      "strike": 35.08
-    },
-    {
-      "code": "BPACE353",
-      "strike": 35.33
-    },
-    {
-      "code": "BPACE355",
-      "strike": 35.58
-    },
-    {
-      "code": "BPACQ332",
-      "strike": 33.08
-    },
-    {
-      "code": "BPACQ335",
-      "strike": 33.58
-    },
-    {
-      "code": "BPACQ342",
-      "strike": 34.08
-    },
-    {
-      "code": "BPACQ345",
-      "strike": 34.58
-    },
-    {
-      "code": "BPACQ352",
-      "strike": 35.08
-    },
-    {
-      "code": "BPACQ353",
-      "strike": 35.33
-    },
-    {
-      "code": "BPACQ355",
-      "strike": 35.58
+      "code": "BOVVQ136",
+      "strike": 136.0
     }
   ],
   [
     {
       "code": "BPAN4"
-    },
-    {
-      "code": "BPANE880",
-      "strike": 8.8
     },
     {
       "code": "BPANE900",
@@ -899,8 +431,8 @@
       "strike": 9.6
     },
     {
-      "code": "BPANQ880",
-      "strike": 8.8
+      "code": "BPANE980",
+      "strike": 9.8
     },
     {
       "code": "BPANQ900",
@@ -917,11 +449,23 @@
     {
       "code": "BPANQ960",
       "strike": 9.6
+    },
+    {
+      "code": "BPANQ980",
+      "strike": 9.8
     }
   ],
   [
     {
       "code": "BRAP4"
+    },
+    {
+      "code": "BRAPE193",
+      "strike": 19.39
+    },
+    {
+      "code": "BRAPE198",
+      "strike": 19.89
     },
     {
       "code": "BRAPE203",
@@ -932,12 +476,12 @@
       "strike": 20.89
     },
     {
-      "code": "BRAPE213",
-      "strike": 21.39
+      "code": "BRAPQ193",
+      "strike": 19.39
     },
     {
-      "code": "BRAPE218",
-      "strike": 21.89
+      "code": "BRAPQ198",
+      "strike": 19.89
     },
     {
       "code": "BRAPQ203",
@@ -946,19 +490,15 @@
     {
       "code": "BRAPQ208",
       "strike": 20.89
-    },
-    {
-      "code": "BRAPQ213",
-      "strike": 21.39
-    },
-    {
-      "code": "BRAPQ218",
-      "strike": 21.89
     }
   ],
   [
     {
       "code": "BRFS3"
+    },
+    {
+      "code": "BRFSE162",
+      "strike": 16.25
     },
     {
       "code": "BRFSE167",
@@ -969,12 +509,8 @@
       "strike": 17.25
     },
     {
-      "code": "BRFSE177",
-      "strike": 17.75
-    },
-    {
-      "code": "BRFSE182",
-      "strike": 18.25
+      "code": "BRFSQ162",
+      "strike": 16.25
     },
     {
       "code": "BRFSQ167",
@@ -983,23 +519,11 @@
     {
       "code": "BRFSQ172",
       "strike": 17.25
-    },
-    {
-      "code": "BRFSQ177",
-      "strike": 17.75
-    },
-    {
-      "code": "BRFSQ182",
-      "strike": 18.25
     }
   ],
   [
     {
       "code": "BRKM5"
-    },
-    {
-      "code": "BRKME217",
-      "strike": 21.75
     },
     {
       "code": "BRKME222",
@@ -1016,10 +540,6 @@
     {
       "code": "BRKME237",
       "strike": 23.75
-    },
-    {
-      "code": "BRKMQ217",
-      "strike": 21.75
     },
     {
       "code": "BRKMQ222",
@@ -1040,51 +560,6 @@
   ],
   [
     {
-      "code": "CASH3"
-    },
-    {
-      "code": "CASHE680",
-      "strike": 4.39
-    },
-    {
-      "code": "CASHE450",
-      "strike": 4.49
-    },
-    {
-      "code": "CASHE700",
-      "strike": 4.59
-    },
-    {
-      "code": "CASHE470",
-      "strike": 4.69
-    },
-    {
-      "code": "CASHE720",
-      "strike": 4.79
-    },
-    {
-      "code": "CASHQ680",
-      "strike": 4.39
-    },
-    {
-      "code": "CASHQ450",
-      "strike": 4.49
-    },
-    {
-      "code": "CASHQ700",
-      "strike": 4.59
-    },
-    {
-      "code": "CASHQ470",
-      "strike": 4.69
-    },
-    {
-      "code": "CASHQ720",
-      "strike": 4.79
-    }
-  ],
-  [
-    {
       "code": "CCRO3"
     },
     {
@@ -1100,6 +575,10 @@
       "strike": 13.0
     },
     {
+      "code": "CCROE132",
+      "strike": 13.25
+    },
+    {
       "code": "CCROQ122",
       "strike": 12.25
     },
@@ -1110,6 +589,10 @@
     {
       "code": "CCROQ130",
       "strike": 13.0
+    },
+    {
+      "code": "CCROQ132",
+      "strike": 13.25
     }
   ],
   [
@@ -1162,107 +645,37 @@
       "code": "CMIG4"
     },
     {
-      "code": "CMIGE123",
-      "strike": 12.15
+      "code": "CMIGE104",
+      "strike": 10.4
     },
     {
-      "code": "CMIGE124",
-      "strike": 12.4
+      "code": "CMIGE109",
+      "strike": 10.9
     },
     {
-      "code": "CMIGE129",
-      "strike": 12.9
+      "code": "CMIGQ104",
+      "strike": 10.4
     },
     {
-      "code": "CMIGE131",
-      "strike": 13.15
-    },
-    {
-      "code": "CMIGQ123",
-      "strike": 12.15
-    },
-    {
-      "code": "CMIGQ124",
-      "strike": 12.4
-    },
-    {
-      "code": "CMIGQ129",
-      "strike": 12.9
-    },
-    {
-      "code": "CMIGQ131",
-      "strike": 13.15
-    }
-  ],
-  [
-    {
-      "code": "CMIN3"
-    },
-    {
-      "code": "CMINE490",
-      "strike": 4.9
-    },
-    {
-      "code": "CMINE500",
-      "strike": 5.0
-    },
-    {
-      "code": "CMINE520",
-      "strike": 5.2
-    },
-    {
-      "code": "CMINQ490",
-      "strike": 4.9
-    },
-    {
-      "code": "CMINQ500",
-      "strike": 5.0
-    },
-    {
-      "code": "CMINQ520",
-      "strike": 5.2
-    }
-  ],
-  [
-    {
-      "code": "COGN3"
-    },
-    {
-      "code": "COGNE210",
-      "strike": 2.1
-    },
-    {
-      "code": "COGNE215",
-      "strike": 2.15
-    },
-    {
-      "code": "COGNE220",
-      "strike": 2.2
-    },
-    {
-      "code": "COGNE225",
-      "strike": 2.25
-    },
-    {
-      "code": "COGNQ210",
-      "strike": 2.1
-    },
-    {
-      "code": "COGNQ215",
-      "strike": 2.15
-    },
-    {
-      "code": "COGNQ220",
-      "strike": 2.2
-    },
-    {
-      "code": "COGNQ225",
-      "strike": 2.25
+      "code": "CMIGQ109",
+      "strike": 10.9
     }
   ],
   [
     {
       "code": "CPFE3"
+    },
+    {
+      "code": "CPFEE317",
+      "strike": 31.75
+    },
+    {
+      "code": "CPFEE322",
+      "strike": 32.25
+    },
+    {
+      "code": "CPFEE327",
+      "strike": 32.75
     },
     {
       "code": "CPFEE332",
@@ -1277,24 +690,16 @@
       "strike": 34.25
     },
     {
-      "code": "CPFEE347",
-      "strike": 34.75
+      "code": "CPFEQ317",
+      "strike": 31.75
     },
     {
-      "code": "CPFEE352",
-      "strike": 35.25
+      "code": "CPFEQ322",
+      "strike": 32.25
     },
     {
-      "code": "CPFEE355",
-      "strike": 35.5
-    },
-    {
-      "code": "CPFEE357",
-      "strike": 35.75
-    },
-    {
-      "code": "CPFEE362",
-      "strike": 36.25
+      "code": "CPFEQ327",
+      "strike": 32.75
     },
     {
       "code": "CPFEQ332",
@@ -1307,39 +712,11 @@
     {
       "code": "CPFEQ342",
       "strike": 34.25
-    },
-    {
-      "code": "CPFEQ347",
-      "strike": 34.75
-    },
-    {
-      "code": "CPFEQ352",
-      "strike": 35.25
-    },
-    {
-      "code": "CPFEQ355",
-      "strike": 35.5
-    },
-    {
-      "code": "CPFEQ357",
-      "strike": 35.75
-    },
-    {
-      "code": "CPFEQ362",
-      "strike": 36.25
     }
   ],
   [
     {
       "code": "CPLE6"
-    },
-    {
-      "code": "CPLEE876",
-      "strike": 8.76
-    },
-    {
-      "code": "CPLEE896",
-      "strike": 8.96
     },
     {
       "code": "CPLEE916",
@@ -1354,12 +731,12 @@
       "strike": 9.56
     },
     {
-      "code": "CPLEQ876",
-      "strike": 8.76
+      "code": "CPLEE976",
+      "strike": 9.76
     },
     {
-      "code": "CPLEQ896",
-      "strike": 8.96
+      "code": "CPLEE996",
+      "strike": 9.96
     },
     {
       "code": "CPLEQ916",
@@ -1372,81 +749,19 @@
     {
       "code": "CPLEQ956",
       "strike": 9.56
-    }
-  ],
-  [
-    {
-      "code": "CRFB3"
     },
     {
-      "code": "CRFBE112",
-      "strike": 11.25
+      "code": "CPLEQ976",
+      "strike": 9.76
     },
     {
-      "code": "CRFBE115",
-      "strike": 11.5
-    },
-    {
-      "code": "CRFBE117",
-      "strike": 11.75
-    },
-    {
-      "code": "CRFBE120",
-      "strike": 12.0
-    },
-    {
-      "code": "CRFBQ112",
-      "strike": 11.25
-    },
-    {
-      "code": "CRFBQ115",
-      "strike": 11.5
-    },
-    {
-      "code": "CRFBQ117",
-      "strike": 11.75
-    },
-    {
-      "code": "CRFBQ120",
-      "strike": 12.0
-    }
-  ],
-  [
-    {
-      "code": "CSAN3"
-    },
-    {
-      "code": "CSANE140",
-      "strike": 14.0
-    },
-    {
-      "code": "CSANE145",
-      "strike": 14.5
-    },
-    {
-      "code": "CSANE150",
-      "strike": 15.0
-    },
-    {
-      "code": "CSANQ140",
-      "strike": 14.0
-    },
-    {
-      "code": "CSANQ145",
-      "strike": 14.5
-    },
-    {
-      "code": "CSANQ150",
-      "strike": 15.0
+      "code": "CPLEQ996",
+      "strike": 9.96
     }
   ],
   [
     {
       "code": "CSNA3"
-    },
-    {
-      "code": "CSNAE135",
-      "strike": 13.5
     },
     {
       "code": "CSNAE137",
@@ -1465,10 +780,6 @@
       "strike": 14.5
     },
     {
-      "code": "CSNAQ135",
-      "strike": 13.5
-    },
-    {
       "code": "CSNAQ137",
       "strike": 13.75
     },
@@ -1483,128 +794,6 @@
     {
       "code": "CSNAQ145",
       "strike": 14.5
-    }
-  ],
-  [
-    {
-      "code": "CYRE3"
-    },
-    {
-      "code": "CYREE199",
-      "strike": 19.92
-    },
-    {
-      "code": "CYREE205",
-      "strike": 20.17
-    },
-    {
-      "code": "CYREE204",
-      "strike": 20.42
-    },
-    {
-      "code": "CYREE209",
-      "strike": 20.92
-    },
-    {
-      "code": "CYREE211",
-      "strike": 21.17
-    },
-    {
-      "code": "CYREE214",
-      "strike": 21.42
-    },
-    {
-      "code": "CYREE219",
-      "strike": 21.92
-    },
-    {
-      "code": "CYREQ199",
-      "strike": 19.92
-    },
-    {
-      "code": "CYREQ205",
-      "strike": 20.17
-    },
-    {
-      "code": "CYREQ204",
-      "strike": 20.42
-    },
-    {
-      "code": "CYREQ209",
-      "strike": 20.92
-    },
-    {
-      "code": "CYREQ211",
-      "strike": 21.17
-    },
-    {
-      "code": "CYREQ214",
-      "strike": 21.42
-    },
-    {
-      "code": "CYREQ219",
-      "strike": 21.92
-    }
-  ],
-  [
-    {
-      "code": "DXCO3"
-    },
-    {
-      "code": "DXCOE703",
-      "strike": 7.03
-    },
-    {
-      "code": "DXCOE720",
-      "strike": 7.13
-    },
-    {
-      "code": "DXCOE723",
-      "strike": 7.23
-    },
-    {
-      "code": "DXCOE740",
-      "strike": 7.33
-    },
-    {
-      "code": "DXCOE743",
-      "strike": 7.43
-    },
-    {
-      "code": "DXCOE760",
-      "strike": 7.53
-    },
-    {
-      "code": "DXCOE763",
-      "strike": 7.63
-    },
-    {
-      "code": "DXCOQ703",
-      "strike": 7.03
-    },
-    {
-      "code": "DXCOQ720",
-      "strike": 7.13
-    },
-    {
-      "code": "DXCOQ723",
-      "strike": 7.23
-    },
-    {
-      "code": "DXCOQ740",
-      "strike": 7.33
-    },
-    {
-      "code": "DXCOQ743",
-      "strike": 7.43
-    },
-    {
-      "code": "DXCOQ760",
-      "strike": 7.53
-    },
-    {
-      "code": "DXCOQ763",
-      "strike": 7.63
     }
   ],
   [
@@ -1673,34 +862,6 @@
       "code": "EGIE3"
     },
     {
-      "code": "EGIEE378",
-      "strike": 37.85
-    },
-    {
-      "code": "EGIEE383",
-      "strike": 38.35
-    },
-    {
-      "code": "EGIEE388",
-      "strike": 38.85
-    },
-    {
-      "code": "EGIEE393",
-      "strike": 39.35
-    },
-    {
-      "code": "EGIEE396",
-      "strike": 39.6
-    },
-    {
-      "code": "EGIEE398",
-      "strike": 39.85
-    },
-    {
-      "code": "EGIEE403",
-      "strike": 40.35
-    },
-    {
       "code": "EGIEE406",
       "strike": 40.6
     },
@@ -1721,32 +882,48 @@
       "strike": 41.6
     },
     {
-      "code": "EGIEQ378",
-      "strike": 37.85
+      "code": "EGIEE418",
+      "strike": 41.85
     },
     {
-      "code": "EGIEQ383",
-      "strike": 38.35
+      "code": "EGIEE421",
+      "strike": 42.1
     },
     {
-      "code": "EGIEQ388",
-      "strike": 38.85
+      "code": "EGIEE423",
+      "strike": 42.35
     },
     {
-      "code": "EGIEQ393",
-      "strike": 39.35
+      "code": "EGIEE426",
+      "strike": 42.6
     },
     {
-      "code": "EGIEQ396",
-      "strike": 39.6
+      "code": "EGIEE428",
+      "strike": 42.85
     },
     {
-      "code": "EGIEQ398",
-      "strike": 39.85
+      "code": "EGIEE432",
+      "strike": 43.1
     },
     {
-      "code": "EGIEQ403",
-      "strike": 40.35
+      "code": "EGIEE433",
+      "strike": 43.35
+    },
+    {
+      "code": "EGIEE436",
+      "strike": 43.6
+    },
+    {
+      "code": "EGIEE438",
+      "strike": 43.85
+    },
+    {
+      "code": "EGIEE441",
+      "strike": 44.1
+    },
+    {
+      "code": "EGIEE443",
+      "strike": 44.35
     },
     {
       "code": "EGIEQ406",
@@ -1767,31 +944,55 @@
     {
       "code": "EGIEQ416",
       "strike": 41.6
+    },
+    {
+      "code": "EGIEQ418",
+      "strike": 41.85
+    },
+    {
+      "code": "EGIEQ421",
+      "strike": 42.1
+    },
+    {
+      "code": "EGIEQ423",
+      "strike": 42.35
+    },
+    {
+      "code": "EGIEQ426",
+      "strike": 42.6
+    },
+    {
+      "code": "EGIEQ428",
+      "strike": 42.85
+    },
+    {
+      "code": "EGIEQ432",
+      "strike": 43.1
+    },
+    {
+      "code": "EGIEQ433",
+      "strike": 43.35
+    },
+    {
+      "code": "EGIEQ436",
+      "strike": 43.6
+    },
+    {
+      "code": "EGIEQ438",
+      "strike": 43.85
+    },
+    {
+      "code": "EGIEQ441",
+      "strike": 44.1
+    },
+    {
+      "code": "EGIEQ443",
+      "strike": 44.35
     }
   ],
   [
     {
       "code": "ELET3"
-    },
-    {
-      "code": "ELETE360",
-      "strike": 36.0
-    },
-    {
-      "code": "ELETE362",
-      "strike": 36.25
-    },
-    {
-      "code": "ELETE365",
-      "strike": 36.5
-    },
-    {
-      "code": "ELETE367",
-      "strike": 36.75
-    },
-    {
-      "code": "ELETE370",
-      "strike": 37.0
     },
     {
       "code": "ELETE372",
@@ -1834,24 +1035,28 @@
       "strike": 39.5
     },
     {
-      "code": "ELETQ360",
-      "strike": 36.0
+      "code": "ELETE397",
+      "strike": 39.75
     },
     {
-      "code": "ELETQ362",
-      "strike": 36.25
+      "code": "ELETE400",
+      "strike": 40.0
     },
     {
-      "code": "ELETQ365",
-      "strike": 36.5
+      "code": "ELETE402",
+      "strike": 40.25
     },
     {
-      "code": "ELETQ367",
-      "strike": 36.75
+      "code": "ELETE405",
+      "strike": 40.5
     },
     {
-      "code": "ELETQ370",
-      "strike": 37.0
+      "code": "ELETE407",
+      "strike": 40.75
+    },
+    {
+      "code": "ELETE410",
+      "strike": 41.0
     },
     {
       "code": "ELETQ372",
@@ -1892,15 +1097,35 @@
     {
       "code": "ELETQ395",
       "strike": 39.5
+    },
+    {
+      "code": "ELETQ397",
+      "strike": 39.75
+    },
+    {
+      "code": "ELETQ400",
+      "strike": 40.0
+    },
+    {
+      "code": "ELETQ402",
+      "strike": 40.25
+    },
+    {
+      "code": "ELETQ405",
+      "strike": 40.5
+    },
+    {
+      "code": "ELETQ407",
+      "strike": 40.75
+    },
+    {
+      "code": "ELETQ410",
+      "strike": 41.0
     }
   ],
   [
     {
       "code": "ELET6"
-    },
-    {
-      "code": "ELETE404",
-      "strike": 40.5
     },
     {
       "code": "ELETE41",
@@ -1939,8 +1164,12 @@
       "strike": 44.5
     },
     {
-      "code": "ELETQ404",
-      "strike": 40.5
+      "code": "ELETE444",
+      "strike": 45.0
+    },
+    {
+      "code": "ELETE451",
+      "strike": 45.25
     },
     {
       "code": "ELETQ41",
@@ -1977,27 +1206,19 @@
     {
       "code": "ELETQ4",
       "strike": 44.5
+    },
+    {
+      "code": "ELETQ444",
+      "strike": 45.0
+    },
+    {
+      "code": "ELETQ451",
+      "strike": 45.25
     }
   ],
   [
     {
       "code": "EMBR3"
-    },
-    {
-      "code": "EMBRE32",
-      "strike": 31.75
-    },
-    {
-      "code": "EMBRE320",
-      "strike": 32.0
-    },
-    {
-      "code": "EMBRE319",
-      "strike": 32.25
-    },
-    {
-      "code": "EMBRE325",
-      "strike": 32.5
     },
     {
       "code": "EMBRE33",
@@ -2036,20 +1257,20 @@
       "strike": 34.75
     },
     {
-      "code": "EMBRQ32",
-      "strike": 31.75
+      "code": "EMBRE350",
+      "strike": 35.0
     },
     {
-      "code": "EMBRQ320",
-      "strike": 32.0
+      "code": "EMBRE352",
+      "strike": 35.25
     },
     {
-      "code": "EMBRQ319",
-      "strike": 32.25
+      "code": "EMBRE355",
+      "strike": 35.5
     },
     {
-      "code": "EMBRQ325",
-      "strike": 32.5
+      "code": "EMBRE357",
+      "strike": 35.75
     },
     {
       "code": "EMBRQ33",
@@ -2086,6 +1307,22 @@
     {
       "code": "EMBRQ347",
       "strike": 34.75
+    },
+    {
+      "code": "EMBRQ350",
+      "strike": 35.0
+    },
+    {
+      "code": "EMBRQ352",
+      "strike": 35.25
+    },
+    {
+      "code": "EMBRQ355",
+      "strike": 35.5
+    },
+    {
+      "code": "EMBRQ357",
+      "strike": 35.75
     }
   ],
   [
@@ -2122,10 +1359,6 @@
       "code": "ENGI11"
     },
     {
-      "code": "ENGIE450",
-      "strike": 45.0
-    },
-    {
       "code": "ENGIE460",
       "strike": 46.0
     },
@@ -2150,8 +1383,16 @@
       "strike": 48.5
     },
     {
-      "code": "ENGIQ450",
-      "strike": 45.0
+      "code": "ENGIE490",
+      "strike": 49.0
+    },
+    {
+      "code": "ENGIE495",
+      "strike": 49.5
+    },
+    {
+      "code": "ENGIE500",
+      "strike": 50.0
     },
     {
       "code": "ENGIQ460",
@@ -2176,15 +1417,23 @@
     {
       "code": "ENGIQ485",
       "strike": 48.5
+    },
+    {
+      "code": "ENGIQ490",
+      "strike": 49.0
+    },
+    {
+      "code": "ENGIQ495",
+      "strike": 49.5
+    },
+    {
+      "code": "ENGIQ500",
+      "strike": 50.0
     }
   ],
   [
     {
       "code": "EQTL3"
-    },
-    {
-      "code": "EQTLE297",
-      "strike": 29.75
     },
     {
       "code": "EQTLE300",
@@ -2211,8 +1460,12 @@
       "strike": 32.5
     },
     {
-      "code": "EQTLQ297",
-      "strike": 29.75
+      "code": "EQTLE327",
+      "strike": 32.75
+    },
+    {
+      "code": "EQTLE330",
+      "strike": 33.0
     },
     {
       "code": "EQTLQ300",
@@ -2237,6 +1490,14 @@
     {
       "code": "EQTLQ325",
       "strike": 32.5
+    },
+    {
+      "code": "EQTLQ327",
+      "strike": 32.75
+    },
+    {
+      "code": "EQTLQ330",
+      "strike": 33.0
     }
   ],
   [
@@ -2244,437 +1505,33 @@
       "code": "EZTC3"
     },
     {
-      "code": "EZTCE135",
-      "strike": 13.41
-    },
-    {
-      "code": "EZTCE140",
-      "strike": 13.91
-    },
-    {
       "code": "EZTCE145",
       "strike": 14.41
     },
     {
-      "code": "EZTCQ135",
-      "strike": 13.41
+      "code": "EZTCE150",
+      "strike": 14.91
     },
     {
-      "code": "EZTCQ140",
-      "strike": 13.91
+      "code": "EZTCE155",
+      "strike": 15.41
     },
     {
       "code": "EZTCQ145",
       "strike": 14.41
-    }
-  ],
-  [
-    {
-      "code": "FLRY3"
-    },
-    {
-      "code": "FLRYE145",
-      "strike": 14.35
-    },
-    {
-      "code": "FLRYE150",
-      "strike": 14.85
-    },
-    {
-      "code": "FLRYQ145",
-      "strike": 14.35
-    },
-    {
-      "code": "FLRYQ150",
-      "strike": 14.85
-    }
-  ],
-  [
-    {
-      "code": "GFSA3"
-    },
-    {
-      "code": "GFSAE555",
-      "strike": 5.55
-    },
-    {
-      "code": "GFSAE575",
-      "strike": 5.75
-    },
-    {
-      "code": "GFSAQ555",
-      "strike": 5.55
-    },
-    {
-      "code": "GFSAQ575",
-      "strike": 5.75
-    }
-  ],
-  [
-    {
-      "code": "GGBR4"
-    },
-    {
-      "code": "GGBRE180",
-      "strike": 17.93
-    },
-    {
-      "code": "GGBRE182",
-      "strike": 18.18
-    },
-    {
-      "code": "GGBRE185",
-      "strike": 18.43
-    },
-    {
-      "code": "GGBRE187",
-      "strike": 18.68
-    },
-    {
-      "code": "GGBRE190",
-      "strike": 18.93
-    },
-    {
-      "code": "GGBRE192",
-      "strike": 19.18
-    },
-    {
-      "code": "GGBRE195",
-      "strike": 19.43
-    },
-    {
-      "code": "GGBRQ180",
-      "strike": 17.93
-    },
-    {
-      "code": "GGBRQ182",
-      "strike": 18.18
-    },
-    {
-      "code": "GGBRQ185",
-      "strike": 18.43
-    },
-    {
-      "code": "GGBRQ187",
-      "strike": 18.68
-    },
-    {
-      "code": "GGBRQ190",
-      "strike": 18.93
-    },
-    {
-      "code": "GGBRQ192",
-      "strike": 19.18
-    },
-    {
-      "code": "GGBRQ195",
-      "strike": 19.43
-    }
-  ],
-  [
-    {
-      "code": "GOAU4"
-    },
-    {
-      "code": "GOAUE103",
-      "strike": 10.2
-    },
-    {
-      "code": "GOAUE105",
-      "strike": 10.45
-    },
-    {
-      "code": "GOAUE108",
-      "strike": 10.7
-    },
-    {
-      "code": "GOAUE110",
-      "strike": 10.95
-    },
-    {
-      "code": "GOAUQ103",
-      "strike": 10.2
-    },
-    {
-      "code": "GOAUQ105",
-      "strike": 10.45
-    },
-    {
-      "code": "GOAUQ108",
-      "strike": 10.7
-    },
-    {
-      "code": "GOAUQ110",
-      "strike": 10.95
-    }
-  ],
-  [
-    {
-      "code": "HAPV3"
-    },
-    {
-      "code": "HAPVE360",
-      "strike": 3.6
-    },
-    {
-      "code": "HAPVE365",
-      "strike": 3.65
-    },
-    {
-      "code": "HAPVE370",
-      "strike": 3.7
-    },
-    {
-      "code": "HAPVE375",
-      "strike": 3.75
-    },
-    {
-      "code": "HAPVE380",
-      "strike": 3.8
-    },
-    {
-      "code": "HAPVE385",
-      "strike": 3.85
-    },
-    {
-      "code": "HAPVE390",
-      "strike": 3.9
-    },
-    {
-      "code": "HAPVE395",
-      "strike": 3.95
-    },
-    {
-      "code": "HAPVQ360",
-      "strike": 3.6
-    },
-    {
-      "code": "HAPVQ365",
-      "strike": 3.65
-    },
-    {
-      "code": "HAPVQ370",
-      "strike": 3.7
-    },
-    {
-      "code": "HAPVQ375",
-      "strike": 3.75
-    },
-    {
-      "code": "HAPVQ380",
-      "strike": 3.8
-    },
-    {
-      "code": "HAPVQ385",
-      "strike": 3.85
-    },
-    {
-      "code": "HAPVQ390",
-      "strike": 3.9
-    },
-    {
-      "code": "HAPVQ395",
-      "strike": 3.95
-    }
-  ],
-  [
-    {
-      "code": "HYPE3"
-    },
-    {
-      "code": "HYPEE280",
-      "strike": 27.84
-    },
-    {
-      "code": "HYPEE285",
-      "strike": 28.34
-    },
-    {
-      "code": "HYPEE290",
-      "strike": 28.84
-    },
-    {
-      "code": "HYPEE295",
-      "strike": 29.34
-    },
-    {
-      "code": "HYPEQ280",
-      "strike": 27.84
-    },
-    {
-      "code": "HYPEQ285",
-      "strike": 28.34
-    },
-    {
-      "code": "HYPEQ290",
-      "strike": 28.84
-    },
-    {
-      "code": "HYPEQ295",
-      "strike": 29.34
-    }
-  ],
-  [
-    {
-      "code": "IGTI11"
-    },
-    {
-      "code": "IGTIE205",
-      "strike": 20.33
-    },
-    {
-      "code": "IGTIE210",
-      "strike": 20.83
-    },
-    {
-      "code": "IGTIE215",
-      "strike": 21.33
-    },
-    {
-      "code": "IGTIE220",
-      "strike": 21.83
-    },
-    {
-      "code": "IGTIQ205",
-      "strike": 20.33
-    },
-    {
-      "code": "IGTIQ210",
-      "strike": 20.83
-    },
-    {
-      "code": "IGTIQ215",
-      "strike": 21.33
-    },
-    {
-      "code": "IGTIQ220",
-      "strike": 21.83
-    }
-  ],
-  [
-    {
-      "code": "IRBR3"
-    },
-    {
-      "code": "IRBRE402",
-      "strike": 40.25
-    },
-    {
-      "code": "IRBRE407",
-      "strike": 40.75
-    },
-    {
-      "code": "IRBRE410",
-      "strike": 41.0
-    },
-    {
-      "code": "IRBRE412",
-      "strike": 41.25
-    },
-    {
-      "code": "IRBRE415",
-      "strike": 41.5
-    },
-    {
-      "code": "IRBRE417",
-      "strike": 41.75
-    },
-    {
-      "code": "IRBRE420",
-      "strike": 42.0
-    },
-    {
-      "code": "IRBRE422",
-      "strike": 42.25
-    },
-    {
-      "code": "IRBRE427",
-      "strike": 42.75
-    },
-    {
-      "code": "IRBRE430",
-      "strike": 43.0
-    },
-    {
-      "code": "IRBRE432",
-      "strike": 43.25
-    },
-    {
-      "code": "IRBRE435",
-      "strike": 43.5
-    },
-    {
-      "code": "IRBRE437",
-      "strike": 43.75
-    },
-    {
-      "code": "IRBRE442",
-      "strike": 44.25
-    },
-    {
-      "code": "IRBRQ402",
-      "strike": 40.25
-    },
-    {
-      "code": "IRBRQ407",
-      "strike": 40.75
-    },
-    {
-      "code": "IRBRQ410",
-      "strike": 41.0
-    },
-    {
-      "code": "IRBRQ412",
-      "strike": 41.25
-    },
-    {
-      "code": "IRBRQ415",
-      "strike": 41.5
-    },
-    {
-      "code": "IRBRQ417",
-      "strike": 41.75
-    },
-    {
-      "code": "IRBRQ420",
-      "strike": 42.0
-    },
-    {
-      "code": "IRBRQ422",
-      "strike": 42.25
-    },
-    {
-      "code": "IRBRQ427",
-      "strike": 42.75
-    },
-    {
-      "code": "IRBRQ430",
-      "strike": 43.0
-    },
-    {
-      "code": "IRBRQ432",
-      "strike": 43.25
-    },
-    {
-      "code": "IRBRQ435",
-      "strike": 43.5
     },
     {
-      "code": "IRBRQ437",
-      "strike": 43.75
+      "code": "EZTCQ150",
+      "strike": 14.91
     },
     {
-      "code": "IRBRQ442",
-      "strike": 44.25
+      "code": "EZTCQ155",
+      "strike": 15.41
     }
   ],
   [
     {
       "code": "ITSA4"
-    },
-    {
-      "code": "ITSAE932",
-      "strike": 9.26
     },
     {
       "code": "ITSAE942",
@@ -2705,8 +1562,8 @@
       "strike": 9.96
     },
     {
-      "code": "ITSAQ932",
-      "strike": 9.26
+      "code": "ITSAE102",
+      "strike": 10.21
     },
     {
       "code": "ITSAQ942",
@@ -2735,6 +1592,10 @@
     {
       "code": "ITSAQ10",
       "strike": 9.96
+    },
+    {
+      "code": "ITSAQ102",
+      "strike": 10.21
     }
   ],
   [
@@ -2795,6 +1656,10 @@
       "code": "ITUB4"
     },
     {
+      "code": "ITUBE321",
+      "strike": 30.52
+    },
+    {
       "code": "ITUBE320",
       "strike": 30.77
     },
@@ -2839,8 +1704,8 @@
       "strike": 33.52
     },
     {
-      "code": "ITUBE350",
-      "strike": 33.77
+      "code": "ITUBQ321",
+      "strike": 30.52
     },
     {
       "code": "ITUBQ320",
@@ -2885,10 +1750,6 @@
     {
       "code": "ITUBQ351",
       "strike": 33.52
-    },
-    {
-      "code": "ITUBQ350",
-      "strike": 33.77
     }
   ],
   [
@@ -2914,72 +1775,7 @@
   ],
   [
     {
-      "code": "JBSS3"
-    },
-    {
-      "code": "JBSSE222",
-      "strike": 22.25
-    },
-    {
-      "code": "JBSSE227",
-      "strike": 22.75
-    },
-    {
-      "code": "JBSSE230",
-      "strike": 23.0
-    },
-    {
-      "code": "JBSSE232",
-      "strike": 23.25
-    },
-    {
-      "code": "JBSSE235",
-      "strike": 23.5
-    },
-    {
-      "code": "JBSSE237",
-      "strike": 23.75
-    },
-    {
-      "code": "JBSSE240",
-      "strike": 24.0
-    },
-    {
-      "code": "JBSSQ222",
-      "strike": 22.25
-    },
-    {
-      "code": "JBSSQ227",
-      "strike": 22.75
-    },
-    {
-      "code": "JBSSQ230",
-      "strike": 23.0
-    },
-    {
-      "code": "JBSSQ232",
-      "strike": 23.25
-    },
-    {
-      "code": "JBSSQ235",
-      "strike": 23.5
-    },
-    {
-      "code": "JBSSQ237",
-      "strike": 23.75
-    },
-    {
-      "code": "JBSSQ240",
-      "strike": 24.0
-    }
-  ],
-  [
-    {
       "code": "JHSF3"
-    },
-    {
-      "code": "JHSFE420",
-      "strike": 4.14
     },
     {
       "code": "JHSFE430",
@@ -2994,8 +1790,8 @@
       "strike": 4.44
     },
     {
-      "code": "JHSFQ420",
-      "strike": 4.14
+      "code": "JHSFE460",
+      "strike": 4.54
     },
     {
       "code": "JHSFQ430",
@@ -3008,91 +1804,10 @@
     {
       "code": "JHSFQ450",
       "strike": 4.44
-    }
-  ],
-  [
-    {
-      "code": "KLBN11"
     },
     {
-      "code": "KLBNE221",
-      "strike": 21.95
-    },
-    {
-      "code": "KLBNE223",
-      "strike": 22.2
-    },
-    {
-      "code": "KLBNE226",
-      "strike": 22.45
-    },
-    {
-      "code": "KLBNE228",
-      "strike": 22.7
-    },
-    {
-      "code": "KLBNE231",
-      "strike": 22.95
-    },
-    {
-      "code": "KLBNE233",
-      "strike": 23.2
-    },
-    {
-      "code": "KLBNE236",
-      "strike": 23.45
-    },
-    {
-      "code": "KLBNE238",
-      "strike": 23.7
-    },
-    {
-      "code": "KLBNE245",
-      "strike": 23.95
-    },
-    {
-      "code": "KLBNE243",
-      "strike": 24.2
-    },
-    {
-      "code": "KLBNQ221",
-      "strike": 21.95
-    },
-    {
-      "code": "KLBNQ223",
-      "strike": 22.2
-    },
-    {
-      "code": "KLBNQ226",
-      "strike": 22.45
-    },
-    {
-      "code": "KLBNQ228",
-      "strike": 22.7
-    },
-    {
-      "code": "KLBNQ231",
-      "strike": 22.95
-    },
-    {
-      "code": "KLBNQ233",
-      "strike": 23.2
-    },
-    {
-      "code": "KLBNQ236",
-      "strike": 23.45
-    },
-    {
-      "code": "KLBNQ238",
-      "strike": 23.7
-    },
-    {
-      "code": "KLBNQ245",
-      "strike": 23.95
-    },
-    {
-      "code": "KLBNQ243",
-      "strike": 24.2
+      "code": "JHSFQ460",
+      "strike": 4.54
     }
   ],
   [
@@ -3108,208 +1823,12 @@
       "strike": 33.0
     },
     {
-      "code": "LEVEE335",
-      "strike": 33.5
-    },
-    {
-      "code": "LEVEE340",
-      "strike": 34.0
-    },
-    {
-      "code": "LEVEE345",
-      "strike": 34.5
-    },
-    {
       "code": "LEVEQ325",
       "strike": 32.5
     },
     {
       "code": "LEVEQ330",
       "strike": 33.0
-    },
-    {
-      "code": "LEVEQ335",
-      "strike": 33.5
-    },
-    {
-      "code": "LEVEQ340",
-      "strike": 34.0
-    },
-    {
-      "code": "LEVEQ345",
-      "strike": 34.5
-    }
-  ],
-  [
-    {
-      "code": "LREN3"
-    },
-    {
-      "code": "LRENE153",
-      "strike": 15.22
-    },
-    {
-      "code": "LRENE158",
-      "strike": 15.72
-    },
-    {
-      "code": "LRENE163",
-      "strike": 16.22
-    },
-    {
-      "code": "LRENQ153",
-      "strike": 15.22
-    },
-    {
-      "code": "LRENQ158",
-      "strike": 15.72
-    },
-    {
-      "code": "LRENQ163",
-      "strike": 16.22
-    }
-  ],
-  [
-    {
-      "code": "LWSA3"
-    },
-    {
-      "code": "LWSAE450",
-      "strike": 4.5
-    },
-    {
-      "code": "LWSAE460",
-      "strike": 4.6
-    },
-    {
-      "code": "LWSAE470",
-      "strike": 4.7
-    },
-    {
-      "code": "LWSAE480",
-      "strike": 4.8
-    },
-    {
-      "code": "LWSAE490",
-      "strike": 4.9
-    },
-    {
-      "code": "LWSAQ450",
-      "strike": 4.5
-    },
-    {
-      "code": "LWSAQ460",
-      "strike": 4.6
-    },
-    {
-      "code": "LWSAQ470",
-      "strike": 4.7
-    },
-    {
-      "code": "LWSAQ480",
-      "strike": 4.8
-    },
-    {
-      "code": "LWSAQ490",
-      "strike": 4.9
-    }
-  ],
-  [
-    {
-      "code": "MGLU3"
-    },
-    {
-      "code": "MGLUE140",
-      "strike": 1.39
-    },
-    {
-      "code": "MGLUE145",
-      "strike": 1.44
-    },
-    {
-      "code": "MGLUQ140",
-      "strike": 1.39
-    },
-    {
-      "code": "MGLUQ145",
-      "strike": 1.44
-    }
-  ],
-  [
-    {
-      "code": "MRFG3"
-    },
-    {
-      "code": "MRFGE930",
-      "strike": 9.3
-    },
-    {
-      "code": "MRFGE940",
-      "strike": 9.4
-    },
-    {
-      "code": "MRFGE950",
-      "strike": 9.5
-    },
-    {
-      "code": "MRFGE960",
-      "strike": 9.6
-    },
-    {
-      "code": "MRFGE970",
-      "strike": 9.7
-    },
-    {
-      "code": "MRFGE980",
-      "strike": 9.8
-    },
-    {
-      "code": "MRFGE990",
-      "strike": 9.9
-    },
-    {
-      "code": "MRFGE100",
-      "strike": 10.0
-    },
-    {
-      "code": "MRFGE102",
-      "strike": 10.25
-    },
-    {
-      "code": "MRFGQ930",
-      "strike": 9.3
-    },
-    {
-      "code": "MRFGQ940",
-      "strike": 9.4
-    },
-    {
-      "code": "MRFGQ950",
-      "strike": 9.5
-    },
-    {
-      "code": "MRFGQ960",
-      "strike": 9.6
-    },
-    {
-      "code": "MRFGQ970",
-      "strike": 9.7
-    },
-    {
-      "code": "MRFGQ980",
-      "strike": 9.8
-    },
-    {
-      "code": "MRFGQ990",
-      "strike": 9.9
-    },
-    {
-      "code": "MRFGQ100",
-      "strike": 10.0
-    },
-    {
-      "code": "MRFGQ102",
-      "strike": 10.25
     }
   ],
   [
@@ -3317,37 +1836,41 @@
       "code": "MRVE3"
     },
     {
-      "code": "MRVEE650",
-      "strike": 6.5
-    },
-    {
-      "code": "MRVEE670",
-      "strike": 6.7
-    },
-    {
       "code": "MRVEE690",
       "strike": 6.9
     },
     {
-      "code": "MRVEQ650",
-      "strike": 6.5
+      "code": "MRVEE710",
+      "strike": 7.1
     },
     {
-      "code": "MRVEQ670",
-      "strike": 6.7
+      "code": "MRVEE730",
+      "strike": 7.3
+    },
+    {
+      "code": "MRVEE750",
+      "strike": 7.5
     },
     {
       "code": "MRVEQ690",
       "strike": 6.9
+    },
+    {
+      "code": "MRVEQ710",
+      "strike": 7.1
+    },
+    {
+      "code": "MRVEQ730",
+      "strike": 7.3
+    },
+    {
+      "code": "MRVEQ750",
+      "strike": 7.5
     }
   ],
   [
     {
       "code": "MULT3"
-    },
-    {
-      "code": "MULTE232",
-      "strike": 23.12
     },
     {
       "code": "MULTE237",
@@ -3374,8 +1897,12 @@
       "strike": 25.12
     },
     {
-      "code": "MULTQ232",
-      "strike": 23.12
+      "code": "MULTE255",
+      "strike": 25.37
+    },
+    {
+      "code": "MULTE257",
+      "strike": 25.62
     },
     {
       "code": "MULTQ237",
@@ -3400,591 +1927,19 @@
     {
       "code": "MULTQ252",
       "strike": 25.12
-    }
-  ],
-  [
-    {
-      "code": "NEOE3"
-    },
-    {
-      "code": "NEOEE187",
-      "strike": 18.75
-    },
-    {
-      "code": "NEOEE192",
-      "strike": 19.25
-    },
-    {
-      "code": "NEOEE197",
-      "strike": 19.75
-    },
-    {
-      "code": "NEOEE202",
-      "strike": 20.25
-    },
-    {
-      "code": "NEOEQ187",
-      "strike": 18.75
-    },
-    {
-      "code": "NEOEQ192",
-      "strike": 19.25
-    },
-    {
-      "code": "NEOEQ197",
-      "strike": 19.75
-    },
-    {
-      "code": "NEOEQ202",
-      "strike": 20.25
-    }
-  ],
-  [
-    {
-      "code": "NTCO3"
-    },
-    {
-      "code": "NTCOE167",
-      "strike": 16.01
-    },
-    {
-      "code": "NTCOE161",
-      "strike": 16.26
-    },
-    {
-      "code": "NTCOE172",
-      "strike": 16.51
-    },
-    {
-      "code": "NTCOE166",
-      "strike": 16.76
-    },
-    {
-      "code": "NTCOE177",
-      "strike": 17.01
-    },
-    {
-      "code": "NTCOE180",
-      "strike": 17.26
-    },
-    {
-      "code": "NTCOE182",
-      "strike": 17.51
-    },
-    {
-      "code": "NTCOQ167",
-      "strike": 16.01
-    },
-    {
-      "code": "NTCOQ161",
-      "strike": 16.26
-    },
-    {
-      "code": "NTCOQ172",
-      "strike": 16.51
-    },
-    {
-      "code": "NTCOQ166",
-      "strike": 16.76
-    },
-    {
-      "code": "NTCOQ177",
-      "strike": 17.01
-    },
-    {
-      "code": "NTCOQ180",
-      "strike": 17.26
-    },
-    {
-      "code": "NTCOQ182",
-      "strike": 17.51
-    }
-  ],
-  [
-    {
-      "code": "PCAR3"
-    },
-    {
-      "code": "PCARE26",
-      "strike": 2.65
-    },
-    {
-      "code": "PCARE270",
-      "strike": 2.7
-    },
-    {
-      "code": "PCARE280",
-      "strike": 2.8
-    },
-    {
-      "code": "PCARE285",
-      "strike": 2.85
-    },
-    {
-      "code": "PCARQ26",
-      "strike": 2.65
-    },
-    {
-      "code": "PCARQ270",
-      "strike": 2.7
-    },
-    {
-      "code": "PCARQ280",
-      "strike": 2.8
-    },
-    {
-      "code": "PCARQ285",
-      "strike": 2.85
-    }
-  ],
-  [
-    {
-      "code": "PETR3"
-    },
-    {
-      "code": "PETRE420",
-      "strike": 42.0
-    },
-    {
-      "code": "PETRE425",
-      "strike": 42.5
-    },
-    {
-      "code": "PETRE430",
-      "strike": 43.0
-    },
-    {
-      "code": "PETRE435",
-      "strike": 43.5
-    },
-    {
-      "code": "PETRE440",
-      "strike": 44.0
-    },
-    {
-      "code": "PETRE445",
-      "strike": 44.5
-    },
-    {
-      "code": "PETRE450",
-      "strike": 45.0
-    },
-    {
-      "code": "PETRE455",
-      "strike": 45.5
-    },
-    {
-      "code": "PETRQ420",
-      "strike": 42.0
-    },
-    {
-      "code": "PETRQ425",
-      "strike": 42.5
-    },
-    {
-      "code": "PETRQ430",
-      "strike": 43.0
-    },
-    {
-      "code": "PETRQ435",
-      "strike": 43.5
-    },
-    {
-      "code": "PETRQ440",
-      "strike": 44.0
-    },
-    {
-      "code": "PETRQ445",
-      "strike": 44.5
-    },
-    {
-      "code": "PETRQ450",
-      "strike": 45.0
-    },
-    {
-      "code": "PETRQ455",
-      "strike": 45.5
-    }
-  ],
-  [
-    {
-      "code": "PETR4"
-    },
-    {
-      "code": "PETRE39",
-      "strike": 39.5
-    },
-    {
-      "code": "PETRE396",
-      "strike": 39.75
-    },
-    {
-      "code": "PETRE399",
-      "strike": 40.0
-    },
-    {
-      "code": "PETRE401",
-      "strike": 40.25
-    },
-    {
-      "code": "PETRE405",
-      "strike": 40.5
-    },
-    {
-      "code": "PETRE406",
-      "strike": 40.75
-    },
-    {
-      "code": "PETRE409",
-      "strike": 41.0
-    },
-    {
-      "code": "PETRE515",
-      "strike": 41.25
-    },
-    {
-      "code": "PETRE414",
-      "strike": 41.5
-    },
-    {
-      "code": "PETRE416",
-      "strike": 41.75
-    },
-    {
-      "code": "PETRE419",
-      "strike": 42.0
-    },
-    {
-      "code": "PETRE421",
-      "strike": 42.25
-    },
-    {
-      "code": "PETRE424",
-      "strike": 42.5
-    },
-    {
-      "code": "PETRE426",
-      "strike": 42.75
-    },
-    {
-      "code": "PETRE429",
-      "strike": 43.0
-    },
-    {
-      "code": "PETRE431",
-      "strike": 43.25
-    },
-    {
-      "code": "PETRQ39",
-      "strike": 39.5
-    },
-    {
-      "code": "PETRQ396",
-      "strike": 39.75
-    },
-    {
-      "code": "PETRQ399",
-      "strike": 40.0
-    },
-    {
-      "code": "PETRQ401",
-      "strike": 40.25
-    },
-    {
-      "code": "PETRQ405",
-      "strike": 40.5
-    },
-    {
-      "code": "PETRQ406",
-      "strike": 40.75
-    },
-    {
-      "code": "PETRQ409",
-      "strike": 41.0
-    },
-    {
-      "code": "PETRQ515",
-      "strike": 41.25
-    },
-    {
-      "code": "PETRQ414",
-      "strike": 41.5
-    },
-    {
-      "code": "PETRQ416",
-      "strike": 41.75
-    },
-    {
-      "code": "PETRQ419",
-      "strike": 42.0
-    },
-    {
-      "code": "PETRQ421",
-      "strike": 42.25
-    },
-    {
-      "code": "PETRQ424",
-      "strike": 42.5
-    },
-    {
-      "code": "PETRQ426",
-      "strike": 42.75
-    },
-    {
-      "code": "PETRQ429",
-      "strike": 43.0
-    },
-    {
-      "code": "PETRQ431",
-      "strike": 43.25
-    }
-  ],
-  [
-    {
-      "code": "PETZ3"
-    },
-    {
-      "code": "PETZE475",
-      "strike": 4.75
-    },
-    {
-      "code": "PETZE480",
-      "strike": 4.8
-    },
-    {
-      "code": "PETZE485",
-      "strike": 4.85
-    },
-    {
-      "code": "PETZE490",
-      "strike": 4.9
-    },
-    {
-      "code": "PETZE495",
-      "strike": 4.95
-    },
-    {
-      "code": "PETZE510",
-      "strike": 5.1
-    },
-    {
-      "code": "PETZQ475",
-      "strike": 4.75
-    },
-    {
-      "code": "PETZQ480",
-      "strike": 4.8
-    },
-    {
-      "code": "PETZQ485",
-      "strike": 4.85
-    },
-    {
-      "code": "PETZQ490",
-      "strike": 4.9
-    },
-    {
-      "code": "PETZQ495",
-      "strike": 4.95
-    },
-    {
-      "code": "PETZQ510",
-      "strike": 5.1
-    }
-  ],
-  [
-    {
-      "code": "POSI3"
-    },
-    {
-      "code": "POSIE900",
-      "strike": 9.0
-    },
-    {
-      "code": "POSIE920",
-      "strike": 9.2
-    },
-    {
-      "code": "POSIE940",
-      "strike": 9.4
-    },
-    {
-      "code": "POSIE960",
-      "strike": 9.6
-    },
-    {
-      "code": "POSIE980",
-      "strike": 9.8
-    },
-    {
-      "code": "POSIQ900",
-      "strike": 9.0
-    },
-    {
-      "code": "POSIQ920",
-      "strike": 9.2
-    },
-    {
-      "code": "POSIQ940",
-      "strike": 9.4
-    },
-    {
-      "code": "POSIQ960",
-      "strike": 9.6
-    },
-    {
-      "code": "POSIQ980",
-      "strike": 9.8
-    }
-  ],
-  [
-    {
-      "code": "PRIO3"
-    },
-    {
-      "code": "PRIOE470",
-      "strike": 46.93
-    },
-    {
-      "code": "PRIOE471",
-      "strike": 47.18
-    },
-    {
-      "code": "PRIOE474",
-      "strike": 47.43
-    },
-    {
-      "code": "PRIOE476",
-      "strike": 47.68
-    },
-    {
-      "code": "PRIOE479",
-      "strike": 47.93
-    },
-    {
-      "code": "PRIOE481",
-      "strike": 48.18
-    },
-    {
-      "code": "PRIOE484",
-      "strike": 48.43
-    },
-    {
-      "code": "PRIOE486",
-      "strike": 48.68
-    },
-    {
-      "code": "PRIOE489",
-      "strike": 48.93
-    },
-    {
-      "code": "PRIOE491",
-      "strike": 49.18
-    },
-    {
-      "code": "PRIOE494",
-      "strike": 49.43
-    },
-    {
-      "code": "PRIOE496",
-      "strike": 49.68
-    },
-    {
-      "code": "PRIOE500",
-      "strike": 49.93
-    },
-    {
-      "code": "PRIOE501",
-      "strike": 50.18
-    },
-    {
-      "code": "PRIOE506",
-      "strike": 50.68
-    },
-    {
-      "code": "PRIOE511",
-      "strike": 51.18
-    },
-    {
-      "code": "PRIOE516",
-      "strike": 51.68
-    },
-    {
-      "code": "PRIOQ470",
-      "strike": 46.93
-    },
-    {
-      "code": "PRIOQ471",
-      "strike": 47.18
-    },
-    {
-      "code": "PRIOQ474",
-      "strike": 47.43
-    },
-    {
-      "code": "PRIOQ476",
-      "strike": 47.68
-    },
-    {
-      "code": "PRIOQ479",
-      "strike": 47.93
-    },
-    {
-      "code": "PRIOQ481",
-      "strike": 48.18
-    },
-    {
-      "code": "PRIOQ484",
-      "strike": 48.43
-    },
-    {
-      "code": "PRIOQ486",
-      "strike": 48.68
-    },
-    {
-      "code": "PRIOQ489",
-      "strike": 48.93
-    },
-    {
-      "code": "PRIOQ491",
-      "strike": 49.18
-    },
-    {
-      "code": "PRIOQ494",
-      "strike": 49.43
-    },
-    {
-      "code": "PRIOQ496",
-      "strike": 49.68
-    },
-    {
-      "code": "PRIOQ500",
-      "strike": 49.93
-    },
-    {
-      "code": "PRIOQ501",
-      "strike": 50.18
-    },
-    {
-      "code": "PRIOQ506",
-      "strike": 50.68
     },
     {
-      "code": "PRIOQ511",
-      "strike": 51.18
+      "code": "MULTQ255",
+      "strike": 25.37
     },
     {
-      "code": "PRIOQ516",
-      "strike": 51.68
+      "code": "MULTQ257",
+      "strike": 25.62
     }
   ],
   [
     {
       "code": "RADL3"
-    },
-    {
-      "code": "RADLE260",
-      "strike": 24.77
     },
     {
       "code": "RADLE254",
@@ -3999,8 +1954,16 @@
       "strike": 26.37
     },
     {
-      "code": "RADLQ260",
-      "strike": 24.77
+      "code": "RADLE269",
+      "strike": 26.87
+    },
+    {
+      "code": "RADLE272",
+      "strike": 27.12
+    },
+    {
+      "code": "RADLE274",
+      "strike": 27.37
     },
     {
       "code": "RADLQ254",
@@ -4013,6 +1976,18 @@
     {
       "code": "RADLQ264",
       "strike": 26.37
+    },
+    {
+      "code": "RADLQ269",
+      "strike": 26.87
+    },
+    {
+      "code": "RADLQ272",
+      "strike": 27.12
+    },
+    {
+      "code": "RADLQ274",
+      "strike": 27.37
     }
   ],
   [
@@ -4036,6 +2011,10 @@
       "strike": 21.43
     },
     {
+      "code": "RAILE219",
+      "strike": 21.93
+    },
+    {
       "code": "RAILQ20",
       "strike": 19.93
     },
@@ -4050,327 +2029,15 @@
     {
       "code": "RAILQ214",
       "strike": 21.43
-    }
-  ],
-  [
-    {
-      "code": "RAIZ4"
-    },
-    {
-      "code": "RAIZE297",
-      "strike": 2.95
-    },
-    {
-      "code": "RAIZE320",
-      "strike": 3.05
-    },
-    {
-      "code": "RAIZE317",
-      "strike": 3.15
-    },
-    {
-      "code": "RAIZQ297",
-      "strike": 2.95
-    },
-    {
-      "code": "RAIZQ320",
-      "strike": 3.05
-    },
-    {
-      "code": "RAIZQ317",
-      "strike": 3.15
-    }
-  ],
-  [
-    {
-      "code": "RDOR3"
-    },
-    {
-      "code": "RDORE250",
-      "strike": 24.98
-    },
-    {
-      "code": "RDORE255",
-      "strike": 25.48
-    },
-    {
-      "code": "RDORE260",
-      "strike": 25.98
-    },
-    {
-      "code": "RDORE265",
-      "strike": 26.48
-    },
-    {
-      "code": "RDORE270",
-      "strike": 26.98
-    },
-    {
-      "code": "RDORQ250",
-      "strike": 24.98
-    },
-    {
-      "code": "RDORQ255",
-      "strike": 25.48
-    },
-    {
-      "code": "RDORQ260",
-      "strike": 25.98
-    },
-    {
-      "code": "RDORQ265",
-      "strike": 26.48
-    },
-    {
-      "code": "RDORQ270",
-      "strike": 26.98
-    }
-  ],
-  [
-    {
-      "code": "RENT3"
-    },
-    {
-      "code": "RENTE485",
-      "strike": 48.17
-    },
-    {
-      "code": "RENTE487",
-      "strike": 48.42
-    },
-    {
-      "code": "RENTE490",
-      "strike": 48.67
-    },
-    {
-      "code": "RENTE492",
-      "strike": 48.92
-    },
-    {
-      "code": "RENTE495",
-      "strike": 49.17
-    },
-    {
-      "code": "RENTE497",
-      "strike": 49.42
-    },
-    {
-      "code": "RENTE500",
-      "strike": 49.67
-    },
-    {
-      "code": "RENTE505",
-      "strike": 50.17
-    },
-    {
-      "code": "RENTE510",
-      "strike": 50.67
-    },
-    {
-      "code": "RENTE515",
-      "strike": 51.17
-    },
-    {
-      "code": "RENTE520",
-      "strike": 51.67
-    },
-    {
-      "code": "RENTE525",
-      "strike": 52.17
-    },
-    {
-      "code": "RENTE530",
-      "strike": 52.67
-    },
-    {
-      "code": "RENTQ485",
-      "strike": 48.17
-    },
-    {
-      "code": "RENTQ487",
-      "strike": 48.42
-    },
-    {
-      "code": "RENTQ490",
-      "strike": 48.67
-    },
-    {
-      "code": "RENTQ492",
-      "strike": 48.92
-    },
-    {
-      "code": "RENTQ495",
-      "strike": 49.17
-    },
-    {
-      "code": "RENTQ497",
-      "strike": 49.42
-    },
-    {
-      "code": "RENTQ500",
-      "strike": 49.67
-    },
-    {
-      "code": "RENTQ505",
-      "strike": 50.17
-    },
-    {
-      "code": "RENTQ510",
-      "strike": 50.67
-    },
-    {
-      "code": "RENTQ515",
-      "strike": 51.17
-    },
-    {
-      "code": "RENTQ520",
-      "strike": 51.67
-    },
-    {
-      "code": "RENTQ525",
-      "strike": 52.17
-    },
-    {
-      "code": "RENTQ530",
-      "strike": 52.67
-    }
-  ],
-  [
-    {
-      "code": "RRRP3"
-    },
-    {
-      "code": "RRRPE337",
-      "strike": 33.75
-    },
-    {
-      "code": "RRRPE340",
-      "strike": 34.0
-    },
-    {
-      "code": "RRRPE342",
-      "strike": 34.25
-    },
-    {
-      "code": "RRRPE345",
-      "strike": 34.5
-    },
-    {
-      "code": "RRRPE347",
-      "strike": 34.75
-    },
-    {
-      "code": "RRRPE350",
-      "strike": 35.0
-    },
-    {
-      "code": "RRRPE352",
-      "strike": 35.25
-    },
-    {
-      "code": "RRRPE355",
-      "strike": 35.5
-    },
-    {
-      "code": "RRRPE35",
-      "strike": 35.75
-    },
-    {
-      "code": "RRRPE360",
-      "strike": 36.0
-    },
-    {
-      "code": "RRRPE362",
-      "strike": 36.25
-    },
-    {
-      "code": "RRRPE365",
-      "strike": 36.5
-    },
-    {
-      "code": "RRRPE367",
-      "strike": 36.75
-    },
-    {
-      "code": "RRRPE370",
-      "strike": 37.0
-    },
-    {
-      "code": "RRRPQ337",
-      "strike": 33.75
-    },
-    {
-      "code": "RRRPQ340",
-      "strike": 34.0
-    },
-    {
-      "code": "RRRPQ342",
-      "strike": 34.25
-    },
-    {
-      "code": "RRRPQ345",
-      "strike": 34.5
-    },
-    {
-      "code": "RRRPQ347",
-      "strike": 34.75
-    },
-    {
-      "code": "RRRPQ350",
-      "strike": 35.0
-    },
-    {
-      "code": "RRRPQ352",
-      "strike": 35.25
-    },
-    {
-      "code": "RRRPQ355",
-      "strike": 35.5
-    },
-    {
-      "code": "RRRPQ35",
-      "strike": 35.75
-    },
-    {
-      "code": "RRRPQ360",
-      "strike": 36.0
-    },
-    {
-      "code": "RRRPQ362",
-      "strike": 36.25
-    },
-    {
-      "code": "RRRPQ365",
-      "strike": 36.5
-    },
-    {
-      "code": "RRRPQ367",
-      "strike": 36.75
     },
     {
-      "code": "RRRPQ370",
-      "strike": 37.0
+      "code": "RAILQ219",
+      "strike": 21.93
     }
   ],
   [
     {
       "code": "SANB11"
-    },
-    {
-      "code": "SANBE265",
-      "strike": 26.5
-    },
-    {
-      "code": "SANBE270",
-      "strike": 27.0
-    },
-    {
-      "code": "SANBE275",
-      "strike": 27.5
-    },
-    {
-      "code": "SANBE280",
-      "strike": 28.0
     },
     {
       "code": "SANBE282",
@@ -4381,20 +2048,28 @@
       "strike": 28.5
     },
     {
-      "code": "SANBQ265",
-      "strike": 26.5
+      "code": "SANBE290",
+      "strike": 29.0
     },
     {
-      "code": "SANBQ270",
-      "strike": 27.0
+      "code": "SANBE292",
+      "strike": 29.25
     },
     {
-      "code": "SANBQ275",
-      "strike": 27.5
+      "code": "SANBE295",
+      "strike": 29.5
     },
     {
-      "code": "SANBQ280",
-      "strike": 28.0
+      "code": "SANBE300",
+      "strike": 30.0
+    },
+    {
+      "code": "SANBE305",
+      "strike": 30.5
+    },
+    {
+      "code": "SANBE310",
+      "strike": 31.0
     },
     {
       "code": "SANBQ282",
@@ -4403,15 +2078,35 @@
     {
       "code": "SANBQ285",
       "strike": 28.5
+    },
+    {
+      "code": "SANBQ290",
+      "strike": 29.0
+    },
+    {
+      "code": "SANBQ292",
+      "strike": 29.25
+    },
+    {
+      "code": "SANBQ295",
+      "strike": 29.5
+    },
+    {
+      "code": "SANBQ300",
+      "strike": 30.0
+    },
+    {
+      "code": "SANBQ305",
+      "strike": 30.5
+    },
+    {
+      "code": "SANBQ310",
+      "strike": 31.0
     }
   ],
   [
     {
       "code": "SAPR11"
-    },
-    {
-      "code": "SAPRE250",
-      "strike": 25.0
     },
     {
       "code": "SAPRE255",
@@ -4430,8 +2125,8 @@
       "strike": 27.0
     },
     {
-      "code": "SAPRQ250",
-      "strike": 25.0
+      "code": "SAPRE275",
+      "strike": 27.5
     },
     {
       "code": "SAPRQ255",
@@ -4448,181 +2143,15 @@
     {
       "code": "SAPRQ270",
       "strike": 27.0
-    }
-  ],
-  [
-    {
-      "code": "SBSP3"
     },
     {
-      "code": "SBSPE785",
-      "strike": 78.5
-    },
-    {
-      "code": "SBSPE795",
-      "strike": 79.5
-    },
-    {
-      "code": "SBSPE800",
-      "strike": 80.0
-    },
-    {
-      "code": "SBSPE805",
-      "strike": 80.5
-    },
-    {
-      "code": "SBSPE815",
-      "strike": 81.5
-    },
-    {
-      "code": "SBSPE825",
-      "strike": 82.5
-    },
-    {
-      "code": "SBSPE835",
-      "strike": 83.5
-    },
-    {
-      "code": "SBSPE845",
-      "strike": 84.5
-    },
-    {
-      "code": "SBSPE850",
-      "strike": 85.0
-    },
-    {
-      "code": "SBSPE855",
-      "strike": 85.5
-    },
-    {
-      "code": "SBSPQ785",
-      "strike": 78.5
-    },
-    {
-      "code": "SBSPQ795",
-      "strike": 79.5
-    },
-    {
-      "code": "SBSPQ800",
-      "strike": 80.0
-    },
-    {
-      "code": "SBSPQ805",
-      "strike": 80.5
-    },
-    {
-      "code": "SBSPQ815",
-      "strike": 81.5
-    },
-    {
-      "code": "SBSPQ825",
-      "strike": 82.5
-    },
-    {
-      "code": "SBSPQ835",
-      "strike": 83.5
-    },
-    {
-      "code": "SBSPQ845",
-      "strike": 84.5
-    },
-    {
-      "code": "SBSPQ850",
-      "strike": 85.0
-    },
-    {
-      "code": "SBSPQ855",
-      "strike": 85.5
-    }
-  ],
-  [
-    {
-      "code": "SLCE3"
-    },
-    {
-      "code": "SLCEE180",
-      "strike": 18.0
-    },
-    {
-      "code": "SLCEE182",
-      "strike": 18.25
-    },
-    {
-      "code": "SLCEE185",
-      "strike": 18.5
-    },
-    {
-      "code": "SLCEE187",
-      "strike": 18.75
-    },
-    {
-      "code": "SLCEE190",
-      "strike": 19.0
-    },
-    {
-      "code": "SLCEE192",
-      "strike": 19.25
-    },
-    {
-      "code": "SLCEE195",
-      "strike": 19.5
-    },
-    {
-      "code": "SLCEQ180",
-      "strike": 18.0
-    },
-    {
-      "code": "SLCEQ182",
-      "strike": 18.25
-    },
-    {
-      "code": "SLCEQ185",
-      "strike": 18.5
-    },
-    {
-      "code": "SLCEQ187",
-      "strike": 18.75
-    },
-    {
-      "code": "SLCEQ190",
-      "strike": 19.0
-    },
-    {
-      "code": "SLCEQ192",
-      "strike": 19.25
-    },
-    {
-      "code": "SLCEQ195",
-      "strike": 19.5
+      "code": "SAPRQ275",
+      "strike": 27.5
     }
   ],
   [
     {
       "code": "SMAL11"
-    },
-    {
-      "code": "SMALE970",
-      "strike": 97.0
-    },
-    {
-      "code": "SMALE975",
-      "strike": 97.5
-    },
-    {
-      "code": "SMALE980",
-      "strike": 98.0
-    },
-    {
-      "code": "SMALE985",
-      "strike": 98.5
-    },
-    {
-      "code": "SMALE990",
-      "strike": 99.0
-    },
-    {
-      "code": "SMALE995",
-      "strike": 99.5
     },
     {
       "code": "SMALE100",
@@ -4657,28 +2186,12 @@
       "strike": 107.0
     },
     {
-      "code": "SMALQ970",
-      "strike": 97.0
+      "code": "SMALE108",
+      "strike": 108.0
     },
     {
-      "code": "SMALQ975",
-      "strike": 97.5
-    },
-    {
-      "code": "SMALQ980",
-      "strike": 98.0
-    },
-    {
-      "code": "SMALQ985",
-      "strike": 98.5
-    },
-    {
-      "code": "SMALQ990",
-      "strike": 99.0
-    },
-    {
-      "code": "SMALQ995",
-      "strike": 99.5
+      "code": "SMALE109",
+      "strike": 109.0
     },
     {
       "code": "SMALQ100",
@@ -4711,125 +2224,27 @@
     {
       "code": "SMALQ107",
       "strike": 107.0
-    }
-  ],
-  [
-    {
-      "code": "SMTO3"
     },
     {
-      "code": "SMTOE270",
-      "strike": 27.0
+      "code": "SMALQ108",
+      "strike": 108.0
     },
     {
-      "code": "SMTOE272",
-      "strike": 27.25
-    },
-    {
-      "code": "SMTOE275",
-      "strike": 27.5
-    },
-    {
-      "code": "SMTOE280",
-      "strike": 28.0
-    },
-    {
-      "code": "SMTOE282",
-      "strike": 28.25
-    },
-    {
-      "code": "SMTOE285",
-      "strike": 28.5
-    },
-    {
-      "code": "SMTOE290",
-      "strike": 29.0
-    },
-    {
-      "code": "SMTOQ270",
-      "strike": 27.0
-    },
-    {
-      "code": "SMTOQ272",
-      "strike": 27.25
-    },
-    {
-      "code": "SMTOQ275",
-      "strike": 27.5
-    },
-    {
-      "code": "SMTOQ280",
-      "strike": 28.0
-    },
-    {
-      "code": "SMTOQ282",
-      "strike": 28.25
-    },
-    {
-      "code": "SMTOQ285",
-      "strike": 28.5
-    },
-    {
-      "code": "SMTOQ290",
-      "strike": 29.0
-    }
-  ],
-  [
-    {
-      "code": "SOMA3"
-    },
-    {
-      "code": "SOMAE580",
-      "strike": 5.8
-    },
-    {
-      "code": "SOMAE590",
-      "strike": 5.9
-    },
-    {
-      "code": "SOMAE600",
-      "strike": 6.0
-    },
-    {
-      "code": "SOMAE610",
-      "strike": 6.1
-    },
-    {
-      "code": "SOMAE620",
-      "strike": 6.2
-    },
-    {
-      "code": "SOMAE630",
-      "strike": 6.3
-    },
-    {
-      "code": "SOMAQ580",
-      "strike": 5.8
-    },
-    {
-      "code": "SOMAQ590",
-      "strike": 5.9
-    },
-    {
-      "code": "SOMAQ600",
-      "strike": 6.0
-    },
-    {
-      "code": "SOMAQ610",
-      "strike": 6.1
-    },
-    {
-      "code": "SOMAQ620",
-      "strike": 6.2
-    },
-    {
-      "code": "SOMAQ630",
-      "strike": 6.3
+      "code": "SMALQ109",
+      "strike": 109.0
     }
   ],
   [
     {
       "code": "SUZB3"
+    },
+    {
+      "code": "SUZBE560",
+      "strike": 56.01
+    },
+    {
+      "code": "SUZBE565",
+      "strike": 56.51
     },
     {
       "code": "SUZBE570",
@@ -4872,12 +2287,12 @@
       "strike": 61.51
     },
     {
-      "code": "SUZBE620",
-      "strike": 62.01
+      "code": "SUZBQ560",
+      "strike": 56.01
     },
     {
-      "code": "SUZBE625",
-      "strike": 62.51
+      "code": "SUZBQ565",
+      "strike": 56.51
     },
     {
       "code": "SUZBQ570",
@@ -4918,31 +2333,11 @@
     {
       "code": "SUZBQ615",
       "strike": 61.51
-    },
-    {
-      "code": "SUZBQ620",
-      "strike": 62.01
-    },
-    {
-      "code": "SUZBQ625",
-      "strike": 62.51
     }
   ],
   [
     {
       "code": "TAEE11"
-    },
-    {
-      "code": "TAEEE338",
-      "strike": 33.83
-    },
-    {
-      "code": "TAEEE352",
-      "strike": 34.08
-    },
-    {
-      "code": "TAEEE343",
-      "strike": 34.33
     },
     {
       "code": "TAEEE348",
@@ -4977,16 +2372,20 @@
       "strike": 37.08
     },
     {
-      "code": "TAEEQ338",
-      "strike": 33.83
+      "code": "TAEEE373",
+      "strike": 37.33
     },
     {
-      "code": "TAEEQ352",
-      "strike": 34.08
+      "code": "TAEEE378",
+      "strike": 37.83
     },
     {
-      "code": "TAEEQ343",
-      "strike": 34.33
+      "code": "TAEEE392",
+      "strike": 38.08
+    },
+    {
+      "code": "TAEEE383",
+      "strike": 38.33
     },
     {
       "code": "TAEEQ348",
@@ -5019,189 +2418,35 @@
     {
       "code": "TAEEQ382",
       "strike": 37.08
-    }
-  ],
-  [
-    {
-      "code": "USIM5"
     },
     {
-      "code": "USIME780",
-      "strike": 7.8
+      "code": "TAEEQ373",
+      "strike": 37.33
     },
     {
-      "code": "USIME790",
-      "strike": 7.9
+      "code": "TAEEQ378",
+      "strike": 37.83
     },
     {
-      "code": "USIME800",
-      "strike": 8.0
+      "code": "TAEEQ392",
+      "strike": 38.08
     },
     {
-      "code": "USIME810",
-      "strike": 8.1
-    },
-    {
-      "code": "USIME820",
-      "strike": 8.2
-    },
-    {
-      "code": "USIME830",
-      "strike": 8.3
-    },
-    {
-      "code": "USIME840",
-      "strike": 8.4
-    },
-    {
-      "code": "USIME850",
-      "strike": 8.5
-    },
-    {
-      "code": "USIMQ780",
-      "strike": 7.8
-    },
-    {
-      "code": "USIMQ790",
-      "strike": 7.9
-    },
-    {
-      "code": "USIMQ800",
-      "strike": 8.0
-    },
-    {
-      "code": "USIMQ810",
-      "strike": 8.1
-    },
-    {
-      "code": "USIMQ820",
-      "strike": 8.2
-    },
-    {
-      "code": "USIMQ830",
-      "strike": 8.3
-    },
-    {
-      "code": "USIMQ840",
-      "strike": 8.4
-    },
-    {
-      "code": "USIMQ850",
-      "strike": 8.5
-    }
-  ],
-  [
-    {
-      "code": "VALE3"
-    },
-    {
-      "code": "VALEE664",
-      "strike": 59.83
-    },
-    {
-      "code": "VALEE669",
-      "strike": 60.33
-    },
-    {
-      "code": "VALEE674",
-      "strike": 60.83
-    },
-    {
-      "code": "VALEE679",
-      "strike": 61.33
-    },
-    {
-      "code": "VALEE684",
-      "strike": 61.83
-    },
-    {
-      "code": "VALEE689",
-      "strike": 62.33
-    },
-    {
-      "code": "VALEE694",
-      "strike": 62.83
-    },
-    {
-      "code": "VALEE69",
-      "strike": 63.33
-    },
-    {
-      "code": "VALEE704",
-      "strike": 63.83
-    },
-    {
-      "code": "VALEE709",
-      "strike": 64.33
-    },
-    {
-      "code": "VALEE714",
-      "strike": 64.83
-    },
-    {
-      "code": "VALEE740",
-      "strike": 65.33
-    },
-    {
-      "code": "VALEE724",
-      "strike": 65.83
-    },
-    {
-      "code": "VALEQ664",
-      "strike": 59.83
-    },
-    {
-      "code": "VALEQ669",
-      "strike": 60.33
-    },
-    {
-      "code": "VALEQ674",
-      "strike": 60.83
-    },
-    {
-      "code": "VALEQ679",
-      "strike": 61.33
-    },
-    {
-      "code": "VALEQ684",
-      "strike": 61.83
-    },
-    {
-      "code": "VALEQ689",
-      "strike": 62.33
-    },
-    {
-      "code": "VALEQ694",
-      "strike": 62.83
-    },
-    {
-      "code": "VALEQ69",
-      "strike": 63.33
-    },
-    {
-      "code": "VALEQ704",
-      "strike": 63.83
-    },
-    {
-      "code": "VALEQ709",
-      "strike": 64.33
-    },
-    {
-      "code": "VALEQ714",
-      "strike": 64.83
-    },
-    {
-      "code": "VALEQ740",
-      "strike": 65.33
-    },
-    {
-      "code": "VALEQ724",
-      "strike": 65.83
+      "code": "TAEEQ383",
+      "strike": 38.33
     }
   ],
   [
     {
       "code": "WEGE3"
+    },
+    {
+      "code": "WEGEE368",
+      "strike": 36.84
+    },
+    {
+      "code": "WEGEE371",
+      "strike": 37.09
     },
     {
       "code": "WEGEE373",
@@ -5256,12 +2501,12 @@
       "strike": 40.34
     },
     {
-      "code": "WEGEE406",
-      "strike": 40.59
+      "code": "WEGEQ368",
+      "strike": 36.84
     },
     {
-      "code": "WEGEE408",
-      "strike": 40.84
+      "code": "WEGEQ371",
+      "strike": 37.09
     },
     {
       "code": "WEGEQ373",
@@ -5314,14 +2559,6 @@
     {
       "code": "WEGEQ403",
       "strike": 40.34
-    },
-    {
-      "code": "WEGEQ406",
-      "strike": 40.59
-    },
-    {
-      "code": "WEGEQ408",
-      "strike": 40.84
     }
   ]
 ]

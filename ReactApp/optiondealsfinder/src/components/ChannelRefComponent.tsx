@@ -1,11 +1,13 @@
-import { SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useFimatheContext } from "../context/useFimatheContext";
-import { FimatheRef, IFimatheRef } from "../context/FimatheContext";
+import { IFimatheRef } from "../context/FimatheContext";
 import jsonData from "../data/initialRefs.json";
 
 const getTickerName = (opt: string) => {
-  const numberIndex = opt.match(/\d/)?.index;
-  return opt.slice(0, numberIndex);
+  const numberIndex = opt.match(/\d/)?.index || 2;
+  return numberIndex === 1
+    ? opt.slice(0, numberIndex)
+    : opt.slice(0, numberIndex - 1);
 };
 
 const updateRef = (
