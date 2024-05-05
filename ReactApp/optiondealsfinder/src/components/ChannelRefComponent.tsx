@@ -3,13 +3,6 @@ import { useFimatheContext } from "../context/useFimatheContext";
 import { IFimatheRef } from "../context/FimatheContext";
 import jsonData from "../data/initialRefs.json";
 
-const getTickerName = (opt: string) => {
-  const numberIndex = opt.match(/\d/)?.index || 2;
-  return numberIndex === 1
-    ? opt.slice(0, numberIndex)
-    : opt.slice(0, numberIndex - 1);
-};
-
 const updateRef = (
   inputRef: number,
   refNumber: number,
@@ -57,11 +50,9 @@ const insertedRefInitialState = (
 };
 
 const ChannelRefComponent: React.FC<{
-  opt: string;
+  tickerName: string;
   refNumber: number;
-}> = ({ opt, refNumber }) => {
-  const tickerName = getTickerName(opt);
-
+}> = ({ tickerName, refNumber }) => {
   const { ref, setRef } = useFimatheContext();
 
   const [open, setOpen] = useState(!assetRefExists(tickerName, refNumber, ref));

@@ -35,6 +35,13 @@ const TableCell = styled.td`
   border-bottom: 1px solid #ddd;
 `;
 
+const getTickerName = (opt: string) => {
+  const numberIndex = opt.match(/\d/)?.index || 2;
+  return numberIndex === 1
+    ? opt.slice(0, numberIndex)
+    : opt.slice(0, numberIndex - 1);
+};
+
 const showFDI = (ref: IFimatheRef | null) => {
   if (ref) {
     const keys = Object.keys(ref);
@@ -45,6 +52,24 @@ const showFDI = (ref: IFimatheRef | null) => {
     }
   }
   return true;
+};
+
+const calculateFDI = (row: Array<string | number>, ref: IFimatheRef | null) => {
+  const tickerName = getTickerName(row[2].toString());
+  if (
+    ref &&
+    ref[tickerName] &&
+    !!ref[tickerName].ref1 &&
+    !!ref[tickerName].ref2
+  ) {
+    return (
+      (parseFloat(String(row[row.length - 1])) *
+        parseFloat(String(row[row.length - 2]))) /
+      100 /
+      Math.abs(ref[tickerName].ref1 - ref[tickerName].ref2)
+    );
+  }
+  return "";
 };
 
 const OptionsPage = () => {
@@ -76,14 +101,22 @@ const OptionsPage = () => {
           {tableData.map((row: Array<string | number>, tableIndex: number) => (
             <TableRow key={tableIndex}>
               {row.map((v, valueIndex) => (
-                <TableCell key={valueIndex}>
+                <TableCell key={valueIndex} hidden={valueIndex === 8}>
                   {valueIndex === 0 ? parseIsoDate(v.toString()) : v}
                 </TableCell>
               ))}
-              <TableCell hidden={showFDI(ref)}>0</TableCell>
+              <TableCell hidden={showFDI(ref)}>
+                {calculateFDI(row, ref)}
+              </TableCell>
               <TableCell>
-                <ChannelRefComponent opt={row[2].toString()} refNumber={1} />
-                <ChannelRefComponent opt={row[2].toString()} refNumber={2} />
+                <ChannelRefComponent
+                  tickerName={getTickerName(row[2].toString())}
+                  refNumber={1}
+                />
+                <ChannelRefComponent
+                  tickerName={getTickerName(row[2].toString())}
+                  refNumber={2}
+                />
               </TableCell>
             </TableRow>
           ))}

@@ -26,14 +26,14 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
                         else ii['time'], i['strike'],i['code']+"("+str(i['strike'])+")",i['sellPrice'],
                         ii['code']+"("+str(ii['strike'])+")",ii['buyPrice'],
                         (strikeDiff-(i['sellPrice']-ii['buyPrice']))/(i['sellPrice']-ii['buyPrice']),
-                        round(((ii['strike']-stockPrice)/stockPrice)*100,3)])
+                        round(((ii['strike']-stockPrice)/stockPrice)*100,3), stockPrice])
                     if not itype and not iitype and i['strike'] < stockPrice and ii['strike'] < stockPrice:
                         all_lock_combinations.append([
                         i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
                         else ii['time'], ii['strike'],ii['code']+"("+str(ii['strike'])+")",ii['sellPrice'],
                         i['code']+"("+str(i['strike'])+")",i['buyPrice'],
                         (strikeDiff-(ii['sellPrice']-i['buyPrice']))/(ii['sellPrice']-i['buyPrice']),
-                        round(((stockPrice-i['strike'])/stockPrice)*100,3)])
+                        round(((stockPrice-i['strike'])/stockPrice)*100,3), stockPrice])
             except (TypeError, ZeroDivisionError):
                 continue
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
