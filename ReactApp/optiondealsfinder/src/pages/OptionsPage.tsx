@@ -3,6 +3,7 @@ import tableData from "../data/lockOutput.json";
 import { useFimatheContext } from "../context/useFimatheContext";
 import ChannelRefComponent from "../components/ChannelRefComponent";
 import parseIsoDate from "../utils/parseIsoDate";
+import { IFimatheRef } from "../context/FimatheContext";
 
 const Table = styled.table`
   width: 100%;
@@ -34,6 +35,18 @@ const TableCell = styled.td`
   border-bottom: 1px solid #ddd;
 `;
 
+const showFDI = (ref: IFimatheRef | null) => {
+  if (ref) {
+    const keys = Object.keys(ref);
+    for (let index = 0; index < keys.length; index++) {
+      if (ref[keys[index]].ref1 !== 0 && ref[keys[index]].ref2) {
+        return false;
+      }
+    }
+  }
+  return true;
+};
+
 const OptionsPage = () => {
   const { ref } = useFimatheContext();
   return (
@@ -54,8 +67,9 @@ const OptionsPage = () => {
             <TableHeaderCell>Sell Price</TableHeaderCell>
             <TableHeaderCell>Multiplication</TableHeaderCell>
             <TableHeaderCell>Percentage To Max. Profit</TableHeaderCell>
-            <TableHeaderCell>Fimathe Distance Index</TableHeaderCell>
-            <TableHeaderCell></TableHeaderCell>
+            <TableHeaderCell hidden={showFDI(ref)}>
+              Fimathe Distance Index
+            </TableHeaderCell>
           </TableRow>
         </TableHead>
         <tbody>
@@ -66,7 +80,7 @@ const OptionsPage = () => {
                   {valueIndex === 0 ? parseIsoDate(v.toString()) : v}
                 </TableCell>
               ))}
-              <TableCell>0</TableCell>
+              <TableCell hidden={showFDI(ref)}>0</TableCell>
               <TableCell>
                 <ChannelRefComponent opt={row[2].toString()} refNumber={1} />
                 <ChannelRefComponent opt={row[2].toString()} refNumber={2} />
