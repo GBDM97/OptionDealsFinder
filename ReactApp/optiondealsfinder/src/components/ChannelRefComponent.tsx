@@ -1,4 +1,4 @@
-import { SetStateAction, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { useFimatheContext } from "../context/useFimatheContext";
 import { FimatheRef, IFimatheRef } from "../context/FimatheContext";
 import jsonData from "../data/initialRefs.json";
@@ -14,19 +14,17 @@ const updateRef = (
   ref: IFimatheRef | null,
   tickerName: string
 ) => {
-  if (ref && ref[tickerName]) {
-    if (refNumber === 1) {
-      ref[tickerName].ref1 = inputRef;
-    } else {
-      ref[tickerName].ref2 = inputRef;
-    }
-    return ref;
-  } else if (ref && !ref[tickerName]) {
+  ref = { ...ref };
+  if (!(ref && ref[tickerName])) {
+    ref = jsonData;
     ref[tickerName] = { ref1: 0, ref2: 0 };
-    return ref;
-  } else {
-    return jsonData;
   }
+  if (refNumber === 1) {
+    ref[tickerName].ref1 = inputRef;
+  } else {
+    ref[tickerName].ref2 = inputRef;
+  }
+  return ref;
 };
 
 const assetRefExists = (
@@ -59,16 +57,21 @@ const insertedRefInitialState = (
 const ChannelRefComponent: React.FC<{
   opt: string;
   refNumber: number;
-  ref: IFimatheRef | null;
-  setRef: (p: IFimatheRef) => void;
-}> = ({ opt, refNumber, ref, setRef }) => {
+}> = ({ opt, refNumber }) => {
   const tickerName = getTickerName(opt);
+
+  const { ref, setRef } = useFimatheContext();
 
   const [open, setOpen] = useState(!assetRefExists(tickerName, refNumber, ref));
 
   const [insertedRef, setInsertedRef] = useState(
     insertedRefInitialState(tickerName, refNumber, ref)
   );
+
+  useEffect(() => {
+    setInsertedRef(insertedRefInitialState(tickerName, refNumber, ref));
+    setOpen(!assetRefExists(tickerName, refNumber, ref));
+  }, [ref]);
 
   return open ? (
     <>

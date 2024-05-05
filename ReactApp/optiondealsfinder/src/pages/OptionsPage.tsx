@@ -37,11 +37,7 @@ const TableCell = styled.td`
 `;
 
 const OptionsPage = () => {
-  // const { ref, setRef } = useFimatheContext();
-  const [ref, setRefState] = useState<IFimatheRef>(jsonData);
-  const setRef = (p: IFimatheRef) => {
-    setRefState(p);
-  };
+  const { ref } = useFimatheContext();
   return (
     <>
       <Table>
@@ -71,18 +67,8 @@ const OptionsPage = () => {
                 <TableCell key={valueIndex}>{v}</TableCell>
               ))}
               <TableCell>
-                <ChannelRefComponent
-                  opt={row[1].toString()}
-                  refNumber={1}
-                  ref={ref}
-                  setRef={setRef}
-                />
-                <ChannelRefComponent
-                  opt={row[1].toString()}
-                  refNumber={2}
-                  ref={ref}
-                  setRef={setRef}
-                />
+                <ChannelRefComponent opt={row[1].toString()} refNumber={1} />
+                <ChannelRefComponent opt={row[1].toString()} refNumber={2} />
               </TableCell>
             </TableRow>
           ))}
