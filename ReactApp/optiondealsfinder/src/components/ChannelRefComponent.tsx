@@ -64,7 +64,7 @@ const ChannelRefComponent: React.FC<{
   useEffect(() => {
     setInsertedRef(insertedRefInitialState(tickerName, refNumber, ref));
     setOpen(!assetRefExists(tickerName, refNumber, ref));
-  }, [ref]);
+  }, [ref, tickerName]);
 
   return open ? (
     <>

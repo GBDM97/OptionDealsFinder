@@ -85,6 +85,7 @@ const OptionsPage = () => {
     "",
     "",
     "",
+    "",
   ]);
 
   const order = (col: number) => {
@@ -99,14 +100,14 @@ const OptionsPage = () => {
 
     if (orderDirection[col] === "") {
       setOrderDirection((p) => {
-        p = ["", "", "", "", "", "", "", "", ""];
+        p = ["", "", "", "", "", "", "", "", "", ""];
         p[col] = "a";
         return p;
       });
       setList(list.sort((a, b) => compareStringOrNumber(a[col], b[col])));
     } else if (orderDirection[col] === "a") {
       setOrderDirection((p) => {
-        p = ["", "", "", "", "", "", "", "", ""];
+        p = ["", "", "", "", "", "", "", "", "", ""];
         p[col] = "d";
         return p;
       });
@@ -115,7 +116,7 @@ const OptionsPage = () => {
       );
     } else {
       setOrderDirection((p) => {
-        p = ["", "", "", "", "", "", "", "", ""];
+        p = ["", "", "", "", "", "", "", "", "", ""];
         p[col] = "";
         return p;
       });
