@@ -4,6 +4,7 @@ import { useFimatheContext } from "../context/useFimatheContext";
 import ChannelRefComponent from "../components/ChannelRefComponent";
 import parseIsoDate from "../utils/parseIsoDate";
 import { IFimatheRef } from "../context/FimatheContext";
+import { useEffect, useState } from "react";
 
 const Table = styled.table`
   width: 100%;
@@ -42,18 +43,6 @@ const getTickerName = (opt: string) => {
     : opt.slice(0, numberIndex - 1);
 };
 
-const showFDI = (ref: IFimatheRef | null) => {
-  if (ref) {
-    const keys = Object.keys(ref);
-    for (let index = 0; index < keys.length; index++) {
-      if (ref[keys[index]].ref1 !== 0 && ref[keys[index]].ref2) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
-
 const calculateFDI = (row: Array<string | number>, ref: IFimatheRef | null) => {
   const tickerName = getTickerName(row[2].toString());
   if (
@@ -69,11 +58,75 @@ const calculateFDI = (row: Array<string | number>, ref: IFimatheRef | null) => {
       Math.abs(ref[tickerName].ref1 - ref[tickerName].ref2)
     );
   }
-  return "";
+  return 0;
+};
+
+const updateFDI = (
+  list: Array<Array<string | number>>,
+  ref: IFimatheRef | null
+) => {
+  return list.map((row: Array<string | number>) => {
+    row.length > 9 ? row.pop() : null;
+    row.push(calculateFDI(row, ref));
+    return row;
+  });
 };
 
 const OptionsPage = () => {
   const { ref } = useFimatheContext();
+  const [list, setList] = useState(tableData);
+  const [orderDirection, setOrderDirection] = useState([
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ]);
+
+  const order = (col: number) => {
+    const compareStringOrNumber = (
+      p1: string | number,
+      p2: string | number
+    ) => {
+      return typeof p1 === "string" && typeof p2 === "string"
+        ? String(p1).localeCompare(String(p2))
+        : parseFloat(String(p1)) - parseFloat(String(p2));
+    };
+
+    if (orderDirection[col] === "") {
+      setOrderDirection((p) => {
+        p = ["", "", "", "", "", "", "", "", ""];
+        p[col] = "a";
+        return p;
+      });
+      setList(list.sort((a, b) => compareStringOrNumber(a[col], b[col])));
+    } else if (orderDirection[col] === "a") {
+      setOrderDirection((p) => {
+        p = ["", "", "", "", "", "", "", "", ""];
+        p[col] = "d";
+        return p;
+      });
+      setList(
+        list.sort((a, b) => compareStringOrNumber(a[col], b[col])).reverse()
+      );
+    } else {
+      setOrderDirection((p) => {
+        p = ["", "", "", "", "", "", "", "", ""];
+        p[col] = "";
+        return p;
+      });
+      setList(list.sort((a, b) => compareStringOrNumber(a[2], b[2])));
+    }
+  };
+
+  useEffect(() => {
+    setList(updateFDI(list, ref));
+  });
+
   return (
     <>
       <Table>
@@ -84,30 +137,40 @@ const OptionsPage = () => {
           }}
         >
           <TableRow>
-            <TableHeaderCell>Date and Time</TableHeaderCell>
-            <TableHeaderCell>Profit Level</TableHeaderCell>
-            <TableHeaderCell>Buy</TableHeaderCell>
-            <TableHeaderCell>Buy Price</TableHeaderCell>
-            <TableHeaderCell>Sell</TableHeaderCell>
-            <TableHeaderCell>Sell Price</TableHeaderCell>
-            <TableHeaderCell>Multiplication</TableHeaderCell>
-            <TableHeaderCell>Percentage To Max. Profit</TableHeaderCell>
-            <TableHeaderCell hidden={showFDI(ref)}>
+            <TableHeaderCell onClick={() => order(0)}>
+              Date and Time
+            </TableHeaderCell>
+            <TableHeaderCell onClick={() => order(1)}>
+              Profit Level
+            </TableHeaderCell>
+            <TableHeaderCell onClick={() => order(2)}>Buy</TableHeaderCell>
+            <TableHeaderCell onClick={() => order(3)}>
+              Buy Price
+            </TableHeaderCell>
+            <TableHeaderCell onClick={() => order(4)}>Sell</TableHeaderCell>
+            <TableHeaderCell onClick={() => order(5)}>
+              Sell Price
+            </TableHeaderCell>
+            <TableHeaderCell onClick={() => order(6)}>
+              Multiplication
+            </TableHeaderCell>
+            <TableHeaderCell onClick={() => order(7)}>
+              Percentage To Max. Profit
+            </TableHeaderCell>
+            <TableHeaderCell onClick={() => order(9)}>
               Fimathe Distance Index
             </TableHeaderCell>
+            <TableHeaderCell></TableHeaderCell>
           </TableRow>
         </TableHead>
         <tbody>
-          {tableData.map((row: Array<string | number>, tableIndex: number) => (
+          {list.map((row: Array<string | number>, tableIndex: number) => (
             <TableRow key={tableIndex}>
               {row.map((v, valueIndex) => (
                 <TableCell key={valueIndex} hidden={valueIndex === 8}>
                   {valueIndex === 0 ? parseIsoDate(v.toString()) : v}
                 </TableCell>
               ))}
-              <TableCell hidden={showFDI(ref)}>
-                {calculateFDI(row, ref)}
-              </TableCell>
               <TableCell>
                 <ChannelRefComponent
                   tickerName={getTickerName(row[2].toString())}
