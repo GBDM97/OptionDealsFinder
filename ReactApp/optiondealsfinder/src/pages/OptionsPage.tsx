@@ -5,6 +5,7 @@ import ChannelRefComponent from "../components/ChannelRefComponent";
 import parseIsoDate from "../utils/parseIsoDate";
 import { IFimatheRef } from "../context/FimatheContext";
 import { useEffect, useState } from "react";
+import persistFimatheRef from "../context/persistFimatheRef";
 
 const Table = styled.table`
   width: 100%;
@@ -126,7 +127,7 @@ const OptionsPage = () => {
 
   useEffect(() => {
     setList(updateFDI(list, ref));
-  });
+  }, [ref]);
 
   return (
     <>
@@ -161,7 +162,12 @@ const OptionsPage = () => {
             <TableHeaderCell onClick={() => order(9)}>
               Fimathe Distance Index
             </TableHeaderCell>
-            <TableHeaderCell></TableHeaderCell>
+            <TableHeaderCell
+              onClick={() => persistFimatheRef(ref)}
+              style={{ cursor: ref ? "pointer" : "default" }}
+            >
+              Click to copy 📃
+            </TableHeaderCell>
           </TableRow>
         </TableHead>
         <tbody>
@@ -169,7 +175,9 @@ const OptionsPage = () => {
             <TableRow key={tableIndex}>
               {row.map((v, valueIndex) => (
                 <TableCell key={valueIndex} hidden={valueIndex === 8}>
-                  {valueIndex === 0 ? parseIsoDate(v.toString()) : v}
+                  {valueIndex === 0 ? parseIsoDate(v.toString()) : null}
+                  {valueIndex === 6 ? parseFloat(String(v)).toFixed(4) : null}
+                  {valueIndex !== 0 && valueIndex !== 6 ? v : null}
                 </TableCell>
               ))}
               <TableCell>

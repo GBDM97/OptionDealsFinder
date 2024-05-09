@@ -71,7 +71,7 @@ const ChannelRefComponent: React.FC<{
       <input
         onChange={(e) => setInsertedRef(e.target.value)}
         type="text"
-        value={insertedRef}
+        value={insertedRef !== "0" ? insertedRef : ""}
       />
       <button
         onClick={() => {
@@ -91,19 +91,16 @@ const ChannelRefComponent: React.FC<{
       </button>
     </>
   ) : (
-    <>
-      <p>
-        {ref && ref[tickerName] && refNumber === 1
-          ? ref[tickerName].ref1
-          : null}
-        {ref && ref[tickerName] && refNumber === 2
-          ? ref[tickerName].ref2
-          : null}
+    <div style={{ display: "block" }}>
+      <p style={{ display: "inline" }}>
+        {refNumber === 1 && ref && ref[tickerName].ref1}
+        {refNumber === 2 && ref && ref[tickerName].ref2}
       </p>
+      &nbsp;
       <button onClick={() => setOpen(true)} type="button">
         Edit
       </button>
-    </>
+    </div>
   );
 };
 
