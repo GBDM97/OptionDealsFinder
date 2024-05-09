@@ -93,8 +93,12 @@ const ChannelRefComponent: React.FC<{
   ) : (
     <div style={{ display: "block" }}>
       <p style={{ display: "inline" }}>
-        {refNumber === 1 && ref && ref[tickerName].ref1}
-        {refNumber === 2 && ref && ref[tickerName].ref2}
+        {refNumber === 1 && ref && ref[tickerName] && ref[tickerName].ref1
+          ? ref[tickerName].ref1
+          : null}
+        {refNumber === 2 && ref && ref[tickerName] && ref[tickerName].ref2
+          ? ref[tickerName].ref2
+          : null}
       </p>
       &nbsp;
       <button onClick={() => setOpen(true)} type="button">

@@ -99,14 +99,7 @@ const OptionsPage = () => {
         : parseFloat(String(p1)) - parseFloat(String(p2));
     };
 
-    if (orderDirection[col] === "") {
-      setOrderDirection((p) => {
-        p = ["", "", "", "", "", "", "", "", "", ""];
-        p[col] = "a";
-        return p;
-      });
-      setList(list.sort((a, b) => compareStringOrNumber(a[col], b[col])));
-    } else if (orderDirection[col] === "a") {
+    if (orderDirection[col] === "a") {
       setOrderDirection((p) => {
         p = ["", "", "", "", "", "", "", "", "", ""];
         p[col] = "d";
@@ -115,6 +108,13 @@ const OptionsPage = () => {
       setList(
         list.sort((a, b) => compareStringOrNumber(a[col], b[col])).reverse()
       );
+    } else if (orderDirection[col] === "") {
+      setOrderDirection((p) => {
+        p = ["", "", "", "", "", "", "", "", "", ""];
+        p[col] = "a";
+        return p;
+      });
+      setList(list.sort((a, b) => compareStringOrNumber(a[col], b[col])));
     } else {
       setOrderDirection((p) => {
         p = ["", "", "", "", "", "", "", "", "", ""];
