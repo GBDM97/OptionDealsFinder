@@ -174,7 +174,16 @@ const OptionsPage = () => {
           {list.map((row: Array<string | number>, tableIndex: number) => (
             <TableRow key={tableIndex}>
               {row.map((v, valueIndex) => (
-                <TableCell key={valueIndex} hidden={valueIndex === 8}>
+                <TableCell
+                  key={valueIndex}
+                  hidden={valueIndex === 8}
+                  style={{
+                    color:
+                      valueIndex === 9 && parseFloat(String(v)) <= 0.5
+                        ? "limeGreen"
+                        : "white",
+                  }}
+                >
                   {valueIndex === 0 ? parseIsoDate(v.toString()) : null}
                   {valueIndex === 6 ? parseFloat(String(v)).toFixed(4) : null}
                   {valueIndex !== 0 && valueIndex !== 6 ? v : null}
