@@ -44,7 +44,11 @@ const getTickerName = (opt: string) => {
     : opt.slice(0, numberIndex - 1);
 };
 
-const calculateFDI = (row: Array<string | number>, ref: IFimatheRef | null) => {
+const calculateIndexes = (
+  row: Array<string | number>,
+  ref: IFimatheRef | null,
+  indexNumber: number
+) => {
   const tickerName = getTickerName(row[2].toString());
   if (
     ref &&
@@ -52,23 +56,31 @@ const calculateFDI = (row: Array<string | number>, ref: IFimatheRef | null) => {
     !!ref[tickerName].ref1 &&
     !!ref[tickerName].ref2
   ) {
-    return (
-      (parseFloat(String(row[row.length - 1])) *
-        parseFloat(String(row[row.length - 2]))) /
-      100 /
-      Math.abs(ref[tickerName].ref1 - ref[tickerName].ref2)
-    );
+    if (indexNumber === 1) {
+      return (
+        (parseFloat(String(row[row.length - 1])) *
+          parseFloat(String(row[row.length - 2]))) /
+        100 /
+        Math.abs(ref[tickerName].ref1 - ref[tickerName].ref2)
+      );
+    } else if (indexNumber === 2) {
+      return (
+        parseFloat(String(row[row.length - 4])) /
+        parseFloat(String(row[row.length - 1])) ** 1.1
+      );
+    }
   }
   return 0;
 };
 
-const updateFDI = (
+const updateIndexes = (
   list: Array<Array<string | number>>,
   ref: IFimatheRef | null
 ) => {
   return list.map((row: Array<string | number>) => {
-    row.length > 9 ? row.pop() : null;
-    row.push(calculateFDI(row, ref));
+    row.length > 9 ? row.splice(-2) : null;
+    row.push(calculateIndexes(row, ref, 1));
+    row.push(calculateIndexes(row, ref, 2));
     return row;
   });
 };
@@ -77,6 +89,7 @@ const OptionsPage = () => {
   const { ref } = useFimatheContext();
   const [list, setList] = useState(tableData);
   const [orderDirection, setOrderDirection] = useState([
+    "",
     "",
     "",
     "",
@@ -101,7 +114,7 @@ const OptionsPage = () => {
 
     if (orderDirection[col] === "a") {
       setOrderDirection((p) => {
-        p = ["", "", "", "", "", "", "", "", "", ""];
+        p = ["", "", "", "", "", "", "", "", "", "", ""];
         p[col] = "d";
         return p;
       });
@@ -110,14 +123,14 @@ const OptionsPage = () => {
       );
     } else if (orderDirection[col] === "") {
       setOrderDirection((p) => {
-        p = ["", "", "", "", "", "", "", "", "", ""];
+        p = ["", "", "", "", "", "", "", "", "", "", ""];
         p[col] = "a";
         return p;
       });
       setList(list.sort((a, b) => compareStringOrNumber(a[col], b[col])));
     } else {
       setOrderDirection((p) => {
-        p = ["", "", "", "", "", "", "", "", "", ""];
+        p = ["", "", "", "", "", "", "", "", "", "", ""];
         p[col] = "";
         return p;
       });
@@ -126,7 +139,7 @@ const OptionsPage = () => {
   };
 
   useEffect(() => {
-    setList(updateFDI(list, ref));
+    setList(updateIndexes(list, ref));
   }, [ref]);
 
   return (
@@ -161,6 +174,9 @@ const OptionsPage = () => {
             </TableHeaderCell>
             <TableHeaderCell onClick={() => order(9)}>
               Fimathe Distance Index
+            </TableHeaderCell>
+            <TableHeaderCell onClick={() => order(10)}>
+              Deal Relevance Index
             </TableHeaderCell>
             <TableHeaderCell
               onClick={() => persistFimatheRef(ref)}
