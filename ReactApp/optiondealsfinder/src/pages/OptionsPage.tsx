@@ -179,7 +179,7 @@ const OptionsPage = () => {
                   hidden={valueIndex === 8}
                   style={{
                     color:
-                      valueIndex === 9 && parseFloat(String(v)) <= 0.5
+                      valueIndex === 9 && parseFloat(String(v)) <= 1
                         ? "limeGreen"
                         : "white",
                   }}
