@@ -16,7 +16,8 @@ const Table = styled.table`
 const TableHead = styled.thead`
   background-color: black;
   color: white;
-  border-bottom: 1px solid white;
+  position: sticky;
+  top: 0;
 `;
 
 const TableRow = styled.tr`
@@ -34,7 +35,6 @@ const TableHeaderCell = styled.th`
 
 const TableCell = styled.td`
   padding: 12px;
-  border-bottom: 1px solid #ddd;
 `;
 
 const getTickerName = (opt: string) => {
@@ -132,12 +132,7 @@ const OptionsPage = () => {
   return (
     <>
       <Table>
-        <TableHead
-          style={{
-            position: "sticky",
-            top: 0,
-          }}
-        >
+        <TableHead>
           <TableRow>
             <TableHeaderCell onClick={() => order(0)}>
               Date and Time
@@ -169,7 +164,16 @@ const OptionsPage = () => {
               Click to copy 📃
             </TableHeaderCell>
           </TableRow>
+          <TableRow
+            style={{
+              width: "100vw",
+              backgroundColor: "gray",
+              height: "1px",
+              position: "fixed",
+            }}
+          ></TableRow>
         </TableHead>
+
         <tbody>
           {list.map((row: Array<string | number>, tableIndex: number) => (
             <TableRow key={tableIndex}>
