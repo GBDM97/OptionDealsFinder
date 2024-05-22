@@ -1,29 +1,47 @@
 [
   {
-    "code": "BOVAP117",
+    "code": "SANB11",
+    "reference": "<=",
+    "alertPrice": "26.66"
+  },
+  {
+    "code": "SANBR270",
     "reference": "<=",
     "alertPrice": "0.02"
   },
   {
-    "code": "VALEP666",
+    "code": "SANBR275",
     "reference": "<=",
-    "alertPrice": "0.02",
-    "notified": "True"
+    "alertPrice": "0.02"
   },
   {
-    "code": "BOVA11",
+    "code": "ELET6",
     "reference": "<=",
-    "alertPrice": "118"
+    "alertPrice": "40.01"
   },
   {
-    "code": "VALE3",
+    "code": "ELETR4",
     "reference": "<=",
-    "alertPrice": "57.99"
+    "alertPrice": "0.02"
   },
   {
-    "code": "VALE3",
-    "reference": ">=",
-    "alertPrice": "57.99",
-    "notified": "True"
+    "code": "ELETR424",
+    "reference": "<=",
+    "alertPrice": "0.02"
+  },
+  {
+    "code": "GGBR4",
+    "reference": "<=",
+    "alertPrice": "17.63"
+  },
+  {
+    "code": "GGBRR220",
+    "reference": "<=",
+    "alertPrice": "0.02"
+  },
+  {
+    "code": "GGBRR212",
+    "reference": "<=",
+    "alertPrice": "0.02"
   }
 ]
