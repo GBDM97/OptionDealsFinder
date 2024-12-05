@@ -6,7 +6,7 @@ def testPrices():
     with open('Data\\testPrices.json', 'r') as file:
         return ast.literal_eval(file.read().replace('null','None'))
 
-async def generateDataSet(driver) -> list[list[dict]]:
+async def generateDataSet(driver,weekly) -> list[list[dict]]:
     asset_dataset = []
     final_dataset = []
 
@@ -24,7 +24,7 @@ async def generateDataSet(driver) -> list[list[dict]]:
         return False
             
     prices_index = 0
-    currentOptions = optionCodes.importFiltered()
+    currentOptions = optionCodes.importWeeklyFiltered() if weekly else optionCodes.importFiltered()
     prices = await ws.queryPrices([ii['code'] for i in currentOptions for ii in i],driver)
     # prices = testPrices()
     for i in currentOptions:
@@ -52,7 +52,7 @@ async def generateDataSet(driver) -> list[list[dict]]:
             final_dataset.append(asset_dataset)
     return final_dataset
 
-async def createLockOutput(driver):
-    await optionCodes.updateOptionsList(driver)
-    assetsInputData = await generateDataSet(driver)
-    return dataProcess.getLockInfo(assetsInputData)
+async def createLockOutput(driver, weekly):
+    await optionCodes.updateOptionsList(driver,weekly)
+    assetsInputData = await generateDataSet(driver,weekly)
+    return dataProcess.getLockInfo(assetsInputData, weekly)
