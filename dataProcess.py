@@ -43,16 +43,16 @@ def assetWeeklyLockInfo(input_data):
     all_lock_combinations = []
     data = input_data[1:]
     curr_call_code = data[0]['code'][4]
-    curr_put_code
+    curr_put_code = ''
     curr_week_code = data[0]['code'][-2:] if len(data[0]['code']) > 8 else 'W3'
-    next_week_code
+    next_week_code = ''
     for i in data:
         if i['code'][4] != curr_call_code:
             curr_put_code = i['code'][4]
             break
     for i in data:
-        if i['code'][4] != curr_week_code or curr_week_code == 'W3':
-            next_week_code = i['code'][4] if curr_week_code != 'W3' else 'W4'
+        if i['code'][-2:] != curr_week_code or curr_week_code == 'W3':
+            next_week_code = i['code'][-2:] if curr_week_code != 'W3' else 'W4'
             break
     calls = []
     puts = []
@@ -76,7 +76,8 @@ def assetWeeklyLockInfo(input_data):
                     priceDiff = ii['sellPrice']-i['buyPrice']
                     if priceDiff < 0.1 and priceDiff > 0:
                         all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
-                        else ii['time'],i['code'],i['buyPrice'],ii['code'],ii['sellPrice'],priceDiff])
+                        else ii['time'],i['code'],i['buyPrice'],ii['code'],ii['sellPrice'],
+                        ((ii['sellPrice']-i['buyPrice'])*100)/((ii['sellPrice']+i['buyPrice'])/2), priceDiff])
                 except (TypeError, ZeroDivisionError):
                     continue
     iterateOverSide(calls, nextCalls)
@@ -90,6 +91,6 @@ def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
         outList.extend(assetWeeklyLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
     if weekly:
         def sortLast(val):
-            return val[-1] 
+            return val[-2] 
         outList.sort(key=sortLast)
     return outList

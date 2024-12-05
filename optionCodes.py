@@ -93,7 +93,7 @@ def exportTestPrices(l):
 
 async def updateOptionsList(driver,weekly):
     percentage = 10 if weekly else 5
-    assetsPrices = await ws.queryPrices(underlyingAssets,driver)
+    assetsPrices = await ws.queryPrices(underlyingWeeklyAssets if weekly else underlyingAssets,driver)
     ws.clearSnapshots(driver)
     assetsOptions = importWeeklyCurrent() if weekly else importCurrent()
     for i,v in enumerate(assetsPrices):
