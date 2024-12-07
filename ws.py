@@ -41,7 +41,7 @@ def sendTwilioMessage(driver,opt:str):
         xhr.open('POST', '{url}', true);
         xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
         xhr.setRequestHeader('Authorization', 'Basic {auth}');
-        var data = 'To=whatsapp:{number}&From=whatsapp:14155238886&ContentSid={sid}&ContentVariables={urllib.parse.quote(json.dumps({"1": opt}))};
+        var data = 'To=whatsapp:{number}&From=whatsapp:14155238886&ContentSid={sid}&ContentVariables={urllib.parse.quote(json.dumps({"1": opt}))}';
         xhr.send(data);
         xhr.onload = function () {{
             if (xhr.status >= 200 && xhr.status < 300) {{
@@ -51,7 +51,6 @@ def sendTwilioMessage(driver,opt:str):
             }}
         }};
     """
-    print(js_code)
     driver.execute_script(js_code)
 
 

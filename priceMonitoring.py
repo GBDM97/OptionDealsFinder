@@ -32,16 +32,12 @@ def subscribeList(driver):
      ws.subscribeQuote(i['boughtAsset'],driver)) if i['operationType'] == 'lock' else 
      None for i in inputList]
 
-async def start(driver=''):
-    snapshots = await ws.getSnapshots(driver)
-    updates = await ws.getUpdates(driver)
-    updates.append(snapshots)
-    updates = updates[0]
-    print(updates)
+async def start(driver):
     while True:
         snapshots = await ws.getSnapshots(driver)
         updates = await ws.getUpdates(driver)
         updates.append(snapshots)
+        updates = updates[0]
         inputList = list(importList())
         for i in inputList:
             for ii in updates:
