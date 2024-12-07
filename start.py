@@ -25,11 +25,11 @@ async def update():
         ws.clearSnapshots(driver)
         lockOutput = await clearScript.createLockOutput(driver,weekly)
         exportWeeklyLockOutput(lockOutput) if weekly else exportLockOutput(lockOutput)
-        [ws.subscribeQuote(i['code'],driver) for i in priceMonitoring.importList()]
-
+        priceMonitoring.subscribeList(driver)
 
 async def main():
     input('Verify permission.')
+    priceMonitoring.subscribeList(driver)
     driver.execute_script('await Notification.requestPermission();')
     input('Start?')
     await asyncio.gather(

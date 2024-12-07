@@ -92,7 +92,7 @@ def exportTestPrices(l):
         json.dump(l, file, indent=1)
 
 async def updateOptionsList(driver,weekly):
-    percentage = 10 if weekly else 5
+    percentage = 5
     assetsPrices = await ws.queryPrices(underlyingWeeklyAssets if weekly else underlyingAssets,driver)
     ws.clearSnapshots(driver)
     assetsOptions = importWeeklyCurrent() if weekly else importCurrent()
@@ -115,4 +115,4 @@ async def updateOptionsList(driver,weekly):
     exportWeeklyFilteredOptions(assetsOptions) if weekly else exportFilteredOptions(assetsOptions)
 
 # exportCurrentOptionsList(getAllOptionsAPI(underlyingAssets,"L"))
-# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"L","W1"))
+# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"L","W2"))

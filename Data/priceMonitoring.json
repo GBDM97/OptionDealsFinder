@@ -1,47 +1,20 @@
 [
   {
+    "operationType": "dry",
     "code": "SANB11",
     "reference": "<=",
-    "alertPrice": "26.66"
+    "alertPrice": "26.66",
+    "notified": "True"
   },
   {
-    "code": "SANBR270",
-    "reference": "<=",
-    "alertPrice": "0.02"
-  },
-  {
-    "code": "SANBR275",
-    "reference": "<=",
-    "alertPrice": "0.02"
-  },
-  {
-    "code": "ELET6",
-    "reference": "<=",
-    "alertPrice": "40.01"
-  },
-  {
-    "code": "ELETR4",
-    "reference": "<=",
-    "alertPrice": "0.02"
-  },
-  {
-    "code": "ELETR424",
-    "reference": "<=",
-    "alertPrice": "0.02"
-  },
-  {
-    "code": "GGBR4",
-    "reference": "<=",
-    "alertPrice": "17.63"
-  },
-  {
-    "code": "GGBRR220",
-    "reference": "<=",
-    "alertPrice": "0.02"
-  },
-  {
-    "code": "GGBRR212",
-    "reference": "<=",
-    "alertPrice": "0.02"
+    "operationType": "lock",
+    "soldAsset": "MGLUX880W2",
+    "soldAssetPrices": [0.23, 0.26],
+    "boughtAsset": "MGLUX880",
+    "boughtAssetPrices": [0.22, 0.24],
+    "multiplicationTarget": 2,
+    "soldAssetExitPrice": 0.46,
+    "boughtAssetCurrExitPrice": 0.52,
+    "soldAssetCurrExitPrice": 0.45
   }
 ]

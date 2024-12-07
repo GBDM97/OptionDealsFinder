@@ -4,62 +4,6 @@
       "code": "ABEV3"
     },
     {
-      "code": "ABEVL130W1",
-      "strike": 13.0
-    },
-    {
-      "code": "ABEVL135W1",
-      "strike": 13.5
-    },
-    {
-      "code": "ABEVL140W1",
-      "strike": 14.0
-    },
-    {
-      "code": "ABEVL145W1",
-      "strike": 14.5
-    },
-    {
-      "code": "ABEVL150W1",
-      "strike": 15.0
-    },
-    {
-      "code": "ABEVL155W1",
-      "strike": 15.5
-    },
-    {
-      "code": "ABEVX130W1",
-      "strike": 13.0
-    },
-    {
-      "code": "ABEVX135W1",
-      "strike": 13.5
-    },
-    {
-      "code": "ABEVX140W1",
-      "strike": 14.0
-    },
-    {
-      "code": "ABEVX145W1",
-      "strike": 14.5
-    },
-    {
-      "code": "ABEVX150W1",
-      "strike": 15.0
-    },
-    {
-      "code": "ABEVX155W1",
-      "strike": 15.5
-    },
-    {
-      "code": "ABEVL130W2",
-      "strike": 13.0
-    },
-    {
-      "code": "ABEVL135W2",
-      "strike": 13.5
-    },
-    {
       "code": "ABEVL140W2",
       "strike": 14.0
     },
@@ -70,18 +14,6 @@
     {
       "code": "ABEVL150W2",
       "strike": 15.0
-    },
-    {
-      "code": "ABEVL155W2",
-      "strike": 15.5
-    },
-    {
-      "code": "ABEVX130W2",
-      "strike": 13.0
-    },
-    {
-      "code": "ABEVX135W2",
-      "strike": 13.5
     },
     {
       "code": "ABEVX140W2",
@@ -96,93 +28,57 @@
       "strike": 15.0
     },
     {
-      "code": "ABEVX155W2",
-      "strike": 15.5
+      "code": "ABEVL137",
+      "strike": 13.75
+    },
+    {
+      "code": "ABEVL140",
+      "strike": 14.0
+    },
+    {
+      "code": "ABEVL142",
+      "strike": 14.25
+    },
+    {
+      "code": "ABEVL145",
+      "strike": 14.5
+    },
+    {
+      "code": "ABEVL147",
+      "strike": 14.75
+    },
+    {
+      "code": "ABEVL150",
+      "strike": 15.0
+    },
+    {
+      "code": "ABEVX137",
+      "strike": 13.75
+    },
+    {
+      "code": "ABEVX140",
+      "strike": 14.0
+    },
+    {
+      "code": "ABEVX142",
+      "strike": 14.25
+    },
+    {
+      "code": "ABEVX145",
+      "strike": 14.5
+    },
+    {
+      "code": "ABEVX147",
+      "strike": 14.75
+    },
+    {
+      "code": "ABEVX150",
+      "strike": 15.0
     }
   ],
   [
     {
       "code": "B3SA3"
-    },
-    {
-      "code": "B3SAL880W1",
-      "strike": 8.8
-    },
-    {
-      "code": "B3SAL900W1",
-      "strike": 9.0
-    },
-    {
-      "code": "B3SAL920W1",
-      "strike": 9.2
-    },
-    {
-      "code": "B3SAL940W1",
-      "strike": 9.4
-    },
-    {
-      "code": "B3SAL960W1",
-      "strike": 9.6
-    },
-    {
-      "code": "B3SAL980W1",
-      "strike": 9.8
-    },
-    {
-      "code": "B3SAL100W1",
-      "strike": 10.0
-    },
-    {
-      "code": "B3SAL105W1",
-      "strike": 10.5
-    },
-    {
-      "code": "B3SAX880W1",
-      "strike": 8.8
-    },
-    {
-      "code": "B3SAX900W1",
-      "strike": 9.0
-    },
-    {
-      "code": "B3SAX920W1",
-      "strike": 9.2
-    },
-    {
-      "code": "B3SAX940W1",
-      "strike": 9.4
-    },
-    {
-      "code": "B3SAX960W1",
-      "strike": 9.6
-    },
-    {
-      "code": "B3SAX980W1",
-      "strike": 9.8
-    },
-    {
-      "code": "B3SAX100W1",
-      "strike": 10.0
-    },
-    {
-      "code": "B3SAX105W1",
-      "strike": 10.5
-    },
-    {
-      "code": "B3SAL880W2",
-      "strike": 8.8
-    },
-    {
-      "code": "B3SAL900W2",
-      "strike": 9.0
-    },
-    {
-      "code": "B3SAL920W2",
-      "strike": 9.2
-    },
-    {
-      "code": "B3SAL940W2",
-      "strike": 9.4
     },
     {
       "code": "B3SAL960W2",
@@ -201,22 +97,6 @@
       "strike": 10.4
     },
     {
-      "code": "B3SAX880W2",
-      "strike": 8.8
-    },
-    {
-      "code": "B3SAX900W2",
-      "strike": 9.0
-    },
-    {
-      "code": "B3SAX920W2",
-      "strike": 9.2
-    },
-    {
-      "code": "B3SAX940W2",
-      "strike": 9.4
-    },
-    {
       "code": "B3SAX960W2",
       "strike": 9.6
     },
@@ -231,95 +111,67 @@
     {
       "code": "B3SAX104W2",
       "strike": 10.4
+    },
+    {
+      "code": "B3SAL963",
+      "strike": 9.46
+    },
+    {
+      "code": "B3SAL973",
+      "strike": 9.56
+    },
+    {
+      "code": "B3SAL983",
+      "strike": 9.66
+    },
+    {
+      "code": "B3SAL993",
+      "strike": 9.76
+    },
+    {
+      "code": "B3SAL100",
+      "strike": 9.96
+    },
+    {
+      "code": "B3SAL101",
+      "strike": 10.01
+    },
+    {
+      "code": "B3SAL104",
+      "strike": 10.26
+    },
+    {
+      "code": "B3SAX963",
+      "strike": 9.46
+    },
+    {
+      "code": "B3SAX973",
+      "strike": 9.56
+    },
+    {
+      "code": "B3SAX983",
+      "strike": 9.66
+    },
+    {
+      "code": "B3SAX993",
+      "strike": 9.76
+    },
+    {
+      "code": "B3SAX100",
+      "strike": 9.96
+    },
+    {
+      "code": "B3SAX101",
+      "strike": 10.01
+    },
+    {
+      "code": "B3SAX104",
+      "strike": 10.26
     }
   ],
   [
     {
       "code": "BBAS3"
-    },
-    {
-      "code": "BBASL235W1",
-      "strike": 23.09
-    },
-    {
-      "code": "BBASL240W1",
-      "strike": 23.59
-    },
-    {
-      "code": "BBASL245W1",
-      "strike": 24.09
-    },
-    {
-      "code": "BBASL250W1",
-      "strike": 24.59
-    },
-    {
-      "code": "BBASL255W1",
-      "strike": 25.09
-    },
-    {
-      "code": "BBASL260W1",
-      "strike": 25.59
-    },
-    {
-      "code": "BBASL265W1",
-      "strike": 26.09
-    },
-    {
-      "code": "BBASL270W1",
-      "strike": 26.59
-    },
-    {
-      "code": "BBASL275W1",
-      "strike": 27.09
-    },
-    {
-      "code": "BBASL280W1",
-      "strike": 27.59
-    },
-    {
-      "code": "BBASX235W1",
-      "strike": 23.09
-    },
-    {
-      "code": "BBASX240W1",
-      "strike": 23.59
-    },
-    {
-      "code": "BBASX245W1",
-      "strike": 24.09
-    },
-    {
-      "code": "BBASX250W1",
-      "strike": 24.59
-    },
-    {
-      "code": "BBASX255W1",
-      "strike": 25.09
-    },
-    {
-      "code": "BBASX260W1",
-      "strike": 25.59
-    },
-    {
-      "code": "BBASX265W1",
-      "strike": 26.09
-    },
-    {
-      "code": "BBASX270W1",
-      "strike": 26.59
-    },
-    {
-      "code": "BBASX275W1",
-      "strike": 27.09
-    },
-    {
-      "code": "BBASX280W1",
-      "strike": 27.59
-    },
-    {
-      "code": "BBASL235W2",
-      "strike": 23.09
     },
     {
       "code": "BBASL240W2",
@@ -342,26 +194,6 @@
       "strike": 25.59
     },
     {
-      "code": "BBASL265W2",
-      "strike": 26.09
-    },
-    {
-      "code": "BBASL270W2",
-      "strike": 26.59
-    },
-    {
-      "code": "BBASL275W2",
-      "strike": 27.09
-    },
-    {
-      "code": "BBASL280W2",
-      "strike": 27.59
-    },
-    {
-      "code": "BBASX235W2",
-      "strike": 23.09
-    },
-    {
       "code": "BBASX240W2",
       "strike": 23.59
     },
@@ -382,77 +214,89 @@
       "strike": 25.59
     },
     {
-      "code": "BBASX265W2",
-      "strike": 26.09
+      "code": "BBASL52",
+      "strike": 23.38
     },
     {
-      "code": "BBASX270W2",
-      "strike": 26.59
+      "code": "BBASL524",
+      "strike": 23.63
     },
     {
-      "code": "BBASX275W2",
-      "strike": 27.09
+      "code": "BBASL519",
+      "strike": 23.88
     },
     {
-      "code": "BBASX280W2",
-      "strike": 27.59
+      "code": "BBASL523",
+      "strike": 24.13
+    },
+    {
+      "code": "BBASL529",
+      "strike": 24.38
+    },
+    {
+      "code": "BBASL537",
+      "strike": 24.63
+    },
+    {
+      "code": "BBASL542",
+      "strike": 24.88
+    },
+    {
+      "code": "BBASL544",
+      "strike": 25.13
+    },
+    {
+      "code": "BBASL549",
+      "strike": 25.38
+    },
+    {
+      "code": "BBASL557",
+      "strike": 25.63
+    },
+    {
+      "code": "BBASX52",
+      "strike": 23.38
+    },
+    {
+      "code": "BBASX524",
+      "strike": 23.63
+    },
+    {
+      "code": "BBASX519",
+      "strike": 23.88
+    },
+    {
+      "code": "BBASX523",
+      "strike": 24.13
+    },
+    {
+      "code": "BBASX529",
+      "strike": 24.38
+    },
+    {
+      "code": "BBASX537",
+      "strike": 24.63
+    },
+    {
+      "code": "BBASX542",
+      "strike": 24.88
+    },
+    {
+      "code": "BBASX544",
+      "strike": 25.13
+    },
+    {
+      "code": "BBASX549",
+      "strike": 25.38
+    },
+    {
+      "code": "BBASX557",
+      "strike": 25.63
     }
   ],
   [
     {
       "code": "BBDC4"
-    },
-    {
-      "code": "BBDCL115W1",
-      "strike": 11.46
-    },
-    {
-      "code": "BBDCL120W1",
-      "strike": 11.96
-    },
-    {
-      "code": "BBDCL125W1",
-      "strike": 12.46
-    },
-    {
-      "code": "BBDCL130W1",
-      "strike": 12.96
-    },
-    {
-      "code": "BBDCL135W1",
-      "strike": 13.46
-    },
-    {
-      "code": "BBDCL140W1",
-      "strike": 13.96
-    },
-    {
-      "code": "BBDCX115W1",
-      "strike": 11.46
-    },
-    {
-      "code": "BBDCX120W1",
-      "strike": 11.96
-    },
-    {
-      "code": "BBDCX125W1",
-      "strike": 12.46
-    },
-    {
-      "code": "BBDCX130W1",
-      "strike": 12.96
-    },
-    {
-      "code": "BBDCX135W1",
-      "strike": 13.46
-    },
-    {
-      "code": "BBDCX140W1",
-      "strike": 13.96
-    },
-    {
-      "code": "BBDCL115W2",
-      "strike": 11.48
     },
     {
       "code": "BBDCL120W2",
@@ -463,18 +307,6 @@
       "strike": 12.48
     },
     {
-      "code": "BBDCL130W2",
-      "strike": 12.98
-    },
-    {
-      "code": "BBDCL135W2",
-      "strike": 13.48
-    },
-    {
-      "code": "BBDCX115W2",
-      "strike": 11.48
-    },
-    {
       "code": "BBDCX120W2",
       "strike": 11.98
     },
@@ -483,45 +315,41 @@
       "strike": 12.48
     },
     {
-      "code": "BBDCX130W2",
-      "strike": 12.98
+      "code": "BBDCL123",
+      "strike": 11.73
     },
     {
-      "code": "BBDCX135W2",
-      "strike": 13.48
+      "code": "BBDCL12",
+      "strike": 11.98
+    },
+    {
+      "code": "BBDCL127",
+      "strike": 12.23
+    },
+    {
+      "code": "BBDCL512",
+      "strike": 12.73
+    },
+    {
+      "code": "BBDCX123",
+      "strike": 11.73
+    },
+    {
+      "code": "BBDCX12",
+      "strike": 11.98
+    },
+    {
+      "code": "BBDCX127",
+      "strike": 12.23
+    },
+    {
+      "code": "BBDCX512",
+      "strike": 12.73
     }
   ],
   [
     {
       "code": "BBSE3"
-    },
-    {
-      "code": "BBSEL320",
-      "strike": 32.0
-    },
-    {
-      "code": "BBSEL336",
-      "strike": 32.25
-    },
-    {
-      "code": "BBSEL325",
-      "strike": 32.5
-    },
-    {
-      "code": "BBSEL341",
-      "strike": 32.75
-    },
-    {
-      "code": "BBSEL343",
-      "strike": 33.0
-    },
-    {
-      "code": "BBSEL346",
-      "strike": 33.25
-    },
-    {
-      "code": "BBSEL348",
-      "strike": 33.5
     },
     {
       "code": "BBSEL351",
@@ -572,54 +400,6 @@
       "strike": 37.25
     },
     {
-      "code": "BBSEL375",
-      "strike": 37.5
-    },
-    {
-      "code": "BBSEL377",
-      "strike": 37.75
-    },
-    {
-      "code": "BBSEL380",
-      "strike": 38.0
-    },
-    {
-      "code": "BBSEL411",
-      "strike": 38.5
-    },
-    {
-      "code": "BBSEL390",
-      "strike": 39.0
-    },
-    {
-      "code": "BBSEX320",
-      "strike": 32.0
-    },
-    {
-      "code": "BBSEX336",
-      "strike": 32.25
-    },
-    {
-      "code": "BBSEX325",
-      "strike": 32.5
-    },
-    {
-      "code": "BBSEX341",
-      "strike": 32.75
-    },
-    {
-      "code": "BBSEX343",
-      "strike": 33.0
-    },
-    {
-      "code": "BBSEX346",
-      "strike": 33.25
-    },
-    {
-      "code": "BBSEX348",
-      "strike": 33.5
-    },
-    {
       "code": "BBSEX351",
       "strike": 33.75
     },
@@ -666,46 +446,6 @@
     {
       "code": "BBSEX386",
       "strike": 37.25
-    },
-    {
-      "code": "BBSEX375",
-      "strike": 37.5
-    },
-    {
-      "code": "BBSEX377",
-      "strike": 37.75
-    },
-    {
-      "code": "BBSEX380",
-      "strike": 38.0
-    },
-    {
-      "code": "BBSEX411",
-      "strike": 38.5
-    },
-    {
-      "code": "BBSEX390",
-      "strike": 39.0
-    },
-    {
-      "code": "BBSEA323",
-      "strike": 32.36
-    },
-    {
-      "code": "BBSEA340",
-      "strike": 32.61
-    },
-    {
-      "code": "BBSEA328",
-      "strike": 32.86
-    },
-    {
-      "code": "BBSEA333",
-      "strike": 33.36
-    },
-    {
-      "code": "BBSEA350",
-      "strike": 33.61
     },
     {
       "code": "BBSEA338",
@@ -756,46 +496,6 @@
       "strike": 37.11
     },
     {
-      "code": "BBSEA373",
-      "strike": 37.36
-    },
-    {
-      "code": "BBSEA378",
-      "strike": 37.86
-    },
-    {
-      "code": "BBSEA381",
-      "strike": 38.11
-    },
-    {
-      "code": "BBSEA383",
-      "strike": 38.36
-    },
-    {
-      "code": "BBSEA388",
-      "strike": 38.86
-    },
-    {
-      "code": "BBSEM323",
-      "strike": 32.36
-    },
-    {
-      "code": "BBSEM340",
-      "strike": 32.61
-    },
-    {
-      "code": "BBSEM328",
-      "strike": 32.86
-    },
-    {
-      "code": "BBSEM333",
-      "strike": 33.36
-    },
-    {
-      "code": "BBSEM350",
-      "strike": 33.61
-    },
-    {
       "code": "BBSEM338",
       "strike": 33.86
     },
@@ -842,251 +542,11 @@
     {
       "code": "BBSEM371",
       "strike": 37.11
-    },
-    {
-      "code": "BBSEM373",
-      "strike": 37.36
-    },
-    {
-      "code": "BBSEM378",
-      "strike": 37.86
-    },
-    {
-      "code": "BBSEM381",
-      "strike": 38.11
-    },
-    {
-      "code": "BBSEM383",
-      "strike": 38.36
-    },
-    {
-      "code": "BBSEM388",
-      "strike": 38.86
     }
   ],
   [
     {
       "code": "BOVA11"
-    },
-    {
-      "code": "BOVAL112W1",
-      "strike": 112.0
-    },
-    {
-      "code": "BOVAL113W1",
-      "strike": 113.0
-    },
-    {
-      "code": "BOVAL114W1",
-      "strike": 114.0
-    },
-    {
-      "code": "BOVAL115W1",
-      "strike": 115.0
-    },
-    {
-      "code": "BOVAL116W1",
-      "strike": 116.0
-    },
-    {
-      "code": "BOVAL117W1",
-      "strike": 117.0
-    },
-    {
-      "code": "BOVAL118W1",
-      "strike": 118.0
-    },
-    {
-      "code": "BOVAL119W1",
-      "strike": 119.0
-    },
-    {
-      "code": "BOVAL120W1",
-      "strike": 120.0
-    },
-    {
-      "code": "BOVAL121W1",
-      "strike": 121.0
-    },
-    {
-      "code": "BOVAL122W1",
-      "strike": 122.0
-    },
-    {
-      "code": "BOVAL123W1",
-      "strike": 123.0
-    },
-    {
-      "code": "BOVAL124W1",
-      "strike": 124.0
-    },
-    {
-      "code": "BOVAL125W1",
-      "strike": 125.0
-    },
-    {
-      "code": "BOVAL126W1",
-      "strike": 126.0
-    },
-    {
-      "code": "BOVAL127W1",
-      "strike": 127.0
-    },
-    {
-      "code": "BOVAL128W1",
-      "strike": 128.0
-    },
-    {
-      "code": "BOVAL129W1",
-      "strike": 129.0
-    },
-    {
-      "code": "BOVAL130W1",
-      "strike": 130.0
-    },
-    {
-      "code": "BOVAL131W1",
-      "strike": 131.0
-    },
-    {
-      "code": "BOVAL132W1",
-      "strike": 132.0
-    },
-    {
-      "code": "BOVAL133W1",
-      "strike": 133.0
-    },
-    {
-      "code": "BOVAL134W1",
-      "strike": 134.0
-    },
-    {
-      "code": "BOVAL135W1",
-      "strike": 135.0
-    },
-    {
-      "code": "BOVAL136W1",
-      "strike": 136.0
-    },
-    {
-      "code": "BOVAX112W1",
-      "strike": 112.0
-    },
-    {
-      "code": "BOVAX113W1",
-      "strike": 113.0
-    },
-    {
-      "code": "BOVAX114W1",
-      "strike": 114.0
-    },
-    {
-      "code": "BOVAX115W1",
-      "strike": 115.0
-    },
-    {
-      "code": "BOVAX116W1",
-      "strike": 116.0
-    },
-    {
-      "code": "BOVAX117W1",
-      "strike": 117.0
-    },
-    {
-      "code": "BOVAX118W1",
-      "strike": 118.0
-    },
-    {
-      "code": "BOVAX119W1",
-      "strike": 119.0
-    },
-    {
-      "code": "BOVAX120W1",
-      "strike": 120.0
-    },
-    {
-      "code": "BOVAX121W1",
-      "strike": 121.0
-    },
-    {
-      "code": "BOVAX122W1",
-      "strike": 122.0
-    },
-    {
-      "code": "BOVAX123W1",
-      "strike": 123.0
-    },
-    {
-      "code": "BOVAX124W1",
-      "strike": 124.0
-    },
-    {
-      "code": "BOVAX125W1",
-      "strike": 125.0
-    },
-    {
-      "code": "BOVAX126W1",
-      "strike": 126.0
-    },
-    {
-      "code": "BOVAX127W1",
-      "strike": 127.0
-    },
-    {
-      "code": "BOVAX128W1",
-      "strike": 128.0
-    },
-    {
-      "code": "BOVAX129W1",
-      "strike": 129.0
-    },
-    {
-      "code": "BOVAX130W1",
-      "strike": 130.0
-    },
-    {
-      "code": "BOVAX131W1",
-      "strike": 131.0
-    },
-    {
-      "code": "BOVAX132W1",
-      "strike": 132.0
-    },
-    {
-      "code": "BOVAX133W1",
-      "strike": 133.0
-    },
-    {
-      "code": "BOVAX134W1",
-      "strike": 134.0
-    },
-    {
-      "code": "BOVAX135W1",
-      "strike": 135.0
-    },
-    {
-      "code": "BOVAX136W1",
-      "strike": 136.0
-    },
-    {
-      "code": "BOVAL112W2",
-      "strike": 112.0
-    },
-    {
-      "code": "BOVAL113W2",
-      "strike": 113.0
-    },
-    {
-      "code": "BOVAL114W2",
-      "strike": 114.0
-    },
-    {
-      "code": "BOVAL115W2",
-      "strike": 115.0
-    },
-    {
-      "code": "BOVAL116W2",
-      "strike": 116.0
     },
     {
       "code": "BOVAL117W2",
@@ -1137,58 +597,6 @@
       "strike": 128.0
     },
     {
-      "code": "BOVAL129W2",
-      "strike": 129.0
-    },
-    {
-      "code": "BOVAL130W2",
-      "strike": 130.0
-    },
-    {
-      "code": "BOVAL131W2",
-      "strike": 131.0
-    },
-    {
-      "code": "BOVAL132W2",
-      "strike": 132.0
-    },
-    {
-      "code": "BOVAL133W2",
-      "strike": 133.0
-    },
-    {
-      "code": "BOVAL134W2",
-      "strike": 134.0
-    },
-    {
-      "code": "BOVAL135W2",
-      "strike": 135.0
-    },
-    {
-      "code": "BOVAL136W2",
-      "strike": 136.0
-    },
-    {
-      "code": "BOVAX112W2",
-      "strike": 112.0
-    },
-    {
-      "code": "BOVAX113W2",
-      "strike": 113.0
-    },
-    {
-      "code": "BOVAX114W2",
-      "strike": 114.0
-    },
-    {
-      "code": "BOVAX115W2",
-      "strike": 115.0
-    },
-    {
-      "code": "BOVAX116W2",
-      "strike": 116.0
-    },
-    {
       "code": "BOVAX117W2",
       "strike": 117.0
     },
@@ -1237,129 +645,105 @@
       "strike": 128.0
     },
     {
-      "code": "BOVAX129W2",
-      "strike": 129.0
+      "code": "BOVAL117",
+      "strike": 117.0
     },
     {
-      "code": "BOVAX130W2",
-      "strike": 130.0
+      "code": "BOVAL18",
+      "strike": 118.0
     },
     {
-      "code": "BOVAX131W2",
-      "strike": 131.0
+      "code": "BOVAL119",
+      "strike": 119.0
     },
     {
-      "code": "BOVAX132W2",
-      "strike": 132.0
+      "code": "BOVAL252",
+      "strike": 120.0
     },
     {
-      "code": "BOVAX133W2",
-      "strike": 133.0
+      "code": "BOVAL121",
+      "strike": 121.0
     },
     {
-      "code": "BOVAX134W2",
-      "strike": 134.0
+      "code": "BOVAL122",
+      "strike": 122.0
     },
     {
-      "code": "BOVAX135W2",
-      "strike": 135.0
+      "code": "BOVAL123",
+      "strike": 123.0
     },
     {
-      "code": "BOVAX136W2",
-      "strike": 136.0
+      "code": "BOVAL124",
+      "strike": 124.0
+    },
+    {
+      "code": "BOVAL125",
+      "strike": 125.0
+    },
+    {
+      "code": "BOVAL26",
+      "strike": 126.0
+    },
+    {
+      "code": "BOVAL127",
+      "strike": 127.0
+    },
+    {
+      "code": "BOVAL128",
+      "strike": 128.0
+    },
+    {
+      "code": "BOVAX117",
+      "strike": 117.0
+    },
+    {
+      "code": "BOVAX18",
+      "strike": 118.0
+    },
+    {
+      "code": "BOVAX119",
+      "strike": 119.0
+    },
+    {
+      "code": "BOVAX252",
+      "strike": 120.0
+    },
+    {
+      "code": "BOVAX121",
+      "strike": 121.0
+    },
+    {
+      "code": "BOVAX122",
+      "strike": 122.0
+    },
+    {
+      "code": "BOVAX123",
+      "strike": 123.0
+    },
+    {
+      "code": "BOVAX124",
+      "strike": 124.0
+    },
+    {
+      "code": "BOVAX125",
+      "strike": 125.0
+    },
+    {
+      "code": "BOVAX26",
+      "strike": 126.0
+    },
+    {
+      "code": "BOVAX127",
+      "strike": 127.0
+    },
+    {
+      "code": "BOVAX128",
+      "strike": 128.0
     }
   ],
   [
     {
       "code": "GGBR4"
-    },
-    {
-      "code": "GGBRL190W1",
-      "strike": 18.7
-    },
-    {
-      "code": "GGBRL192W1",
-      "strike": 18.95
-    },
-    {
-      "code": "GGBRL195W1",
-      "strike": 19.2
-    },
-    {
-      "code": "GGBRL200W1",
-      "strike": 19.7
-    },
-    {
-      "code": "GGBRL205W1",
-      "strike": 20.2
-    },
-    {
-      "code": "GGBRL210W1",
-      "strike": 20.7
-    },
-    {
-      "code": "GGBRL215W1",
-      "strike": 21.2
-    },
-    {
-      "code": "GGBRL220W1",
-      "strike": 21.7
-    },
-    {
-      "code": "GGBRL225W1",
-      "strike": 22.2
-    },
-    {
-      "code": "GGBRL230W1",
-      "strike": 22.7
-    },
-    {
-      "code": "GGBRX190W1",
-      "strike": 18.7
-    },
-    {
-      "code": "GGBRX192W1",
-      "strike": 18.95
-    },
-    {
-      "code": "GGBRX195W1",
-      "strike": 19.2
-    },
-    {
-      "code": "GGBRX200W1",
-      "strike": 19.7
-    },
-    {
-      "code": "GGBRX205W1",
-      "strike": 20.2
-    },
-    {
-      "code": "GGBRX210W1",
-      "strike": 20.7
-    },
-    {
-      "code": "GGBRX215W1",
-      "strike": 21.2
-    },
-    {
-      "code": "GGBRX220W1",
-      "strike": 21.7
-    },
-    {
-      "code": "GGBRX225W1",
-      "strike": 22.2
-    },
-    {
-      "code": "GGBRX230W1",
-      "strike": 22.7
-    },
-    {
-      "code": "GGBRL190W2",
-      "strike": 18.7
-    },
-    {
-      "code": "GGBRL195W2",
-      "strike": 19.2
     },
     {
       "code": "GGBRL200W2",
@@ -1378,26 +762,6 @@
       "strike": 21.2
     },
     {
-      "code": "GGBRL220W2",
-      "strike": 21.7
-    },
-    {
-      "code": "GGBRL225W2",
-      "strike": 22.2
-    },
-    {
-      "code": "GGBRL230W2",
-      "strike": 22.7
-    },
-    {
-      "code": "GGBRX190W2",
-      "strike": 18.7
-    },
-    {
-      "code": "GGBRX195W2",
-      "strike": 19.2
-    },
-    {
       "code": "GGBRX200W2",
       "strike": 19.7
     },
@@ -1414,16 +778,68 @@
       "strike": 21.2
     },
     {
-      "code": "GGBRX220W2",
-      "strike": 21.7
+      "code": "GGBRL201",
+      "strike": 19.72
     },
     {
-      "code": "GGBRX225W2",
-      "strike": 22.2
+      "code": "GGBRL203",
+      "strike": 19.97
     },
     {
-      "code": "GGBRX230W2",
-      "strike": 22.7
+      "code": "GGBRL209",
+      "strike": 20.22
+    },
+    {
+      "code": "GGBRL208",
+      "strike": 20.47
+    },
+    {
+      "code": "GGBRL211",
+      "strike": 20.72
+    },
+    {
+      "code": "GGBRL213",
+      "strike": 20.97
+    },
+    {
+      "code": "GGBRL219",
+      "strike": 21.22
+    },
+    {
+      "code": "GGBRL218",
+      "strike": 21.47
+    },
+    {
+      "code": "GGBRX201",
+      "strike": 19.72
+    },
+    {
+      "code": "GGBRX203",
+      "strike": 19.97
+    },
+    {
+      "code": "GGBRX209",
+      "strike": 20.22
+    },
+    {
+      "code": "GGBRX208",
+      "strike": 20.47
+    },
+    {
+      "code": "GGBRX211",
+      "strike": 20.72
+    },
+    {
+      "code": "GGBRX213",
+      "strike": 20.97
+    },
+    {
+      "code": "GGBRX219",
+      "strike": 21.22
+    },
+    {
+      "code": "GGBRX218",
+      "strike": 21.47
     }
   ],
   [
@@ -1431,44 +847,8 @@
       "code": "HAPV3"
     },
     {
-      "code": "HAPVL250W1",
-      "strike": 2.5
-    },
-    {
-      "code": "HAPVL260W1",
-      "strike": 2.6
-    },
-    {
-      "code": "HAPVL270W1",
-      "strike": 2.7
-    },
-    {
-      "code": "HAPVL280W1",
-      "strike": 2.8
-    },
-    {
-      "code": "HAPVL290W1",
-      "strike": 2.9
-    },
-    {
-      "code": "HAPVX250W1",
-      "strike": 2.5
-    },
-    {
-      "code": "HAPVX260W1",
-      "strike": 2.6
-    },
-    {
-      "code": "HAPVX270W1",
-      "strike": 2.7
-    },
-    {
-      "code": "HAPVX280W1",
-      "strike": 2.8
-    },
-    {
-      "code": "HAPVX290W1",
-      "strike": 2.9
+      "code": "HAPVL240W2",
+      "strike": 2.4
     },
     {
       "code": "HAPVL250W2",
@@ -1479,16 +859,8 @@
       "strike": 2.6
     },
     {
-      "code": "HAPVL270W2",
-      "strike": 2.7
-    },
-    {
-      "code": "HAPVL280W2",
-      "strike": 2.8
-    },
-    {
-      "code": "HAPVL290W2",
-      "strike": 2.9
+      "code": "HAPVX240W2",
+      "strike": 2.4
     },
     {
       "code": "HAPVX250W2",
@@ -1499,257 +871,49 @@
       "strike": 2.6
     },
     {
-      "code": "HAPVX270W2",
-      "strike": 2.7
+      "code": "HAPVL240",
+      "strike": 2.4
     },
     {
-      "code": "HAPVX280W2",
-      "strike": 2.8
+      "code": "HAPVL245",
+      "strike": 2.45
     },
     {
-      "code": "HAPVX290W2",
-      "strike": 2.9
+      "code": "HAPVL250",
+      "strike": 2.5
+    },
+    {
+      "code": "HAPVL255",
+      "strike": 2.55
+    },
+    {
+      "code": "HAPVL260",
+      "strike": 2.6
+    },
+    {
+      "code": "HAPVX240",
+      "strike": 2.4
+    },
+    {
+      "code": "HAPVX245",
+      "strike": 2.45
+    },
+    {
+      "code": "HAPVX250",
+      "strike": 2.5
+    },
+    {
+      "code": "HAPVX255",
+      "strike": 2.55
+    },
+    {
+      "code": "HAPVX260",
+      "strike": 2.6
     }
   ],
   [
     {
       "code": "ITUB4"
-    },
-    {
-      "code": "ITUBL300W1",
-      "strike": 29.96
-    },
-    {
-      "code": "ITUBL302W1",
-      "strike": 30.21
-    },
-    {
-      "code": "ITUBL305W1",
-      "strike": 30.46
-    },
-    {
-      "code": "ITUBL307W1",
-      "strike": 30.71
-    },
-    {
-      "code": "ITUBL310W1",
-      "strike": 30.96
-    },
-    {
-      "code": "ITUBL312W1",
-      "strike": 31.21
-    },
-    {
-      "code": "ITUBL315W1",
-      "strike": 31.46
-    },
-    {
-      "code": "ITUBL317W1",
-      "strike": 31.71
-    },
-    {
-      "code": "ITUBL320W1",
-      "strike": 31.96
-    },
-    {
-      "code": "ITUBL322W1",
-      "strike": 32.21
-    },
-    {
-      "code": "ITUBL325W1",
-      "strike": 32.46
-    },
-    {
-      "code": "ITUBL327W1",
-      "strike": 32.71
-    },
-    {
-      "code": "ITUBL330W1",
-      "strike": 32.96
-    },
-    {
-      "code": "ITUBL332W1",
-      "strike": 33.21
-    },
-    {
-      "code": "ITUBL335W1",
-      "strike": 33.46
-    },
-    {
-      "code": "ITUBL337W1",
-      "strike": 33.71
-    },
-    {
-      "code": "ITUBL340W1",
-      "strike": 33.96
-    },
-    {
-      "code": "ITUBL342W1",
-      "strike": 34.21
-    },
-    {
-      "code": "ITUBL345W1",
-      "strike": 34.46
-    },
-    {
-      "code": "ITUBL347W1",
-      "strike": 34.71
-    },
-    {
-      "code": "ITUBL350W1",
-      "strike": 34.96
-    },
-    {
-      "code": "ITUBL352W1",
-      "strike": 35.21
-    },
-    {
-      "code": "ITUBL355W1",
-      "strike": 35.46
-    },
-    {
-      "code": "ITUBL357W1",
-      "strike": 35.71
-    },
-    {
-      "code": "ITUBL360W1",
-      "strike": 35.96
-    },
-    {
-      "code": "ITUBL362W1",
-      "strike": 36.21
-    },
-    {
-      "code": "ITUBL365W1",
-      "strike": 36.46
-    },
-    {
-      "code": "ITUBX300W1",
-      "strike": 29.96
-    },
-    {
-      "code": "ITUBX302W1",
-      "strike": 30.21
-    },
-    {
-      "code": "ITUBX305W1",
-      "strike": 30.46
-    },
-    {
-      "code": "ITUBX307W1",
-      "strike": 30.71
-    },
-    {
-      "code": "ITUBX310W1",
-      "strike": 30.96
-    },
-    {
-      "code": "ITUBX312W1",
-      "strike": 31.21
-    },
-    {
-      "code": "ITUBX315W1",
-      "strike": 31.46
-    },
-    {
-      "code": "ITUBX317W1",
-      "strike": 31.71
-    },
-    {
-      "code": "ITUBX320W1",
-      "strike": 31.96
-    },
-    {
-      "code": "ITUBX322W1",
-      "strike": 32.21
-    },
-    {
-      "code": "ITUBX325W1",
-      "strike": 32.46
-    },
-    {
-      "code": "ITUBX327W1",
-      "strike": 32.71
-    },
-    {
-      "code": "ITUBX330W1",
-      "strike": 32.96
-    },
-    {
-      "code": "ITUBX332W1",
-      "strike": 33.21
-    },
-    {
-      "code": "ITUBX335W1",
-      "strike": 33.46
-    },
-    {
-      "code": "ITUBX337W1",
-      "strike": 33.71
-    },
-    {
-      "code": "ITUBX340W1",
-      "strike": 33.96
-    },
-    {
-      "code": "ITUBX342W1",
-      "strike": 34.21
-    },
-    {
-      "code": "ITUBX345W1",
-      "strike": 34.46
-    },
-    {
-      "code": "ITUBX347W1",
-      "strike": 34.71
-    },
-    {
-      "code": "ITUBX350W1",
-      "strike": 34.96
-    },
-    {
-      "code": "ITUBX352W1",
-      "strike": 35.21
-    },
-    {
-      "code": "ITUBX355W1",
-      "strike": 35.46
-    },
-    {
-      "code": "ITUBX357W1",
-      "strike": 35.71
-    },
-    {
-      "code": "ITUBX360W1",
-      "strike": 35.96
-    },
-    {
-      "code": "ITUBX362W1",
-      "strike": 36.21
-    },
-    {
-      "code": "ITUBX365W1",
-      "strike": 36.46
-    },
-    {
-      "code": "ITUBL300W2",
-      "strike": 29.98
-    },
-    {
-      "code": "ITUBL302W2",
-      "strike": 30.23
-    },
-    {
-      "code": "ITUBL305W2",
-      "strike": 30.48
-    },
-    {
-      "code": "ITUBL307W2",
-      "strike": 30.73
-    },
-    {
-      "code": "ITUBL310W2",
-      "strike": 30.98
     },
     {
       "code": "ITUBL312W2",
@@ -1804,62 +968,6 @@
       "strike": 34.23
     },
     {
-      "code": "ITUBL345W2",
-      "strike": 34.48
-    },
-    {
-      "code": "ITUBL347W2",
-      "strike": 34.73
-    },
-    {
-      "code": "ITUBL350W2",
-      "strike": 34.98
-    },
-    {
-      "code": "ITUBL352W2",
-      "strike": 35.23
-    },
-    {
-      "code": "ITUBL355W2",
-      "strike": 35.48
-    },
-    {
-      "code": "ITUBL357W2",
-      "strike": 35.73
-    },
-    {
-      "code": "ITUBL360W2",
-      "strike": 35.98
-    },
-    {
-      "code": "ITUBL362W2",
-      "strike": 36.23
-    },
-    {
-      "code": "ITUBL365W2",
-      "strike": 36.48
-    },
-    {
-      "code": "ITUBX300W2",
-      "strike": 29.98
-    },
-    {
-      "code": "ITUBX302W2",
-      "strike": 30.23
-    },
-    {
-      "code": "ITUBX305W2",
-      "strike": 30.48
-    },
-    {
-      "code": "ITUBX307W2",
-      "strike": 30.73
-    },
-    {
-      "code": "ITUBX310W2",
-      "strike": 30.98
-    },
-    {
       "code": "ITUBX312W2",
       "strike": 31.23
     },
@@ -1912,40 +1020,108 @@
       "strike": 34.23
     },
     {
-      "code": "ITUBX345W2",
-      "strike": 34.48
+      "code": "ITUBL319",
+      "strike": 31.37
     },
     {
-      "code": "ITUBX347W2",
-      "strike": 34.73
+      "code": "ITUBL322",
+      "strike": 31.62
     },
     {
-      "code": "ITUBX350W2",
-      "strike": 34.98
+      "code": "ITUBL324",
+      "strike": 31.87
     },
     {
-      "code": "ITUBX352W2",
-      "strike": 35.23
+      "code": "ITUBL329",
+      "strike": 32.12
     },
     {
-      "code": "ITUBX355W2",
-      "strike": 35.48
+      "code": "ITUBL328",
+      "strike": 32.37
     },
     {
-      "code": "ITUBX357W2",
-      "strike": 35.73
+      "code": "ITUBL332",
+      "strike": 32.62
     },
     {
-      "code": "ITUBX360W2",
-      "strike": 35.98
+      "code": "ITUBL334",
+      "strike": 32.87
     },
     {
-      "code": "ITUBX362W2",
-      "strike": 36.23
+      "code": "ITUBL339",
+      "strike": 33.12
     },
     {
-      "code": "ITUBX365W2",
-      "strike": 36.48
+      "code": "ITUBL353",
+      "strike": 33.37
+    },
+    {
+      "code": "ITUBL342",
+      "strike": 33.62
+    },
+    {
+      "code": "ITUBL344",
+      "strike": 33.87
+    },
+    {
+      "code": "ITUBL347",
+      "strike": 34.12
+    },
+    {
+      "code": "ITUBL349",
+      "strike": 34.37
+    },
+    {
+      "code": "ITUBX319",
+      "strike": 31.37
+    },
+    {
+      "code": "ITUBX322",
+      "strike": 31.62
+    },
+    {
+      "code": "ITUBX324",
+      "strike": 31.87
+    },
+    {
+      "code": "ITUBX329",
+      "strike": 32.12
+    },
+    {
+      "code": "ITUBX328",
+      "strike": 32.37
+    },
+    {
+      "code": "ITUBX332",
+      "strike": 32.62
+    },
+    {
+      "code": "ITUBX334",
+      "strike": 32.87
+    },
+    {
+      "code": "ITUBX339",
+      "strike": 33.12
+    },
+    {
+      "code": "ITUBX353",
+      "strike": 33.37
+    },
+    {
+      "code": "ITUBX342",
+      "strike": 33.62
+    },
+    {
+      "code": "ITUBX344",
+      "strike": 33.87
+    },
+    {
+      "code": "ITUBX347",
+      "strike": 34.12
+    },
+    {
+      "code": "ITUBX349",
+      "strike": 34.37
     }
   ],
   [
@@ -1953,68 +1129,8 @@
       "code": "MGLU3"
     },
     {
-      "code": "MGLUL860W1",
-      "strike": 8.6
-    },
-    {
-      "code": "MGLUL880W1",
-      "strike": 8.8
-    },
-    {
-      "code": "MGLUL900W1",
-      "strike": 9.0
-    },
-    {
-      "code": "MGLUL920W1",
-      "strike": 9.2
-    },
-    {
-      "code": "MGLUL940W1",
-      "strike": 9.4
-    },
-    {
-      "code": "MGLUL960W1",
-      "strike": 9.6
-    },
-    {
-      "code": "MGLUL980W1",
-      "strike": 9.8
-    },
-    {
-      "code": "MGLUL100W1",
-      "strike": 10.0
-    },
-    {
-      "code": "MGLUX860W1",
-      "strike": 8.6
-    },
-    {
-      "code": "MGLUX880W1",
-      "strike": 8.8
-    },
-    {
-      "code": "MGLUX900W1",
-      "strike": 9.0
-    },
-    {
-      "code": "MGLUX920W1",
-      "strike": 9.2
-    },
-    {
-      "code": "MGLUX940W1",
-      "strike": 9.4
-    },
-    {
-      "code": "MGLUX960W1",
-      "strike": 9.6
-    },
-    {
-      "code": "MGLUX980W1",
-      "strike": 9.8
-    },
-    {
-      "code": "MGLUX100W1",
-      "strike": 10.0
+      "code": "MGLUL840W2",
+      "strike": 8.4
     },
     {
       "code": "MGLUL860W2",
@@ -2033,20 +1149,8 @@
       "strike": 9.2
     },
     {
-      "code": "MGLUL940W2",
-      "strike": 9.4
-    },
-    {
-      "code": "MGLUL960W2",
-      "strike": 9.6
-    },
-    {
-      "code": "MGLUL980W2",
-      "strike": 9.8
-    },
-    {
-      "code": "MGLUL100W2",
-      "strike": 10.0
+      "code": "MGLUX840W2",
+      "strike": 8.4
     },
     {
       "code": "MGLUX860W2",
@@ -2065,73 +1169,81 @@
       "strike": 9.2
     },
     {
-      "code": "MGLUX940W2",
-      "strike": 9.4
+      "code": "MGLUL840",
+      "strike": 8.4
     },
     {
-      "code": "MGLUX960W2",
-      "strike": 9.6
+      "code": "MGLUL850",
+      "strike": 8.5
     },
     {
-      "code": "MGLUX980W2",
-      "strike": 9.8
+      "code": "MGLUL860",
+      "strike": 8.6
     },
     {
-      "code": "MGLUX100W2",
-      "strike": 10.0
+      "code": "MGLUL870",
+      "strike": 8.7
+    },
+    {
+      "code": "MGLUL880",
+      "strike": 8.8
+    },
+    {
+      "code": "MGLUL890",
+      "strike": 8.9
+    },
+    {
+      "code": "MGLUL900",
+      "strike": 9.0
+    },
+    {
+      "code": "MGLUL910",
+      "strike": 9.1
+    },
+    {
+      "code": "MGLUL920",
+      "strike": 9.2
+    },
+    {
+      "code": "MGLUX840",
+      "strike": 8.4
+    },
+    {
+      "code": "MGLUX850",
+      "strike": 8.5
+    },
+    {
+      "code": "MGLUX860",
+      "strike": 8.6
+    },
+    {
+      "code": "MGLUX870",
+      "strike": 8.7
+    },
+    {
+      "code": "MGLUX880",
+      "strike": 8.8
+    },
+    {
+      "code": "MGLUX890",
+      "strike": 8.9
+    },
+    {
+      "code": "MGLUX900",
+      "strike": 9.0
+    },
+    {
+      "code": "MGLUX910",
+      "strike": 9.1
+    },
+    {
+      "code": "MGLUX920",
+      "strike": 9.2
     }
   ],
   [
     {
       "code": "NTCO3"
-    },
-    {
-      "code": "NTCOL135W1",
-      "strike": 13.5
-    },
-    {
-      "code": "NTCOL140W1",
-      "strike": 14.0
-    },
-    {
-      "code": "NTCOL145W1",
-      "strike": 14.5
-    },
-    {
-      "code": "NTCOL150W1",
-      "strike": 15.0
-    },
-    {
-      "code": "NTCOL155W1",
-      "strike": 15.5
-    },
-    {
-      "code": "NTCOL160W1",
-      "strike": 16.0
-    },
-    {
-      "code": "NTCOX135W1",
-      "strike": 13.5
-    },
-    {
-      "code": "NTCOX140W1",
-      "strike": 14.0
-    },
-    {
-      "code": "NTCOX145W1",
-      "strike": 14.5
-    },
-    {
-      "code": "NTCOX150W1",
-      "strike": 15.0
-    },
-    {
-      "code": "NTCOX155W1",
-      "strike": 15.5
-    },
-    {
-      "code": "NTCOX160W1",
-      "strike": 16.0
     },
     {
       "code": "NTCOL135W2",
@@ -2146,18 +1258,6 @@
       "strike": 14.5
     },
     {
-      "code": "NTCOL150W2",
-      "strike": 15.0
-    },
-    {
-      "code": "NTCOL155W2",
-      "strike": 15.5
-    },
-    {
-      "code": "NTCOL160W2",
-      "strike": 16.0
-    },
-    {
       "code": "NTCOX135W2",
       "strike": 13.5
     },
@@ -2170,165 +1270,57 @@
       "strike": 14.5
     },
     {
-      "code": "NTCOX150W2",
-      "strike": 15.0
+      "code": "NTCOL135",
+      "strike": 13.51
     },
     {
-      "code": "NTCOX155W2",
-      "strike": 15.5
+      "code": "NTCOL137",
+      "strike": 13.76
     },
     {
-      "code": "NTCOX160W2",
-      "strike": 16.0
+      "code": "NTCOL140",
+      "strike": 14.01
+    },
+    {
+      "code": "NTCOL142",
+      "strike": 14.26
+    },
+    {
+      "code": "NTCOL145",
+      "strike": 14.51
+    },
+    {
+      "code": "NTCOL147",
+      "strike": 14.76
+    },
+    {
+      "code": "NTCOX135",
+      "strike": 13.51
+    },
+    {
+      "code": "NTCOX137",
+      "strike": 13.76
+    },
+    {
+      "code": "NTCOX140",
+      "strike": 14.01
+    },
+    {
+      "code": "NTCOX142",
+      "strike": 14.26
+    },
+    {
+      "code": "NTCOX145",
+      "strike": 14.51
+    },
+    {
+      "code": "NTCOX147",
+      "strike": 14.76
     }
   ],
   [
     {
       "code": "PETR4"
-    },
-    {
-      "code": "PETRL355W1",
-      "strike": 35.5
-    },
-    {
-      "code": "PETRL360W1",
-      "strike": 36.0
-    },
-    {
-      "code": "PETRL365W1",
-      "strike": 36.5
-    },
-    {
-      "code": "PETRL370W1",
-      "strike": 37.0
-    },
-    {
-      "code": "PETRL375W1",
-      "strike": 37.5
-    },
-    {
-      "code": "PETRL380W1",
-      "strike": 38.0
-    },
-    {
-      "code": "PETRL385W1",
-      "strike": 38.5
-    },
-    {
-      "code": "PETRL390W1",
-      "strike": 39.0
-    },
-    {
-      "code": "PETRL395W1",
-      "strike": 39.5
-    },
-    {
-      "code": "PETRL400W1",
-      "strike": 40.0
-    },
-    {
-      "code": "PETRL405W1",
-      "strike": 40.5
-    },
-    {
-      "code": "PETRL410W1",
-      "strike": 41.0
-    },
-    {
-      "code": "PETRL415W1",
-      "strike": 41.5
-    },
-    {
-      "code": "PETRL420W1",
-      "strike": 42.0
-    },
-    {
-      "code": "PETRL425W1",
-      "strike": 42.5
-    },
-    {
-      "code": "PETRL430W1",
-      "strike": 43.0
-    },
-    {
-      "code": "PETRX355W1",
-      "strike": 35.5
-    },
-    {
-      "code": "PETRX360W1",
-      "strike": 36.0
-    },
-    {
-      "code": "PETRX365W1",
-      "strike": 36.5
-    },
-    {
-      "code": "PETRX370W1",
-      "strike": 37.0
-    },
-    {
-      "code": "PETRX375W1",
-      "strike": 37.5
-    },
-    {
-      "code": "PETRX380W1",
-      "strike": 38.0
-    },
-    {
-      "code": "PETRX385W1",
-      "strike": 38.5
-    },
-    {
-      "code": "PETRX390W1",
-      "strike": 39.0
-    },
-    {
-      "code": "PETRX395W1",
-      "strike": 39.5
-    },
-    {
-      "code": "PETRX400W1",
-      "strike": 40.0
-    },
-    {
-      "code": "PETRX405W1",
-      "strike": 40.5
-    },
-    {
-      "code": "PETRX410W1",
-      "strike": 41.0
-    },
-    {
-      "code": "PETRX415W1",
-      "strike": 41.5
-    },
-    {
-      "code": "PETRX420W1",
-      "strike": 42.0
-    },
-    {
-      "code": "PETRX425W1",
-      "strike": 42.5
-    },
-    {
-      "code": "PETRX430W1",
-      "strike": 43.0
-    },
-    {
-      "code": "PETRL355W2",
-      "strike": 35.5
-    },
-    {
-      "code": "PETRL360W2",
-      "strike": 36.0
-    },
-    {
-      "code": "PETRL365W2",
-      "strike": 36.5
-    },
-    {
-      "code": "PETRL370W2",
-      "strike": 37.0
     },
     {
       "code": "PETRL375W2",
@@ -2367,38 +1359,6 @@
       "strike": 41.0
     },
     {
-      "code": "PETRL415W2",
-      "strike": 41.5
-    },
-    {
-      "code": "PETRL420W2",
-      "strike": 42.0
-    },
-    {
-      "code": "PETRL425W2",
-      "strike": 42.5
-    },
-    {
-      "code": "PETRL430W2",
-      "strike": 43.0
-    },
-    {
-      "code": "PETRX355W2",
-      "strike": 35.5
-    },
-    {
-      "code": "PETRX360W2",
-      "strike": 36.0
-    },
-    {
-      "code": "PETRX365W2",
-      "strike": 36.5
-    },
-    {
-      "code": "PETRX370W2",
-      "strike": 37.0
-    },
-    {
       "code": "PETRX375W2",
       "strike": 37.5
     },
@@ -2435,165 +1395,137 @@
       "strike": 41.0
     },
     {
-      "code": "PETRX415W2",
-      "strike": 41.5
+      "code": "PETRL419",
+      "strike": 37.19
     },
     {
-      "code": "PETRX420W2",
-      "strike": 42.0
+      "code": "PETRL421",
+      "strike": 37.44
     },
     {
-      "code": "PETRX425W2",
-      "strike": 42.5
+      "code": "PETRL424",
+      "strike": 37.69
     },
     {
-      "code": "PETRX430W2",
-      "strike": 43.0
+      "code": "PETRL426",
+      "strike": 37.94
+    },
+    {
+      "code": "PETRL429",
+      "strike": 38.19
+    },
+    {
+      "code": "PETRL431",
+      "strike": 38.44
+    },
+    {
+      "code": "PETRL434",
+      "strike": 38.69
+    },
+    {
+      "code": "PETRL436",
+      "strike": 38.94
+    },
+    {
+      "code": "PETRL439",
+      "strike": 39.19
+    },
+    {
+      "code": "PETRL441",
+      "strike": 39.44
+    },
+    {
+      "code": "PETRL444",
+      "strike": 39.69
+    },
+    {
+      "code": "PETRL446",
+      "strike": 39.94
+    },
+    {
+      "code": "PETRL449",
+      "strike": 40.19
+    },
+    {
+      "code": "PETRL451",
+      "strike": 40.44
+    },
+    {
+      "code": "PETRL454",
+      "strike": 40.69
+    },
+    {
+      "code": "PETRL456",
+      "strike": 40.94
+    },
+    {
+      "code": "PETRX419",
+      "strike": 37.19
+    },
+    {
+      "code": "PETRX421",
+      "strike": 37.44
+    },
+    {
+      "code": "PETRX424",
+      "strike": 37.69
+    },
+    {
+      "code": "PETRX426",
+      "strike": 37.94
+    },
+    {
+      "code": "PETRX429",
+      "strike": 38.19
+    },
+    {
+      "code": "PETRX431",
+      "strike": 38.44
+    },
+    {
+      "code": "PETRX434",
+      "strike": 38.69
+    },
+    {
+      "code": "PETRX436",
+      "strike": 38.94
+    },
+    {
+      "code": "PETRX439",
+      "strike": 39.19
+    },
+    {
+      "code": "PETRX441",
+      "strike": 39.44
+    },
+    {
+      "code": "PETRX444",
+      "strike": 39.69
+    },
+    {
+      "code": "PETRX446",
+      "strike": 39.94
+    },
+    {
+      "code": "PETRX449",
+      "strike": 40.19
+    },
+    {
+      "code": "PETRX451",
+      "strike": 40.44
+    },
+    {
+      "code": "PETRX454",
+      "strike": 40.69
+    },
+    {
+      "code": "PETRX456",
+      "strike": 40.94
     }
   ],
   [
     {
       "code": "PRIO3"
-    },
-    {
-      "code": "PRIOL365W1",
-      "strike": 36.5
-    },
-    {
-      "code": "PRIOL370W1",
-      "strike": 37.0
-    },
-    {
-      "code": "PRIOL375W1",
-      "strike": 37.5
-    },
-    {
-      "code": "PRIOL380W1",
-      "strike": 38.0
-    },
-    {
-      "code": "PRIOL385W1",
-      "strike": 38.5
-    },
-    {
-      "code": "PRIOL390W1",
-      "strike": 39.0
-    },
-    {
-      "code": "PRIOL395W1",
-      "strike": 39.5
-    },
-    {
-      "code": "PRIOL400W1",
-      "strike": 40.0
-    },
-    {
-      "code": "PRIOL405W1",
-      "strike": 40.5
-    },
-    {
-      "code": "PRIOL410W1",
-      "strike": 41.0
-    },
-    {
-      "code": "PRIOL415W1",
-      "strike": 41.5
-    },
-    {
-      "code": "PRIOL420W1",
-      "strike": 42.0
-    },
-    {
-      "code": "PRIOL425W1",
-      "strike": 42.5
-    },
-    {
-      "code": "PRIOL430W1",
-      "strike": 43.0
-    },
-    {
-      "code": "PRIOL435W1",
-      "strike": 43.5
-    },
-    {
-      "code": "PRIOL440W1",
-      "strike": 44.0
-    },
-    {
-      "code": "PRIOX365W1",
-      "strike": 36.5
-    },
-    {
-      "code": "PRIOX370W1",
-      "strike": 37.0
-    },
-    {
-      "code": "PRIOX375W1",
-      "strike": 37.5
-    },
-    {
-      "code": "PRIOX380W1",
-      "strike": 38.0
-    },
-    {
-      "code": "PRIOX385W1",
-      "strike": 38.5
-    },
-    {
-      "code": "PRIOX390W1",
-      "strike": 39.0
-    },
-    {
-      "code": "PRIOX395W1",
-      "strike": 39.5
-    },
-    {
-      "code": "PRIOX400W1",
-      "strike": 40.0
-    },
-    {
-      "code": "PRIOX405W1",
-      "strike": 40.5
-    },
-    {
-      "code": "PRIOX410W1",
-      "strike": 41.0
-    },
-    {
-      "code": "PRIOX415W1",
-      "strike": 41.5
-    },
-    {
-      "code": "PRIOX420W1",
-      "strike": 42.0
-    },
-    {
-      "code": "PRIOX425W1",
-      "strike": 42.5
-    },
-    {
-      "code": "PRIOX430W1",
-      "strike": 43.0
-    },
-    {
-      "code": "PRIOX435W1",
-      "strike": 43.5
-    },
-    {
-      "code": "PRIOX440W1",
-      "strike": 44.0
-    },
-    {
-      "code": "PRIOL365W2",
-      "strike": 36.5
-    },
-    {
-      "code": "PRIOL370W2",
-      "strike": 37.0
-    },
-    {
-      "code": "PRIOL375W2",
-      "strike": 37.5
     },
     {
       "code": "PRIOL380W2",
@@ -2628,38 +1560,6 @@
       "strike": 41.5
     },
     {
-      "code": "PRIOL420W2",
-      "strike": 42.0
-    },
-    {
-      "code": "PRIOL425W2",
-      "strike": 42.5
-    },
-    {
-      "code": "PRIOL430W2",
-      "strike": 43.0
-    },
-    {
-      "code": "PRIOL435W2",
-      "strike": 43.5
-    },
-    {
-      "code": "PRIOL440W2",
-      "strike": 44.0
-    },
-    {
-      "code": "PRIOX365W2",
-      "strike": 36.5
-    },
-    {
-      "code": "PRIOX370W2",
-      "strike": 37.0
-    },
-    {
-      "code": "PRIOX375W2",
-      "strike": 37.5
-    },
-    {
       "code": "PRIOX380W2",
       "strike": 38.0
     },
@@ -2692,173 +1592,137 @@
       "strike": 41.5
     },
     {
-      "code": "PRIOX420W2",
-      "strike": 42.0
+      "code": "PRIOL379",
+      "strike": 37.93
     },
     {
-      "code": "PRIOX425W2",
-      "strike": 42.5
+      "code": "PRIOL381",
+      "strike": 38.18
     },
     {
-      "code": "PRIOX430W2",
-      "strike": 43.0
+      "code": "PRIOL384",
+      "strike": 38.43
     },
     {
-      "code": "PRIOX435W2",
-      "strike": 43.5
+      "code": "PRIOL386",
+      "strike": 38.68
     },
     {
-      "code": "PRIOX440W2",
-      "strike": 44.0
+      "code": "PRIOL389",
+      "strike": 38.93
+    },
+    {
+      "code": "PRIOL391",
+      "strike": 39.18
+    },
+    {
+      "code": "PRIOL394",
+      "strike": 39.43
+    },
+    {
+      "code": "PRIOL396",
+      "strike": 39.68
+    },
+    {
+      "code": "PRIOL399",
+      "strike": 39.93
+    },
+    {
+      "code": "PRIOL401",
+      "strike": 40.18
+    },
+    {
+      "code": "PRIOL404",
+      "strike": 40.43
+    },
+    {
+      "code": "PRIOL406",
+      "strike": 40.68
+    },
+    {
+      "code": "PRIOL409",
+      "strike": 40.93
+    },
+    {
+      "code": "PRIOL411",
+      "strike": 41.18
+    },
+    {
+      "code": "PRIOL414",
+      "strike": 41.43
+    },
+    {
+      "code": "PRIOL416",
+      "strike": 41.68
+    },
+    {
+      "code": "PRIOX379",
+      "strike": 37.93
+    },
+    {
+      "code": "PRIOX381",
+      "strike": 38.18
+    },
+    {
+      "code": "PRIOX384",
+      "strike": 38.43
+    },
+    {
+      "code": "PRIOX386",
+      "strike": 38.68
+    },
+    {
+      "code": "PRIOX389",
+      "strike": 38.93
+    },
+    {
+      "code": "PRIOX391",
+      "strike": 39.18
+    },
+    {
+      "code": "PRIOX394",
+      "strike": 39.43
+    },
+    {
+      "code": "PRIOX396",
+      "strike": 39.68
+    },
+    {
+      "code": "PRIOX399",
+      "strike": 39.93
+    },
+    {
+      "code": "PRIOX401",
+      "strike": 40.18
+    },
+    {
+      "code": "PRIOX404",
+      "strike": 40.43
+    },
+    {
+      "code": "PRIOX406",
+      "strike": 40.68
+    },
+    {
+      "code": "PRIOX409",
+      "strike": 40.93
+    },
+    {
+      "code": "PRIOX411",
+      "strike": 41.18
+    },
+    {
+      "code": "PRIOX414",
+      "strike": 41.43
+    },
+    {
+      "code": "PRIOX416",
+      "strike": 41.68
     }
   ],
   [
     {
       "code": "SMAL11"
-    },
-    {
-      "code": "SMALL880W1",
-      "strike": 88.0
-    },
-    {
-      "code": "SMALL890W1",
-      "strike": 89.0
-    },
-    {
-      "code": "SMALL900W1",
-      "strike": 90.0
-    },
-    {
-      "code": "SMALL910W1",
-      "strike": 91.0
-    },
-    {
-      "code": "SMALL920W1",
-      "strike": 92.0
-    },
-    {
-      "code": "SMALL930W1",
-      "strike": 93.0
-    },
-    {
-      "code": "SMALL940W1",
-      "strike": 94.0
-    },
-    {
-      "code": "SMALL950W1",
-      "strike": 95.0
-    },
-    {
-      "code": "SMALL960W1",
-      "strike": 96.0
-    },
-    {
-      "code": "SMALL970W1",
-      "strike": 97.0
-    },
-    {
-      "code": "SMALL980W1",
-      "strike": 98.0
-    },
-    {
-      "code": "SMALL990W1",
-      "strike": 99.0
-    },
-    {
-      "code": "SMALL100W1",
-      "strike": 100.0
-    },
-    {
-      "code": "SMALL101W1",
-      "strike": 101.0
-    },
-    {
-      "code": "SMALL102W1",
-      "strike": 102.0
-    },
-    {
-      "code": "SMALL103W1",
-      "strike": 103.0
-    },
-    {
-      "code": "SMALL104W1",
-      "strike": 104.0
-    },
-    {
-      "code": "SMALX880W1",
-      "strike": 88.0
-    },
-    {
-      "code": "SMALX890W1",
-      "strike": 89.0
-    },
-    {
-      "code": "SMALX900W1",
-      "strike": 90.0
-    },
-    {
-      "code": "SMALX910W1",
-      "strike": 91.0
-    },
-    {
-      "code": "SMALX920W1",
-      "strike": 92.0
-    },
-    {
-      "code": "SMALX930W1",
-      "strike": 93.0
-    },
-    {
-      "code": "SMALX940W1",
-      "strike": 94.0
-    },
-    {
-      "code": "SMALX950W1",
-      "strike": 95.0
-    },
-    {
-      "code": "SMALX960W1",
-      "strike": 96.0
-    },
-    {
-      "code": "SMALX970W1",
-      "strike": 97.0
-    },
-    {
-      "code": "SMALX980W1",
-      "strike": 98.0
-    },
-    {
-      "code": "SMALX990W1",
-      "strike": 99.0
-    },
-    {
-      "code": "SMALX100W1",
-      "strike": 100.0
-    },
-    {
-      "code": "SMALX101W1",
-      "strike": 101.0
-    },
-    {
-      "code": "SMALX102W1",
-      "strike": 102.0
-    },
-    {
-      "code": "SMALX103W1",
-      "strike": 103.0
-    },
-    {
-      "code": "SMALX104W1",
-      "strike": 104.0
-    },
-    {
-      "code": "SMALL860W2",
-      "strike": 86.0
-    },
-    {
-      "code": "SMALL870W2",
-      "strike": 87.0
     },
     {
       "code": "SMALL880W2",
@@ -2897,38 +1761,6 @@
       "strike": 96.0
     },
     {
-      "code": "SMALL970W2",
-      "strike": 97.0
-    },
-    {
-      "code": "SMALL980W2",
-      "strike": 98.0
-    },
-    {
-      "code": "SMALL990W2",
-      "strike": 99.0
-    },
-    {
-      "code": "SMALL100W2",
-      "strike": 100.0
-    },
-    {
-      "code": "SMALL102W2",
-      "strike": 102.0
-    },
-    {
-      "code": "SMALL104W2",
-      "strike": 104.0
-    },
-    {
-      "code": "SMALX860W2",
-      "strike": 86.0
-    },
-    {
-      "code": "SMALX870W2",
-      "strike": 87.0
-    },
-    {
       "code": "SMALX880W2",
       "strike": 88.0
     },
@@ -2965,149 +1797,89 @@
       "strike": 96.0
     },
     {
-      "code": "SMALX970W2",
-      "strike": 97.0
+      "code": "SMALL880",
+      "strike": 88.0
     },
     {
-      "code": "SMALX980W2",
-      "strike": 98.0
+      "code": "SMALL900",
+      "strike": 90.0
     },
     {
-      "code": "SMALX990W2",
-      "strike": 99.0
+      "code": "SMALL910",
+      "strike": 91.0
     },
     {
-      "code": "SMALX100W2",
-      "strike": 100.0
+      "code": "SMALL920",
+      "strike": 92.0
     },
     {
-      "code": "SMALX102W2",
-      "strike": 102.0
+      "code": "SMALL925",
+      "strike": 92.5
     },
     {
-      "code": "SMALX104W2",
-      "strike": 104.0
+      "code": "SMALL930",
+      "strike": 93.0
+    },
+    {
+      "code": "SMALL935",
+      "strike": 93.5
+    },
+    {
+      "code": "SMALL940",
+      "strike": 94.0
+    },
+    {
+      "code": "SMALL950",
+      "strike": 95.0
+    },
+    {
+      "code": "SMALL960",
+      "strike": 96.0
+    },
+    {
+      "code": "SMALX880",
+      "strike": 88.0
+    },
+    {
+      "code": "SMALX900",
+      "strike": 90.0
+    },
+    {
+      "code": "SMALX910",
+      "strike": 91.0
+    },
+    {
+      "code": "SMALX920",
+      "strike": 92.0
+    },
+    {
+      "code": "SMALX925",
+      "strike": 92.5
+    },
+    {
+      "code": "SMALX930",
+      "strike": 93.0
+    },
+    {
+      "code": "SMALX935",
+      "strike": 93.5
+    },
+    {
+      "code": "SMALX940",
+      "strike": 94.0
+    },
+    {
+      "code": "SMALX950",
+      "strike": 95.0
+    },
+    {
+      "code": "SMALX960",
+      "strike": 96.0
     }
   ],
   [
     {
       "code": "SUZB3"
-    },
-    {
-      "code": "SUZBL580W1",
-      "strike": 58.0
-    },
-    {
-      "code": "SUZBL590W1",
-      "strike": 59.0
-    },
-    {
-      "code": "SUZBL600W1",
-      "strike": 60.0
-    },
-    {
-      "code": "SUZBL610W1",
-      "strike": 61.0
-    },
-    {
-      "code": "SUZBL620W1",
-      "strike": 62.0
-    },
-    {
-      "code": "SUZBL630W1",
-      "strike": 63.0
-    },
-    {
-      "code": "SUZBL640W1",
-      "strike": 64.0
-    },
-    {
-      "code": "SUZBL650W1",
-      "strike": 65.0
-    },
-    {
-      "code": "SUZBL660W1",
-      "strike": 66.0
-    },
-    {
-      "code": "SUZBL670W1",
-      "strike": 67.0
-    },
-    {
-      "code": "SUZBL680W1",
-      "strike": 68.0
-    },
-    {
-      "code": "SUZBL690W1",
-      "strike": 69.0
-    },
-    {
-      "code": "SUZBX580W1",
-      "strike": 58.0
-    },
-    {
-      "code": "SUZBX590W1",
-      "strike": 59.0
-    },
-    {
-      "code": "SUZBX600W1",
-      "strike": 60.0
-    },
-    {
-      "code": "SUZBX610W1",
-      "strike": 61.0
-    },
-    {
-      "code": "SUZBX620W1",
-      "strike": 62.0
-    },
-    {
-      "code": "SUZBX630W1",
-      "strike": 63.0
-    },
-    {
-      "code": "SUZBX640W1",
-      "strike": 64.0
-    },
-    {
-      "code": "SUZBX650W1",
-      "strike": 65.0
-    },
-    {
-      "code": "SUZBX660W1",
-      "strike": 66.0
-    },
-    {
-      "code": "SUZBX670W1",
-      "strike": 67.0
-    },
-    {
-      "code": "SUZBX680W1",
-      "strike": 68.0
-    },
-    {
-      "code": "SUZBX690W1",
-      "strike": 69.0
-    },
-    {
-      "code": "SUZBL580W2",
-      "strike": 58.0
-    },
-    {
-      "code": "SUZBL590W2",
-      "strike": 59.0
-    },
-    {
-      "code": "SUZBL600W2",
-      "strike": 60.0
-    },
-    {
-      "code": "SUZBL610W2",
-      "strike": 61.0
-    },
-    {
-      "code": "SUZBL620W2",
-      "strike": 62.0
     },
     {
       "code": "SUZBL630W2",
@@ -3134,34 +1906,6 @@
       "strike": 68.0
     },
     {
-      "code": "SUZBL690W2",
-      "strike": 69.0
-    },
-    {
-      "code": "SUZBL700W2",
-      "strike": 70.0
-    },
-    {
-      "code": "SUZBX580W2",
-      "strike": 58.0
-    },
-    {
-      "code": "SUZBX590W2",
-      "strike": 59.0
-    },
-    {
-      "code": "SUZBX600W2",
-      "strike": 60.0
-    },
-    {
-      "code": "SUZBX610W2",
-      "strike": 61.0
-    },
-    {
-      "code": "SUZBX620W2",
-      "strike": 62.0
-    },
-    {
       "code": "SUZBX630W2",
       "strike": 63.0
     },
@@ -3186,125 +1930,113 @@
       "strike": 68.0
     },
     {
-      "code": "SUZBX690W2",
-      "strike": 69.0
+      "code": "SUZBL625",
+      "strike": 62.51
     },
     {
-      "code": "SUZBX700W2",
-      "strike": 70.0
+      "code": "SUZBL630",
+      "strike": 63.01
+    },
+    {
+      "code": "SUZBL635",
+      "strike": 63.51
+    },
+    {
+      "code": "SUZBL640",
+      "strike": 64.01
+    },
+    {
+      "code": "SUZBL645",
+      "strike": 64.51
+    },
+    {
+      "code": "SUZBL650",
+      "strike": 65.01
+    },
+    {
+      "code": "SUZBL655",
+      "strike": 65.51
+    },
+    {
+      "code": "SUZBL660",
+      "strike": 66.01
+    },
+    {
+      "code": "SUZBL665",
+      "strike": 66.51
+    },
+    {
+      "code": "SUZBL670",
+      "strike": 67.01
+    },
+    {
+      "code": "SUZBL675",
+      "strike": 67.51
+    },
+    {
+      "code": "SUZBL680",
+      "strike": 68.01
+    },
+    {
+      "code": "SUZBL685",
+      "strike": 68.51
+    },
+    {
+      "code": "SUZBX625",
+      "strike": 62.51
+    },
+    {
+      "code": "SUZBX630",
+      "strike": 63.01
+    },
+    {
+      "code": "SUZBX635",
+      "strike": 63.51
+    },
+    {
+      "code": "SUZBX640",
+      "strike": 64.01
+    },
+    {
+      "code": "SUZBX645",
+      "strike": 64.51
+    },
+    {
+      "code": "SUZBX650",
+      "strike": 65.01
+    },
+    {
+      "code": "SUZBX655",
+      "strike": 65.51
+    },
+    {
+      "code": "SUZBX660",
+      "strike": 66.01
+    },
+    {
+      "code": "SUZBX665",
+      "strike": 66.51
+    },
+    {
+      "code": "SUZBX670",
+      "strike": 67.01
+    },
+    {
+      "code": "SUZBX675",
+      "strike": 67.51
+    },
+    {
+      "code": "SUZBX680",
+      "strike": 68.01
+    },
+    {
+      "code": "SUZBX685",
+      "strike": 68.51
     }
   ],
   [
     {
       "code": "VALE3"
-    },
-    {
-      "code": "VALEL520W1",
-      "strike": 52.0
-    },
-    {
-      "code": "VALEL530W1",
-      "strike": 53.0
-    },
-    {
-      "code": "VALEL540W1",
-      "strike": 54.0
-    },
-    {
-      "code": "VALEL550W1",
-      "strike": 55.0
-    },
-    {
-      "code": "VALEL560W1",
-      "strike": 56.0
-    },
-    {
-      "code": "VALEL570W1",
-      "strike": 57.0
-    },
-    {
-      "code": "VALEL580W1",
-      "strike": 58.0
-    },
-    {
-      "code": "VALEL590W1",
-      "strike": 59.0
-    },
-    {
-      "code": "VALEL600W1",
-      "strike": 60.0
-    },
-    {
-      "code": "VALEL610W1",
-      "strike": 61.0
-    },
-    {
-      "code": "VALEL620W1",
-      "strike": 62.0
-    },
-    {
-      "code": "VALEL630W1",
-      "strike": 63.0
-    },
-    {
-      "code": "VALEX520W1",
-      "strike": 52.0
-    },
-    {
-      "code": "VALEX530W1",
-      "strike": 53.0
-    },
-    {
-      "code": "VALEX540W1",
-      "strike": 54.0
-    },
-    {
-      "code": "VALEX550W1",
-      "strike": 55.0
-    },
-    {
-      "code": "VALEX560W1",
-      "strike": 56.0
-    },
-    {
-      "code": "VALEX570W1",
-      "strike": 57.0
-    },
-    {
-      "code": "VALEX580W1",
-      "strike": 58.0
-    },
-    {
-      "code": "VALEX590W1",
-      "strike": 59.0
-    },
-    {
-      "code": "VALEX600W1",
-      "strike": 60.0
-    },
-    {
-      "code": "VALEX610W1",
-      "strike": 61.0
-    },
-    {
-      "code": "VALEX620W1",
-      "strike": 62.0
-    },
-    {
-      "code": "VALEX630W1",
-      "strike": 63.0
-    },
-    {
-      "code": "VALEL520W2",
-      "strike": 52.0
-    },
-    {
-      "code": "VALEL530W2",
-      "strike": 53.0
-    },
-    {
-      "code": "VALEL540W2",
-      "strike": 54.0
     },
     {
       "code": "VALEL550W2",
@@ -3331,30 +2063,6 @@
       "strike": 60.0
     },
     {
-      "code": "VALEL610W2",
-      "strike": 61.0
-    },
-    {
-      "code": "VALEL620W2",
-      "strike": 62.0
-    },
-    {
-      "code": "VALEL630W2",
-      "strike": 63.0
-    },
-    {
-      "code": "VALEX520W2",
-      "strike": 52.0
-    },
-    {
-      "code": "VALEX530W2",
-      "strike": 53.0
-    },
-    {
-      "code": "VALEX540W2",
-      "strike": 54.0
-    },
-    {
       "code": "VALEX550W2",
       "strike": 55.0
     },
@@ -3379,16 +2087,100 @@
       "strike": 60.0
     },
     {
-      "code": "VALEX610W2",
-      "strike": 61.0
+      "code": "VALEL563",
+      "strike": 54.55
     },
     {
-      "code": "VALEX620W2",
-      "strike": 62.0
+      "code": "VALEL568",
+      "strike": 55.05
     },
     {
-      "code": "VALEX630W2",
-      "strike": 63.0
+      "code": "VALEL573",
+      "strike": 55.55
+    },
+    {
+      "code": "VALEL605",
+      "strike": 56.05
+    },
+    {
+      "code": "VALEL610",
+      "strike": 56.55
+    },
+    {
+      "code": "VALEL615",
+      "strike": 57.05
+    },
+    {
+      "code": "VALEL620",
+      "strike": 57.55
+    },
+    {
+      "code": "VALEL625",
+      "strike": 58.05
+    },
+    {
+      "code": "VALEL669",
+      "strike": 58.55
+    },
+    {
+      "code": "VALEL635",
+      "strike": 59.05
+    },
+    {
+      "code": "VALEL640",
+      "strike": 59.55
+    },
+    {
+      "code": "VALEL645",
+      "strike": 60.05
+    },
+    {
+      "code": "VALEX563",
+      "strike": 54.55
+    },
+    {
+      "code": "VALEX568",
+      "strike": 55.05
+    },
+    {
+      "code": "VALEX573",
+      "strike": 55.55
+    },
+    {
+      "code": "VALEX605",
+      "strike": 56.05
+    },
+    {
+      "code": "VALEX610",
+      "strike": 56.55
+    },
+    {
+      "code": "VALEX615",
+      "strike": 57.05
+    },
+    {
+      "code": "VALEX620",
+      "strike": 57.55
+    },
+    {
+      "code": "VALEX625",
+      "strike": 58.05
+    },
+    {
+      "code": "VALEX669",
+      "strike": 58.55
+    },
+    {
+      "code": "VALEX635",
+      "strike": 59.05
+    },
+    {
+      "code": "VALEX640",
+      "strike": 59.55
+    },
+    {
+      "code": "VALEX645",
+      "strike": 60.05
     }
   ]
 ]
