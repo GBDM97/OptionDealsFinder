@@ -36,8 +36,9 @@ async def start(driver):
     while True:
         snapshots = await ws.getSnapshots(driver)
         updates = await ws.getUpdates(driver)
-        updates.append(snapshots)
-        updates = updates[0]
+        ws.clearUpdates(driver)
+        ws.clearSnapshots(driver)
+        updates.extend(snapshots)
         inputList = list(importList())
         for i in inputList:
             for ii in updates:
@@ -73,7 +74,7 @@ async def start(driver):
                         )
                         ):
                         sendNotification(driver,i,lastPrice,symbol,inputList)
-        ws.clearUpdates(driver)
-        ws.clearSnapshots(driver)
         await asyncio.sleep(0.5)
+        updates = await ws.getUpdates(driver)
+        ws.clearUpdates(driver)
 
