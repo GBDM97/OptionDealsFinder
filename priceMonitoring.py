@@ -1,6 +1,8 @@
+from datetime import datetime
 import ast
 import asyncio
 import json
+import sys
 import ws
 
 def sendNotification(driver,i,lastPrice, symbol, inputList):
@@ -31,8 +33,18 @@ def subscribeList(driver):
     (ws.subscribeQuote(i['soldAsset'],driver), 
      ws.subscribeQuote(i['boughtAsset'],driver)) if i['operationType'] == 'lock' else 
      None for i in inputList]
+    
 
 async def start(driver):
+    def printStatus():
+        now = datetime.now()
+        current_hour = now.hour
+        current_minute = now.minute
+        current_second = now.second
+        print(f"Monitoring at {current_hour:02}:{current_minute:02}:{current_second:02}",end="")
+        sys.stdout.flush() 
+        sys.stdout.write("\r")
+        sys.stdout.write("\033[K")
     while True:
         snapshots = await ws.getSnapshots(driver)
         updates = await ws.getUpdates(driver)
@@ -76,5 +88,6 @@ async def start(driver):
                         sendNotification(driver,i,lastPrice,symbol,inputList)
         await asyncio.sleep(0.5)
         updates = await ws.getUpdates(driver)
+        printStatus() if len(updates) > 0 else None
         ws.clearUpdates(driver)
 

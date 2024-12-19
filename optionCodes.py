@@ -115,4 +115,4 @@ async def updateOptionsList(driver,weekly):
     exportWeeklyFilteredOptions(assetsOptions) if weekly else exportFilteredOptions(assetsOptions)
 
 # exportCurrentOptionsList(getAllOptionsAPI(underlyingAssets,"L"))
-# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"L","W2"))
+# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"L","W3"))
