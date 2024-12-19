@@ -45,3 +45,5 @@ sleep(500).then(() => {
     .click();
   fillAndSendOrder(lockQuantity);
 });
+
+//the operation is exited for the current slot selected of the grid quotation, for example: 0 is for the first and second assets, following the correct order of the first beign early expiry and latter being the latter expiry

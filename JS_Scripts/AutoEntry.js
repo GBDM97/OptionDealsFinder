@@ -1,4 +1,5 @@
 const lockQuantity = 2;
+const multiplicationTarget = 8;
 
 const gridElements = Array.from(
   document
@@ -47,3 +48,45 @@ sleep(500).then(() => {
     .click();
   fillAndSendOrder(lockQuantity);
 });
+
+const jsonOrderReceipt = {
+  operationType: "lock",
+  soldAsset: entryElements[0].children[0].querySelector(
+    "[class=div-background]"
+  ).firstChild.firstChild.textContent,
+  soldAssetPrices: [
+    parseFloat(
+      entryElements[0].children[4].firstChild.firstChild.textContent.replace(
+        ",",
+        "."
+      )
+    ),
+    parseFloat(
+      entryElements[0].children[5].firstChild.firstChild.textContent.replace(
+        ",",
+        "."
+      )
+    ),
+  ],
+  boughtAsset: entryElements[1].children[0].querySelector(
+    "[class=div-background]"
+  ).firstChild.firstChild.textContent,
+  boughtAssetPrices: [
+    parseFloat(
+      entryElements[1].children[4].firstChild.firstChild.textContent.replace(
+        ",",
+        "."
+      )
+    ),
+    parseFloat(
+      entryElements[1].children[5].firstChild.firstChild.textContent.replace(
+        ",",
+        "."
+      )
+    ),
+  ],
+  multiplicationTarget: multiplicationTarget,
+};
+console.log(JSON.stringify(jsonOrderReceipt));
+
+//the operation is executed for the last 2 assets in the quotation grid
