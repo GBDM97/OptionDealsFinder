@@ -5,6 +5,40 @@ callCodes = ['A','B','C','D','E','F','G','H','I','J','K','L']
 def verifyOptType(s):
         return any(map(lambda x: x == (re.search("[a-zA-Z]+",s[::-1]).group(0)[0]),callCodes))
 
+def divideOptionTypes(data):
+    curr_call_code = data[0]['code'][4]
+    curr_put_code = ''
+    curr_week_code = data[0]['code'][-2:] if len(data[0]['code']) > 8 else 'W3'
+    next_call_code = ''
+    next_put_code = ''
+    next_week_code = ''
+    for i in data:
+        if i['code'][4] != curr_call_code:
+            curr_put_code = i['code'][4]
+            break
+    for i in data:
+        if i['code'][-2:] != curr_week_code or curr_week_code == 'W3':
+            next_week_code = i['code'][-2:] if curr_week_code != 'W3' else 'W4'
+            next_call_code = i['code'][4]
+            next_put_code = data[-1]['code'][4]
+            break
+    calls = []
+    puts = []
+    nextCalls = []
+    nextPuts = []
+    for i in data:
+        if i['code'][-2:] == curr_week_code or (len(i['code']) < 9 and curr_week_code == 'W3'):
+            if i['code'][4] == curr_call_code:
+                calls.append(i)
+            if i['code'][4] == curr_put_code:
+                puts.append(i)
+        if i['code'][-2:] == next_week_code or (len(i['code']) < 9 and next_week_code == 'W3'):
+            if i['code'][4] == next_call_code:
+                nextCalls.append(i)
+            if i['code'][4] == next_put_code:
+                nextPuts.append(i)
+    return {'calls':calls,'puts':puts,'nextCalls':nextCalls,'nextPuts':nextPuts}
+
 def assetLockInfo(input_data:list[dict]) -> list[dict]:
     all_lock_combinations = []
     stockPrice = (input_data[0]['buyPrice']+input_data[0]['sellPrice'])/2
@@ -41,34 +75,8 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
 
 def assetWeeklyLockInfo(input_data):
     all_lock_combinations = []
-    data = input_data[1:]
-    curr_call_code = data[0]['code'][4]
-    curr_put_code = ''
-    curr_week_code = data[0]['code'][-2:] if len(data[0]['code']) > 8 else 'W3'
-    next_week_code = ''
-    for i in data:
-        if i['code'][4] != curr_call_code:
-            curr_put_code = i['code'][4]
-            break
-    for i in data:
-        if i['code'][-2:] != curr_week_code or curr_week_code == 'W3':
-            next_week_code = i['code'][-2:] if curr_week_code != 'W3' else 'W4'
-            break
-    calls = []
-    puts = []
-    nextCalls = []
-    nextPuts = []
-    for i in data:
-        if i['code'][-2:] == curr_week_code or (len(i['code']) < 9 and curr_week_code == 'W3'):
-            if i['code'][4] == curr_call_code:
-                calls.append(i)
-            if i['code'][4] == curr_put_code:
-                puts.append(i)
-        if i['code'][-2:] == next_week_code or (len(i['code']) < 9 and next_week_code == 'W3'):
-            if i['code'][4] == curr_call_code:
-                nextCalls.append(i)
-            if i['code'][4] == curr_put_code:
-                nextPuts.append(i)
+    dividedOptions = divideOptionTypes(input_data[1:])
+    calls, puts, nextCalls, nextPuts = dividedOptions['calls'], dividedOptions['puts'], dividedOptions['nextCalls'], dividedOptions['nextPuts']
     def iterateOverSide(side, nextWeekSide):
         for i in side:
             for ii in nextWeekSide:

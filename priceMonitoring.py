@@ -3,6 +3,7 @@ import ast
 import asyncio
 import json
 import sys
+# import entryMonitoring
 import ws
 
 def sendNotification(driver,i,lastPrice, symbol, inputList):
@@ -45,6 +46,7 @@ async def start(driver):
         sys.stdout.flush() 
         sys.stdout.write("\r")
         sys.stdout.write("\033[K")
+    # analyzeUpdate = entryMonitoring()
     while True:
         snapshots = await ws.getSnapshots(driver)
         updates = await ws.getUpdates(driver)
@@ -52,12 +54,12 @@ async def start(driver):
         ws.clearSnapshots(driver)
         updates.extend(snapshots)
         inputList = list(importList())
-        for i in inputList:
-            for ii in updates:
-                symbol = ii['arguments'][0]['symbol'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][0]
-                bestBuyPrice =  ii['arguments'][0]['bestBuyPrice'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][1]['bestBuyPrice']
-                bestSellPrice = ii['arguments'][0]['bestSellPrice'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][1]['bestSellPrice']
-                lastPrice = ii['arguments'][0]['lastPrice'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][1]['lastPrice']
+        for ii in updates:
+            symbol = ii['arguments'][0]['symbol'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][0]
+            bestBuyPrice =  ii['arguments'][0]['bestBuyPrice'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][1]['bestBuyPrice']
+            bestSellPrice = ii['arguments'][0]['bestSellPrice'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][1]['bestSellPrice']
+            lastPrice = ii['arguments'][0]['lastPrice'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][1]['lastPrice']
+            for i in inputList:
                 if i['operationType'] == 'lock':
                     if not 'boughtAssetCurrExitPrice' in i and not 'soldAssetCurrExitPrice' in i:
                         inputList[inputList.index(i)]['boughtAssetCurrExitPrice'] = i['boughtAssetPrices'][0]
@@ -86,6 +88,7 @@ async def start(driver):
                         )
                         ):
                         sendNotification(driver,i,lastPrice,symbol,inputList)
+            # analyzeUpdate(symbol,bestBuyPrice,bestSellPrice)
         await asyncio.sleep(0.5)
         updates = await ws.getUpdates(driver)
         printStatus() if len(updates) > 0 else None

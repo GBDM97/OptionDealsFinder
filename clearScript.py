@@ -1,3 +1,4 @@
+import json
 import optionCodes,dataProcess
 import ast
 import ws
@@ -5,6 +6,10 @@ import ws
 def testPrices():
     with open('Data\\testPrices.json', 'r') as file:
         return ast.literal_eval(file.read().replace('null','None'))
+
+def exportTesPrices(l):
+    with open("Data\\testPrices.json", "w") as file:
+        json.dump(l, file, indent=2)
 
 async def generateDataSet(driver,weekly) -> list[list[dict]]:
     asset_dataset = []
@@ -17,15 +22,16 @@ async def generateDataSet(driver,weekly) -> list[list[dict]]:
         asset_dataset.append(writeDict)
 
     def search(readArray,writeDict):
-        for i in readArray:
-            if i['arguments'][0] == writeDict['code']:
-                save(readArray,writeDict)
+        for i,v in enumerate(readArray):
+            if v['arguments'][0] == writeDict['code']:
+                save(readArray[i],writeDict)
                 return True
         return False
             
     prices_index = 0
     currentOptions = optionCodes.importWeeklyFiltered() if weekly else optionCodes.importFiltered()
     prices = await ws.queryPrices([ii['code'] for i in currentOptions for ii in i],driver)
+    # exportTesPrices(prices)
     # prices = testPrices()
     for i in currentOptions:
         asset_dataset = []
@@ -45,7 +51,6 @@ async def generateDataSet(driver,weekly) -> list[list[dict]]:
                     break
             else:
                 if not search(prices[prices_index-50:prices_index+50],ii):
-                    prices_index+=1
                     continue
             prices_index+=1
         if asset_dataset:
