@@ -4,7 +4,7 @@ import json
 import ws
 
 underlyingAssets = ["ABEV3","ALOS3","ALPA4","ALUP11","ASAI3","B3SA3","BBAS3","BBDC3","BBDC4","BBSE3","BEEF3","BHIA3","BOVA11","BOVV11","BPAC11","BPAN4","BRAP4","BRFS3","BRKM5","CASH3","CCRO3","CMIG4","CMIN3","COGN3","CPFE3","CPLE6","CRFB3","CSAN3","CSNA3","CXSE3","CYRE3","DXCO3","ECOR3","EGIE3","ELET3","ELET6","EMBR3","ENEV3","ENGI11","EQTL3","EZTC3","FLRY3","GFSA3","GGBR4","GOAU4","HAPV3","HYPE3","IBOV11","IGTI11","IRBR3","ITSA4","ITUB3","ITUB4","IVVB11","JBSS3","JHSF3","KLBN11","LEVE3","LREN3","LWSA3","MEAL3","MGLU3","MRFG3","MRVE3","MULT3","NEOE3","NTCO3","PCAR3","PETR3","PETR4","PETZ3","POSI3","PRIO3","RADL3","RAIL3","RAIZ4","RDOR3","RENT3","SANB11","SAPR11","SBSP3","SLCE3","SMAL11","SMTO3","SUZB3","TAEE11","USIM5","VALE3","WEGE3"]
-underlyingWeeklyAssets = ["ABEV3","B3SA3","BBAS3","BBDC4","BBSE3","BOVA11","GGBR4","HAPV3","ITUB4","MGLU3","NTCO3","PETR4","PRIO3","SMAL11","SUZB3","VALE3"]
+underlyingWeeklyAssets = ["ABEV3","B3SA3","BBAS3","BBDC4","BOVA11","GGBR4","HAPV3","ITUB4","MGLU3","NTCO3","PETR4","PRIO3","SMAL11","SUZB3","VALE3"]
 
 testList = ["ABEV3"]
 
@@ -114,5 +114,5 @@ async def updateOptionsList(driver,weekly):
     assetsOptions = list(filter(lambda x: x is not None and len(x) != 1, assetsOptions))
     exportWeeklyFilteredOptions(assetsOptions) if weekly else exportFilteredOptions(assetsOptions)
 
-# exportCurrentOptionsList(getAllOptionsAPI(underlyingAssets,"L"))
-# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"L","W3"))
+# exportCurrentOptionsList(getAllOptionsAPI(underlyingAssets,"B"))
+# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"A","W1"))

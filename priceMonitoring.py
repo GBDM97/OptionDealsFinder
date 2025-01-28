@@ -3,10 +3,9 @@ import ast
 import asyncio
 import json
 import sys
-# import entryMonitoring
 import ws
 
-def sendNotification(driver,i,lastPrice, symbol, inputList):
+def sendBreakoutNotification(driver,i,lastPrice, symbol, inputList):
     driver.execute_script('new Notification("'+symbol+' BREAKOUT",{body:"'
         +str(lastPrice)+'"})')
     inputList[inputList.index(i)]['notified'] = 'True'
@@ -46,10 +45,10 @@ async def start(driver):
         sys.stdout.flush() 
         sys.stdout.write("\r")
         sys.stdout.write("\033[K")
-    # analyzeUpdate = entryMonitoring()
     while True:
         snapshots = await ws.getSnapshots(driver)
         updates = await ws.getUpdates(driver)
+        # updates = importUpdatesTestList()
         ws.clearUpdates(driver)
         ws.clearSnapshots(driver)
         updates.extend(snapshots)
@@ -87,8 +86,7 @@ async def start(driver):
                         lastPrice <= float(i['alertPrice']))
                         )
                         ):
-                        sendNotification(driver,i,lastPrice,symbol,inputList)
-            # analyzeUpdate(symbol,bestBuyPrice,bestSellPrice)
+                        sendBreakoutNotification(driver,i,lastPrice,symbol,inputList)
         await asyncio.sleep(0.5)
         updates = await ws.getUpdates(driver)
         printStatus() if len(updates) > 0 else None
