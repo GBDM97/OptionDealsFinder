@@ -43,32 +43,34 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
     all_lock_combinations = []
     stockPrice = (input_data[0]['buyPrice']+input_data[0]['sellPrice'])/2
     data = input_data[1:]
-    for ii in data: 
-        for i in data:
+    for ii,vv in enumerate(data): 
+        for i,v in enumerate(data):
             try:
-                strikeDiff = ii['strike']-i['strike']
-                if (ii['code'] != i['code'] and ii['strike'] >= i['strike'] 
-                and i['buyPrice'] >= 0.1 and i['buyPrice'] <= 0.5 
-                and ii['buyPrice'] >= 0.1 and ii['buyPrice'] <= 0.5
-                and i['sellPrice'] >= 0.1 and i['sellPrice'] <= 0.5 
-                and ii['sellPrice'] >= 0.1 and ii['sellPrice'] <= 0.5
-                and strikeDiff > 0):
-                    itype = verifyOptType(i['code'])
-                    iitype = verifyOptType(ii['code'])
-                    if itype and iitype and i['strike'] > stockPrice and ii['strike'] > stockPrice:
+                strikeDiff = abs(vv['strike']-v['strike'])
+                indexDiff = abs(i-ii)
+                if (vv['code'] != v['code'] and vv['strike'] < v['strike'] and indexDiff > 1):
+                    itype = verifyOptType(v['code'])
+                    iitype = verifyOptType(vv['code'])
+                    if itype and iitype and v['strike'] > stockPrice and vv['strike'] > stockPrice:
+                        profit = (strikeDiff-(vv['sellPrice']-v['buyPrice']))/(vv['sellPrice']-v['buyPrice'])
+                        if profit <= 1:
+                            continue
                         all_lock_combinations.append([
-                        i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time'])
-                        else ii['time'], i['strike'],i['code']+"("+str(i['strike'])+")",i['sellPrice'],
-                        ii['code']+"("+str(ii['strike'])+")",ii['buyPrice'],
-                        (strikeDiff-(i['sellPrice']-ii['buyPrice']))/(i['sellPrice']-ii['buyPrice']),
-                        round(((ii['strike']-stockPrice)/stockPrice)*100,3), stockPrice])
-                    if not itype and not iitype and i['strike'] < stockPrice and ii['strike'] < stockPrice:
+                        v['time'] if datetime.fromisoformat(v['time']) < datetime.fromisoformat(vv['time'])
+                        else vv['time'], vv['strike'],vv['code']+"("+str(vv['strike'])+")",vv['sellPrice'],
+                        v['code']+"("+str(v['strike'])+")",v['buyPrice'],
+                        profit,
+                        round(((v['strike']-stockPrice)/stockPrice)*100,3), stockPrice])
+                    if not itype and not iitype and v['strike'] < stockPrice and vv['strike'] < stockPrice:
+                        profit = (strikeDiff-(v['sellPrice']-vv['buyPrice']))/(v['sellPrice']-vv['buyPrice'])
+                        if profit <= 1:
+                            continue
                         all_lock_combinations.append([
-                        i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
-                        else ii['time'], ii['strike'],ii['code']+"("+str(ii['strike'])+")",ii['sellPrice'],
-                        i['code']+"("+str(i['strike'])+")",i['buyPrice'],
-                        (strikeDiff-(ii['sellPrice']-i['buyPrice']))/(ii['sellPrice']-i['buyPrice']),
-                        round(((stockPrice-i['strike'])/stockPrice)*100,3), stockPrice])
+                        v['time'] if datetime.fromisoformat(v['time']) < datetime.fromisoformat(vv['time']) 
+                        else vv['time'], v['strike'],v['code']+"("+str(v['strike'])+")",v['sellPrice'],
+                        vv['code']+"("+str(vv['strike'])+")",vv['buyPrice'],
+                        profit,
+                        round(((stockPrice-vv['strike'])/stockPrice)*100,3), stockPrice])
             except (TypeError, ZeroDivisionError):
                 continue
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
