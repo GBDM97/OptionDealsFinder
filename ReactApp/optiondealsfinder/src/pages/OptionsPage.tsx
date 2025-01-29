@@ -1,11 +1,14 @@
 import styled from "styled-components";
 import tableData from "../data/lockOutput.json";
+import relevantAssets from "../data/filter.json";
 import { useFimatheContext } from "../context/useFimatheContext";
 import ChannelRefComponent from "../components/ChannelRefComponent";
 import parseIsoDate from "../utils/parseIsoDate";
 import { IFimatheRef } from "../context/FimatheContext";
 import { useEffect, useState } from "react";
 import persistFimatheRef from "../context/persistFimatheRef";
+import SelectComponent from "../components/SelectComponent";
+import Menu from "../components/Menu";
 
 const Table = styled.table`
   width: 100%;
@@ -75,7 +78,9 @@ const updateFDI = (
 
 const OptionsPage = () => {
   const { ref } = useFimatheContext();
-  const [list, setList] = useState(tableData);
+  const [list, setList] = useState(
+    tableData.filter((e) => relevantAssets.includes(String(e[2]).slice(0, 5)))
+  );
   const [orderDirection, setOrderDirection] = useState([
     "",
     "",
