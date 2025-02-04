@@ -5,7 +5,7 @@ import priceMonitoring
 import json
 import ws
 
-weekly = False
+weekly = True
 
 browser.start()
 driver = browser.getDriver()

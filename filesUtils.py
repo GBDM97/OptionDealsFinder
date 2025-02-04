@@ -9,6 +9,18 @@ def importTestOptions():
     with open("Data\\testOptionsList.json", "r") as file:
         return ast.literal_eval(file.read().replace("null","None"))
     
+def importTestPrices():
+    with open("Data\\testPrices.json", "r") as file:
+        return ast.literal_eval(file.read().replace("null","None"))
+    
 def exportLockOutput(l):
     with open('ReactApp\\optiondealsfinder\\src\\data\\lockOutput.json', "w") as file:
+        json.dump(l, file, indent=2)
+
+def exportLockOutput(l):
+    with open('ReactApp\\optiondealsfinder\\src\\data\\lockOutput.json', "w") as file:
+        json.dump(l, file, indent=2)
+
+def exportWeeklyLockOutput(l):
+    with open('Data\\weeklyLockOutput.json', "w") as file:
         json.dump(l, file, indent=2)

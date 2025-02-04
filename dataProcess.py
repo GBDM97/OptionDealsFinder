@@ -17,8 +17,16 @@ def divideOptionTypes(data):
             curr_put_code = i['code'][4]
             break
     for i in data:
-        if i['code'][-2:] != curr_week_code or curr_week_code == 'W3':
-            next_week_code = i['code'][-2:] if curr_week_code != 'W3' else 'W4'
+        if i['code'][-2:] != curr_week_code:
+            if (i['code'][-2:] != 'W1' or
+                i['code'][-2:] != 'W2' or
+                i['code'][-2:] != 'W4' or
+                i['code'][-2:] != 'W5'):
+                next_week_code = 'W3'
+                next_call_code = i['code'][4]
+                next_put_code = data[-1]['code'][4]
+                break
+            next_week_code = i['code'][-2:]
             next_call_code = i['code'][4]
             next_put_code = data[-1]['code'][4]
             break
@@ -76,6 +84,7 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
 
 def assetWeeklyLockInfo(input_data):
+    weeksToExpiry = 3 #Enter weeks to expiry of bought assets
     all_lock_combinations = []
     dividedOptions = divideOptionTypes(input_data[1:])
     calls, puts, nextCalls, nextPuts = dividedOptions['calls'], dividedOptions['puts'], dividedOptions['nextCalls'], dividedOptions['nextPuts']
@@ -83,11 +92,19 @@ def assetWeeklyLockInfo(input_data):
         for i in side:
             for ii in nextWeekSide:
                 try:
-                    priceDiff = ii['sellPrice']-i['buyPrice']
-                    if priceDiff < 0.1 and priceDiff > 0:
+                    boughtAssetEntryPrice = ii['sellPrice']
+                    soldAssetEntryPrice = i['buyPrice']
+                    priceDiff = boughtAssetEntryPrice - soldAssetEntryPrice
+                    desagy = ii['sellPrice']-ii['buyPrice']
+                    endBuyBalance = (1-(1/weeksToExpiry)) * boughtAssetEntryPrice
+                    endSellBalance = 0 if soldAssetEntryPrice <= 0.25 else soldAssetEntryPrice/2
+                    boughtAssetProfit = endBuyBalance - boughtAssetEntryPrice - desagy
+                    soldAssetProfit = soldAssetEntryPrice - endSellBalance
+                    totalEstimatedProfit = boughtAssetProfit + soldAssetProfit
+                    if priceDiff > 0 and totalEstimatedProfit > 0.01:
                         all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
                         else ii['time'],i['code'],i['buyPrice'],ii['code'],ii['sellPrice'],
-                        ((ii['sellPrice']-i['buyPrice'])*100)/((ii['sellPrice']+i['buyPrice'])/2), priceDiff])
+                        round(priceDiff,2),round(totalEstimatedProfit,2)])
                 except (TypeError, ZeroDivisionError):
                     continue
     iterateOverSide(calls, nextCalls)
@@ -101,6 +118,6 @@ def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
         outList.extend(assetWeeklyLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
     if weekly:
         def sortLast(val):
-            return val[-2] 
-        outList.sort(key=sortLast)
+            return val[-1] 
+        outList.sort(key=sortLast, reverse=True)
     return outList
