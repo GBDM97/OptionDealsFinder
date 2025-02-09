@@ -1,6 +1,8 @@
 import re
 from datetime import datetime
 
+import filesUtils
+
 callCodes = ['A','B','C','D','E','F','G','H','I','J','K','L']
 def verifyOptType(s):
         return any(map(lambda x: x == (re.search("[a-zA-Z]+",s[::-1]).group(0)[0]),callCodes))
@@ -18,9 +20,9 @@ def divideOptionTypes(data):
             break
     for i in data:
         if i['code'][-2:] != curr_week_code:
-            if (i['code'][-2:] != 'W1' or
-                i['code'][-2:] != 'W2' or
-                i['code'][-2:] != 'W4' or
+            if (i['code'][-2:] != 'W1' and
+                i['code'][-2:] != 'W2' and
+                i['code'][-2:] != 'W4' and
                 i['code'][-2:] != 'W5'):
                 next_week_code = 'W3'
                 next_call_code = i['code'][4]
@@ -84,11 +86,12 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
 
 def assetWeeklyLockInfo(input_data):
-    weeksToExpiry = 3 #Enter weeks to expiry of bought assets
+    weeksToExpiry = 6 #Enter weeks to expiry of bought assets
     all_lock_combinations = []
+    stockPrice = (input_data[0]['buyPrice']+input_data[0]['sellPrice'])/2
     dividedOptions = divideOptionTypes(input_data[1:])
     calls, puts, nextCalls, nextPuts = dividedOptions['calls'], dividedOptions['puts'], dividedOptions['nextCalls'], dividedOptions['nextPuts']
-    def iterateOverSide(side, nextWeekSide):
+    def iterateOverSide(side, nextWeekSide, isCall):
         for i in side:
             for ii in nextWeekSide:
                 try:
@@ -101,16 +104,19 @@ def assetWeeklyLockInfo(input_data):
                     boughtAssetProfit = endBuyBalance - boughtAssetEntryPrice - desagy
                     soldAssetProfit = soldAssetEntryPrice - endSellBalance
                     totalEstimatedProfit = boughtAssetProfit + soldAssetProfit
-                    if priceDiff > 0 and totalEstimatedProfit > 0.01:
+                    if isCall:
+                        isOTM = True if i['strike'] > stockPrice and ii['strike'] > stockPrice else False
+                    else:
+                        isOTM = True if i['strike'] < stockPrice and ii['strike'] < stockPrice else False
+                    if totalEstimatedProfit > 0.01 and priceDiff >= 0 and isOTM:
                         all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
                         else ii['time'],i['code'],i['buyPrice'],ii['code'],ii['sellPrice'],
                         round(priceDiff,2),round(totalEstimatedProfit,2)])
                 except (TypeError, ZeroDivisionError):
                     continue
-    iterateOverSide(calls, nextCalls)
-    iterateOverSide(puts, nextPuts)
+    iterateOverSide(calls, nextCalls, True)
+    iterateOverSide(puts, nextPuts, False)
     return all_lock_combinations
-
 
 def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
     outList = []
@@ -118,6 +124,10 @@ def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
         outList.extend(assetWeeklyLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
     if weekly:
         def sortLast(val):
-            return val[-1] 
-        outList.sort(key=sortLast, reverse=True)
+            return val[-2] 
+        outList.sort(key=sortLast)
     return outList
+
+v = getLockInfo(filesUtils.importTestPrices(),True)
+filesUtils.exportWeeklyLockOutput(v)
+print

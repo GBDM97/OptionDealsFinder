@@ -1,13 +1,1 @@
-{
-  "BBAS": { "ref1": 27, "ref2": 26 },
-  "BOVA": { "ref1": 123, "ref2": 121 },
-  "BPAC": { "ref1": 32.5, "ref2": 31 },
-  "BBSE": { "ref1": 39, "ref2": 38 },
-  "ELET": { "ref1": 36.75, "ref2": 35.5 },
-  "PETR": { "ref1": 37, "ref2": 36 },
-  "VALE": { "ref1": 53, "ref2": 55 },
-  "WEGE": { "ref1": 56, "ref2": 54 },
-  "ITUB": { "ref1": 33.5, "ref2": 32.63 },
-  "MGLU": { "ref1": 7, "ref2": 6.5 },
-  "SUZB": { "ref1": 63.5, "ref2": 62 }
-}
+{"BBAS":{"ref1":27,"ref2":26},"BOVA":{"ref1":123,"ref2":121},"BPAC":{"ref1":32.5,"ref2":31},"BBSE":{"ref1":39,"ref2":38},"ELET":{"ref1":36.75,"ref2":35.5},"PETR":{"ref1":37,"ref2":36},"VALE":{"ref1":53,"ref2":55},"WEGE":{"ref1":56,"ref2":54},"ITUB":{"ref1":33.5,"ref2":32.63},"MGLU":{"ref1":7,"ref2":6.5},"SUZB":{"ref1":63.5,"ref2":62},"USIM":{"ref1":5.66,"ref2":5}}

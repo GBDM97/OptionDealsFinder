@@ -59,7 +59,7 @@ async def start(driver):
             bestSellPrice = ii['arguments'][0]['bestSellPrice'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][1]['bestSellPrice']
             lastPrice = ii['arguments'][0]['lastPrice'] if ii['target'] == 'QuoteUpdate' else ii['arguments'][1]['lastPrice']
             for i in inputList:
-                if i['operationType'] == 'lock':
+                if i['operationType'] == 'lock' and not "notified" in i:
                     if not 'boughtAssetCurrExitPrice' in i and not 'soldAssetCurrExitPrice' in i:
                         inputList[inputList.index(i)]['boughtAssetCurrExitPrice'] = i['boughtAssetPrices'][0]
                         inputList[inputList.index(i)]['soldAssetCurrExitPrice'] = i['soldAssetPrices'][1]
@@ -71,8 +71,7 @@ async def start(driver):
                         inputList[inputList.index(i)]['boughtAssetCurrExitPrice'] = bestBuyPrice
                         exportList(inputList)
                     result = round(i['boughtAssetCurrExitPrice'] - i['soldAssetCurrExitPrice'],2)
-                    operationCost = round(i['boughtAssetPrices'][1] - i['soldAssetPrices'][0],2)
-                    if result / operationCost >= i['multiplicationTarget'] and not "notified" in i:
+                    if result <= i['stop']:
                         inputList[inputList.index(i)]['notified'] = "True"
                         exportList(inputList)
                         ws.sendTwilioMessage(driver,i['soldAsset'])

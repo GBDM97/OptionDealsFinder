@@ -60,4 +60,5 @@ async def generateDataSet(driver,weekly) -> list[list[dict]]:
 async def createLockOutput(driver, weekly):
     await optionCodes.updateOptionsList(driver,weekly)
     assetsInputData = await generateDataSet(driver,weekly)
+    exportTesPrices(assetsInputData)
     return dataProcess.getLockInfo(assetsInputData, weekly)
