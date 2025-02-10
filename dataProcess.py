@@ -99,10 +99,11 @@ def assetWeeklyLockInfo(input_data):
                     boughtAssetEntryPrice = ii['sellPrice']
                     soldAssetEntryPrice = i['buyPrice']
                     priceDiff = boughtAssetEntryPrice - soldAssetEntryPrice
-                    desagy = ii['sellPrice']-ii['buyPrice']
+                    latterAssetDesagy = ii['sellPrice']-ii['buyPrice']
+                    desagy = latterAssetDesagy + (i['sellPrice']-i['buyPrice'])
                     endBuyBalance = (1-(1/weeksToExpiry)) * boughtAssetEntryPrice
                     endSellBalance = 0 if soldAssetEntryPrice <= 0.25 else soldAssetEntryPrice/2
-                    boughtAssetProfit = endBuyBalance - boughtAssetEntryPrice - desagy
+                    boughtAssetProfit = endBuyBalance - boughtAssetEntryPrice - latterAssetDesagy
                     soldAssetProfit = soldAssetEntryPrice - endSellBalance
                     totalEstimatedProfit = boughtAssetProfit + soldAssetProfit
                     if isCall:
@@ -113,7 +114,7 @@ def assetWeeklyLockInfo(input_data):
                         isOTM = True if i['strike'] < stockPrice and ii['strike'] < stockPrice else False
                         if isOTM:
                             percentDistToStrike = (stockPrice - i['strike'])/stockPrice
-                    if totalEstimatedProfit > 0.01 and priceDiff >= 0 and isOTM and percentDistToStrike >= 0.03:
+                    if totalEstimatedProfit > 0.01 and priceDiff >= 0 and percentDistToStrike >= 0.02 and desagy < totalEstimatedProfit:
                         all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
                         else ii['time'],i['code'],i['buyPrice'],ii['code'],ii['sellPrice'], round(percentDistToStrike,2),
                         round(priceDiff,2),round(desagy,2),round(totalEstimatedProfit,2)])
@@ -132,7 +133,3 @@ def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
             return val[-1] 
         outList.sort(key=sortLast, reverse=True)
     return outList
-
-v = getLockInfo(filesUtils.importTestPrices(),True)
-filesUtils.exportWeeklyLockOutput(v)
-print

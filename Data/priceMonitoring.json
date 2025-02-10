@@ -8,13 +8,18 @@
   },
   {
     "operationType": "lock",
-    "soldAsset": "MGLUX880W2",
-    "soldAssetPrices": [0.23, 0.26],
-    "boughtAsset": "MGLUX880",
-    "boughtAssetPrices": [0.22, 0.24],
-    "multiplicationTarget": 2,
-    "soldAssetExitPrice": 0.46,
-    "boughtAssetCurrExitPrice": 0.52,
-    "soldAssetCurrExitPrice": 0.45
+    "soldAsset": "VALEN540W2",
+    "soldAssetPrices": [
+      0.22,
+      0.23
+    ],
+    "boughtAsset": "VALEO540",
+    "boughtAssetPrices": [
+      0.49,
+      0.51
+    ],
+    "stop": 0.19,
+    "boughtAssetCurrExitPrice": 0.49,
+    "soldAssetCurrExitPrice": 0.23
   }
 ]
