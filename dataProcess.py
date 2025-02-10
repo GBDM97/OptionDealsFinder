@@ -95,6 +95,7 @@ def assetWeeklyLockInfo(input_data):
         for i in side:
             for ii in nextWeekSide:
                 try:
+                    percentDistToStrike = 0
                     boughtAssetEntryPrice = ii['sellPrice']
                     soldAssetEntryPrice = i['buyPrice']
                     priceDiff = boughtAssetEntryPrice - soldAssetEntryPrice
@@ -106,12 +107,16 @@ def assetWeeklyLockInfo(input_data):
                     totalEstimatedProfit = boughtAssetProfit + soldAssetProfit
                     if isCall:
                         isOTM = True if i['strike'] > stockPrice and ii['strike'] > stockPrice else False
+                        if isOTM:
+                            percentDistToStrike = (i['strike'] - stockPrice)/stockPrice
                     else:
                         isOTM = True if i['strike'] < stockPrice and ii['strike'] < stockPrice else False
-                    if totalEstimatedProfit > 0.01 and priceDiff >= 0 and isOTM:
+                        if isOTM:
+                            percentDistToStrike = (stockPrice - i['strike'])/stockPrice
+                    if totalEstimatedProfit > 0.01 and priceDiff >= 0 and isOTM and percentDistToStrike >= 0.03:
                         all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
-                        else ii['time'],i['code'],i['buyPrice'],ii['code'],ii['sellPrice'],
-                        round(priceDiff,2),round(totalEstimatedProfit,2)])
+                        else ii['time'],i['code'],i['buyPrice'],ii['code'],ii['sellPrice'], round(percentDistToStrike,2),
+                        round(priceDiff,2),round(desagy,2),round(totalEstimatedProfit,2)])
                 except (TypeError, ZeroDivisionError):
                     continue
     iterateOverSide(calls, nextCalls, True)
@@ -124,8 +129,8 @@ def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
         outList.extend(assetWeeklyLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
     if weekly:
         def sortLast(val):
-            return val[-2] 
-        outList.sort(key=sortLast)
+            return val[-1] 
+        outList.sort(key=sortLast, reverse=True)
     return outList
 
 v = getLockInfo(filesUtils.importTestPrices(),True)
