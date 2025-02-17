@@ -96,28 +96,24 @@ def assetWeeklyLockInfo(input_data):
             for ii in nextWeekSide:
                 try:
                     percentDistToStrike = 0
-                    boughtAssetEntryPrice = ii['sellPrice']
-                    soldAssetEntryPrice = i['buyPrice']
-                    priceDiff = boughtAssetEntryPrice - soldAssetEntryPrice
+                    firstAssetBoughtPrice = i['sellPrice']
+                    firstAssetSoldPrice = i['buyPrice']
+                    latterAssetBoughtPrice = ii['sellPrice']
+                    latterAssetSoldPrice = ii['buyPrice']
+                    conventionalTHLPriceDiff = round(latterAssetBoughtPrice - firstAssetSoldPrice,2) #conventional calendar spreads win with the increase on pricediff between assets
+                    reverseTHLPriceDiff = round(latterAssetSoldPrice - firstAssetBoughtPrice,2) #reverse calendar spreads win with the decrease on pricediff between assets
                     latterAssetDesagy = ii['sellPrice']-ii['buyPrice']
                     desagy = latterAssetDesagy + (i['sellPrice']-i['buyPrice'])
-                    endBuyBalance = (1-(1/weeksToExpiry)) * boughtAssetEntryPrice
-                    endSellBalance = 0 if soldAssetEntryPrice <= 0.25 else soldAssetEntryPrice/2
-                    boughtAssetProfit = endBuyBalance - boughtAssetEntryPrice - latterAssetDesagy
-                    soldAssetProfit = soldAssetEntryPrice - endSellBalance
-                    totalEstimatedProfit = boughtAssetProfit + soldAssetProfit
-                    if isCall:
-                        isOTM = True if i['strike'] > stockPrice and ii['strike'] > stockPrice else False
-                        if isOTM:
-                            percentDistToStrike = (i['strike'] - stockPrice)/stockPrice
-                    else:
-                        isOTM = True if i['strike'] < stockPrice and ii['strike'] < stockPrice else False
-                        if isOTM:
-                            percentDistToStrike = (stockPrice - i['strike'])/stockPrice
-                    if totalEstimatedProfit > 0.01 and priceDiff >= 0 and percentDistToStrike >= 0.02 and desagy < totalEstimatedProfit:
-                        all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
-                        else ii['time'],i['code'],i['buyPrice'],ii['code'],ii['sellPrice'], round(percentDistToStrike,2),
-                        round(priceDiff,2),round(desagy,2),round(totalEstimatedProfit,2)])
+                    percentDistToStrike = abs((stockPrice - i['strike'])/stockPrice)
+                    if i['strike'] == ii['strike']:
+                        if conventionalTHLPriceDiff <= 0.01:
+                            all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
+                            else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = '+round(percentDistToStrike,4),'desagy =',round(desagy,2),
+                            'conventionalDiff = '+round(conventionalTHLPriceDiff,2)])
+                        elif reverseTHLPriceDiff > 0.25:
+                            all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
+                            else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = ',round(percentDistToStrike,4),'desagy =',round(desagy,2),
+                            'reverseDiff = ',round(reverseTHLPriceDiff,2)])
                 except (TypeError, ZeroDivisionError):
                     continue
     iterateOverSide(calls, nextCalls, True)
@@ -130,6 +126,10 @@ def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
         outList.extend(assetWeeklyLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
     if weekly:
         def sortLast(val):
-            return val[-1] 
-        outList.sort(key=sortLast, reverse=True)
+            return val[-3] 
+        outList.sort(key=sortLast)
     return outList
+
+# v = getLockInfo(filesUtils.importTestPrices(),True)
+# filesUtils.exportWeeklyLockOutput(v)
+# print

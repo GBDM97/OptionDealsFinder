@@ -40,8 +40,8 @@ def getAllWeeklyOptionsAPI(assets, currentCallCode, currentWeekCode):
                 break
         calls = response["data"]["expirations"][index]["calls"]
         puts = response["data"]["expirations"][index]["puts"]
-        nextCalls = response["data"]["expirations"][index+5]["calls"]
-        nextPuts = response["data"]["expirations"][index+5]["puts"]
+        nextCalls = response["data"]["expirations"][index+1]["calls"]
+        nextPuts = response["data"]["expirations"][index+1]["puts"]
         calls+=puts
         nextCalls+=nextPuts
         calls+=nextCalls
@@ -115,4 +115,4 @@ async def updateOptionsList(driver,weekly):
     exportWeeklyFilteredOptions(assetsOptions) if weekly else exportFilteredOptions(assetsOptions)
 
 # exportCurrentOptionsList(getAllOptionsAPI(underlyingAssets,"B"))
-# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"B","W2"))
+# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"B","W4"))
