@@ -91,7 +91,7 @@ def assetWeeklyLockInfo(input_data):
     stockPrice = (input_data[0]['buyPrice']+input_data[0]['sellPrice'])/2
     dividedOptions = divideOptionTypes(input_data[1:])
     calls, puts, nextCalls, nextPuts = dividedOptions['calls'], dividedOptions['puts'], dividedOptions['nextCalls'], dividedOptions['nextPuts']
-    def iterateOverSide(side, nextWeekSide, isCall):
+    def iterateOverSide(side, nextWeekSide, isCall, removeFilter):
         for i in side:
             for ii in nextWeekSide:
                 try:
@@ -106,18 +106,22 @@ def assetWeeklyLockInfo(input_data):
                     desagy = latterAssetDesagy + (i['sellPrice']-i['buyPrice'])
                     percentDistToStrike = abs((stockPrice - i['strike'])/stockPrice)
                     if i['strike'] == ii['strike']:
-                        if conventionalTHLPriceDiff <= 0.01:
+                        if not removeFilter:
+                            if conventionalTHLPriceDiff <= 0.01:
+                                all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
+                                else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = ',round(percentDistToStrike,4),'desagy =',round(desagy,2),
+                                'conventionalDiff = '+round(conventionalTHLPriceDiff,2)])
+                            elif reverseTHLPriceDiff > 0.25:
+                                all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
+                                else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = ',round(percentDistToStrike,4),'desagy =',round(desagy,2),
+                                'reverseDiff = ',round(reverseTHLPriceDiff,2)])
+                        else:
                             all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
-                            else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = '+round(percentDistToStrike,4),'desagy =',round(desagy,2),
-                            'conventionalDiff = '+round(conventionalTHLPriceDiff,2)])
-                        elif reverseTHLPriceDiff > 0.25:
-                            all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
-                            else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = ',round(percentDistToStrike,4),'desagy =',round(desagy,2),
-                            'reverseDiff = ',round(reverseTHLPriceDiff,2)])
+                            else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = ',round(percentDistToStrike,4),'desagy =',round(desagy,2)])
                 except (TypeError, ZeroDivisionError):
                     continue
-    iterateOverSide(calls, nextCalls, True)
-    iterateOverSide(puts, nextPuts, False)
+    iterateOverSide(calls, nextCalls, True, False)
+    iterateOverSide(puts, nextPuts, False, False)
     return all_lock_combinations
 
 def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
@@ -125,8 +129,12 @@ def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
     for i in l:
         outList.extend(assetWeeklyLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
     if weekly:
+        if len(outList) == 0:
+            print("Filter removed")
+            for i in l:
+                outList.extend(assetWeeklyLockInfo(i,True))
         def sortLast(val):
-            return val[-3] 
+            return val[-3]
         outList.sort(key=sortLast)
     return outList
 
