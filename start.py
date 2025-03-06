@@ -7,7 +7,7 @@ import ws
 
 weekly = True
 
-browser.start()
+browser.start('https://portal.clear.com.br/login')
 driver = browser.getDriver()
 
 def exportLockOutput(l):

@@ -13,6 +13,10 @@ def importTestPrices():
     with open("Data\\testPrices.json", "r") as file:
         return ast.literal_eval(file.read().replace("null","None"))
     
+def importMockList():
+    with open("Data\\mockList.json", "r") as file:
+        return ast.literal_eval(file.read().replace("null","None"))
+    
 def exportLockOutput(l):
     with open('ReactApp\\optiondealsfinder\\src\\data\\lockOutput.json', "w") as file:
         json.dump(l, file, indent=2)

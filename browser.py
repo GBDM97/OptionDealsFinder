@@ -3,10 +3,10 @@ from selenium.webdriver.chrome.options import Options
 
 driver = ''
 
-def start():
+def start(url):
     global driver
     driver = webdriver.Chrome()
-    driver.get('https://portal.clear.com.br/login')
+    driver.get(url)
 
 def getDriver():
     global driver

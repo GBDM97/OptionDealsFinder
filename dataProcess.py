@@ -1,7 +1,10 @@
+import json
 import re
 from datetime import datetime
-
+from selenium.webdriver.common.by import By
+import browser
 import filesUtils
+import urllib.parse
 
 callCodes = ['A','B','C','D','E','F','G','H','I','J','K','L']
 def verifyOptType(s):
@@ -85,13 +88,13 @@ def assetLockInfo(input_data:list[dict]) -> list[dict]:
                 continue
     return list(sorted(all_lock_combinations, key=lambda x: x[0],reverse=False))
 
-def assetWeeklyLockInfo(input_data):
+def assetWeeklyTHLLockInfo(input_data):
     weeksToExpiry = 6 #Enter weeks to expiry of bought assets
     all_lock_combinations = []
     stockPrice = (input_data[0]['buyPrice']+input_data[0]['sellPrice'])/2
     dividedOptions = divideOptionTypes(input_data[1:])
     calls, puts, nextCalls, nextPuts = dividedOptions['calls'], dividedOptions['puts'], dividedOptions['nextCalls'], dividedOptions['nextPuts']
-    def iterateOverSide(side, nextWeekSide, isCall, removeFilter):
+    def iterateSide(side, nextWeekSide, isCall, removeFilter):
         for i in side:
             for ii in nextWeekSide:
                 try:
@@ -120,22 +123,71 @@ def assetWeeklyLockInfo(input_data):
                             else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = ',round(percentDistToStrike,4),'desagy =',round(desagy,2)])
                 except (TypeError, ZeroDivisionError):
                     continue
-    iterateOverSide(calls, nextCalls, True, False)
-    iterateOverSide(puts, nextPuts, False, False)
+    iterateSide(calls, nextCalls, True, False)
+    iterateSide(puts, nextPuts, False, False)
     return all_lock_combinations
+
+def assetWeeklyCreditLockInfo(input_data):
+    outList = []
+    callCode = input_data[1]['code'][4]
+    calls = []
+    puts = []
+    stockPrice = (input_data[0]['buyPrice']+input_data[0]['sellPrice'])/2
+
+    def getMargin(firstAsset, secondAsset):
+        strike_diff = round(abs(secondAsset['strike'] - firstAsset['strike']),2)
+        credit_received = round(abs(secondAsset['buyPrice'] - firstAsset['sellPrice']),2)
+        margin_per_contract = (strike_diff * 100) - (credit_received * 100)
+        return margin_per_contract
+
+    def iterateSide(side, isCall):
+        for i in side:
+            for ii in side:
+                if i['code'] != ii['code']:
+                    try:
+                        firstAssetBuyPrice = i['sellPrice']
+                        secondAssetSellPrice = ii['buyPrice']
+                        priceDiff = round(firstAssetBuyPrice - secondAssetSellPrice, 2)
+                        if priceDiff < 0:
+                            if isCall and i['strike'] > stockPrice and ii['strike'] > stockPrice:
+                                isOTM = True
+                                nearestStrike = i['strike'] if i['strike'] < ii['strike'] else ii['strike']
+                                percentageToATM = round((nearestStrike - stockPrice)/stockPrice,3)
+                            elif not isCall and i['strike'] < stockPrice and ii['strike'] < stockPrice:
+                                isOTM = True
+                                nearestStrike = i['strike'] if i['strike'] > ii['strike'] else ii['strike']
+                                percentageToATM = round((stockPrice - nearestStrike)/stockPrice,3)
+                            else:
+                                isOTM = False
+                            if isOTM:
+                                requiredMargin = getMargin(i,ii)
+                                multiplicationPercentage = round((priceDiff * -100)/requiredMargin,2)
+                                index = percentageToATM+(multiplicationPercentage/2)
+                                if multiplicationPercentage == 0 or percentageToATM < 0.03:
+                                    continue
+                                outList.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
+                                else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code']+'('+str(ii['strike'])+')',
+                                percentageToATM, multiplicationPercentage])
+                    except (TypeError, ZeroDivisionError):
+                        continue
+
+    for i in input_data[1:]:
+        if i['code'][4] == callCode:
+            calls.append(i)
+        else:
+            puts.append(i)
+    iterateSide(calls, True)
+    iterateSide(puts, False)
+    return outList
 
 def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
     outList = []
     for i in l:
-        outList.extend(assetWeeklyLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
+        outList.extend(assetWeeklyCreditLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
     if weekly:
-        if len(outList) == 0:
-            print("Filter removed")
-            for i in l:
-                outList.extend(assetWeeklyLockInfo(i,True))
         def sortLast(val):
-            return val[-3]
-        outList.sort(key=sortLast)
+            return val[-1]
+        outList.sort(key=sortLast, reverse=True)
     return outList
 
 # v = getLockInfo(filesUtils.importTestPrices(),True)
