@@ -1,6 +1,7 @@
 import ast
 import requests
 import json
+from filesUtils import *
 import ws
 
 underlyingAssets = ["ABEV3","ALOS3","ALPA4","ALUP11","ASAI3","B3SA3","BBAS3","BBDC3","BBDC4","BBSE3","BEEF3","BHIA3","BOVA11","BOVV11","BPAC11","BPAN4","BRAP4","BRFS3","BRKM5","CASH3","CCRO3","CMIG4","CMIN3","COGN3","CPFE3","CPLE6","CRFB3","CSAN3","CSNA3","CXSE3","CYRE3","DXCO3","ECOR3","EGIE3","ELET3","EMBR3","ENEV3","ENGI11","EQTL3","EZTC3","FLRY3","GFSA3","GGBR4","GOAU4","HAPV3","HYPE3","IBOV11","IGTI11","IRBR3","ITSA4","ITUB4","IVVB11","JBSS3","JHSF3","KLBN11","LEVE3","LREN3","LWSA3","MEAL3","MGLU3","MRFG3","MRVE3","MULT3","NEOE3","NTCO3","PCAR3","PETR4","PETZ3","POSI3","PRIO3","RADL3","RAIL3","RAIZ4","RDOR3","RENT3","SANB11","SAPR11","SBSP3","SLCE3","SMAL11","SMTO3","SUZB3","TAEE11","USIM5","VALE3","WEGE3"]
@@ -40,56 +41,16 @@ def getAllWeeklyOptionsAPI(assets, currentCallCode, currentWeekCode):
                 break
         calls = response["data"]["expirations"][index]["calls"]
         puts = response["data"]["expirations"][index]["puts"]
-        # nextCalls = response["data"]["expirations"][index+1]["calls"]
-        # nextPuts = response["data"]["expirations"][index+1]["puts"]
         calls+=puts
-        # nextCalls+=nextPuts
-        # calls+=nextCalls
+        nextCalls = response["data"]["expirations"][index+1]["calls"]
+        nextPuts = response["data"]["expirations"][index+1]["puts"]
+        nextCalls+=nextPuts
+        calls+=nextCalls
         outAssetList = [{"code":asset}]
         outAssetList.extend(map(lambda x: {"code":asset[:4]+x[0],"strike":x[3]},calls))
         output.append(outAssetList)
         print(asset)
     return output
-
-def importCurrent():
-    with open("Data\\currentOptionsList.json", "r") as file:
-        return ast.literal_eval(file.read())
-    
-def importWeeklyCurrent():
-    with open("Data\\weeklyCurrentOptionsList.json", "r") as file:
-        return ast.literal_eval(file.read())
-
-def importPrices():
-    with open("Data\\testPrices.json", "r") as file:
-        return ast.literal_eval(file.read().replace("null","None"))
-
-def importFiltered():
-    with open("Data\\filteredOptionsList.json", "r") as file:
-        return ast.literal_eval(file.read())
-
-def importWeeklyFiltered():
-    with open("Data\\weeklyFilteredOptionsList.json", "r") as file:
-        return ast.literal_eval(file.read())
-
-def exportCurrentOptionsList(l):
-    with open("Data\\currentOptionsList.json", "w") as file:
-        json.dump(l, file, indent=2)
-
-def exportWeeklyCurrentOptionsList(l):
-    with open("Data\\weeklyCurrentOptionsList.json", "w") as file:
-        json.dump(l, file, indent=2)
-
-def exportFilteredOptions(l):
-    with open("Data\\filteredOptionsList.json", "w") as file:
-        json.dump(l, file, indent=2)
-
-def exportWeeklyFilteredOptions(l):
-    with open("Data\\weeklyFilteredOptionsList.json", "w") as file:
-        json.dump(l, file, indent=2)
-
-def exportTestPrices(l):
-    with open("Data\\testPrices.json", "w") as file:
-        json.dump(l, file, indent=1)
 
 async def updateOptionsList(driver,weekly):
     percentage = 10
@@ -115,4 +76,4 @@ async def updateOptionsList(driver,weekly):
     exportWeeklyFilteredOptions(assetsOptions) if weekly else exportFilteredOptions(assetsOptions)
 
 # exportCurrentOptionsList(getAllOptionsAPI(underlyingAssets,"B"))
-# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"C","W1"))
+# exportWeeklyCurrentOptionsList(getAllWeeklyOptionsAPI(underlyingWeeklyAssets,"C","W2"))

@@ -20,11 +20,10 @@ def exportWeeklyLockOutput(l):
 
 async def update():
     loop = asyncio.get_event_loop()
-    while not await loop.run_in_executor(None, input, '\n Ready for Update.\n\n'):
+    while not await loop.run_in_executor(None, input, '\n Ready to update.\n\n'):
         await asyncio.sleep(10)
         ws.clearSnapshots(driver)
-        lockOutput = await clearScript.createLockOutput(driver,weekly)
-        exportWeeklyLockOutput(lockOutput) if weekly else exportLockOutput(lockOutput)
+        await clearScript.createLockOutput(driver,weekly)
         priceMonitoring.subscribeList(driver)
 
 async def main():

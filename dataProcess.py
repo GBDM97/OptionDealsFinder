@@ -3,7 +3,7 @@ import re
 from datetime import datetime
 from selenium.webdriver.common.by import By
 import browser
-import filesUtils
+from filesUtils import *
 import urllib.parse
 
 callCodes = ['A','B','C','D','E','F','G','H','I','J','K','L']
@@ -108,12 +108,24 @@ def assetWeeklyTHLLockInfo(input_data):
                     latterAssetDesagy = ii['sellPrice']-ii['buyPrice']
                     desagy = latterAssetDesagy + (i['sellPrice']-i['buyPrice'])
                     percentDistToStrike = abs((stockPrice - i['strike'])/stockPrice)
+
+                    if isCall and i['strike'] > stockPrice and ii['strike'] > stockPrice:
+                        isOTM = True
+                        nearestStrike = i['strike'] if i['strike'] < ii['strike'] else ii['strike']
+                        percentageToATM = round((nearestStrike - stockPrice)/stockPrice,3)
+                    elif not isCall and i['strike'] < stockPrice and ii['strike'] < stockPrice:
+                        isOTM = True
+                        nearestStrike = i['strike'] if i['strike'] > ii['strike'] else ii['strike']
+                        percentageToATM = round((stockPrice - nearestStrike)/stockPrice,3)
+                    else:
+                        isOTM = False
+
                     if i['strike'] == ii['strike']:
                         if not removeFilter:
-                            if conventionalTHLPriceDiff <= 0.01:
+                            if conventionalTHLPriceDiff <= 0.08 and isOTM:
                                 all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
                                 else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = ',round(percentDistToStrike,4),'desagy =',round(desagy,2),
-                                'conventionalDiff = '+round(conventionalTHLPriceDiff,2)])
+                                'conventionalDiff = ',round(conventionalTHLPriceDiff,2)])
                             elif reverseTHLPriceDiff > 0.25:
                                 all_lock_combinations.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
                                 else ii['time'], i['code']+'('+str(i['strike'])+')',ii['code'],'percentage = ',round(percentDistToStrike,4),'desagy =',round(desagy,2),
@@ -163,6 +175,8 @@ def assetWeeklyCreditLockInfo(input_data):
                                 requiredMargin = getMargin(i,ii)
                                 multiplicationPercentage = round((priceDiff * -100)/requiredMargin,2)
                                 index = percentageToATM+(multiplicationPercentage/2)
+                                if (i['code'] == 'PRIOC400W2' and ii['code'] == 'PRIOC390W2') or (ii['code'] == 'PRIOC400W2' and i['code'] == 'PRIOC390W2'):
+                                    print
                                 if multiplicationPercentage == 0 or percentageToATM < 0.03:
                                     continue
                                 outList.append([i['time'] if datetime.fromisoformat(i['time']) < datetime.fromisoformat(ii['time']) 
@@ -181,14 +195,25 @@ def assetWeeklyCreditLockInfo(input_data):
     return outList
 
 def getLockInfo(l:list[list[dict]], weekly) -> list[dict]:
-    outList = []
+    outList1 = []
+    outList2 = []
     for i in l:
-        outList.extend(assetWeeklyCreditLockInfo(i)) if weekly else outList.extend(assetLockInfo(i))
+        if weekly:
+            outList1.extend(assetWeeklyCreditLockInfo(i))
+            outList2.extend(assetWeeklyTHLLockInfo(i))
+        else:
+            outList1.extend(assetLockInfo(i))
     if weekly:
-        def sortLast(val):
+        def sortLast1(val):
             return val[-1]
-        outList.sort(key=sortLast, reverse=True)
-    return outList
+        def sortLast2(val):
+            return val[-1]
+        outList1.sort(key=sortLast1, reverse=True)
+        outList2.sort(key=sortLast2, reverse=True)
+        exportWeeklyLockOutput(outList1)
+        exportWeeklyFilteredOptionsForTHL(outList2)
+        return
+    exportLockOutput(outList1)
 
 # v = getLockInfo(filesUtils.importTestPrices(),True)
 # filesUtils.exportWeeklyLockOutput(v)
