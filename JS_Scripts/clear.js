@@ -65,15 +65,15 @@ const generateVerticalSpreads = (options, useMid, listType, price) => {
           if(maxProfit <= 0) continue;
           
           results.push({
-              type: isDebit ? 'DebitSpread' : 'CreditSpread',
               gainPercentage: +(gainPercentage).toFixed(2),
-              optionType: long.type + (listType === "OTMCalls" || listType === 'OTMPuts' ? " - OTM" : " - ITM"),
               shortStrike: short.strike,
+              distance,
+              optionType: long.type + (listType === "OTMCalls" || listType === 'OTMPuts' ? " - OTM" : " - ITM"),
+              type: isDebit ? 'DebitSpread' : 'CreditSpread',
               cost: +cost.toFixed(2),
               maxProfit: +maxProfit.toFixed(2),
               maxLoss: +maxLoss.toFixed(2),
               index: gainPercentage * distance,
-              distance,
               additionalInformation :{
                 maxProfit: +maxProfit.toFixed(2),
                 maxLoss: +maxLoss.toFixed(2),
@@ -120,25 +120,25 @@ const generateStructures = (spreads) => {
       if(hybrid) {
         hybrids.push({
           gainPercentage: structureGainPercentage,
+          strikes: `${s1.shortStrike} - ${s2.shortStrike}`,
+          distance,
           structureMaxProfit,
           structureMaxLoss,
           index,
-          distance,
           s1,
           s2
         })
       } else {
         ironCondors.push({
           gainPercentage: structureGainPercentage,
-          distance,
           strikes: `${s1.shortStrike} - ${s2.shortStrike}`,
+          distance,
           structureMaxProfit,
           structureMaxLoss,
           s1,
           s2
         })
       }
-      
     }
   }
   // hybrids.sort((a, b) => b.gainPercentage - a.gainPercentage);

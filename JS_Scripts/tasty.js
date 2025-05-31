@@ -4,7 +4,7 @@ const toFloat = (val, decimals = 2) => {
 }
 
 const extractOptions = () => {
-  const rows = Array.from(document.querySelector("#recycler-view-2 > div.recycler-content.svelte-ljazwp")
+  const rows = Array.from(document.querySelectorAll("[role='status']")[1]
                                   .querySelectorAll('[data-index]')).sort((a, b) => {
                                     const indexA = parseInt(a.getAttribute('data-index'), 10);
                                     const indexB = parseInt(b.getAttribute('data-index'), 10);
@@ -70,15 +70,15 @@ const generateVerticalSpreads = (options, useMid, listType, price) => {
           if(maxProfit <= 0) continue;
           
           results.push({
-              type: isDebit ? 'DebitSpread' : 'CreditSpread',
               gainPercentage: +(gainPercentage).toFixed(2),
-              optionType: long.type + (listType === "OTMCalls" || listType === 'OTMPuts' ? " - OTM" : " - ITM"),
               shortStrike: short.strike,
+              distance,
+              optionType: long.type + (listType === "OTMCalls" || listType === 'OTMPuts' ? " - OTM" : " - ITM"),
+              type: isDebit ? 'DebitSpread' : 'CreditSpread',
               cost: +cost.toFixed(2),
               maxProfit: +maxProfit.toFixed(2),
               maxLoss: +maxLoss.toFixed(2),
               index: gainPercentage * distance,
-              distance,
               additionalInformation :{
                 maxProfit: +maxProfit.toFixed(2),
                 maxLoss: +maxLoss.toFixed(2),
@@ -125,6 +125,7 @@ const generateStructures = (spreads) => {
       if(hybrid) {
         hybrids.push({
           gainPercentage: structureGainPercentage,
+          strikes: `${s1.shortStrike} - ${s2.shortStrike}`,
           distance,
           structureMaxProfit,
           structureMaxLoss,
@@ -135,8 +136,8 @@ const generateStructures = (spreads) => {
       } else {
         ironCondors.push({
           gainPercentage: structureGainPercentage,
-          distance,
           strikes: `${s1.shortStrike} - ${s2.shortStrike}`,
+          distance,
           structureMaxProfit,
           structureMaxLoss,
           s1,
@@ -202,7 +203,7 @@ const filterByDistanceLevel = (array) => {
 
 const find = (useMid = false, lowerResistance, upperResistance) => {
     let options = extractOptions();
-    const price = document.querySelector('[data-element-id="ActiveSymbolDetails:last-price-value.label"]').textContent;
+    const price = document.querySelector('[data-element-id="ActiveSymbolDetails:last-price-value.label"]').textContent.replace(',','');
     const lowerLimit = toFloat(lowerResistance || price);
     const upperLimit = toFloat(upperResistance || price);
     const calls = options.filter(v => v.type === 'CALL');
@@ -221,7 +222,7 @@ const find = (useMid = false, lowerResistance, upperResistance) => {
 
 
     if(lowerResistance && upperResistance){
-      console.dir({ironCondors: structures.ironCondors, spreads})
+      console.dir({ironCondors: structures.ironCondors, spreads, hybrids: structures.hybrids})
     }else{
       console.dir({ironCondors: filterByDistanceLevel(structures.ironCondors), spreads: filterByDistanceLevel(spreads), hybrids: filterByDistanceLevel(structures.hybrids)})
     }
