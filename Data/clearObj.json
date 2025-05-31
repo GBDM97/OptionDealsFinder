@@ -1,345 +1,695 @@
 [
     {
         "type": "CALL",
-        "strike": 112,
-        "bid": 23.61,
-        "ask": 23.68,
-        "mid": 23.64
-    },
-    {
-        "type": "CALL",
-        "strike": 113,
-        "bid": 22.61,
-        "ask": 22.68,
-        "mid": 22.64
-    },
-    {
-        "type": "CALL",
-        "strike": 114,
-        "bid": 21.61,
-        "ask": 21.68,
-        "mid": 21.64
-    },
-    {
-        "type": "CALL",
-        "strike": 115,
-        "bid": 20.61,
-        "ask": 20.68,
-        "mid": 20.64
-    },
-    {
-        "type": "CALL",
-        "strike": 116,
-        "bid": 19.61,
-        "ask": 19.68,
-        "mid": 19.64
-    },
-    {
-        "type": "CALL",
-        "strike": 117,
-        "bid": 18.61,
-        "ask": 18.68,
-        "mid": 18.64
-    },
-    {
-        "type": "CALL",
-        "strike": 118,
-        "bid": 17.62,
-        "ask": 17.69,
-        "mid": 17.66
-    },
-    {
-        "type": "CALL",
-        "strike": 119,
-        "bid": 16.65,
-        "ask": 16.68,
-        "mid": 16.66
-    },
-    {
-        "type": "CALL",
-        "strike": 120,
-        "bid": 15.62,
-        "ask": 15.69,
-        "mid": 15.65
-    },
-    {
-        "type": "CALL",
-        "strike": 121,
-        "bid": 14.62,
-        "ask": 14.69,
-        "mid": 14.65
-    },
-    {
-        "type": "CALL",
-        "strike": 122,
-        "bid": 13.62,
-        "ask": 13.69,
-        "mid": 13.65
-    },
-    {
-        "type": "CALL",
-        "strike": 123,
-        "bid": 9.4,
-        "ask": 12.69,
-        "mid": 11.04
-    },
-    {
-        "type": "CALL",
-        "strike": 124,
-        "bid": 11.63,
-        "ask": 11.7,
-        "mid": 11.66
-    },
-    {
-        "type": "CALL",
-        "strike": 125,
-        "bid": 10.63,
-        "ask": 10.7,
-        "mid": 10.66
+        "strike": 45.05,
+        "bid": 7.07,
+        "ask": 7.92,
+        "mid": 7.5
     },
     {
         "type": "PUT",
-        "strike": 125,
-        "bid": 0.01,
-        "ask": 0.02,
-        "mid": 0.01
-    },
-    {
-        "type": "CALL",
-        "strike": 126,
-        "bid": 9.63,
-        "ask": 9.69,
-        "mid": 9.66
-    },
-    {
-        "type": "PUT",
-        "strike": 126,
-        "bid": 0.01,
-        "ask": 0.03,
-        "mid": 0.02
-    },
-    {
-        "type": "CALL",
-        "strike": 127,
-        "bid": 8.63,
-        "ask": 8.7,
-        "mid": 8.66
-    },
-    {
-        "type": "PUT",
-        "strike": 127,
-        "bid": 0.01,
-        "ask": 0.02,
-        "mid": 0.01
-    },
-    {
-        "type": "CALL",
-        "strike": 128,
-        "bid": 6.07,
-        "ask": 7.7,
-        "mid": 6.88
-    },
-    {
-        "type": "CALL",
-        "strike": 129,
-        "bid": 6.64,
-        "ask": 6.71,
-        "mid": 6.67
-    },
-    {
-        "type": "PUT",
-        "strike": 129,
-        "bid": 0.02,
-        "ask": 0.03,
-        "mid": 0.03
-    },
-    {
-        "type": "CALL",
-        "strike": 130,
-        "bid": 5.64,
-        "ask": 5.71,
-        "mid": 5.67
-    },
-    {
-        "type": "PUT",
-        "strike": 130,
-        "bid": 0.01,
-        "ask": 0.02,
-        "mid": 0.01
-    },
-    {
-        "type": "CALL",
-        "strike": 131,
-        "bid": 4.64,
-        "ask": 4.72,
-        "mid": 4.68
-    },
-    {
-        "type": "PUT",
-        "strike": 131,
-        "bid": 0.02,
-        "ask": 0.04,
-        "mid": 0.03
-    },
-    {
-        "type": "CALL",
-        "strike": 132,
-        "bid": 3.65,
-        "ask": 3.73,
-        "mid": 3.69
-    },
-    {
-        "type": "PUT",
-        "strike": 132,
-        "bid": 0.03,
-        "ask": 0.04,
+        "strike": 45.05,
+        "bid": 0.04,
+        "ask": 0.05,
         "mid": 0.04
     },
     {
         "type": "CALL",
-        "strike": 133,
-        "bid": 2.69,
-        "ask": 2.72,
-        "mid": 2.71
+        "strike": 45.3,
+        "bid": 6.82,
+        "ask": 7.69,
+        "mid": 7.26
     },
     {
         "type": "PUT",
-        "strike": 133,
+        "strike": 45.3,
+        "bid": 0.04,
+        "ask": 0.05,
+        "mid": 0.04
+    },
+    {
+        "type": "CALL",
+        "strike": 45.55,
+        "bid": 6.58,
+        "ask": 7.44,
+        "mid": 7.01
+    },
+    {
+        "type": "PUT",
+        "strike": 45.55,
         "bid": 0.05,
         "ask": 0.06,
         "mid": 0.06
     },
     {
         "type": "CALL",
-        "strike": 134,
-        "bid": 1.73,
-        "ask": 1.8,
-        "mid": 1.77
+        "strike": 45.8,
+        "bid": 6.36,
+        "ask": 7.19,
+        "mid": 6.78
     },
     {
         "type": "PUT",
-        "strike": 134,
+        "strike": 45.8,
+        "bid": 0.05,
+        "ask": 0.06,
+        "mid": 0.06
+    },
+    {
+        "type": "CALL",
+        "strike": 46.05,
+        "bid": 6.1,
+        "ask": 6.96,
+        "mid": 6.53
+    },
+    {
+        "type": "PUT",
+        "strike": 46.05,
+        "bid": 0.05,
+        "ask": 0.07,
+        "mid": 0.06
+    },
+    {
+        "type": "CALL",
+        "strike": 46.3,
+        "bid": 5.85,
+        "ask": 6.72,
+        "mid": 6.29
+    },
+    {
+        "type": "PUT",
+        "strike": 46.3,
+        "bid": 0.06,
+        "ask": 0.07,
+        "mid": 0.07
+    },
+    {
+        "type": "CALL",
+        "strike": 46.55,
+        "bid": 5.61,
+        "ask": 6.19,
+        "mid": 5.9
+    },
+    {
+        "type": "PUT",
+        "strike": 46.55,
+        "bid": 0.07,
+        "ask": 0.08,
+        "mid": 0.08
+    },
+    {
+        "type": "CALL",
+        "strike": 46.8,
+        "bid": 5.41,
+        "ask": 5.95,
+        "mid": 5.68
+    },
+    {
+        "type": "PUT",
+        "strike": 46.8,
+        "bid": 0.07,
+        "ask": 0.09,
+        "mid": 0.08
+    },
+    {
+        "type": "CALL",
+        "strike": 47.05,
+        "bid": 5.21,
+        "ask": 5.7,
+        "mid": 5.46
+    },
+    {
+        "type": "PUT",
+        "strike": 47.05,
+        "bid": 0.08,
+        "ask": 0.09,
+        "mid": 0.08
+    },
+    {
+        "type": "CALL",
+        "strike": 47.3,
+        "bid": 4.97,
+        "ask": 5.46,
+        "mid": 5.21
+    },
+    {
+        "type": "PUT",
+        "strike": 47.3,
+        "bid": 0.09,
+        "ask": 0.1,
+        "mid": 0.1
+    },
+    {
+        "type": "CALL",
+        "strike": 47.55,
+        "bid": 4.73,
+        "ask": 5.23,
+        "mid": 4.98
+    },
+    {
+        "type": "PUT",
+        "strike": 47.55,
+        "bid": 0.1,
+        "ask": 0.11,
+        "mid": 0.11
+    },
+    {
+        "type": "CALL",
+        "strike": 47.8,
+        "bid": 4.5,
+        "ask": 4.99,
+        "mid": 4.75
+    },
+    {
+        "type": "PUT",
+        "strike": 47.8,
         "bid": 0.11,
         "ask": 0.12,
         "mid": 0.11
     },
     {
         "type": "CALL",
-        "strike": 135,
-        "bid": 0.93,
-        "ask": 0.96,
-        "mid": 0.95
+        "strike": 48.05,
+        "bid": 4.26,
+        "ask": 4.76,
+        "mid": 4.51
     },
     {
         "type": "PUT",
-        "strike": 135,
-        "bid": 0.26,
-        "ask": 0.29,
-        "mid": 0.28
-    },
-    {
-        "type": "CALL",
-        "strike": 136,
-        "bid": 0.34,
-        "ask": 0.38,
-        "mid": 0.36
-    },
-    {
-        "type": "PUT",
-        "strike": 136,
-        "bid": 0.69,
-        "ask": 0.73,
-        "mid": 0.71
-    },
-    {
-        "type": "CALL",
-        "strike": 137,
-        "bid": 0.11,
+        "strike": 48.05,
+        "bid": 0.12,
         "ask": 0.14,
         "mid": 0.13
     },
     {
+        "type": "CALL",
+        "strike": 48.3,
+        "bid": 4.02,
+        "ask": 4.52,
+        "mid": 4.27
+    },
+    {
         "type": "PUT",
-        "strike": 137,
-        "bid": 1.45,
-        "ask": 1.5,
-        "mid": 1.48
+        "strike": 48.3,
+        "bid": 0.13,
+        "ask": 0.15,
+        "mid": 0.14
     },
     {
         "type": "CALL",
-        "strike": 138,
-        "bid": 0.03,
+        "strike": 48.55,
+        "bid": 3.79,
+        "ask": 4.29,
+        "mid": 4.04
+    },
+    {
+        "type": "PUT",
+        "strike": 48.55,
+        "bid": 0.15,
+        "ask": 0.17,
+        "mid": 0.16
+    },
+    {
+        "type": "CALL",
+        "strike": 48.8,
+        "bid": 3.55,
+        "ask": 4.05,
+        "mid": 3.8
+    },
+    {
+        "type": "PUT",
+        "strike": 48.8,
+        "bid": 0.17,
+        "ask": 0.18,
+        "mid": 0.17
+    },
+    {
+        "type": "CALL",
+        "strike": 49.05,
+        "bid": 3.5,
+        "ask": 3.84,
+        "mid": 3.67
+    },
+    {
+        "type": "PUT",
+        "strike": 49.05,
+        "bid": 0.19,
+        "ask": 0.2,
+        "mid": 0.2
+    },
+    {
+        "type": "CALL",
+        "strike": 49.3,
+        "bid": 3.5,
+        "ask": 3.62,
+        "mid": 3.56
+    },
+    {
+        "type": "PUT",
+        "strike": 49.3,
+        "bid": 0.21,
+        "ask": 0.23,
+        "mid": 0.22
+    },
+    {
+        "type": "CALL",
+        "strike": 49.55,
+        "bid": 3.28,
+        "ask": 3.39,
+        "mid": 3.33
+    },
+    {
+        "type": "PUT",
+        "strike": 49.55,
+        "bid": 0.24,
+        "ask": 0.25,
+        "mid": 0.24
+    },
+    {
+        "type": "CALL",
+        "strike": 49.8,
+        "bid": 3.06,
+        "ask": 3.17,
+        "mid": 3.12
+    },
+    {
+        "type": "PUT",
+        "strike": 49.8,
+        "bid": 0.27,
+        "ask": 0.28,
+        "mid": 0.28
+    },
+    {
+        "type": "CALL",
+        "strike": 50.05,
+        "bid": 2.84,
+        "ask": 2.96,
+        "mid": 2.9
+    },
+    {
+        "type": "PUT",
+        "strike": 50.05,
+        "bid": 0.3,
+        "ask": 0.32,
+        "mid": 0.31
+    },
+    {
+        "type": "CALL",
+        "strike": 50.55,
+        "bid": 2.44,
+        "ask": 2.54,
+        "mid": 2.49
+    },
+    {
+        "type": "PUT",
+        "strike": 50.55,
+        "bid": 0.39,
+        "ask": 0.4,
+        "mid": 0.4
+    },
+    {
+        "type": "CALL",
+        "strike": 51.05,
+        "bid": 2.09,
+        "ask": 2.16,
+        "mid": 2.13
+    },
+    {
+        "type": "PUT",
+        "strike": 51.05,
+        "bid": 0.49,
+        "ask": 0.51,
+        "mid": 0.5
+    },
+    {
+        "type": "CALL",
+        "strike": 51.55,
+        "bid": 1.7,
+        "ask": 1.8,
+        "mid": 1.75
+    },
+    {
+        "type": "PUT",
+        "strike": 51.55,
+        "bid": 0.63,
+        "ask": 0.65,
+        "mid": 0.64
+    },
+    {
+        "type": "CALL",
+        "strike": 52.05,
+        "bid": 1.44,
+        "ask": 1.46,
+        "mid": 1.45
+    },
+    {
+        "type": "PUT",
+        "strike": 52.05,
+        "bid": 0.8,
+        "ask": 0.81,
+        "mid": 0.81
+    },
+    {
+        "type": "CALL",
+        "strike": 52.55,
+        "bid": 1.16,
+        "ask": 1.17,
+        "mid": 1.17
+    },
+    {
+        "type": "PUT",
+        "strike": 52.55,
+        "bid": 1.01,
+        "ask": 1.02,
+        "mid": 1.02
+    },
+    {
+        "type": "CALL",
+        "strike": 53.05,
+        "bid": 0.91,
+        "ask": 0.92,
+        "mid": 0.92
+    },
+    {
+        "type": "PUT",
+        "strike": 53.05,
+        "bid": 1.26,
+        "ask": 1.27,
+        "mid": 1.27
+    },
+    {
+        "type": "CALL",
+        "strike": 53.55,
+        "bid": 0.71,
+        "ask": 0.72,
+        "mid": 0.71
+    },
+    {
+        "type": "PUT",
+        "strike": 53.55,
+        "bid": 1.55,
+        "ask": 1.57,
+        "mid": 1.56
+    },
+    {
+        "type": "CALL",
+        "strike": 54.05,
+        "bid": 0.54,
+        "ask": 0.55,
+        "mid": 0.55
+    },
+    {
+        "type": "PUT",
+        "strike": 54.05,
+        "bid": 1.89,
+        "ask": 1.9,
+        "mid": 1.9
+    },
+    {
+        "type": "CALL",
+        "strike": 54.55,
+        "bid": 0.41,
+        "ask": 0.42,
+        "mid": 0.41
+    },
+    {
+        "type": "PUT",
+        "strike": 54.55,
+        "bid": 2.24,
+        "ask": 2.28,
+        "mid": 2.26
+    },
+    {
+        "type": "CALL",
+        "strike": 55.05,
+        "bid": 0.31,
+        "ask": 0.32,
+        "mid": 0.32
+    },
+    {
+        "type": "PUT",
+        "strike": 55.05,
+        "bid": 2.63,
+        "ask": 2.68,
+        "mid": 2.66
+    },
+    {
+        "type": "CALL",
+        "strike": 55.55,
+        "bid": 0.23,
+        "ask": 0.24,
+        "mid": 0.23
+    },
+    {
+        "type": "PUT",
+        "strike": 55.55,
+        "bid": 3.05,
+        "ask": 3.1,
+        "mid": 3.08
+    },
+    {
+        "type": "CALL",
+        "strike": 56.05,
+        "bid": 0.17,
+        "ask": 0.18,
+        "mid": 0.17
+    },
+    {
+        "type": "PUT",
+        "strike": 56.05,
+        "bid": 3.48,
+        "ask": 3.59,
+        "mid": 3.54
+    },
+    {
+        "type": "CALL",
+        "strike": 56.55,
+        "bid": 0.13,
+        "ask": 0.14,
+        "mid": 0.14
+    },
+    {
+        "type": "PUT",
+        "strike": 56.55,
+        "bid": 3.94,
+        "ask": 4.05,
+        "mid": 4
+    },
+    {
+        "type": "CALL",
+        "strike": 57.05,
+        "bid": 0.1,
+        "ask": 0.11,
+        "mid": 0.11
+    },
+    {
+        "type": "PUT",
+        "strike": 57.05,
+        "bid": 4.41,
+        "ask": 4.51,
+        "mid": 4.46
+    },
+    {
+        "type": "CALL",
+        "strike": 57.55,
+        "bid": 0.08,
+        "ask": 0.09,
+        "mid": 0.08
+    },
+    {
+        "type": "PUT",
+        "strike": 57.55,
+        "bid": 4.88,
+        "ask": 4.99,
+        "mid": 4.94
+    },
+    {
+        "type": "CALL",
+        "strike": 58.05,
+        "bid": 0.06,
+        "ask": 0.07,
+        "mid": 0.07
+    },
+    {
+        "type": "PUT",
+        "strike": 58.05,
+        "bid": 5.36,
+        "ask": 5.47,
+        "mid": 5.42
+    },
+    {
+        "type": "CALL",
+        "strike": 58.55,
+        "bid": 0.05,
+        "ask": 0.06,
+        "mid": 0.06
+    },
+    {
+        "type": "PUT",
+        "strike": 58.55,
+        "bid": 5.84,
+        "ask": 5.95,
+        "mid": 5.89
+    },
+    {
+        "type": "CALL",
+        "strike": 59.05,
+        "bid": 0.04,
         "ask": 0.05,
         "mid": 0.04
     },
     {
         "type": "PUT",
-        "strike": 138,
-        "bid": 2.34,
-        "ask": 2.42,
-        "mid": 2.38
+        "strike": 59.05,
+        "bid": 6.34,
+        "ask": 6.44,
+        "mid": 6.39
     },
     {
         "type": "CALL",
-        "strike": 139,
+        "strike": 59.55,
+        "bid": 0.03,
+        "ask": 0.04,
+        "mid": 0.04
+    },
+    {
+        "type": "PUT",
+        "strike": 59.55,
+        "bid": 6.82,
+        "ask": 6.93,
+        "mid": 6.88
+    },
+    {
+        "type": "CALL",
+        "strike": 60.05,
+        "bid": 0.03,
+        "ask": 0.04,
+        "mid": 0.04
+    },
+    {
+        "type": "PUT",
+        "strike": 60.05,
+        "bid": 7.31,
+        "ask": 7.35,
+        "mid": 7.33
+    },
+    {
+        "type": "CALL",
+        "strike": 60.55,
+        "bid": 0.02,
+        "ask": 0.03,
+        "mid": 0.03
+    },
+    {
+        "type": "PUT",
+        "strike": 60.55,
+        "bid": 7.32,
+        "ask": 7.91,
+        "mid": 7.62
+    },
+    {
+        "type": "CALL",
+        "strike": 61.05,
+        "bid": 0.02,
+        "ask": 0.03,
+        "mid": 0.03
+    },
+    {
+        "type": "PUT",
+        "strike": 61.05,
+        "bid": 7.8,
+        "ask": 8.41,
+        "mid": 8.11
+    },
+    {
+        "type": "CALL",
+        "strike": 61.55,
+        "bid": 0.02,
+        "ask": 0.03,
+        "mid": 0.03
+    },
+    {
+        "type": "PUT",
+        "strike": 61.55,
+        "bid": 8.29,
+        "ask": 8.91,
+        "mid": 8.6
+    },
+    {
+        "type": "CALL",
+        "strike": 62.05,
         "bid": 0.01,
         "ask": 0.02,
         "mid": 0.01
     },
     {
         "type": "PUT",
-        "strike": 139,
-        "bid": 3.32,
-        "ask": 3.39,
-        "mid": 3.35
+        "strike": 62.05,
+        "bid": 8.78,
+        "ask": 9.39,
+        "mid": 9.09
+    },
+    {
+        "type": "CALL",
+        "strike": 62.55,
+        "bid": 0.01,
+        "ask": 0.02,
+        "mid": 0.01
     },
     {
         "type": "PUT",
-        "strike": 140,
-        "bid": 4.31,
-        "ask": 4.38,
-        "mid": 4.34
+        "strike": 62.55,
+        "bid": 9.28,
+        "ask": 9.89,
+        "mid": 9.59
+    },
+    {
+        "type": "CALL",
+        "strike": 63.05,
+        "bid": 0.01,
+        "ask": 0.02,
+        "mid": 0.01
     },
     {
         "type": "PUT",
-        "strike": 141,
-        "bid": 5.3,
-        "ask": 5.37,
-        "mid": 5.33
+        "strike": 63.05,
+        "bid": 9.77,
+        "ask": 10.78,
+        "mid": 10.27
+    },
+    {
+        "type": "CALL",
+        "strike": 63.55,
+        "bid": 0.01,
+        "ask": 0.02,
+        "mid": 0.01
     },
     {
         "type": "PUT",
-        "strike": 142,
-        "bid": 6.3,
-        "ask": 6.37,
-        "mid": 6.33
+        "strike": 63.55,
+        "bid": 10.27,
+        "ask": 11.27,
+        "mid": 10.77
+    },
+    {
+        "type": "CALL",
+        "strike": 64.05,
+        "bid": 0.01,
+        "ask": 0.02,
+        "mid": 0.01
     },
     {
         "type": "PUT",
-        "strike": 143,
-        "bid": 7.3,
-        "ask": 7.37,
-        "mid": 7.33
+        "strike": 64.05,
+        "bid": 10.77,
+        "ask": 11.77,
+        "mid": 11.27
     },
     {
         "type": "PUT",
-        "strike": 144,
-        "bid": 8.3,
-        "ask": 8.36,
-        "mid": 8.33
-    },
-    {
-        "type": "PUT",
-        "strike": 147,
-        "bid": 11.56,
-        "ask": 12.04,
-        "mid": 11.8
-    },
-    {
-        "type": "PUT",
-        "strike": 150,
-        "bid": 13.39,
-        "ask": 15.07,
-        "mid": 14.23
+        "strike": 64.55,
+        "bid": 11.53,
+        "ask": 12,
+        "mid": 11.77
     }
 ]

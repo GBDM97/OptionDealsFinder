@@ -73,11 +73,11 @@ const generateVerticalSpreads = (options, useMid, listType, price) => {
               maxProfit: +maxProfit.toFixed(2),
               maxLoss: +maxLoss.toFixed(2),
               index: gainPercentage * distance,
+              distance,
               additionalInformation :{
                 maxProfit: +maxProfit.toFixed(2),
                 maxLoss: +maxLoss.toFixed(2),
                 spreadWidth,
-                distance,
                 longStrike: long.strike,
                 long,
                 short
@@ -113,17 +113,16 @@ const generateStructures = (spreads) => {
       const structureMaxProfit = s1p + s2p;
       const structureMaxLoss = hybrid ? s1l + s2l : Math.min(s1p - s2l, s2p - s1l) *-1;
       const structureGainPercentage = (structureMaxProfit / structureMaxLoss) *100;
-      const distance = Math.min(s1.additionalInformation.distance, s2.additionalInformation.distance);
+      const distance = Math.min(s1.distance, s2.distance);
       const index = (distance*25) + structureGainPercentage;
 
-      if(structureGainPercentage < 20) continue;
-      
       if(hybrid) {
         hybrids.push({
           gainPercentage: structureGainPercentage,
           structureMaxProfit,
           structureMaxLoss,
           index,
+          distance,
           s1,
           s2
         })
@@ -133,6 +132,7 @@ const generateStructures = (spreads) => {
           structureMaxProfit,
           structureMaxLoss,
           index,
+          distance,
           s1,
           s2
         })
@@ -140,17 +140,40 @@ const generateStructures = (spreads) => {
       
     }
   }
-  hybrids.sort((a, b) => b.gainPercentage - a.gainPercentage);
-  ironCondors.sort((a, b) => b.index - a.index);
-  return {ironCondors,hybrids};
+  // hybrids.sort((a, b) => b.gainPercentage - a.gainPercentage);
+  // ironCondors.sort((a, b) => b.gainPercentage - a.gainPercentage);
+  return {ironCondors};
+}
+
+const filterBest = (array) => {
+  array.sort((a, b) => b.gainPercentage - a.gainPercentage);
+  let bestOperation = array[0];
+  let upperPercentageLimit = parseInt(array[0].gainPercentage) - 1;
+  iterations = upperPercentageLimit;
+  let results = [];
+  for (let i = 0; i < array.length; i++) {
+    let lowerPercentageLimit = upperPercentageLimit - 1;
+    const item = array[i];
+    if(item.distance > bestOperation.distance){
+      bestOperation = item;
+    }
+    if(item.gainPercentage < lowerPercentageLimit){
+      upperPercentageLimit = item.gainPercentage;
+      results.push(bestOperation);
+      bestOperation = item;
+    }
+    if(results.length !== 0 && results[results.length - 1].gainPercentage < 2) break;
+  }
+  return results.sort((a, b) => b.distance - a.distance);
 }
 
 const find = (useMid = false, lowerResistance, upperResistance) => {
     let options = temp1;
-    const price = Array.from(document.querySelector('tbody')
-                                     .querySelector('tr')
-                                     .querySelectorAll('td'))[2]
-                                     .querySelector("td soma-caption").textContent.trim();
+    // const price = Array.from(document.querySelector('tbody')
+    //                                  .querySelector('tr')
+    //                                  .querySelectorAll('td'))[2]
+    //                                  .querySelector("td soma-caption").textContent.trim();
+    const price = '52,1';
     const lowerLimit = toFloat(lowerResistance || price);
     const upperLimit = toFloat(upperResistance || price);
     const calls = options.filter(v => v.type === 'CALL');
@@ -166,15 +189,13 @@ const find = (useMid = false, lowerResistance, upperResistance) => {
     const OTMPutsSpreads = generateVerticalSpreads(OTMPuts, useMid, 'OTMPuts', lowerLimit);
     const spreads = [...OTMCallsSpreads, ...ITMCallsSpreads, ...ITMPutsSpreads, ...OTMPutsSpreads];
     const structures = generateStructures(spreads);
-    const all = [...structures.ironCondors, ...spreads].sort((a, b) => b.index - a.index);
+    // const all = filterBest([...structures.ironCondors, ...spreads].sort((a, b) => b.gainPercentage - a.gainPercentage));
 
-    console.dir({all, ironCondors: structures.ironCondors, hybrids: structures.hybrids, spreads});
+    console.dir({ironCondors: filterBest(structures.ironCondors), spreads: filterBest(spreads)});
 };
 
 find();
 
-//iterar por faixas de porcentagem de 1% pegando a melhor operação por distância
-  //ordenar por porcentagem e iterar a lista, salva a primeira distancia, se encontrar uma distância maior sobreescreve, terminou a faixa, registra e vai pra próxima
 //teste uma situação onde se encontraria travas de credito itm, pois são oportunidades de arbitragem
 //pense em alguma verificação de distância da trava
 //teste se os preços não estão sendo modificados pela ineficiência do js em calculos
