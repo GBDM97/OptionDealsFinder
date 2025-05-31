@@ -78,14 +78,13 @@ const generateVerticalSpreads = (options, useMid, listType, price) => {
                 maxProfit: +maxProfit.toFixed(2),
                 maxLoss: +maxLoss.toFixed(2),
                 spreadWidth,
-                longStrike: long.strike,
                 long,
                 short
               }
           });
           }
     }
-    return results.sort((a, b) => b.gainPercentage - a.gainPercentage);
+    return results;
 };
 
 const generateStructures = (spreads) => {
@@ -116,6 +115,8 @@ const generateStructures = (spreads) => {
       const distance = Math.min(s1.distance, s2.distance);
       const index = (distance*25) + structureGainPercentage;
 
+      if(structureGainPercentage < 2) continue;
+
       if(hybrid) {
         hybrids.push({
           gainPercentage: structureGainPercentage,
@@ -129,10 +130,11 @@ const generateStructures = (spreads) => {
       } else {
         ironCondors.push({
           gainPercentage: structureGainPercentage,
+          distance,
+          strikes: `${s1.shortStrike} - ${s2.shortStrike}`,
           structureMaxProfit,
           structureMaxLoss,
-          index,
-          distance,
+          // index,
           s1,
           s2
         })
@@ -141,7 +143,7 @@ const generateStructures = (spreads) => {
     }
   }
   // hybrids.sort((a, b) => b.gainPercentage - a.gainPercentage);
-  // ironCondors.sort((a, b) => b.gainPercentage - a.gainPercentage);
+  ironCondors.sort((a, b) => b.gainPercentage - a.gainPercentage);
   return {ironCondors};
 }
 
@@ -187,15 +189,19 @@ const find = (useMid = false, lowerResistance, upperResistance) => {
     const ITMCallsSpreads = generateVerticalSpreads(ITMCalls, useMid, 'ITMCalls', lowerLimit);
     const ITMPutsSpreads = generateVerticalSpreads(ITMPuts, useMid, 'ITMPuts', upperLimit);
     const OTMPutsSpreads = generateVerticalSpreads(OTMPuts, useMid, 'OTMPuts', lowerLimit);
-    const spreads = [...OTMCallsSpreads, ...ITMCallsSpreads, ...ITMPutsSpreads, ...OTMPutsSpreads];
+    const spreads = [...OTMCallsSpreads, ...ITMCallsSpreads, ...ITMPutsSpreads, ...OTMPutsSpreads].sort((a, b) => b.gainPercentage - a.gainPercentage);
     const structures = generateStructures(spreads);
-    // const all = filterBest([...structures.ironCondors, ...spreads].sort((a, b) => b.gainPercentage - a.gainPercentage));
 
-    console.dir({ironCondors: filterBest(structures.ironCondors), spreads: filterBest(spreads)});
+    if(lowerResistance && upperResistance){
+      console.dir({ironCondors: structures.ironCondors, spreads})
+    }else{
+      console.dir({ironCondors: filterBest(structures.ironCondors), spreads: filterBest(spreads)})
+    }
 };
 
-find();
+find(false, '51', '58');
 
+//colocar shortstrike mais próximo fácil de ver nos iron condors
 //teste uma situação onde se encontraria travas de credito itm, pois são oportunidades de arbitragem
 //pense em alguma verificação de distância da trava
 //teste se os preços não estão sendo modificados pela ineficiência do js em calculos
