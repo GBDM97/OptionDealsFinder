@@ -4,16 +4,21 @@ const toFloat = (val, decimals = 2) => {
 }
 
 const extractOptions = () => {
-  const rows = Array.from(document.querySelectorAll('tbody'))[1].querySelectorAll("tr");
+  const rows = Array.from(document.querySelector("#recycler-view-2 > div.recycler-content.svelte-ljazwp")
+                                  .querySelectorAll('[data-index]')).sort((a, b) => {
+                                    const indexA = parseInt(a.getAttribute('data-index'), 10);
+                                    const indexB = parseInt(b.getAttribute('data-index'), 10);
+                                    return indexA - indexB;
+                                  }).map(element => element.children[1]);
   const options = [];
   rows.forEach(row => {
-    const cells = Array.from(row.querySelectorAll("td")).map(v=>v.querySelector("td soma-caption").textContent.trim());
-    const strike = toFloat(cells[5]);
-    const callBid = toFloat(cells[3]);
-    const callAsk = toFloat(cells[4]);
+    const cells = Array.from(row.querySelectorAll("div")).map(v=>v.querySelector("span").textContent.trim());;
+    const strike = toFloat(cells[4]);
+    const callBid = toFloat(cells[2]);
+    const callAsk = toFloat(cells[3]);
     const callMid = toFloat(((callBid + callAsk) / 2));
-    const putBid = toFloat(cells[6]);
-    const putAsk = toFloat(cells[7]);
+    const putBid = toFloat(cells[5]);
+    const putAsk = toFloat(cells[6]);
     const putMid = toFloat(((putBid + putAsk) / 2));
     if(!isNaN(strike) && !isNaN(callBid) && !isNaN(callAsk) && !isNaN(callMid)){
         options.push({type: 'CALL', strike, bid: callBid, ask: callAsk, mid: callMid})
@@ -120,10 +125,10 @@ const generateStructures = (spreads) => {
       if(hybrid) {
         hybrids.push({
           gainPercentage: structureGainPercentage,
+          distance,
           structureMaxProfit,
           structureMaxLoss,
           index,
-          distance,
           s1,
           s2
         })
@@ -141,9 +146,9 @@ const generateStructures = (spreads) => {
       
     }
   }
-  // hybrids.sort((a, b) => b.gainPercentage - a.gainPercentage);
+  hybrids.sort((a, b) => b.gainPercentage - a.gainPercentage);
   ironCondors.sort((a, b) => b.gainPercentage - a.gainPercentage);
-  return {ironCondors};
+  return {ironCondors,hybrids};
 }
 
 const filterByPercentageLevel = (array) => {
@@ -174,11 +179,12 @@ const filterByDistanceLevel = (array) => {
   if(array.length === 0) return [];
   array.sort((a, b) => b.distance - a.distance);
   let bestOperation = array[0];
-  let upperDistanceLimit = parseInt(array[0].distance) - 0.05;
+  let upperDistanceLimit = parseInt(array[0].distance);
+  const limitDecrement = upperDistanceLimit/100;
   iterations = upperDistanceLimit;
   let results = [];
   for (let i = 0; i < array.length; i++) {
-    let lowerDistanceLimit = upperDistanceLimit - 0.05;
+    let lowerDistanceLimit = upperDistanceLimit - limitDecrement;
     const item = array[i];
     if(item.distance > bestOperation.distance){
       bestOperation = item;
@@ -195,12 +201,8 @@ const filterByDistanceLevel = (array) => {
 }
 
 const find = (useMid = false, lowerResistance, upperResistance) => {
-    let options = temp1;
-    // const price = Array.from(document.querySelector('tbody')
-    //                                  .querySelector('tr')
-    //                                  .querySelectorAll('td'))[2]
-    //                                  .querySelector("td soma-caption").textContent.trim();
-    const price = '52,1';
+    let options = extractOptions();
+    const price = document.querySelector('[data-element-id="ActiveSymbolDetails:last-price-value.label"]').textContent;
     const lowerLimit = toFloat(lowerResistance || price);
     const upperLimit = toFloat(upperResistance || price);
     const calls = options.filter(v => v.type === 'CALL');
@@ -217,15 +219,17 @@ const find = (useMid = false, lowerResistance, upperResistance) => {
     const spreads = [...OTMCallsSpreads, ...ITMCallsSpreads, ...ITMPutsSpreads, ...OTMPutsSpreads].sort((a, b) => b.gainPercentage - a.gainPercentage);
     const structures = generateStructures(spreads);
 
+
     if(lowerResistance && upperResistance){
       console.dir({ironCondors: structures.ironCondors, spreads})
     }else{
-      console.dir({ironCondors: filterByDistanceLevel(structures.ironCondors), spreads: filterByDistanceLevel(spreads)})
+      console.dir({ironCondors: filterByDistanceLevel(structures.ironCondors), spreads: filterByDistanceLevel(spreads), hybrids: filterByDistanceLevel(structures.hybrids)})
     }
 };
 
-find();
+find(true);
 
+//passar as divisões de procura específicas dentro de parâmetros 
 //teste uma situação onde se encontraria travas de credito itm, pois são oportunidades de arbitragem
 //se não colocar as resistências nos parâmetros vamos encontrar as melhores oportunidades em qualquer direção e distância,
 //as melhores para cada nível de porcentagem
