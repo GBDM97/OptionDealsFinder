@@ -150,21 +150,21 @@ const filterByPercentageLevel = (array) => {
   if(array.length === 0) return [];
   array.sort((a, b) => b.gainPercentage - a.gainPercentage);
   let bestOperation = array[0];
-  let upperPercentageLimit = parseInt(array[0].gainPercentage) - 1;
+  let upperPercentageLimit = parseInt(array[0].gainPercentage)
+  const limitDecrement = upperPercentageLimit/100;
   iterations = upperPercentageLimit;
   let results = [];
   for (let i = 0; i < array.length; i++) {
-    let lowerPercentageLimit = upperPercentageLimit - 1;
+    let lowerPercentageLimit = upperPercentageLimit - limitDecrement;
     const item = array[i];
     if(item.distance > bestOperation.distance){
       bestOperation = item;
     }
-    if(item.gainPercentage < lowerPercentageLimit){
+    if(item.gainPercentage < lowerPercentageLimit  || i === array.length - 1){
       upperPercentageLimit = item.gainPercentage;
       results.push(bestOperation);
       bestOperation = item;
     }
-    if(results.length !== 0 && results[results.length - 1].gainPercentage < 2) break;
   }
   if(results.length === 0) results = array;
   return results.sort((a, b) => b.distance - a.distance);
@@ -174,21 +174,21 @@ const filterByDistanceLevel = (array) => {
   if(array.length === 0) return [];
   array.sort((a, b) => b.distance - a.distance);
   let bestOperation = array[0];
-  let upperDistanceLimit = parseInt(array[0].distance) - 0.05;
+  let upperDistanceLimit = parseInt(array[0].distance);
+  const limitDecrement = upperDistanceLimit/100;
   iterations = upperDistanceLimit;
   let results = [];
   for (let i = 0; i < array.length; i++) {
-    let lowerDistanceLimit = upperDistanceLimit - 0.05;
+    let lowerDistanceLimit = upperDistanceLimit - limitDecrement;
     const item = array[i];
-    if(item.distance > bestOperation.distance){
+    if(item.gainPercentage > bestOperation.gainPercentage){
       bestOperation = item;
     }
-    if(item.distance < lowerDistanceLimit){
+    if(item.distance < lowerDistanceLimit || i === array.length - 1){
       upperDistanceLimit = item.distance;
       results.push(bestOperation);
       bestOperation = item;
     }
-    if(results.length !== 0 && results[results.length - 1].distance < 0.5) break;
   }
   if(results.length === 0) results = array;
   return results.sort((a, b) => a.distance - b.distance);
