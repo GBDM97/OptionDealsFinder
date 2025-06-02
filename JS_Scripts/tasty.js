@@ -102,14 +102,14 @@ const generateStructures = (spreads) => {
       let hybrid = false;
       if (i === j) continue;
       if (s1.optionType === s2.optionType) continue;
-      if (s1.shortStrike === s2.shortStrike) continue;
-
       if((s1.optionType === 'CALL - OTM' && s2.optionType === 'PUT - ITM')||
          (s1.optionType === 'CALL - ITM' && s2.optionType === 'PUT - OTM')||
          (s2.optionType === 'CALL - OTM' && s1.optionType === 'PUT - ITM')||
          (s2.optionType === 'CALL - ITM' && s1.optionType === 'PUT - OTM')){
             hybrid = true;
          }
+      if (s1.shortStrike === s2.shortStrike && !hybrid) continue;
+
       const s1p = s1.additionalInformation.maxProfit;
       const s2p = s2.additionalInformation.maxProfit;
       const s1l = s1.additionalInformation.maxLoss;
@@ -200,7 +200,7 @@ const filterByDistanceLevel = (array) => {
   return results.sort((a, b) => a.distance - b.distance);
 }
 
-const find = (useMid = false, lowerResistance, upperResistance) => {
+const find = (filter, useMid = false, lowerResistance, upperResistance) => {
     let options = extractOptions();
     const price = document.querySelector('[data-element-id="ActiveSymbolDetails:last-price-value.label"]').textContent.replace(',','');
     const lowerLimit = toFloat(lowerResistance || price);
@@ -220,10 +220,10 @@ const find = (useMid = false, lowerResistance, upperResistance) => {
     const structures = generateStructures(spreads);
 
 
-    if(lowerResistance && upperResistance){
-      console.dir({ironCondors: structures.ironCondors, spreads, hybrids: structures.hybrids})
-    }else{
+    if(filter){
       console.dir({ironCondors: filterByDistanceLevel(structures.ironCondors), spreads: filterByDistanceLevel(spreads), hybrids: filterByDistanceLevel(structures.hybrids)})
+    }else{
+      console.dir({ironCondors: structures.ironCondors, spreads, hybrids: structures.hybrids})
     }
 };
 

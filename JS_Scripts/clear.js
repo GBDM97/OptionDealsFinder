@@ -97,14 +97,14 @@ const generateStructures = (spreads) => {
       let hybrid = false;
       if (i === j) continue;
       if (s1.optionType === s2.optionType) continue;
-      if (s1.shortStrike === s2.shortStrike) continue;
-
       if((s1.optionType === 'CALL - OTM' && s2.optionType === 'PUT - ITM')||
          (s1.optionType === 'CALL - ITM' && s2.optionType === 'PUT - OTM')||
          (s2.optionType === 'CALL - OTM' && s1.optionType === 'PUT - ITM')||
          (s2.optionType === 'CALL - ITM' && s1.optionType === 'PUT - OTM')){
             hybrid = true;
          }
+      if (s1.shortStrike === s2.shortStrike && !hybrid) continue;
+
       const s1p = s1.additionalInformation.maxProfit;
       const s2p = s2.additionalInformation.maxProfit;
       const s1l = s1.additionalInformation.maxLoss;
@@ -141,9 +141,9 @@ const generateStructures = (spreads) => {
       }
     }
   }
-  // hybrids.sort((a, b) => b.gainPercentage - a.gainPercentage);
+  hybrids.sort((a, b) => b.gainPercentage - a.gainPercentage);
   ironCondors.sort((a, b) => b.gainPercentage - a.gainPercentage);
-  return {ironCondors};
+  return {ironCondors,hybrids};
 }
 
 const filterByPercentageLevel = (array) => {
@@ -194,13 +194,12 @@ const filterByDistanceLevel = (array) => {
   return results.sort((a, b) => a.distance - b.distance);
 }
 
-const find = (useMid = false, lowerResistance, upperResistance) => {
-    let options = temp1;
-    // const price = Array.from(document.querySelector('tbody')
-    //                                  .querySelector('tr')
-    //                                  .querySelectorAll('td'))[2]
-    //                                  .querySelector("td soma-caption").textContent.trim();
-    const price = '52,1';
+const find = (filter, useMid = false, lowerResistance, upperResistance) => {
+    let options = extractOptions();
+    const price = Array.from(document.querySelector('tbody')
+                                     .querySelector('tr')
+                                     .querySelectorAll('td'))[2]
+                                     .querySelector("td soma-caption").textContent.trim();
     const lowerLimit = toFloat(lowerResistance || price);
     const upperLimit = toFloat(upperResistance || price);
     const calls = options.filter(v => v.type === 'CALL');
@@ -217,14 +216,14 @@ const find = (useMid = false, lowerResistance, upperResistance) => {
     const spreads = [...OTMCallsSpreads, ...ITMCallsSpreads, ...ITMPutsSpreads, ...OTMPutsSpreads].sort((a, b) => b.gainPercentage - a.gainPercentage);
     const structures = generateStructures(spreads);
 
-    if(lowerResistance && upperResistance){
-      console.dir({ironCondors: structures.ironCondors, spreads})
+    if(filter){
+      console.dir({ironCondors: filterByDistanceLevel(structures.ironCondors), spreads: filterByDistanceLevel(spreads), hybrids: filterByDistanceLevel(structures.hybrids)})
     }else{
-      console.dir({ironCondors: filterByDistanceLevel(structures.ironCondors), spreads: filterByDistanceLevel(spreads)})
+      console.dir({ironCondors: structures.ironCondors, spreads, hybrids: structures.hybrids})
     }
 };
 
-find();
+find(false);
 
 //teste uma situação onde se encontraria travas de credito itm, pois são oportunidades de arbitragem
 //se não colocar as resistências nos parâmetros vamos encontrar as melhores oportunidades em qualquer direção e distância,
