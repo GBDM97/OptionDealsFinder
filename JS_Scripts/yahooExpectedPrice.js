@@ -6,7 +6,6 @@ function getPeriodRange(interval) {
   const now = new Date();
   const end = getUnixTimestamp(now);
   let startDate = new Date(now);
-
   switch (interval) {
   case '1d':
     startDate.setMonth(now.getMonth() - 2); // 2 months lookback for daily data
@@ -19,19 +18,12 @@ function getPeriodRange(interval) {
     break;
   default:
     throw new Error(`Unsupported interval: ${interval}`);
-}
-
+  }
   const start = getUnixTimestamp(startDate);
   return { start, end };
 }
 
-function stdDev(values) {
-  const mean = values.reduce((a, b) => a + b, 0) / values.length;
-  const variance = values.reduce((a, b) => a + (b - mean) ** 2, 0) / values.length;
-  return Math.sqrt(variance);
-}
-
-async function fetchYahooFinanceChart(symbol, interval = '1d') {
+async function fetchYahooFinanceChart(symbol, interval) {
   const { start: period1, end: period2 } = getPeriodRange(interval);
   const url = `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?period1=${period1}&period2=${period2}&interval=${interval}&includePrePost=true&events=div%7Csplit%7Cearn&lang=en-US&region=US&source=cosaic`;
 
@@ -63,50 +55,29 @@ async function fetchYahooFinanceChart(symbol, interval = '1d') {
       };
     });
 
-    // 1️⃣ Average high-low range
+    // Average high-low range
     const ranges = finalData.map(d => (d.high != null && d.low != null ? d.high - d.low : 0));
     const avgHighLowRange = parseFloat((ranges.reduce((a, b) => a + b, 0) / ranges.length).toFixed(2));
 
-    // 2️⃣ Historical Volatility (log returns)
-    const logReturns = [];
-    for (let i = 1; i < closes.length; i++) {
-      const prev = closes[i - 1];
-      const curr = closes[i];
-      if (prev > 0 && curr > 0) {
-        logReturns.push(Math.log(curr / prev));
-      }
-    }
-    const dailyHV = stdDev(logReturns);
-    const hvBasedMove = parseFloat((closes[closes.length - 1] * dailyHV * Math.sqrt(closes.length)).toFixed(2));
+    // Standard deviation of daily close price changes
+    const movementData = finalData.map((v, i) => i >= 1 ? Math.abs(v.close - finalData[i - 1].close) : 0).slice(1);
+    const mean = movementData.reduce((sum, c) => sum + c, 0) / movementData.length;
+    const variance = movementData.reduce((acc, c) => acc + ((c - mean) ** 2), 0) / (movementData.length - 1);
+    const stdDev = Math.sqrt(variance);
 
-    // 3️⃣ Standard deviation of daily close price changes
-    const dailyDiffs = [];
-    for (let i = 1; i < closes.length; i++) {
-      const prev = closes[i - 1];
-      const curr = closes[i];
-      if (prev != null && curr != null) {
-        dailyDiffs.push(curr - prev);
-      }
-    }
-    const stdDevPriceChange = parseFloat(stdDev(dailyDiffs).toFixed(2));
-
-    // 🔢 Output results
     console.log(`\n📈 Price movement analysis for ${symbol} over ${interval} period:`);
     console.log(`1. Avg High-Low Range: $${avgHighLowRange}`);
-    console.log(`2. HV-Based Expected Move: $${hvBasedMove}`);
-    console.log(`3. Std Dev of Daily Price Changes: $${stdDevPriceChange}`);
+    console.log(`2. Std Dev estimate of movement over period: $${stdDev}`);
 
-    return {
-      data: finalData,
-      metrics: {
-        avgHighLowRange,
-        hvBasedMove,
-        stdDevPriceChange
-      }
-    };
   } catch (err) {
     console.error('Error fetching or processing data:', err);
   }
 }
 
-fetchYahooFinanceChart('TSLA', '1mo');
+const run = (ticker) => {
+  fetchYahooFinanceChart(ticker, '1d');
+  fetchYahooFinanceChart(ticker, '1wk');
+  fetchYahooFinanceChart(ticker, '1mo');
+}
+
+run('NVDA')
