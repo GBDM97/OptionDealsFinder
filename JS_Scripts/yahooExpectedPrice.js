@@ -23,7 +23,7 @@ function getPeriodRange(interval) {
   return { start, end };
 }
 
-async function fetchYahooFinanceChart(symbol, interval) {
+async function fecthAndComputeSTD(symbol, interval) {
   const { start: period1, end: period2 } = getPeriodRange(interval);
   const url = `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?period1=${period1}&period2=${period2}&interval=${interval}&includePrePost=true&events=div%7Csplit%7Cearn&lang=en-US&region=US&source=cosaic`;
 
@@ -51,33 +51,29 @@ async function fetchYahooFinanceChart(symbol, interval) {
         high: parseFloat(indicators.high[i]?.toFixed(2)),
         low: parseFloat(indicators.low[i]?.toFixed(2)),
         close: parseFloat(closes[i]?.toFixed(2)),
-        volume: indicators.volume[i]
       };
     });
 
-    // Average high-low range
-    const ranges = finalData.map(d => (d.high != null && d.low != null ? d.high - d.low : 0));
-    const avgHighLowRange = parseFloat((ranges.reduce((a, b) => a + b, 0) / ranges.length).toFixed(2));
-
-    // Standard deviation of daily close price changes
-    const movementData = finalData.map((v, i) => i >= 1 ? Math.abs(v.close - finalData[i - 1].close) : 0).slice(1);
-    const mean = movementData.reduce((sum, c) => sum + c, 0) / movementData.length;
-    const variance = movementData.reduce((acc, c) => acc + ((c - mean) ** 2), 0) / (movementData.length - 1);
+    const movementData = finalData.map((v, i) => i >= 1 ? [v.day ,Math.abs(v.close - finalData[i - 1].close)] : 0).slice(1);
+    const mean = movementData.reduce((sum, c) => sum + c[1], 0) / movementData.length;
+    const variance = movementData.reduce((acc, c) => acc + ((c[1] - mean) ** 2), 0) / (movementData.length - 1);
     const stdDev = Math.sqrt(variance);
-
-    console.log(`\n📈 Price movement analysis for ${symbol} over ${interval} period:`);
-    console.log(`1. Avg High-Low Range: $${avgHighLowRange}`);
-    console.log(`2. Std Dev estimate of movement over period: $${stdDev}`);
-
+    const movementsPerSTDDev = movementData.map(v => [v[0],(v[1] / stdDev).toFixed(2)]);
+    console.dir({
+      symbol,
+      interval,
+      stdDev: stdDev.toFixed(2),
+      movementsPerSTDDev,
+    });
   } catch (err) {
     console.error('Error fetching or processing data:', err);
   }
 }
 
 const run = (ticker) => {
-  fetchYahooFinanceChart(ticker, '1d');
-  fetchYahooFinanceChart(ticker, '1wk');
-  fetchYahooFinanceChart(ticker, '1mo');
+  fecthAndComputeSTD(ticker, '1d');
+  fecthAndComputeSTD(ticker, '1wk');
+  fecthAndComputeSTD(ticker, '1mo');
 }
 
-run('NVDA')
+run('BBAS3.SA')
