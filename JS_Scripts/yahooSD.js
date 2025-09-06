@@ -23,7 +23,7 @@ function getPeriodRange(interval) {
   return { start, end };
 }
 
-async function fecthAndComputeSTD(symbol, interval) {
+async function fecthAndComputeSTD(symbol, interval, maxAndMinMovement) {
   const { start: period1, end: period2 } = getPeriodRange(interval);
   const url = `https://query2.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(symbol)}?period1=${period1}&period2=${period2}&interval=${interval}&includePrePost=true&events=div%7Csplit%7Cearn&lang=en-US&region=US&source=cosaic`;
 
@@ -52,9 +52,14 @@ async function fecthAndComputeSTD(symbol, interval) {
         low: parseFloat(indicators.low[i]?.toFixed(2)),
         close: parseFloat(closes[i]?.toFixed(2)),
       };
-    });
+    }).filter(v=>v.open).filter(v=>v.high).filter(v=>v.low).filter(v=>v.close);
 
-    const movementData = finalData.map((v, i) => i >= 1 ? [v.day ,Math.abs(v.close - finalData[i - 1].close)] : 0).slice(1);
+    let movementData;
+    if (maxAndMinMovement){
+      movementData = finalData.map((v, i) => [v.day ,Math.abs(v.high - v.low)]);
+    } else {
+      movementData = finalData.map((v, i) => i >= 1 ? [v.day ,Math.abs(v.close - finalData[i - 1].close)] : 0).slice(1);
+    }
     const mean = movementData.reduce((sum, c) => sum + c[1], 0) / movementData.length;
     const variance = movementData.reduce((acc, c) => acc + ((c[1] - mean) ** 2), 0) / (movementData.length - 1);
     const stdDev = Math.sqrt(variance);
@@ -70,10 +75,10 @@ async function fecthAndComputeSTD(symbol, interval) {
   }
 }
 
-const run = (ticker) => {
-  fecthAndComputeSTD(ticker, '1d');
-  fecthAndComputeSTD(ticker, '1wk');
-  fecthAndComputeSTD(ticker, '1mo');
+const run = (ticker,maxAndMinMovement) => {
+  fecthAndComputeSTD(ticker, '1d', maxAndMinMovement);
+  fecthAndComputeSTD(ticker, '1wk', maxAndMinMovement);
+  fecthAndComputeSTD(ticker, '1mo', maxAndMinMovement);
 }
 
-run('BBAS3.SA')
+run('RUN', true)
