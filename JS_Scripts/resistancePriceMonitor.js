@@ -3,15 +3,16 @@ async function checkProximity(records, proximityThreshold) {
 
   function toDate(input) {
     if (typeof input === "string") {
-      const [year, month, day] = input.split("-").map(Number)
-      return new Date(year, month - 1, day).getTime()
+      const [year, month] = input.split("-").map(Number)
+      return new Date(year, month - 1, 1).setHours(0, 0, 0, 0)
     } else if (typeof input === "number") {
       const date = new Date(input * 1000)
-      return new Date(
-        date.getUTCFullYear(),
-        date.getUTCMonth(),
-        date.getUTCDate()
-      ).getTime()
+      return new Date(date.getUTCFullYear(), date.getUTCMonth(), 1).setHours(
+        0,
+        0,
+        0,
+        0
+      )
     } else {
       throw new Error(
         "Invalid input type. Must be a date string or timestamp (seconds)."
@@ -30,12 +31,12 @@ async function checkProximity(records, proximityThreshold) {
       start = Math.floor(new Date(dates.sort()[0]).getTime() / 1000)
     }
     const url = start
-      ? `https://query2.finance.yahoo.com/v8/finance/chart/${record.symbol}?period1=${start}&period2=${now}&interval=1d`
+      ? `https://query2.finance.yahoo.com/v8/finance/chart/${record.symbol}?period1=${start}&period2=${now}&interval=1mo`
       : `https://query2.finance.yahoo.com/v8/finance/chart/${record.symbol}`
     const response = await fetch(url)
     const data = await response.json()
     if (!data.chart?.result?.length)
-      throw new Error(`No chart data for ${symbol}`)
+      throw new Error(`No chart data for ${record.symbol}`)
     return data.chart.result[0]
   }
 
@@ -55,7 +56,7 @@ async function checkProximity(records, proximityThreshold) {
       throw new Error(
         `No chart data for ${data.meta.symbol} ` + line.referenceDate2
       )
-    const daysDistanceToCurrentDay = data.timestamp.length - referenceIndex2
+    const daysDistanceToCurrentDay = data.timestamp.length - 2 - referenceIndex2
     const distanceBetweenRefs = referenceIndex2 - referenceIndex1
     const slope =
       (line.referencePrice2 - line.referencePrice1) / distanceBetweenRefs
@@ -134,6 +135,127 @@ const resistanceRecords = [
     },
     lower: {
       referencePrice1: 48.92,
+    },
+  },
+  {
+    symbol: "BOVA11.SA",
+    upper: {
+      referenceDate1: "2024-02-01",
+      referencePrice1: 134.4,
+      referenceDate2: "2025-04-01",
+      referencePrice2: 140.08,
+    },
+    lower: {
+      referenceDate1: "2023-05-02",
+      referencePrice1: 95.71,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 121.25,
+    },
+  },
+  {
+    symbol: "PETR4.SA",
+    upper: {
+      referencePrice1: 42.47,
+    },
+    lower: {
+      referenceDate1: "2023-05-02",
+      referencePrice1: 23.11,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 28.72,
+    },
+  },
+  {
+    symbol: "ITUB4.SA",
+    upper: {
+      referenceDate1: "2024-05-02",
+      referencePrice1: 44.98,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 48.09,
+    },
+    lower: {
+      referenceDate1: "2023-09-01",
+      referencePrice1: 23.36,
+      referenceDate2: "2025-01-02",
+      referencePrice2: 27.29,
+    },
+  },
+
+  {
+    symbol: "CSAN3.SA",
+    upper: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+      referenceDate2: "2025-08-19",
+      referencePrice2: 169.8,
+    },
+    lower: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+    },
+  },
+  {
+    symbol: "B3SA3.SA",
+    upper: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+      referenceDate2: "2025-08-19",
+      referencePrice2: 169.8,
+    },
+    lower: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+    },
+  },
+  {
+    symbol: "SUZB3.SA",
+    upper: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+      referenceDate2: "2025-08-19",
+      referencePrice2: 169.8,
+    },
+    lower: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+    },
+  },
+  {
+    symbol: "BRAV3.SA",
+    upper: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+      referenceDate2: "2025-08-19",
+      referencePrice2: 169.8,
+    },
+    lower: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+    },
+  },
+  {
+    symbol: "ELET3.SA",
+    upper: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+      referenceDate2: "2025-08-19",
+      referencePrice2: 169.8,
+    },
+    lower: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+    },
+  },
+  {
+    symbol: "SBSP3.SA",
+    upper: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+      referenceDate2: "2025-08-19",
+      referencePrice2: 169.8,
+    },
+    lower: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
     },
   },
   {
