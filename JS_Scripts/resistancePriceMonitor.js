@@ -28,7 +28,7 @@ async function checkProximity(records, proximityThreshold) {
       record.lower?.referenceDate1,
     ].filter(Boolean)
     if (dates.length) {
-      start = Math.floor(new Date(dates.sort()[0]).getTime() / 1000)
+      start = toDate(dates.sort()[0])
     }
     const url = start
       ? `https://query2.finance.yahoo.com/v8/finance/chart/${record.symbol}?period1=${start}&period2=${now}&interval=1mo`
@@ -179,83 +179,67 @@ const resistanceRecords = [
       referencePrice2: 27.29,
     },
   },
-
   {
     symbol: "CSAN3.SA",
     upper: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
-      referenceDate2: "2025-08-19",
-      referencePrice2: 169.8,
-    },
-    lower: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
+      referencePrice1: 8.78,
     },
   },
   {
     symbol: "B3SA3.SA",
     upper: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
-      referenceDate2: "2025-08-19",
-      referencePrice2: 169.8,
+      referencePrice1: 15.1,
     },
     lower: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
+      referencePrice1: 9,
     },
   },
   {
     symbol: "SUZB3.SA",
     upper: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
-      referenceDate2: "2025-08-19",
-      referencePrice2: 169.8,
+      referencePrice1: 65.95,
     },
     lower: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
+      referenceDate1: "2023-04-03",
+      referencePrice1: 37.88,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 48.69,
     },
   },
   {
     symbol: "BRAV3.SA",
     upper: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
-      referenceDate2: "2025-08-19",
-      referencePrice2: 169.8,
+      referenceDate1: "2024-12-02",
+      referencePrice1: 28.757,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 23.208,
     },
     lower: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
+      referencePrice1: 15.457,
     },
   },
   {
     symbol: "ELET3.SA",
     upper: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
-      referenceDate2: "2025-08-19",
-      referencePrice2: 169.8,
+      referencePrice1: 45,
     },
     lower: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
+      referencePrice1: 33.3,
     },
   },
   {
     symbol: "SBSP3.SA",
     upper: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
-      referenceDate2: "2025-08-19",
-      referencePrice2: 169.8,
+      referenceDate1: "2024-08-01",
+      referencePrice1: 100.78,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 124.53,
     },
     lower: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
+      referenceDate1: "2025-01-02",
+      referencePrice1: 86.02,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 101.14,
     },
   },
   {
