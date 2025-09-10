@@ -28,7 +28,7 @@ async function checkProximity(records, proximityThreshold) {
       record.lower?.referenceDate1,
     ].filter(Boolean)
     if (dates.length) {
-      start = toDate(dates.sort()[0])
+      start = toDate(dates.sort()[0]) / 1000
     }
     const url = start
       ? `https://query2.finance.yahoo.com/v8/finance/chart/${record.symbol}?period1=${start}&period2=${now}&interval=1mo`
@@ -70,7 +70,7 @@ async function checkProximity(records, proximityThreshold) {
     if (type === "lower") return price <= upperLimit
   }
 
-  for (const record of records) {
+  for (const [index, record] of records.entries()) {
     try {
       let { symbol, upper, lower } = record
       if (symbol === "SAMPLE") continue
@@ -102,11 +102,29 @@ async function checkProximity(records, proximityThreshold) {
           isPriceNearResistance(currentPrice, currentResistancePrice, "lower")
       }
       if (proximity) outputList.push(symbol)
+      console.log(index + 1 + " of " + String(records.length - 1))
     } catch (error) {
       console.log(error)
     }
   }
-  return outputList
+  console.dir({
+    AssetsAnalyzed: {
+      BR: records.filter(
+        (record) =>
+          record.symbol.toUpperCase().endsWith(".SA") &&
+          record.symbol.toUpperCase() !== "SAMPLE"
+      ).length,
+      US: records.filter(
+        (record) =>
+          !record.symbol.toUpperCase().endsWith(".SA") &&
+          record.symbol.toUpperCase() !== "SAMPLE"
+      ).length,
+    },
+  })
+  console.dir({
+    BR: outputList.filter((record) => record.toUpperCase().endsWith(".SA")),
+    US: outputList.filter((record) => !record.toUpperCase().endsWith(".SA")),
+  })
 }
 
 const resistanceRecords = [
@@ -243,6 +261,114 @@ const resistanceRecords = [
     },
   },
   {
+    symbol: "BBSE3.SA",
+    upper: {
+      referenceDate1: "2024-11-01",
+      referencePrice1: 42.5,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 42.9,
+    },
+    lower: {
+      referenceDate1: "2024-12-02",
+      referencePrice1: 30,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 30.4,
+    },
+  },
+  {
+    symbol: "COGN3.SA",
+    upper: {
+      referencePrice1: 3.36,
+    },
+  },
+  {
+    symbol: "ITSA4.SA",
+    upper: {
+      referencePrice1: 11.18,
+    },
+    lower: {
+      referenceDate1: "2023-11-01",
+      referencePrice1: 7.59,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 8.39,
+    },
+  },
+  {
+    symbol: "EMBR3.SA",
+    upper: {
+      referenceDate1: "2025-03-05",
+      referencePrice1: 73.97,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 86.55,
+    },
+    lower: {
+      referenceDate1: "2025-04-01",
+      referencePrice1: 58.13,
+      referenceDate2: "2025-09-01",
+      referencePrice2: 71.17,
+    },
+  },
+  {
+    symbol: "USIM5.SA",
+    upper: {
+      referenceDate1: "2024-10-01",
+      referencePrice1: 8.57,
+      referenceDate2: "2025-05-02",
+      referencePrice2: 5.93,
+    },
+    lower: {
+      referencePrice1: 0.82,
+    },
+  },
+  {
+    symbol: "CSNA3.SA",
+    upper: {
+      referenceDate1: "2023-11-01",
+      referencePrice1: 21.24,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 8.89,
+    },
+    lower: {
+      referencePrice1: 2.79,
+    },
+  },
+  {
+    symbol: "SMAL11.SA",
+    upper: {
+      referenceDate1: "2024-10-01",
+      referencePrice1: 114.04,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 112.73,
+    },
+    lower: {
+      referencePrice1: 84,
+    },
+  },
+  {
+    symbol: "MRFG3.SA",
+    upper: {
+      referencePrice1: 28,
+    },
+    lower: {
+      referencePrice1: 5,
+    },
+  },
+  {
+    symbol: "CMIG4.SA",
+    upper: {
+      referenceDate1: "2024-06-03",
+      referencePrice1: 12.38,
+      referenceDate2: "2025-05-02",
+      referencePrice2: 13.24,
+    },
+    lower: {
+      referenceDate1: "2024-02-01",
+      referencePrice1: 8.46,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 9.9,
+    },
+  },
+  {
     symbol: "SAMPLE",
     upper: {
       referenceDate1: "2025-08-15",
@@ -253,8 +379,10 @@ const resistanceRecords = [
     lower: {
       referenceDate1: "2025-08-15",
       referencePrice1: 169.8,
+      referenceDate2: "2025-09-01",
+      referencePrice2: 58.13,
     },
   },
 ]
 
-checkProximity(resistanceRecords, 2).then(console.dir)
+checkProximity(resistanceRecords, 2)
