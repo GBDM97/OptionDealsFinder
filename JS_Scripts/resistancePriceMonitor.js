@@ -369,6 +369,165 @@ const resistanceRecords = [
     },
   },
   {
+    symbol: "BRFS3.SA",
+    upper: {
+      referenceDate1: "2024-03-01",
+      referencePrice1: 31.32,
+      referenceDate2: "2024-12-02",
+      referencePrice2: 29.55,
+    },
+    lower: {
+      referencePrice1: 11.83,
+    },
+  },
+  {
+    symbol: "BRKM5.SA",
+    upper: {
+      referenceDate1: "2025-04-01",
+      referencePrice1: 18.7,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 15.91,
+    },
+    lower: {
+      referenceDate1: "2025-04-01",
+      referencePrice1: 8.88,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 7.56,
+    },
+  },
+  {
+    symbol: "BPAC11.SA",
+    upper: {
+      referenceDate1: "2025-01-02",
+      referencePrice1: 42.92,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 45.52,
+    },
+    lower: {
+      referenceDate1: "2025-03-05",
+      referencePrice1: 27.37,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 29.13,
+    },
+  },
+  {
+    symbol: "EGIE3.SA",
+    upper: {
+      referencePrice1: 48,
+    },
+    lower: {
+      referenceDate1: "2024-07-01",
+      referencePrice1: 33.95,
+      referenceDate2: "2025-04-01",
+      referencePrice2: 35,
+    },
+  },
+  {
+    symbol: "BRAP4.SA",
+    upper: {
+      referenceDate1: "2025-01-02",
+      referencePrice1: 20.15,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 16.9,
+    },
+    lower: {
+      referencePrice1: 12.2,
+    },
+  },
+  {
+    symbol: "RDOR3.SA",
+    upper: {
+      referencePrice1: 39,
+    },
+    lower: {
+      referenceDate1: "2025-01-03",
+      referencePrice1: 25.215,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 26.513,
+    },
+  },
+  {
+    symbol: "VBBR3.SA",
+    upper: {
+      referenceDate1: "2024-12-02",
+      referencePrice1: 26.99,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 26.53,
+    },
+    lower: {
+      referencePrice1: 16,
+    },
+  },
+  {
+    symbol: "ENEV3.SA",
+    upper: {
+      referencePrice1: 16.4,
+    },
+    lower: {
+      referencePrice1: 9.35,
+    },
+  },
+  {
+    symbol: "ALOS3.SA",
+    upper: {
+      referenceDate1: "2023-11-01",
+      referencePrice1: 27.23,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 25.15,
+    },
+    lower: {
+      referenceDate1: "2023-08-01",
+      referencePrice1: 15.42,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 15.85,
+    },
+  },
+  {
+    symbol: "CPLE6.SA",
+    upper: {
+      referenceDate1: "2025-02-03",
+      referencePrice1: 12.65,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 13.16,
+    },
+    lower: {
+      referenceDate1: "2024-07-01",
+      referencePrice1: 8.16,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 9.24,
+    },
+  },
+  {
+    symbol: "ASAI3.SA",
+    upper: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+      referenceDate2: "2025-08-19",
+      referencePrice2: 169.8,
+    },
+    lower: {
+      referenceDate1: "2025-08-15",
+      referencePrice1: 169.8,
+      referenceDate2: "2025-09-01",
+      referencePrice2: 58.13,
+    },
+  },
+  {
+    symbol: "ASAI3.SA",
+    upper: {
+      referenceDate1: "2025-06-02",
+      referencePrice1: 12.063,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 11.472,
+    },
+    lower: {
+      referenceDate1: "2025-01-02",
+      referencePrice1: 4.898,
+      referenceDate2: "2025-06-02",
+      referencePrice2: 3.494,
+    },
+  },
+  {
     symbol: "SAMPLE",
     upper: {
       referenceDate1: "2025-08-15",
