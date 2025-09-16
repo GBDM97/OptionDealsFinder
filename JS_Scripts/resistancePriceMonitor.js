@@ -129,6 +129,93 @@ async function checkProximity(records, proximityThreshold) {
 
 const resistanceRecords = [
   {
+    symbol: "GLD",
+    lower: {
+      referenceDate1: "2025-01-02",
+      referencePrice1: 247.64,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 286.44,
+    },
+  },
+  {
+    symbol: "SLV",
+    upper: {
+      referencePrice1: 43,
+    },
+    lower: {
+      referenceDate1: "2024-10-01",
+      referencePrice1: 31.24,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 34.26,
+    },
+  },
+  {
+    symbol: "SPY",
+    lower: {
+      referenceDate1: "2024-09-03",
+      referencePrice1: 455.03,
+      referenceDate2: "2025-05-01",
+      referencePrice2: 490.12,
+    },
+  },
+  {
+    symbol: "IWM",
+    lower: {
+      referenceDate1: "2024-09-03",
+      referencePrice1: 169.5,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 177.09,
+    },
+  },
+  {
+    symbol: "EWZ",
+    upper: {
+      referenceDate1: "2024-09-03",
+      referencePrice1: 33.2,
+      referenceDate2: "2025-05-01",
+      referencePrice2: 31.18,
+    },
+    lower: {
+      referencePrice1: 20,
+    },
+  },
+  {
+    symbol: "EEM",
+    upper: {
+      referencePrice1: 58,
+    },
+    lower: {
+      referenceDate1: "2024-05-01",
+      referencePrice1: 34.56,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 35.75,
+    },
+  },
+  {
+    symbol: "XLU",
+    upper: {
+      referenceDate1: "2024-08-01",
+      referencePrice1: 85.14,
+      referenceDate2: "2025-05-01",
+      referencePrice2: 86.77,
+    },
+    lower: {
+      referenceDate1: "2024-12-02",
+      referencePrice1: 60.41,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 61.92,
+    },
+  },
+  {
+    symbol: "DIA",
+    lower: {
+      referenceDate1: "2025-04-01",
+      referencePrice1: 368.34,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 376.34,
+    },
+  },
+  {
     symbol: "NVDA",
     upper: {
       referenceDate1: "2024-11-01",
@@ -141,6 +228,135 @@ const resistanceRecords = [
       referencePrice1: 37.81,
       referenceDate2: "2025-06-02",
       referencePrice2: 114.22,
+    },
+  },
+  {
+    symbol: "MSFT",
+    lower: {
+      referenceDate1: "2025-04-01",
+      referencePrice1: 348.15,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 367.51,
+    },
+  },
+  {
+    symbol: "AAPL",
+    lower: {
+      referenceDate1: "2024-09-03",
+      referencePrice1: 172.59,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 195.02,
+    },
+  },
+  {
+    symbol: "GOOG",
+    lower: {
+      referenceDate1: "2025-02-03",
+      referencePrice1: 139.4,
+      referenceDate2: "2025-07-01",
+      referencePrice2: 150.01,
+    },
+  },
+  {
+    symbol: "META",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 585.33,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 685.26,
+    },
+  },
+  {
+    symbol: "TSLA",
+    upper: {
+      referencePrice1: 420,
+    },
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 202.5,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 221.86,
+    },
+  },
+  {
+    symbol: "BRK-B",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 425.26,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 453.42,
+    },
+  },
+  {
+    symbol: "JPM",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 226.47,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 254.59,
+    },
+  },
+  {
+    symbol: "V",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 286.04,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 310.44,
+    },
+  },
+  {
+    symbol: "MA",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 497.62,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 536.31,
+    },
+  },
+  {
+    symbol: "JNJ",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 139.59,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 142.17,
+    },
+  },
+  {
+    symbol: "HD",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 322.8,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 336.15,
+    },
+  },
+  {
+    symbol: "PLTR",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 76.78,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 127.38,
+    },
+  },
+  {
+    symbol: "ABBV",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 169.64,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 178.93,
+    },
+  },
+  {
+    symbol: "BAC",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 30.48,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 31.71,
     },
   },
   {
@@ -495,21 +711,6 @@ const resistanceRecords = [
       referencePrice1: 8.16,
       referenceDate2: "2025-07-01",
       referencePrice2: 9.24,
-    },
-  },
-  {
-    symbol: "ASAI3.SA",
-    upper: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
-      referenceDate2: "2025-08-19",
-      referencePrice2: 169.8,
-    },
-    lower: {
-      referenceDate1: "2025-08-15",
-      referencePrice1: 169.8,
-      referenceDate2: "2025-09-01",
-      referencePrice2: 58.13,
     },
   },
   {
