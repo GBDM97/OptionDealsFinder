@@ -360,6 +360,159 @@ const resistanceRecords = [
     },
   },
   {
+    symbol: "PG",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 145.07,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 149.62,
+    },
+  },
+  {
+    symbol: "KO",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 61.2,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 62.86,
+    },
+  },
+  {
+    symbol: "CSCO",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 45.08,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 46.08,
+    },
+  },
+  {
+    symbol: "MS",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 91.33,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 96.76,
+    },
+  },
+  {
+    symbol: "IBM",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 204.66,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 225.47,
+    },
+  },
+  {
+    symbol: "ABT",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 102.48,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 105.84,
+    },
+  },
+  {
+    symbol: "LIN",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 401.9,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 422.8,
+    },
+  },
+  {
+    symbol: "MCD",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 272.03,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 279.98,
+    },
+  },
+  {
+    symbol: "T",
+    upper: {
+      referencePrice1: 32.87,
+    },
+    lower: {
+      referencePrice1: 13.38,
+    },
+  },
+  {
+    symbol: "DIS",
+    upper: {
+      referencePrice1: 125.93,
+    },
+    lower: {
+      referencePrice1: 77.6,
+    },
+  },
+  {
+    symbol: "MRK",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 73.8,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 75.22,
+    },
+  },
+  {
+    symbol: "CAT",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 267.12,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 282.13,
+    },
+  },
+  {
+    symbol: "UBER",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 62.74,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 69.99,
+    },
+  },
+  {
+    symbol: "NOW",
+    lower: {
+      referenceDate1: "2025-03-03",
+      referencePrice1: 765.99,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 843.67,
+    },
+  },
+  {
+    symbol: "VZ",
+    upper: {
+      referencePrice1: 63.25,
+    },
+    lower: {
+      referenceDate1: "2025-02-03",
+      referencePrice1: 38.15,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 38.59,
+    },
+  },
+  {
+    symbol: "C",
+    upper: {
+      referenceDate1: "2024-09-03",
+      referencePrice1: 91.34,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 92.77,
+    },
+    lower: {
+      referenceDate1: "2024-07-01",
+      referencePrice1: 40.44,
+      referenceDate2: "2025-08-01",
+      referencePrice2: 42.17,
+    },
+  },
+  {
     symbol: "VALE3.SA",
     upper: {
       referenceDate1: "2024-12-02",
